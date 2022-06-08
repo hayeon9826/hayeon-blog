@@ -11,7 +11,13 @@ const NotFoundPage = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <Seo title="404: Not Found" />
       <h1>404: Not Found</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+      <p>페이지가 존재하지 않습니다.</p>
+      <button>
+        <a href="/">메인으로 돌아가기</a>
+      </button>
+      <br />
+      <br />
+      <br />
     </Layout>
   )
 }
