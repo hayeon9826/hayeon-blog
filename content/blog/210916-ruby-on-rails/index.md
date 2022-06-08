@@ -5,8 +5,8 @@ description: Ruby와 Ruby on Rails 프레임워크에 대해서 정리하는 글
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/6b8990d8-8754-47ce-8cd2-309038a864fa/Ruby_on_Rails-Logo.wine.png" style="width: 50%; padding-bottom: 50px;">
-Ruby on Rails에 대해서 정리하는 글 입니다.
 
+Ruby on Rails에 대해서 정리하는 글 입니다.
 
 > 1. Ruby
 1) 스크립트 언어

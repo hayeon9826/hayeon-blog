@@ -204,9 +204,8 @@ https://quilljs.com/docs/formats/
 
 ### 참고
 
-- [Dynamic Import 로 웹페이지 성능 올리기](https://pks2974.medium.com/dynamic-import-%EB%A1%9C%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%84%B1%EB%8A%A5-%EC%98%AC%EB%A6%AC%EA%B8%B0-caf62cc8c375)
-- [next, react-quill 사용시 document is not defined,  Expected server HTML to contain a matching 에러 문제](https://m.blog.naver.com/choirj91/222044740530)
-- [Nextjs에서 Quill Editor 적용하기](https://jaddong.tistory.com/entry/Nextjs%EC%97%90%EC%84%9C-Quill-Editor-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
-
-- [Use Quill as a rich text editor in next.js](https://www.simplenextjs.com/posts/next-rich-editor-quill)
+> - [Dynamic Import 로 웹페이지 성능 올리기](https://pks2974.medium.com/dynamic-import-%EB%A1%9C%EC%9B%B9%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%84%B1%EB%8A%A5-%EC%98%AC%EB%A6%AC%EA%B8%B0-caf62cc8c375)
+> - [next, react-quill 사용시 document is not defined,  Expected server HTML to contain a matching 에러 문제](https://m.blog.naver.com/choirj91/222044740530)
+> - [Nextjs에서 Quill Editor 적용하기](https://jaddong.tistory.com/entry/Nextjs%EC%97%90%EC%84%9C-Quill-Editor-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
+> - [Use Quill as a rich text editor in next.js](https://www.simplenextjs.com/posts/next-rich-editor-quill)
 

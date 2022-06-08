@@ -5,6 +5,7 @@ description: 리액트 원리 & 특징 정리
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/cda5a5aa-07b7-46c1-b983-bcb3b4c82d57/react.png" style="width: 50%; padding-bottom: 50px;">
+
 <div style="border: 0.5px solid lightgray; padding: 10px;">
   <a href="#intro"><b>i 리액트란?</b></a>
   <br />

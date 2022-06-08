@@ -357,10 +357,10 @@ lock 파일이 둘 다 있더라도 에러가 안날 수 있지만, 동일한 �
 <hr>
 
 
-> 참고:
--  [Yarn 톺아보기 - 안녕 프로그래밍](https://www.holaxprogramming.com/2017/12/21/node-yarn-tutorials/)
-- [패키지 잠금 파일 (package-lock.json, yarn.lock) - DaleSeo](https://www.daleseo.com/js-package-locks/)
-- [yarn 2+ 공식도큐](https://yarnpkg.com/getting-started)
-- [yarn 1 공식 도큐](https://classic.yarnpkg.com/en/docs)
-- [Can you use NPM and yarn together? - ASKINGLOT](https://askinglot.com/can-you-use-npm-and-yarn-together)
-- [Npm과 Yarn 혼용하면 안되는 이유 - OKKY](https://okky.kr/article/874006)
+### 참고:
+> - [Yarn 톺아보기 - 안녕 프로그래밍](https://www.holaxprogramming.com/2017/12/21/node-yarn-tutorials/)
+> - [패키지 잠금 파일 (package-lock.json, yarn.lock) - DaleSeo](https://www.daleseo.com/js-package-locks/)
+> - [yarn 2+ 공식도큐](https://yarnpkg.com/getting-started)
+> - [yarn 1 공식 도큐](https://classic.yarnpkg.com/en/docs)
+> - [Can you use NPM and yarn together? - ASKINGLOT](https://askinglot.com/can-you-use-npm-and-yarn-together)
+> - [Npm과 Yarn 혼용하면 안되는 이유 - OKKY](https://okky.kr/article/874006)

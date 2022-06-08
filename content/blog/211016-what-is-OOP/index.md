@@ -285,7 +285,7 @@ puts u.my #결과: 10000
 
 ### 출처
 > - [객체지향 프로그래밍 제대로 이해하기 ](https://velog.io/@haero_kim/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0)
-- [객체지향 프로그래밍 1](https://opentutorials.org/module/517/4621)
-- [객체지향, 아는 개념도 정리 안하면 당황합니다!](https://universitytomorrow.com/15)
-- [[프로그래밍 패러다임]순차적(비구조적),절차적(구조적),객체지향적 프로그래밍](https://kamang-it.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%88%9C%EC%B0%A8%EC%A0%81%EB%B9%84%EA%B5%AC%EC%A1%B0%EC%A0%81%EC%A0%88%EC%B0%A8%EC%A0%81%EA%B5%AC%EC%A1%B0%EC%A0%81%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%A0%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
-- [객체 지향](http://www.incodom.kr/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5#h_45791da82d928e012cccde6bfb5b5d23)
+> - [객체지향 프로그래밍 1](https://opentutorials.org/module/517/4621)
+> - [객체지향, 아는 개념도 정리 안하면 당황합니다!](https://universitytomorrow.com/15)
+> - [[프로그래밍 패러다임]순차적(비구조적),절차적(구조적),객체지향적 프로그래밍](https://kamang-it.tistory.com/entry/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84%EC%88%9C%EC%B0%A8%EC%A0%81%EB%B9%84%EA%B5%AC%EC%A1%B0%EC%A0%81%EC%A0%88%EC%B0%A8%EC%A0%81%EA%B5%AC%EC%A1%B0%EC%A0%81%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EC%A0%81-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)
+> - [객체 지향](http://www.incodom.kr/%EA%B0%9D%EC%B2%B4_%EC%A7%80%ED%96%A5#h_45791da82d928e012cccde6bfb5b5d23)

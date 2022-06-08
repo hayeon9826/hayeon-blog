@@ -91,7 +91,5 @@ ANALYZE=true yarn build
 ### 참고
 
 > - [쉽게 따라하는 프론트엔드 웹 어플리케이션 패키지 최적화](https://velog.io/@bluestragglr/%EC%89%BD%EA%B2%8C-%EB%94%B0%EB%9D%BC%ED%95%98%EB%8A%94-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9B%B9-%EC%96%B4%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98-%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%B5%9C%EC%A0%81%ED%99%94) 
-- [Webpack bundling 파일 사이즈 줄이기(Tree Shaking)Permalink
+> - [Webpack bundling 파일 사이즈 줄이기(Tree Shaking)Permalink
 ](https://blog.jungbin.kim/web/2019/02/16/js-decreaing-webpack-bundle.html)
-
-ky.kr/article/874006)

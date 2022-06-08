@@ -11,14 +11,11 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  console.log(data)
-
   const disqusConfig = {
     url: data.site.siteMetadata?.siteUrl + location.pathname,
     identifier: post.id,
     title: post.frontmatter.title
   }
-      
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -96,7 +93,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY-MM-DD")
         description
       }
     }
