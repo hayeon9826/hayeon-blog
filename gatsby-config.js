@@ -1,24 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Hayeon Dev Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `김하연`,
+      summary: `2년차 프론트엔드 개발자 입니다.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://hayeondev.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      linkedin: `khy226`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-use-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `hayeondev`
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
