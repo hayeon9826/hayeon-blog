@@ -21,7 +21,7 @@ description: SSR를 가능하게 해주는 프레임워크!
 
 _app.tsx 코드 예시
 
-```javascript
+```tsx
 import React from 'react';
 import { RootStoreType } from '../interface';
 import { RootProvider } from '../store/rootContext';
@@ -49,7 +49,7 @@ export default MyApp;
 
 _document.tsx 예시
 
-```javascript
+```tsx
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class CustomDocument extends Document {
@@ -76,7 +76,7 @@ export default CustomDocument;
 
 index.tsx 예시
 
-```javascript
+```tsx
 import React from 'react';
 import List from '../components/List';
 import 'react-toastify/dist/ReactToastify.css';
@@ -291,7 +291,7 @@ React는 **라이브러리**이고, Next.js는 리액트의 **프레임워크**�
 
 #### Next.js 폴더 구조 예시
 
-```java
+```
 /public
     favicon.ico
 /src
@@ -412,7 +412,7 @@ Next.js 공식 도큐에서는 퍼포먼스 이유등으로 **SSG** 사용을 �
 
 #### getStaticProps 예시
 
-```javascript
+```jsx
 function Blog({ posts }) {
   // Render posts...
 }
@@ -437,7 +437,7 @@ export default Blog
 
 #### getStaticProps 적용 예시 (FAQ 목록)
 
-```javascript
+```jsx
 import { GetStaticProps } from 'next';
 
 const FaqPage: React.FC<{ faqs: Faq[] }> = ({ faqs }) => {
@@ -478,7 +478,7 @@ export default FaqPage;
 
 #### getStaticPaths 예시
 
-```javascript
+```jsx
 // This function gets called at build time
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
@@ -498,7 +498,7 @@ export async function getStaticPaths() {
 
 #### getStaticPaths 적용 예시 (Post 상세 페이지)
 
-```javascript
+```jsx
 import { GetStaticProps, GetStaticPaths } from 'next';
 
 const PostShow: React.FC<{ post: Post }> = ({ post }) => {
@@ -532,7 +532,7 @@ export default PostShow;
 
 #### paths 예시
 
-```javascript
+```jsx
 // console.log(paths)
 [
   { params: { id: '1' } },
@@ -559,7 +559,7 @@ export default PostShow;
 
 #### getServerSideProps 예시
 
-```javascript
+```jsx
 function Page({ data }) {
   // Render data...
 }
@@ -617,7 +617,7 @@ export default List;
 
 #### layout/meta.tsx
 
-```javascript
+```jsx
 import Head from 'next/head';
 
 const Meta = () => (
@@ -642,7 +642,7 @@ export default Meta;
 
 #### _app.tsx
 
-```javascript
+```jsx
 import Meta from '../layout/meta';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
