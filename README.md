@@ -103,3 +103,21 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+---
+
+### 완료한 기능
+[x] 게시글 리스트
+[x] 게시글 상세 페이지 & 내용 넣기
+[x] 구글 애널리틱스 적용
+[x] 다크모드 구현
+[x] 카테고리 레이아웃
+
+### 해야할 것
+
+[ ] 카테고리 기능 추가
+[ ] pagination 기능 추가
+[ ] 검색 기능 추가 
+[ ] SEO 최적화
+[ ] 구글 애드센스 적용
+[ ] ReadME 업데이트
