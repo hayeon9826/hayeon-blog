@@ -11,6 +11,15 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
+  console.log(data)
+
+  const disqusConfig = {
+    url: data.site.siteMetadata?.siteUrl + location.pathname,
+    identifier: post.id,
+    title: post.frontmatter.title
+  }
+      
+
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
@@ -30,7 +39,8 @@ const BlogPostTemplate = ({ data, location }) => {
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
-        <CommentPage title={siteTitle}/>
+        <hr />
+        <CommentPage disqusConfig={disqusConfig}/>
         <hr />
         <footer>
           <Bio />
@@ -77,6 +87,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
     markdownRemark(id: { eq: $id }) {

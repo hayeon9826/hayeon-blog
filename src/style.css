@@ -59,6 +59,7 @@
   --color-text: #000000;
   --color-text-light: #f0f1f2;
   --color-text-gray: #999999;
+  --color-light-gray: #F8F8F8;
   --color-heading: #000000;
   --color-heading-light: #ffffff;
   --color-heading-black: black;
@@ -100,7 +101,7 @@ footer {
 }
 
 hr {
-  background: var(--color-accent);
+  background: var(--color-light);
   height: 1px;
   border: 0;
 }
@@ -192,7 +193,7 @@ ol {
 ul li,
 ol li {
   padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
+  margin-bottom: calc(var(--spacing-6) / 2);
   word-wrap:break-word;
 }
 
@@ -215,7 +216,7 @@ blockquote {
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
   border-left: var(--spacing-1) solid var(--color-primary);
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-1);
   font-style: italic;
   margin-bottom: var(--spacing-8);
 }
@@ -236,14 +237,18 @@ table {
   border-spacing: 0.25rem;
 }
 
-table thead tr th {
-  border-bottom: 1px solid var(--color-accent);
+table, tr, th {
+  border-bottom: 1px solid var(--color-accent) !important;
+}
+
+td {
+  background: var(--color-light-gray)
 }
 
 /* Link */
 
 a {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 a:hover,
@@ -363,7 +368,7 @@ img{
 .toggle-button:checked {
   background: url("https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png")
     no-repeat center #212121;
-  background-size: 25px;
+  background-size: 20px;
   cursor: pointer;
 }
 
