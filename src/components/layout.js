@@ -1,15 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import ThemeBtn from './themeBtn'
 
 const Layout = ({ location, title, children }) => {
 
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
-  const button = (
-    <span className="toggle-container">
-      <input type="checkbox" className="toggle-button"/>
-    </span>
-  )
+
   let header;
 
   if (isRootPath) {
@@ -31,7 +28,7 @@ const Layout = ({ location, title, children }) => {
     <>
       <header className="global-header">
         <div className="max-width-header">
-          {header} {button}
+          {header} {<ThemeBtn />}
         </div>
       </header>
       <div className="global-wrapper" data-is-root-path={isRootPath}>
