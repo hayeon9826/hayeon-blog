@@ -1,7 +1,10 @@
- import * as React from "react"
+ import React from "react"
  import { useStaticQuery, graphql } from "gatsby"
  
- const Category = () => {
+ const Category = ({ location, siteTitle }) => {
+  const params = new URLSearchParams(location?.search);
+  const currentCategory = params.get('category') || 'All'
+
    const data = useStaticQuery(graphql`
      query CategoryQuery {
        site {
@@ -11,17 +14,19 @@
        }
      }
    `)
- 
    const categories = data.site.siteMetadata?.categories
+
  
    return (
-    <div class="scroll-toggle">
-        <ul class="scroll-toggle__list">
-        {categories && categories?.map((category) => (
-            <li class="scroll-toggle__list-item"><div>{category}</div></li>
+     <>
+      <div className="scroll-toggle">
+        <ul className="scroll-toggle__list">
+        {categories && categories?.map((category, id) => (
+            <li className={`scroll-toggle__list-item ${currentCategory === category && 'active'}`} key={id}><div><a href={`/?category=${category}`}>{category}</a></div></li>
         ))}
         </ul>
-  </div>
+      </div>
+    </>
    )
  }
  

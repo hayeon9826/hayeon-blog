@@ -2,6 +2,7 @@
 title: 코어 자바스크립트 정리 - 4. 콜백함수
 date: "2022-02-20T22:45:32.169Z"
 description: '콜백함수: 다른 코드의 인자로 넘겨주는 함수'
+category: "Javascript"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg" style="width: 50%; padding-bottom: 50px;">

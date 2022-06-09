@@ -33,15 +33,21 @@ const Bio = () => {
         layout="fixed"
         formats={["auto", "webp", "avif"]}
         src="../images/profile.png"
-        width={50}
-        height={50}
+        width={70}
+        height={70}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
         <p className="justify-center">
           <span>
-            <strong>{author.name}</strong> <br />{author?.summary || null}
+            <strong>{author.name}</strong> 
+            <br />
+            <small className="text-gray font-semibold">{author?.summary || null}</small>
+            <br />
+            <a className="link-small" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">Github</a>
+            {` `}
+            <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">Linkedin</a>
           </span>
           <span>
             <a className="about-text" href="/about">about</a>

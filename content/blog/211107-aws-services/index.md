@@ -2,6 +2,7 @@
 title: 사용해본 AWS 서비스 정리
 date: "2021-11-07T22:40:32.169Z"
 description: 알아두면 좋은 12가지 AWS 서비스 정리
+category: "Development"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/47219bd9-89ce-4c2c-a078-8c4025a32818/AWSLogo.png" style="width: 60%; padding-bottom: 50px;">

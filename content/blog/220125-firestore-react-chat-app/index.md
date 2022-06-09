@@ -2,6 +2,7 @@
 title: Firestore로 실시간 채팅 앱 구현 (feat. React, Firebase)
 date: "2022-01-25T22:40:32.169Z"
 description: '이번 포스트에서는 React 채팅앱에 Firestore를 적용하는 방법을 공유드리고자 합니다. 기존에 polling 방식으로 채팅을 구현했을 때 속도도 너무 느리고, 싱크가 맞지 않아 실시간으로 데이터가 반영될 수 있는 Firestore를 적용했습니다.'
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/32f0c996-207b-4c0b-8df6-f65c147fd9b7/logo-standard.png" style=" padding-bottom: 50px;">

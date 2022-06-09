@@ -2,6 +2,7 @@
 title: "[swift] 앱 추적 권한 띄우기"
 date: "2021-09-06T23:19:32.169Z"
 description: ios 앱 추적 권한 알림창 띄우기
+category: "Native"
 ---
 
 

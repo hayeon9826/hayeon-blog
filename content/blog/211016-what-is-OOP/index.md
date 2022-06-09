@@ -2,6 +2,7 @@
 title: 객체지향 프로그래밍 (OOP) 이란?
 date: "2021-10-16T22:40:32.169Z"
 description: "객체 지향 프로그래밍.. 그거 뭐 객체..로 코딩하는거 아니야?"
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d49704dd-f745-43ba-af98-2121fef9c0f7/catherine-heath-i4W8OINLI_I-unsplash.jpg" style="width: 60%; padding-bottom: 50px;">

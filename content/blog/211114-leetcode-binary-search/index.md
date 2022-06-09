@@ -2,6 +2,7 @@
 title: 이진 탐색(Binary Search) 구현하기
 date: "2021-11-14T22:40:32.169Z"
 description: 이진 탐색(binary search)은 정렬된 배열 내에서 목표 값을 찾는 검색 알고리즘이다.
+category: "Algorithm"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f8a7ddf0-2f9b-47eb-8115-ba6a7442e560/leetcode_logo.001.jpeg" style="width: 60%; padding-bottom: 50px;">

@@ -2,6 +2,7 @@
 title: "Devise에서 SNS 로그인 세션 유지 안될때"
 date: "2021-09-06T22:50:32.169Z"
 description: 레일즈 Devise 세션 유지 방법
+category: "Rails"
 ---
 
 ![preview](https://velog.velcdn.com/images/khy226/post/fcbad1a8-fa5c-44ff-97a0-5048911cf0ca/68747470733a2f2f7261772e6769746875622e636f6d2f6865617274636f6d626f2f6465766973652f6d61737465722f6465766973652e706e67.png)

@@ -2,6 +2,7 @@
 title: React-csv로 csv 파일 다운로드하기
 date: "2021-12-09T22:40:32.169Z"
 description: 리액트 프로젝트에서 react-csv 패키지를 사용해 csv 파일을 다운로드 하는 방법을 정리해보았다.
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/9129592c-bb81-4fa9-9227-c07c4b8a4150/react.png" style="width: 60%; padding-bottom: 50px;">

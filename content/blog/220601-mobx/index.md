@@ -2,6 +2,7 @@
 title: MobX 훑어보기
 date: "2022-06-01T22:45:32.169Z"
 description: 상태관리 라이브러리, MobX 개념 알아보기
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/2e1f3cef-4882-4fca-ba2e-6c26a2791534/image.png" style="width: 50%; padding-bottom: 50px;">

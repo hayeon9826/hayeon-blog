@@ -2,6 +2,7 @@
 title: 동기, 비동기란? (+Promise, async/await 개념)
 date: "2022-05-19T22:45:32.169Z"
 description: 동기는 '직렬적'으로 작동하는 방식이고 비동기는 '병렬적'으로 작동하는 방식이다.
+category: "Javascript"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/61d1e8ab-9b46-448c-9354-fd0a4e329bb0/image.png" style="padding-bottom: 50px;">

@@ -2,6 +2,7 @@
 title: Rails 7.0 출시 내용 정리
 date: "2022-01-22T22:40:32.169Z"
 description: 레일즈 7.0 업데이트 내용 정리
+category: "Rails"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/47ab711e-5ded-42e1-9b85-e7cf6feedac4/rails7.png" style=" padding-bottom: 50px;">

@@ -2,6 +2,7 @@
 title: '[Rails] Active Record 모델 관계 알아보기'
 date: "2021-10-03T22:40:32.169Z"
 description: 해당 포스트는 활성 레코드관계(Active Record Association)에 대한 안내 - 루비온 레일즈 가이드 를 요약 & 정리한 글 입니다.
+category: "Rails"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/24570e5b-09c5-4782-85df-218e2084e87c/Ruby_on_Rails-Logo.wine.png" style="padding-bottom: 50px;">

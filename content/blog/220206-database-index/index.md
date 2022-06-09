@@ -2,6 +2,7 @@
 title: 데이터베이스 인덱스란?
 date: "2022-02-06T22:40:32.169Z"
 description: 데이터베이스를 다룰 때 인덱싱(indexing)은 매우 중요하다. 본 게시글에서는 데이터베이스 인덱스의 개념과 필요성, 그리고 레일즈 앱에 적용하는 방법을 알아보려고 한다.
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/9da8f00e-c7da-4983-8e11-e6b2c62e09e5/photo-1569235186275-626cb53b83ce.jpeg" style="width: 60%; padding-bottom: 50px;">

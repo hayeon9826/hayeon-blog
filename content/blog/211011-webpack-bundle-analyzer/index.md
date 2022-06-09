@@ -2,6 +2,7 @@
 title: Webpack bundle 사이즈 최적화 (feat. webpack-bundle-analyzer)
 date: "2021-10-11T22:40:32.169Z"
 description: webpack-bundle-analyzer를 사용해서 빌드 크기 확인 후 용량을 줄여보자.
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/1ff21694-d03f-42de-86bb-915aa1e9ec52/logo-on-white-bg.png" style="width: 60%; padding-bottom: 50px;">

@@ -2,6 +2,7 @@
 title: 코어 자바스크립트 - 5. 클로저
 date: "2022-02-28T22:45:32.169Z"
 description: 클로저란, 어떤 함수 A에서 선언한 변수 a를 참조하는 내부함수 B를 외부로 전달할 경우, A의 실행 컨텍스트가 종료된 이후에도 변수 a가 사라지지 않는 현상
+category: "Javascript"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/7eb2ca26-55b0-4476-a22b-26fe6ef63531/316439749g.jpeg" style="width: 50%; padding-bottom: 50px;">

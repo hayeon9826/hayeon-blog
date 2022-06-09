@@ -2,6 +2,7 @@
 title: "Rails에서 엑셀 파일 추출하기 (feat. axlsx_rails)"
 date: "2021-09-06T22:59:32.169Z"
 description: axlsx_rails 젬 활용방법
+category: "Rails"
 ---
 ### Gemfile 추가
 아래 gem을 추가하고 `bundle install` 을 해주세요.

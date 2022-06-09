@@ -3,9 +3,9 @@ module.exports = {
     title: `Hayeon Dev Blog`,
     author: {
       name: `김하연`,
-      summary: `2년차 프론트엔드 개발자 입니다.`,
+      summary: `2년차 프론트엔드 개발자 입니다. 사용자 경험을 개선하는 제품을 개발하는데 집중합니다.`,
     },
-    categories: ["Item #1", "Item #2", "Item #3", "Item #4", "Item #5", "Item #6", "Item #7", "Item #8", "Item #9", "Item #10", "Item #11", "Item #12"],
+    categories: ['All', 'Javascript', 'React', 'CS', 'Development', 'Native', 'Algorithm', 'Rails', 'Career', 'Story'],
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://hayeondev.gatsbyjs.io/`,
     social: {
@@ -29,7 +29,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
+              classPrefix: 'language-',
               inlineCodeMarker: null,
               aliases: {},
               showLineNumbers: true,
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-        shortname: `hayeondev`
-      }
+        shortname: `hayeondev`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -74,7 +74,12 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              inlineCodeMarker: '%',
+            },
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -112,7 +117,7 @@ module.exports = {
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
+                  custom_elements: [{ 'content:encoded': node.html }],
                 })
               })
             },
@@ -135,8 +140,8 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Hayeon Dev Blog RSS Feed",
+            output: '/rss.xml',
+            title: 'Hayeon Dev Blog RSS Feed',
           },
         ],
       },

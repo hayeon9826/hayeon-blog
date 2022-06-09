@@ -2,6 +2,7 @@
 title: "Git 명령어 정리"
 date: "2021-09-12T22:40:32.169Z"
 description: Git 개념과 자주 사용하는 명령어 정리
+category: "Development"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d85518eb-17a0-4df9-8277-79080c01a569/git.png" style="width: 50%; padding-bottom: 100px;">

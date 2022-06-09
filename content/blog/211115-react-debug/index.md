@@ -2,6 +2,7 @@
 title: '[React] 디버깅: 폼 필드 value 값이 undefined 일때'
 date: "2021-11-15T22:40:32.169Z"
 description: 'Warning: A component is changing an uncontrolled input of type text to be controlled.'
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/9c51dee0-dc11-4272-bf79-4476efa910a4/react.png" style="width: 60%; padding-bottom: 50px;">

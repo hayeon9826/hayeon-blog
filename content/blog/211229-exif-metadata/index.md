@@ -2,6 +2,7 @@
 title: 모바일 사진 업로드 시 90도 회전하는 문제 (feat. Exif 메타데이터)
 date: "2021-12-29T22:40:32.169Z"
 description: 사진을 원래대로 돌려보자
+category: "Development"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/b54627d0-4481-4c81-9eb0-96f2b52f4868/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202021-12-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.14.45.png" style="width: 60%; padding-bottom: 50px;">

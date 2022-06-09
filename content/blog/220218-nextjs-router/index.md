@@ -2,6 +2,7 @@
 title: Next.js Router 정리
 date: "2022-02-18T22:45:32.169Z"
 description: Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이 많은 것 같아 자주 사용하는 메서드를 정리해보았습니다.
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/fabead09-b8b2-4569-9f97-2e0d0b368ec3/next.png" style="padding-bottom: 50px;">

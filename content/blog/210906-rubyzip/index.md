@@ -2,6 +2,7 @@
 title: "Rubyzip: zipfile로 압축해서 다중 파일 다운로드 받기"
 date: "2021-09-06T22:40:32.169Z"
 description: Rubyzip 사용 방법을 알아봅시다.
+category: "Rails"
 ---
 
 ### Rubyzip: zipfile로 압축해서 다중 파일 다운로드 받기

@@ -2,6 +2,7 @@
 title: '[Rails] 액티브 레코드 데이터 검증 & 콜백 정리'
 date: "2021-11-18T22:40:32.169Z"
 description: 액티브 레코드 데이터 검증(Validation) 알아보기
+category: "Rails"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/6051434a-30e1-489e-bda5-9c9ab2cddba1/Ruby_on_Rails-Logo.wine.png" style="width: 60%; padding-bottom: 50px;">

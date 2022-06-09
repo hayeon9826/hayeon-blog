@@ -2,6 +2,7 @@
 title: MVC 패턴이란?
 date: "2021-02-08T22:12:03.284Z"
 description: "MVC 패턴에 대해서 알아보자"
+category: "Rails"
 ---
 
 ### MVC 패턴이란?

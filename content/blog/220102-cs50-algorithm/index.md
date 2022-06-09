@@ -2,6 +2,7 @@
 title: '[CS50] 알고리즘 정리'
 date: "2022-01-02T22:40:32.169Z"
 description: 검색 알고리즘, 정렬 알고리즘, big-o 알아보기
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">

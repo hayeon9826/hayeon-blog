@@ -2,6 +2,7 @@
 title: '[Backtracking] Leetcode 77. Combination'
 date: "2021-12-23T22:40:32.169Z"
 description: 백트래킹(backtracking)이란? 해를 찾는 도중 해가 아니어서 막히면, 되돌아가서 다시 해를 찾아가는 기법을 말한다.
+category: "Algorithm"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/9d989682-4811-4122-bdff-31d68048563e/leetcode_logo.001.jpeg" style="width: 60%; padding-bottom: 50px;">

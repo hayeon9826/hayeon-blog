@@ -2,6 +2,7 @@
 title: '[Rails] :includes 로 SQL N+1 문제 개선하기'
 date: "2021-12-26T22:40:32.169Z"
 description: N+1 문제란? 쿼리 1번으로 N건을 가져왔는데, 관련 컬럼을 얻기 위해 쿼리를 N번 추가 수행하는 문제
+category: "Rails"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/97788f5a-6197-4dc4-8da8-637e58c8c7ea/Ruby_on_Rails-Logo.wine.png" style="width: 60%; padding-bottom: 50px;">

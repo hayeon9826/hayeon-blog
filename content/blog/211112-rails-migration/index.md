@@ -2,6 +2,7 @@
 title: '[Rails] 마이그레이션 알아보기'
 date: "2021-11-12T22:40:32.169Z"
 description: Migration 이란? 마이그레이션은 액티브 레코드의 기능으로, 데이터베이스 스키마(구조)를 변경하는 수단이다. 
+category: "Rails"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f96ee986-c6a3-48f8-aad1-14224b2db412/Ruby_on_Rails-Logo.wine.png" style="width: 60%; padding-bottom: 50px;">

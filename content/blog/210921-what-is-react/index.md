@@ -2,6 +2,7 @@
 title: '[React] 리액트란?'
 date: "2021-09-21T22:40:32.169Z"
 description: 리액트 원리 & 특징 정리
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/cda5a5aa-07b7-46c1-b983-bcb3b4c82d57/react.png" style="width: 50%; padding-bottom: 50px;">

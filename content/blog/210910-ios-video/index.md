@@ -2,6 +2,7 @@
 title: "ios 앱 온보딩 영상 재생"
 date: "2021-09-10T22:40:32.169Z"
 description: ios 앱 온보딩 영상 재생 기능 구현 과정 기록
+category: "Native"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/3077d295-1767-4b54-b541-82bc60e268eb/swift.jpeg" style="width: 40%; margin: 0 auto; padding-bottom: 100px;">

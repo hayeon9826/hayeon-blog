@@ -2,6 +2,7 @@
 title: Next.js 프로젝트에 React-Quill(텍스트 에디터) 적용하기
 date: "2021-11-11T22:40:32.169Z"
 description: React-Quill 은 리액트 텍스트 에디터로, Destkop/Mobile을 모두 지원하는 몇 안되는 Rich Text Editor 중 하나이다.
+category: "React"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f1effb96-012f-402e-8f35-203adc0d8f61/next%20logo.png" style="width: 60%; padding-bottom: 50px;">

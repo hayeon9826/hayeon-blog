@@ -2,6 +2,7 @@
 title: var, let, const의 차이점
 date: "2021-12-19T22:40:32.169Z"
 description: var, let, const의 개념과 차이점에 대해서 알아보자.
+category: "Javascript"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/e61f69c5-ce3c-4586-a9b8-479a92008367/js.001.jpeg" style="width: 60%; padding-bottom: 50px;">

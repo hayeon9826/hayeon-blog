@@ -2,6 +2,7 @@
 title: '[CS50] 컴퓨팅 사고'
 date: "2021-09-13T22:40:32.169Z"
 description: 모두를 위한 컴퓨터 과학 (CS50 2019) 강의 정리 1
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/a0f0abad-b72b-4590-b4f2-6fee5d16b9bb/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">

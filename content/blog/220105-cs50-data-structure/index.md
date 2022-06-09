@@ -2,6 +2,7 @@
 title: '[CS50] 자료구조 정리'
 date: "2022-01-05T22:40:32.169Z"
 description: '6강 정리: 포인터, 배열, 연결 리스트, 해시 테이블, 트라이, 스택, 큐, 딕셔너리'
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">

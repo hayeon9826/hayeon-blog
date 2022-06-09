@@ -2,6 +2,7 @@
 title: '[CS50] 배열 강의 정리'
 date: "2021-12-31T22:40:32.169Z"
 description: 모두를 위한 컴퓨터 과학 (CS50 2019) 강의 정리
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">

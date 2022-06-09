@@ -2,6 +2,7 @@
 title: 브라우저에 url을 입력하면 어떤일이 벌어질까?
 date: "2021-09-27T22:40:32.169Z"
 description: maps.google.com을 입력하면..?
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/b5d2bf34-215c-42cd-bbd2-87c700c6dd34/35200f65cb4727f66ad07de2a3a7fe9fcfe7e7b37e9e432329952508404578ccbbf496822dbdf0cc129bad6610bbc6f26312c2729cdd7ea665a81df1875a0d0c8792ab2cdbc9c2886f559ce22a825173.jpeg" style="width: 50%; padding-bottom: 50px;">

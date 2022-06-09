@@ -2,6 +2,7 @@
 title: '[CS50] 메모리 정리'
 date: "2022-01-04T22:40:32.169Z"
 description: 'CS50 메모리 강의 노트: 메모리 주소, 포인터, 문자열, 문자열 비교, 문자열 복사, 메모리 할당과 해제, 메모리 교환/ 스택/ 힙, 메모리 구조'
+category: "CS"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">

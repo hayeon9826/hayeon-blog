@@ -2,6 +2,7 @@
 title: "리액트 체크박스 에러 해결"
 date: "2021-09-07T22:40:32.169Z"
 description: 리액트 checked prop 올바르게 사용하기!
+category: "React"
 ---
 
 ![img](https://velog.velcdn.com/images/khy226/post/9d2040af-d5a5-4add-ad6c-d50c6e819d27/0_XCgoYU9sqt95P8J0.png)

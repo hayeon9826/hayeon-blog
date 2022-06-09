@@ -2,6 +2,7 @@
 title: Yarn 이란?
 date: "2021-10-04T22:40:32.169Z"
 description: Yarn install 하면 어떤일이 벌어질까 🤔
+category: "Development"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/32f58206-04e2-4b59-b38b-a7da923aa4bd/feature-speed.png" style="width: 60%; padding-bottom: 50px;">

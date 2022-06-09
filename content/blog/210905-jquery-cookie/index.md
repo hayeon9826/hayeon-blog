@@ -2,6 +2,7 @@
 title: Jquery cookie로 팝업창 구현
 date: "2021-09-05T23:46:37.121Z"
 summary: "jquery Cookie를 활용해 일주일간 보지않기 기능 구현"
+category: "Javascript"
 ---
 
 ![preview](https://velog.velcdn.com/images/khy226/post/a48ec3b1-cb8a-4bcb-8852-9bf920f38d9a/photo-1597733153203-a54d0fbc47de.jpeg)

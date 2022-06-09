@@ -2,6 +2,7 @@
 title: '[LeetCode] Backtracking 을 이용한 순열 구하기'
 date: "2021-12-25T22:40:32.169Z"
 description: '백트래킹(backtracking)이란? : 한정 조건을 가진 문제를 푸는 전략이다. 해를 찾는 도중 해당 경로에서 해가 나오지 않고 막히면, 되돌아가서 다른 경로에서 해를 찾아가는 기법을 말한다.'
+category: "Algorithm"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/b010e294-29eb-4e7e-a32c-ab5918be5761/leetcode_logo.001.jpeg" style="width: 60%; padding-bottom: 50px;">

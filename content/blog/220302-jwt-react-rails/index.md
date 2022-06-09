@@ -2,6 +2,7 @@
 title: jwt로 로그인 기능 만들기 (React + Rails )
 date: "2022-03-02T22:45:32.169Z"
 description: jwt란? JWT(Json Web Token)의 약자로, Json 포맷을 이용해 인증에 필요한 정보를 암호화 한 웹 토큰이다.
+category: "Development"
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/3c2e713c-5efa-4212-99da-71a67c934aa1/jwt%20logo.png" style="padding-bottom: 50px;">
