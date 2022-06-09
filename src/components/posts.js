@@ -1,36 +1,26 @@
-import React, { useMemo } from "react";
-import { Link } from "gatsby"
+import React, { useMemo } from 'react'
+import { Link } from 'gatsby'
+import NoPostPage from './noPost'
 
-const PostsPage = ({ posts, location, category }) => {
-
-  const selectedPosts = useMemo(() =>
-    posts
-      .filter(
-        ({ post }) =>
-          category === 'All' ||
-          post?.frontmatter?.category === category
-      ).slice(0, 100)
+const PostsPage = ({ posts, category, siteTitle, location }) => {
+  const selectedPosts = useMemo(
+    () => posts.filter(post => category === 'All' || post.frontmatter.category === category),
+    [category, posts],
   )
 
-
-  console.log(posts, '@@@posts')
-  console.log(category, '###category')
-
-  console.log(selectedPosts, '$$$selectedPosts')
+  if (selectedPosts.length === 0) {
+    return <NoPostPage location={location} siteTitle={siteTitle} />
+  }
 
   return (
     <>
-      <ol style={{ listStyle: `none` }}>
-        {posts?.map(post => {
+      <ol style={{ listStyle: `none` }} className="mb-32">
+        {selectedPosts?.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
             <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
+              <article className="post-list-item" itemScope itemType="http://schema.org/Article">
                 <header>
                   <h2>
                     <Link to={post.fields.slug} itemProp="url">
@@ -54,6 +44,7 @@ const PostsPage = ({ posts, location, category }) => {
         })}
       </ol>
     </>
-)};
+  )
+}
 
-export default PostsPage;
+export default PostsPage
