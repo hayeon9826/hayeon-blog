@@ -1,13 +1,6 @@
-/**
- * Bio component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
-
-import * as React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from 'react'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -31,7 +24,7 @@ const Bio = () => {
       <StaticImage
         className="bio-avatar"
         layout="fixed"
-        formats={["auto", "webp", "avif"]}
+        formats={['auto', 'webp', 'avif']}
         src="../images/profile.png"
         width={70}
         height={70}
@@ -41,16 +34,22 @@ const Bio = () => {
       {author?.name && (
         <p className="justify-center">
           <span>
-            <strong>{author.name}</strong> 
+            <strong>{author.name}</strong>
             <br />
             <small className="text-gray font-semibold">{author?.summary || null}</small>
             <br />
-            <a className="link-small" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">Github</a>
+            <a className="link-small" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">
+              Github
+            </a>
             {` `}
-            <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">Linkedin</a>
+            <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
+              Linkedin
+            </a>
           </span>
           <span>
-            <a className="about-text" href="/about">about</a>
+            <Link className="about-text" to="/about">
+              about
+            </Link>
           </span>
         </p>
       )}
