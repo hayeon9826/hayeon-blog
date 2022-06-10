@@ -3,10 +3,10 @@ module.exports = {
     title: `Hayeon Dev Blog`,
     author: {
       name: `김하연`,
-      summary: `2년차 프론트엔드 개발자 입니다. 사용자 경험을 개선하는 제품을 개발하는데 집중합니다.`,
+      summary: `2년차 프론트엔드 개발자 입니다. 사용자 경험 개선, 읽기 쉬운 코드에 집중하여 개발합니다.`,
     },
     categories: ['All', 'Javascript', 'React', 'CS', 'Development', 'Native', 'Algorithm', 'Rails', 'Career', 'Story'],
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `김하연 개발 블로그`,
     siteUrl: `https://hayeondev.gatsbyjs.io/`,
     social: {
       linkedin: `khy226`,
@@ -14,6 +14,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    'gatsby-plugin-advanced-sitemap',
+    'gatsby-plugin-feed',
     `gatsby-plugin-use-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,

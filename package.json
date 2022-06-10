@@ -1,19 +1,20 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "hayeon-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Hayeon's Dev Blog",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Hayeon Kim <hayeonkim226@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/hayeon9826/hayeon-blog/issues"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "add": "^2.0.6",
     "font-awesome": "^4.7.0",
     "gatsby": "^4.15.2",
+    "gatsby-plugin-advanced-sitemap": "^2.1.0",
     "gatsby-plugin-disqus": "^1.2.4",
-    "gatsby-plugin-feed": "^4.15.1",
+    "gatsby-plugin-feed": "^4.16.0",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
     "gatsby-plugin-google-analytics": "^4.16.0",
     "gatsby-plugin-image": "^2.15.1",
@@ -21,6 +22,7 @@
     "gatsby-plugin-offline": "^5.15.1",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-sharp": "^4.15.1",
+    "gatsby-plugin-sitemap": "^5.16.0",
     "gatsby-plugin-use-dark-mode": "^1.5.0",
     "gatsby-remark-copy-linked-files": "^5.15.0",
     "gatsby-remark-images": "^6.15.1",
