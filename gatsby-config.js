@@ -15,7 +15,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-image`,
     'gatsby-plugin-advanced-sitemap',
-    'gatsby-plugin-feed',
     `gatsby-plugin-use-dark-mode`,
     {
       resolve: `gatsby-source-filesystem`,
