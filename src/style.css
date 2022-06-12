@@ -377,8 +377,13 @@ img {
   font-weight: var(--fontWeight-bold);
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-3);
   color: white;
+}
+
+.header-link-home:hover,
+.main-heading a:hover {
+  color: var(--category-active-border);
 }
 
 .bio {
