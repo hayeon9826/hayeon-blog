@@ -129,7 +129,7 @@ footer {
 }
 
 hr {
-  background: var(--color-light);
+  background: var(--category-active-border);
   height: 1px;
   border: 0;
 }
@@ -389,6 +389,7 @@ img {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-10);
+  cursor: pointer;
 }
 
 .bio p {
@@ -469,6 +470,25 @@ button {
   border-radius: 0.5rem;
   padding: var(--spacing-2);
   border: none;
+  margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
+}
+
+button.button-outline {
+  background-color: var(--bg-color);
+  border-radius: 0.5rem;
+  padding: var(--spacing-2);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  margin-top: var(--spacing-1);
+  margin-bottom: var(--spacing-1);
+}
+
+button.button-outline a {
+  text-decoration: none !important;
+  font-weight: var(--fontWeight-semibold);
+  font-size: var(--fontSize-1);
+  color: var(--color-primary);
 }
 
 button a {
@@ -476,6 +496,10 @@ button a {
   font-weight: var(--fontWeight-semibold);
   font-size: var(--fontSize-1);
   color: white;
+}
+
+button a:hover {
+  color: var(--category-active-border);
 }
 
 img {

@@ -1,10 +1,10 @@
-import * as React from "react"
-import { Link, graphql } from "gatsby"
+import * as React from 'react'
+import { Link, graphql } from 'gatsby'
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import CommentPage from "../components/comments"
+import Bio from '../components/bio'
+import Layout from '../components/layout'
+import Seo from '../components/seo'
+import CommentPage from '../components/comments'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -14,37 +14,27 @@ const BlogPostTemplate = ({ data, location }) => {
   const disqusConfig = {
     url: data.site.siteMetadata?.siteUrl + location.pathname,
     identifier: post.id,
-    title: post.frontmatter.title
+    title: post.frontmatter.title,
   }
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
-      <article
-        className="blog-post"
-        itemScope
-        itemType="http://schema.org/Article"
-      >
+      <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
+      <article className="blog-post" itemScope itemType="http://schema.org/Article">
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="post-date">{post.frontmatter.date}</p>
         </header>
-        <section
-          dangerouslySetInnerHTML={{ __html: post.html }}
-          itemProp="articleBody"
-        />
+        <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         <hr />
-        <CommentPage disqusConfig={disqusConfig}/>
+        <CommentPage disqusConfig={disqusConfig} />
         <hr />
         <footer>
           <Bio />
         </footer>
       </article>
       <nav className="blog-post-nav">
-        <ul
+        <div
           style={{
             display: `flex`,
             flexWrap: `wrap`,
@@ -53,21 +43,22 @@ const BlogPostTemplate = ({ data, location }) => {
             padding: 0,
           }}
         >
-          <li>
-            {previous && (
+          {previous && (
+            <button className="button-outline">
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            )}
-          </li>
-          <li>
-            {next && (
+            </button>
+          )}
+
+          {next && (
+            <button className="button-outline">
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            )}
-          </li>
-        </ul>
+            </button>
+          )}
+        </div>
       </nav>
     </Layout>
   )
@@ -76,11 +67,7 @@ const BlogPostTemplate = ({ data, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $id: String!
-    $previousPostId: String
-    $nextPostId: String
-  ) {
+  query BlogPostBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
     site {
       siteMetadata {
         title

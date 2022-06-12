@@ -115,13 +115,15 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - [x] codeblock 스타일 변경
 - [x] 카테고리 레이아웃
 - [x] 카테고리 기능 추가
+- [x] 다음 페이지 버튼 레이아웃
+- [x] SEO 적용
 
 ### 해야할 것
 
 - [ ] pagination 기능 추가
 - [ ] 검색 기능 추가
-- [ ] SEO 최적화
 - [ ] 구글 애드센스 적용
 - [ ] ReadME 업데이트
 - [ ] image zoom 작업
 - [ ] sns 공유 기능
+- [ ] 조회수 추가
