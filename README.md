@@ -117,14 +117,19 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - [x] 카테고리 기능 추가
 - [x] 다음 페이지 버튼 레이아웃
 - [x] SEO 적용
+- [x] Disqus를 Utterance로 변경
+- [x] 검색 기능 추가
 
 ### 해야할 것
 
-- [ ] Disqus를 Utterance로 변경
-- [ ] 검색 기능 추가
 - [ ] 조회수 추가
 - [ ] pagination 기능 추가
 - [ ] 구글 애드센스 적용
 - [ ] ReadME 업데이트
 - [ ] image zoom 작업
 - [ ] sns 공유 기능
+
+#### 참고 사이트
+
+- 검색기능: https://aboutmonica.com/blog/create-gatsby-blog-search-tutorial/
+- 검색기능2: https://yohanpro.com/posts/gatsby-search

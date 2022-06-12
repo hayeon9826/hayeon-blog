@@ -4,7 +4,7 @@ import Category from '../components/category'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
-import PostsPage from '../components/posts'
+import Search from '../components/search'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -17,7 +17,8 @@ const BlogIndex = ({ data, location }) => {
       <Seo title="Posts" />
       <Bio />
       <Category location={location} />
-      <PostsPage location={location} posts={posts} category={category} siteTitle={siteTitle} />
+      {/* search bar & searched posts */}
+      <Search props={data} location={location} siteTitle={siteTitle} allPosts={posts} selectedCategory={category} />
     </Layout>
   )
 }
