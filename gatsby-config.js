@@ -13,6 +13,18 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+          'G-FSL5CNXYDP', // Google Analytics / GA
+        ],
+        pluginConfig: {
+          head: true,
+          anonymize_ip: true,
+        },
+      },
+    },
     `gatsby-plugin-image`,
     'gatsby-plugin-advanced-sitemap',
     `gatsby-plugin-use-dark-mode`,
@@ -51,12 +63,6 @@ module.exports = {
             allow: '/',
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-FSL5CNXYDP`, // google analytics id
       },
     },
     {
