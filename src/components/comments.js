@@ -1,13 +1,12 @@
-import React from "react";
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+import React from 'react'
+import Utterances from './utterances'
 
-const CommentPage = ({ disqusConfig }) => {
-
+const CommentPage = () => {
   return (
     <>
-      <CommentCount config={disqusConfig} placeholder={'...'} />
-      <Disqus config={disqusConfig} />
+      <Utterances />
     </>
-)};
+  )
+}
 
-export default CommentPage;
+export default CommentPage

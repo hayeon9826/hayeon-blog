@@ -11,12 +11,6 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
 
-  const disqusConfig = {
-    url: data.site.siteMetadata?.siteUrl + location.pathname,
-    identifier: post.id,
-    title: post.frontmatter.title,
-  }
-
   return (
     <Layout location={location} title={siteTitle}>
       <Seo title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
@@ -27,7 +21,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         <hr />
-        <CommentPage disqusConfig={disqusConfig} />
+        <CommentPage />
         <hr />
         <footer>
           <Bio />

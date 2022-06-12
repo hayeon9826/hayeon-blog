@@ -13,7 +13,6 @@
     "font-awesome": "^4.7.0",
     "gatsby": "^4.15.2",
     "gatsby-plugin-advanced-sitemap": "^2.1.0",
-    "gatsby-plugin-disqus": "^1.2.4",
     "gatsby-plugin-feed": "^4.16.0",
     "gatsby-plugin-gatsby-cloud": "^4.15.0",
     "gatsby-plugin-google-gtag": "^4.16.0",
