@@ -41,6 +41,19 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://hayeondev.gatsbyjs.io/',
+        sitemap: 'https://hayeondev.gatsbyjs.io/sitemap.xml',
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: `G-FSL5CNXYDP`, // google analytics id
