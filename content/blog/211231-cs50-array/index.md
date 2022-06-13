@@ -1,12 +1,12 @@
 ---
 title: '[CS50] 배열 강의 정리'
-date: "2021-12-31T22:40:32.169Z"
+date: '2021-12-31T22:40:32.169Z'
 description: 모두를 위한 컴퓨터 과학 (CS50 2019) 강의 정리
-category: "CS"
+category: 'CS'
+image: 'https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/d53d12a2-a8d4-4037-bc2a-8cfde9b5ce81/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">
-
 
 ## 컴파일링
 
@@ -18,6 +18,7 @@ int main(void)
 	printf("hello, world\n")
 }
 ```
+
 C 언어로 만든 파일을 실행시키려면 아래 `clang` 명령어로 '컴파일'을 시켜줘야합니다.
 
 ```
@@ -55,7 +56,6 @@ clang -o hello hello.c
 
 만약 프로그램이 여러 개의 파일(라이브러리 `include` 등)로 이루어져 있어 하나의 오브젝트 파일로 합쳐져야 한다면 링크라는 컴파일의 마지막 단계가 필요합니다. 링커는 여러 개의 **다른 오브젝트 코드 파일을 실행 가능한 하나의 오브젝트 코드 파일로 합쳐**줍니다. 예를 들어, 컴파일을 하는 동안에 CS50 라이브러리를 링크하면 오브젝트 코드는 `GetInt()`나 `GetString()` 같은 함수를 어떻게 실행할 지 알 수 있게 됩니다.
 
-
 이 네 단계를 거치면 최종적으로 실행 가능한 파일이 완성됩니다.
 
 <hr>
@@ -81,7 +81,6 @@ C에는 아래와 같은 여러 자료형이 있고, 각각의 자료형은 서�
 ![ram](https://cs50.harvard.edu/x/2020/notes/2/ram.png)
 
 예를 들어 char 타입의 변수를 하나 생성하고, 그 값을 입력한다고 하면 위 사진에서 한 사각형 안에 그 변수의 값이 저장되는 것이죠.
-
 
 ### 배열
 
@@ -111,7 +110,6 @@ int main(void)
 - 이 인덱스를 변수명 뒤 대괄호 [ ] 사이에 입력하여 배열의 원하는 위치에 원하는 값을 저장하고 불러올 수 있습니다.
 
 하지만 위와 같은 코드는 여전히 점수의 개수가 바뀌는 상황에서 제약이 많습니다.
-
 
 ## 배열(2)
 
@@ -184,7 +182,6 @@ float average(int length, int array[])
 
 average 함수는 length 와 array[], 즉 **배열의 길이와 배열**을 입력으로 받습니다. 함수 안에서는 배열의 길이만큼 루프를 돌면서 값의 합을 구하고 최종적으로 평균값을 반환합니다.
 
-
 ## 문자열과 배열
 
 c에서 문자열(string) 자료형의 데이터는 사실 **문자(char) 자료형의 데이터들의 배열**입니다.
@@ -209,6 +206,7 @@ names[3] = "DAVID";
 printf("%s\n", names[0]);
 printf("%c%c%c%c\n", names[0][0], names[0][1], names[0][2], names[0][3]);
 ```
+
 `names`라는 문자열 형식의 배열에 네 개의 이름이 저장되어있습니다.
 첫 번째 `printf`에서는 names의 첫번째 인덱스의 값, 즉 “EMMA”를 출력합니다.
 
@@ -220,10 +218,8 @@ printf("%c%c%c%c\n", names[0][0], names[0][1], names[0][2], names[0][3]);
 
 ![array memory](https://cs50.harvard.edu/x/2020/notes/2/memory_with_string_array.png)
 
-
-
-
 <hr>
 
 ## 참고
+
 > - [모두를 위한 컴퓨터 과학 (CS50) 2019 - 배열](https://www.boostcourse.org/cs112/lecture/119011?isDesc=false)

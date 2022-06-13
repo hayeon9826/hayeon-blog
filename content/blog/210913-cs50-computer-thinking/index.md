@@ -1,13 +1,14 @@
 ---
 title: '[CS50] 컴퓨팅 사고'
-date: "2021-09-13T22:40:32.169Z"
+date: '2021-09-13T22:40:32.169Z'
 description: 모두를 위한 컴퓨터 과학 (CS50 2019) 강의 정리 1
-category: "CS"
+category: 'CS'
+image: 'https://velog.velcdn.com/images/khy226/post/a0f0abad-b72b-4590-b4f2-6fee5d16b9bb/photo-1610563166150-b34df4f3bcd6.jpeg'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/a0f0abad-b72b-4590-b4f2-6fee5d16b9bb/photo-1610563166150-b34df4f3bcd6.jpeg" style="padding-bottom: 50px;">
 
-<small> * [모두를 위한 컴퓨터 과학 (CS50 2019)](https://www.boostcourse.org/cs112/joinLectures/41307) 강의를 듣고 정리한 게시물입니다.</small>
+<small> \* [모두를 위한 컴퓨터 과학 (CS50 2019)](https://www.boostcourse.org/cs112/joinLectures/41307) 강의를 듣고 정리한 게시물입니다.</small>
 
 ### 컴퓨터 과학이란?
 
@@ -22,6 +23,7 @@ category: "CS"
 <hr>
 
 ### 2진법
+
 - 컴퓨터가 입력과 출력을 표현하는 방식 (1 과 0)
 - 컴퓨터는 숫자, 글자, 사진, 영상, 소리를 오로지 0과 1로만 표현한다.
 - 각 자리수를 1의 거듭 제곱으로 표현 (2^0, 2^1, 2^2, 2^3, ... 2^n-1)
@@ -30,20 +32,22 @@ category: "CS"
 
 - 예를 들어, **011**은 (0 x 2^2 + 1 x 2^1 + 1 x 2^0) 이므로 (0+2+1) **3**이다.
 
-
 #### 비트(bit)
+
 - 위와같이, 0과 1 두 가지 값만을 가지는 측정단위를 **비트(bit)**라고 한다.
--  (켜기=1, 끄기=0)
+- (켜기=1, 끄기=0)
 - 비트는 이진 숫자라는 뜻을 가진 “binary digit”의 줄임말.
 - 0과 1 두 값만드로 많은 양의 디지털 정보를 표현, 저장할 수 있다.
 
 #### 비트열
+
 - 각각 그 비트 단위가 독립된 단위로 간주되는 이진 숫자의 배열
 - 여덟개의 비트가 모인것을 **바이트(byte)**라고 한다.
 - 하나의 **바이트**에 **여덟 개의 비트**가 있고, 비트 하나는 0과 1로 표현될 수 있기 때문에 **2^8 = 256** 개의 서로 다른 값을 표현 가능.
 - 바이트가 모이면 더 큰단위가 된다: 킬로바이트 (1,000 바이트), 메가바이트 (1,000 킬로바이트), 기가바이트 (1,000 메가바이트)
 
 ![비트 크기](https://cphinf.pstatic.net/mooc/20170712_75/1499826291828lfvjK_PNG/1.1_-03.png?type=w760)
+
 > 이미지 출처: [모두를 위한 컴퓨터 과학 부트코스](https://www.boostcourse.org/cs112/lecture/118997?isDesc=false)
 
 <hr>
@@ -51,21 +55,22 @@ category: "CS"
 ### 정보의 표현
 
 #### 문자의 표현
+
 - 문자를 숫자로 표현할 수 있도록 정해진 약속(표준)이 존재함.
 - 그중 대표적인 예는 설명미국정보교환표준부호인 **ASCII** (American Standard Code for Information Interchange) 아스키코드.
-- 예를 들어, 대문자 'A'는 숫자 65로 표현되고, 소문자 'a'는 숫자 97로 표현. 
+- 예를 들어, 대문자 'A'는 숫자 65로 표현되고, 소문자 'a'는 숫자 97로 표현.
 - 위 숫자를 2진수로 나타내면 각각 1000001, 1100001 이다.
-![ascii code](https://upload.wikimedia.org/wikipedia/commons/2/26/Ascii-codes-table.png)
-
+  ![ascii code](https://upload.wikimedia.org/wikipedia/commons/2/26/Ascii-codes-table.png)
 
 - 하지만, 확장된 ASCII 코드 마저 8 비트만 이용해서 모든 문자들을 나타내기 하기 때문에 총 256개의 문자만 표현 가능하다.
 - 훨신 떠 많은 문자들을 포함할 수 있는 **유니코드(Unicode)**가 생겼다. 100만개 이상의 문자들을 나타낼 수 있는 문자 인코딩 표준이다.
 
 #### 그림, 영상, 음악의 표현
+
 - 문자와 같이 그림도 숫자 (1, 0)으로 표현할 수 있다.
 - 픽셀: 픽셀(pixel, px) 또는 화소(畵素)는 사각형의 점으로, 디지털 화상을 구성하는 기본적인 단위
 - 우리가 보는 그림들은 수많은 <span style="color: red">빨강</span>, <span style="color: green">초록</span>, <span style="color: blue">파란</span> 점으로 이루어져 있다. 이 점을 **픽셀**이라고 부른다.
--  각각의 픽셀은 **세 가지 색**을 서로 다른 비율로 조합하여 특정한 색을 갖는다.
+- 각각의 픽셀은 **세 가지 색**을 서로 다른 비율로 조합하여 특정한 색을 갖는다.
 
 ![rgb](https://images.velog.io/images/khy226/post/148faeaa-8611-4e81-afe9-bf42d71ee116/image.png)
 
@@ -75,16 +80,19 @@ category: "CS"
 <hr>
 
 ### 알고리즘
+
 > **알고리즘**, 셈법은 수학과 컴퓨터과학, 언어학 또는 엮인 분야에서 어떠한 문제를 풀어맺기 위해 **정해진 일련의 절차나 방법을 공식화**한 형태로 표현한 것, 계산을 실행하기 위한 **단계적 절차**를 의미한다. 즉, 문제풀이에 필요한 **계산절차 또는 처리과정**의 순서를 뜻한다. (출처: 위키백과)
 
 - 알고리즘은 입력(input)에서 받은 자료를 출력(output)형태로 만드는 **처리 과정**이다.
-- 즉, **알고리즘이**란 입력값을 출력값의 형태로 바꾸기 위해 어떤 명령들이 수행되어야 하는지에 대한 **규칙들의 순서적 나열**이다. 
--  일련의 순서적 규칙들을 어떻게 나열하는지에 따라 알고리즘의 **종류**가 달라진다.
+- 즉, **알고리즘이**란 입력값을 출력값의 형태로 바꾸기 위해 어떤 명령들이 수행되어야 하는지에 대한 **규칙들의 순서적 나열**이다.
+- 일련의 순서적 규칙들을 어떻게 나열하는지에 따라 알고리즘의 **종류**가 달라진다.
 
 #### 비효율적인 알고리즘 (예)
+
 > 문제: 전화번호부에서 Mike Smith를 찾아라
 
 <u>한 장을 넘긴 다음 또 한 장 넘기는 규칙들의 순서적 나열:</u>
+
 ```
 - 첫 페이지에서 Mike Smith를 찾는다.
 - 없으면 두 번째 페이지에서 Mike Smith를 찾는다.
@@ -98,11 +106,12 @@ category: "CS"
 - 한 번에 두 페이지를 넘기게끔 하여 알고리즘을 개선할 수도 있지만, Mike Smith가 있는 페이지를 지나칠 수 있기에 정확성이 떨어진다.
 - 아래 예시 처럼 효율적인 알고리즘을 사용해보자.
 
-
 #### 효율적인 알고리즘 (예)
+
 > 문제: 전화번호부에서 Mike Smith를 찾아라
 
 <u>반을 줄이고, 다음 또 반을 줄이는 규칙들의 순서적 나열:</u>
+
 ```
 - 전화번호부 가운데를 편다.
 - 해당 페이지에서 Mike Smith를 찾는다.
@@ -117,7 +126,7 @@ category: "CS"
 #### 의사코드
 
 - 의사코드란, 사람의 언어로 코드를 흉내내어 알고리즘을 표현한 코드이다.
-- 위 두 번째 알고리즘을 의사코드로 나타내면 아래와 같다: 
+- 위 두 번째 알고리즘을 의사코드로 나타내면 아래와 같다:
 
 ```
 1 전화번호부를 집어 든다
@@ -136,28 +145,25 @@ category: "CS"
 ```
 
 1. 위 의사코드에서 명령하는 동사들을 '함수(functions)'라고 부른다.
-함수는 컴퓨터에게 이 경우에는 사람에게 무엇을 할지 알려주는 동사와 같다.
-![functions](https://cphinf.pstatic.net/mooc/20200607_84/1591529602350iS3Ov_PNG/mceclip3.png)
+   함수는 컴퓨터에게 이 경우에는 사람에게 무엇을 할지 알려주는 동사와 같다.
+   ![functions](https://cphinf.pstatic.net/mooc/20200607_84/1591529602350iS3Ov_PNG/mceclip3.png)
 
 2. **조건문(Conditional Statement)** 다음에는 들여쓰기가 된 문단은 들여쓰기가 된다. 조건문은 여러 선택지 중 하나를 골라서 특정 함수를 실행시킨다.
-![conditional](https://cphinf.pstatic.net/mooc/20200607_42/15915298004182FtAt_PNG/mceclip4.png)
+   ![conditional](https://cphinf.pstatic.net/mooc/20200607_42/15915298004182FtAt_PNG/mceclip4.png)
 
-3. 조건문에서 결정을 내리기위한 질문들은 **불리언(Boolean)**이라고 한다. 해당 질문에 대한 답이 맞으면 들여쓰기가 된 부분으로 이동하고, 아니라면 다음 조건문으로 이동한다. 
-![boolean](https://cphinf.pstatic.net/mooc/20200607_38/1591529873126cFy5P_PNG/mceclip5.png)
-
+3. 조건문에서 결정을 내리기위한 질문들은 **불리언(Boolean)**이라고 한다. 해당 질문에 대한 답이 맞으면 들여쓰기가 된 부분으로 이동하고, 아니라면 다음 조건문으로 이동한다.
+   ![boolean](https://cphinf.pstatic.net/mooc/20200607_38/1591529873126cFy5P_PNG/mceclip5.png)
 
 4. 마지막으로, 이전 단계로 돌아가라고 하는 문구는 **루프(loop)**라고 한다. 특정 행동을 계속해서 반복하게 한다.
-![loop](https://cphinf.pstatic.net/mooc/20200607_179/1591530051741KueHW_PNG/mceclip6.png)
+   ![loop](https://cphinf.pstatic.net/mooc/20200607_179/1591530051741KueHW_PNG/mceclip6.png)
 
 <hr>
-
 
 ### 스크래치
 
 - https://scratch.mit.edu/ 에서 블록을 이용해 알고리즘을 만들어 볼 수 있다.
 - [해당링크](https://www.boostcourse.org/cs112/lecture/119001?isDesc=false) 에서 스크래치 연습 영상을 볼 수 있다.
-![scratch](https://cs50.harvard.edu/x/2020/notes/0/scratch.png)
-
+  ![scratch](https://cs50.harvard.edu/x/2020/notes/0/scratch.png)
 
 <br><br><br>
 

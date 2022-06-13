@@ -1,13 +1,12 @@
 ---
 title: '[Rails] 마이그레이션 알아보기'
-date: "2021-11-12T22:40:32.169Z"
-description: Migration 이란? 마이그레이션은 액티브 레코드의 기능으로, 데이터베이스 스키마(구조)를 변경하는 수단이다. 
-category: "Rails"
+date: '2021-11-12T22:40:32.169Z'
+description: Migration 이란? 마이그레이션은 액티브 레코드의 기능으로, 데이터베이스 스키마(구조)를 변경하는 수단이다.
+category: 'Rails'
+image: 'https://velog.velcdn.com/images/khy226/post/f96ee986-c6a3-48f8-aad1-14224b2db412/Ruby_on_Rails-Logo.wine.png'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f96ee986-c6a3-48f8-aad1-14224b2db412/Ruby_on_Rails-Logo.wine.png" style="width: 60%; padding-bottom: 50px;">
-
-
 
 ## Migration이란?
 
@@ -28,18 +27,18 @@ class CreateItems < ActiveRecord::Migration[7.0]
 end
 ```
 
-마이그레이션을 성공적으로 마치면, **ActiveRecord**가 변경된 데이터베이스의 최신 구조를 schema.rb 파일에 업데이트한다. 따라서 마이그레이션으로 변경한 데이터베이스 최신 정보는 schema.rb파일에서 확인할 수 있다. 
+마이그레이션을 성공적으로 마치면, **ActiveRecord**가 변경된 데이터베이스의 최신 구조를 schema.rb 파일에 업데이트한다. 따라서 마이그레이션으로 변경한 데이터베이스 최신 정보는 schema.rb파일에서 확인할 수 있다.
+
 > **Active Record?**
-액티브 레코드는 레일즈에서 제공하는 모듈로, 레일즈 어플리케이션에서 모델의 기초입니다. 액티브 레코드는 데이터베이스 추상화와 기본 CRUD 기능, 고급 검색 능력과 객체들 간의 관계를 정의하는 기능을 제공합니다.
+> 액티브 레코드는 레일즈에서 제공하는 모듈로, 레일즈 어플리케이션에서 모델의 기초입니다. 액티브 레코드는 데이터베이스 추상화와 기본 CRUD 기능, 고급 검색 능력과 객체들 간의 관계를 정의하는 기능을 제공합니다.
 
-
-(*주의할 점: **schema.rb 파일은 마이그레이션 할 때마다 자동으로 변경되므로 사용자가 임의로 조작해서는 안된다.**)
+(\*주의할 점: **schema.rb 파일은 마이그레이션 할 때마다 자동으로 변경되므로 사용자가 임의로 조작해서는 안된다.**)
 
 <hr>
 
 ## Migration 메서드
 
-#### 1. 아래는 마이그레이션 파일에서  `change` 메서드로  `Product` 라는 테이블을 생성하는 마이그레이션이다. 
+#### 1. 아래는 마이그레이션 파일에서 `change` 메서드로 `Product` 라는 테이블을 생성하는 마이그레이션이다.
 
 ```ruby
 class CreateProducts < ActiveRecord::Migration[7.0]
@@ -60,13 +59,11 @@ end
 
 물론 migration 파일을 만든다고 해서 테이블이 짠 하고 생기지는 않는다. `rails db:migrate` 와 같은 명령어로 마이그레이션을 실행을 해야 마이그레이션 파일에 명시된 Product 테이블이 생긴다. 그리고 만약 해당 마이그레이션을 취소하고 싶다면 `rails db:rollback` 명령어를 치면 된다. ActiveRecord는 change 메서드의 migration 코드를 읽고 역으로 돌리는게 가능하므로, 방금 생성한 `Product` 테이블을 삭제한다.
 
-* 팁) 마이그레이션 파일을 직접 생성해서 코드 하나하나 설정할 수도 있지만, 터미널에서 `rails generate model Product name:string description:text` 를 치면 위 마이그레이션 파일이 생성된다. 
-
-
+- 팁) 마이그레이션 파일을 직접 생성해서 코드 하나하나 설정할 수도 있지만, 터미널에서 `rails generate model Product name:string description:text` 를 치면 위 마이그레이션 파일이 생성된다.
 
 #### 2. `up `과 `down` 메서드로 마이그레이션 작성하기
 
-`def change` 대신, `up` 과 `down` 메서드로 마이그레이션을 작성할 수 있다. 
+`def change` 대신, `up` 과 `down` 메서드로 마이그레이션을 작성할 수 있다.
 
 ```ruby
 class ChangeProductsPrice < ActiveRecord::Migration[7.0]
@@ -84,21 +81,15 @@ class ChangeProductsPrice < ActiveRecord::Migration[7.0]
 end
 ```
 
-
-
 up, down 메서드는 앞서 설명한 `change`메서드와는 달리 `rollback` 을 해도 ActiveRecord가 자동으로 이전 버전으로 되돌리지는 못한다. 하지만 위처럼 두 메서드를 동시에 사용하면 `change` 와 같은 효과를 낸다.
-
-
 
 `rails db:migrate` 를 실행하면 ActiveRecord는 `up` 메서드와 `change` 메서드를 읽는다. (`down` 메서드는 읽지 않는다)
 
 반대로, `rails db:rollback` 을 실행하면 ActiveRecord는 `down` 메서드와 `change` 메서드를 읽는다. (`up` 메서드는 읽지 않는다)
 
-
-
 ### 3. `change` 메서드로 컬럼 추가하기
 
-마이그레이션 파일을 생성해 기존 테이블에 컬럼을 추가할 수도 있다. 우선 `rails generate migration AddPartNumberToProducts`  를 쳐보자.  그럼 빈 마이그레이션 파일이 생긴다. 해당 파일에 원하는 definition을 추가해서 컬럼을 추가하거나 변경, 삭제할 수 있다.
+마이그레이션 파일을 생성해 기존 테이블에 컬럼을 추가할 수도 있다. 우선 `rails generate migration AddPartNumberToProducts` 를 쳐보자. 그럼 빈 마이그레이션 파일이 생긴다. 해당 파일에 원하는 definition을 추가해서 컬럼을 추가하거나 변경, 삭제할 수 있다.
 
 ```ruby
 class AddPartNumberToProducts < ActiveRecord::Migration[7.0]
@@ -106,8 +97,6 @@ class AddPartNumberToProducts < ActiveRecord::Migration[7.0]
   end
 end
 ```
-
-
 
 마이그레이션을 생성할 때, 생성하려는 컬럼명과 타입을 적어주면 해당 definition과 함께 파일이 생성된다. 예를 들어 `rails generate migration AddPartNumberToProducts part_number:string` 을 쳐보자. 아래와 같이 `add_column` statement가 같이 생성된다.
 
@@ -119,15 +108,11 @@ class AddPartNumberToProducts < ActiveRecord::Migration[7.0]
 end
 ```
 
-
-
-
-
 <hr>
 
 ## Migration 컬럼 타입
 
-Migration에서 사용할 수 있는 컬럼 타입은 다음과 같다: 
+Migration에서 사용할 수 있는 컬럼 타입은 다음과 같다:
 
 - string
 - text
@@ -170,8 +155,6 @@ Migration에서 사용할 수 있는 컬럼 타입은 다음과 같다:
 - [`rename_index`](https://edgeapi.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-rename_index)
 - [`rename_table`](https://edgeapi.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-rename_table)
 
-
-
 사용 방법을 간단하게 정리해보자면 아래와 같다.
 
 ```ruby
@@ -186,7 +169,7 @@ add_foreign_key :table_name_1, :table_name_2
 add_index :table_name, :column_name, options: "custom_index_name"
 
 # 참조 추가
-# table에 ref_id 라는 컬럼이 생성됨. 
+# table에 ref_id 라는 컬럼이 생성됨.
 # options: polymorphic일 때 options에 polymorphic: true를 줄 수 있음. foreign_key: true, index: true로 외래키나 인덱트 추가 가능
 add_reference :table_name, :ref_name, options = {}
 
@@ -216,13 +199,11 @@ rename_column :table_name, :old_column_name, :new_column_name
 rename_table ("old_table_name", "new_table_name")
 ```
 
-
-
 <hr>
 
 ## Migration 실행
 
-이제 마이그레이션 메서드와 definitions들을 알았으니, 생성한 마이그레이션 파일을 실행해보자. 
+이제 마이그레이션 메서드와 definitions들을 알았으니, 생성한 마이그레이션 파일을 실행해보자.
 
 ### 1. Migrate
 
@@ -236,15 +217,11 @@ rails db:migrate VERSION=20080906120000
 
 만약 20080906120000 버전이 현재 버전보다 크다면, 현재 다음 버전부터 20080906120000 까지 up, change 메서드를 실행시킨다. 반대로 rollback을 시킨다면 현재 버전부터 20080906120000 초과 버전까지 (20080906120000는 포함하지 않음) rollback을 시킨다.
 
-
-
 만약 특정 마이그레이션 '하나만' 실행하고 싶다면 'db:migrate:up' 혹은 'db:migrate:down'명령어와 함께 버전 넘버를 써주면 된다.
 
 ```ruby
 rails db:migrate:up VERSION=20080906120000
 ```
-
-
 
 ### 2. Rollback
 
@@ -252,17 +229,13 @@ rails db:migrate:up VERSION=20080906120000
 
 만약 여러개의 마이그레이션을 취소하고 있따면 STEP= 플래그를 추가하면 된다.
 
-``` ruby
+```ruby
 rails db:rollback STEP=3
 ```
-
-
 
 ### 3. 데이터베이스 생성
 
 `rails db:create` 는 가장 기본적인 명령어로, 프로젝트를 처음 시작했을 때 한번 실행하면된다. 데이터베이스를 생성해준다.
-
-
 
 데이터 베이스 생성과 동시에 세팅까지 하고 싶다면:
 
@@ -274,13 +247,9 @@ rails db:setup은 db:create, db:schema:load, db:seed 세 가지 명령을 한번
 
 데이터베이스를 생성하고, 스키마를 로드하고, 시드까지 돌려준다.
 
-
-
 ### 4. 데이터베이스 삭제
 
 데이터베이스 삭제 명령어는 `rails db:drop` 이다. 데이터베이스 삭제 명령어는 조심해서 사용해야한다. 데이터베이스를 삭제하면 다시 되돌릴 수 없으며, 기존의 데이터들이 다 날라간다.
-
-
 
 데이터 베이스 삭제와 동시에 세팅까지 하고 싶다면:
 
@@ -289,8 +258,6 @@ rails db:reset
 ```
 
 reset 명령어도 기존 데이터베이스를 삭제해준다. rails db:drop과 다른점은, 데이터베이스 drop이후 다시 셋업을 실행한다. 즉, `rails db:drop db:setup` 과 같은 명령어이다.
-
-
 
 ### 5. 다른 개발 환경에서 Migrate
 
@@ -304,13 +271,11 @@ rails db:migrate RAILS_ENV=test
 RAILS_ENV=production rails db:migrate
 ```
 
-
-
 ### 6. Seed 데이터 생성
 
 데이터베이스를 생성해도 데이터는 하나도 들어있지 않다. 데이터를 하나하나 수기로 만들 수 있지만, 로컬 환경에서 개발할 때는 fake 데이터를 한번에 여러개 생성해서 작업하는 것이 더 편리하다. 이때, seed.rb 파일을 활용하면 된다.
 
-우선 `db/seed.rb` 시드 파일에 아래와 같이 데이터를 생성하는 코드를 작성한다. 그리고 명령어 `rails db:seed` 를 실행하면 10 개의 Product 데이터가 생긴다. 
+우선 `db/seed.rb` 시드 파일에 아래와 같이 데이터를 생성하는 코드를 작성한다. 그리고 명령어 `rails db:seed` 를 실행하면 10 개의 Product 데이터가 생긴다.
 
 ```ruby
 10.times do |i|
@@ -318,15 +283,11 @@ RAILS_ENV=production rails db:migrate
 end
 ```
 
-
-
 시드 파일을 사용하게 되면 rake db:drop으로 디비를 삭제하고 데이터를 모두 지워버려도, rails db:seed 명령어 한줄로 데이터를 다시 채울 수 있다. 테스트, 개발 하는데 매우 편리하다.
-
-
 
 ### 7. 현재 마이그레이션 status 확인
 
-현재 마이그레이션이 어디까지 진행되었나 확인하려면 `rails db:migrate:status` 를 치면 된다. 
+현재 마이그레이션이 어디까지 진행되었나 확인하려면 `rails db:migrate:status` 를 치면 된다.
 
 현재까지 진행된 마이그레이션 현황 (up/down)과 마이그레이션 파일 이름들을 보여준다.
 
@@ -342,13 +303,11 @@ database: velog_server_development
    down   20210209135806  Devise create admin users < 아직 여기는 마이그레이션이 실행되지 않음.
 ```
 
-
-
 <hr>
 
 ## Schema 파일
 
-그렇다면 (schema.rb) 스키마 파일은 왜 존재하는 것일까? 
+그렇다면 (schema.rb) 스키마 파일은 왜 존재하는 것일까?
 
 ```ruby
 # schema.rb 스키마 파일 예시
@@ -374,13 +333,8 @@ end
 
 뿐만 아니라, 새로운 어플리케이션에서 `rails db:schema:load` 명령어로 이미 생성된 스키마 파일을 로드해서 데이터베이스를 만들면 더욱 빠르고 안전하게 데이터베이스를 생성할 수 있다. (수십개의 마이그레이션 히스토리를 다 확인하지 않아도 됨) 프로젝트가 커질수록 마이그레이션 파일이 몇십개, 몇백개로 늘어날 수 있다. 이때 마이그레이션 버전이 오래되면 dependencies가 맞지 않아 마이그레이션이 실패할 수도 있다.
 
-
-
-
-
 <hr>
 
 ## 참고
 
 > - [Active Record Migrations](https://edgeguides.rubyonrails.org/active_record_migrations.html)
-

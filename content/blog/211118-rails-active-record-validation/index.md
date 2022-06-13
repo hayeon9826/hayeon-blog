@@ -1,14 +1,13 @@
 ---
 title: '[Rails] 액티브 레코드 데이터 검증 & 콜백 정리'
-date: "2021-11-18T22:40:32.169Z"
+date: '2021-11-18T22:40:32.169Z'
 description: 액티브 레코드 데이터 검증(Validation) 알아보기
-category: "Rails"
+category: 'Rails'
+image: 'https://velog.velcdn.com/images/khy226/post/6051434a-30e1-489e-bda5-9c9ab2cddba1/Ruby_on_Rails-Logo.wine.png'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/6051434a-30e1-489e-bda5-9c9ab2cddba1/Ruby_on_Rails-Logo.wine.png" style="width: 60%; padding-bottom: 50px;">
 
-
-
 ## 객체 생명 주기
 
 레일즈 어플리케이션 실행중에, 객체는 만들어지고, 갱신되고, 삭제 되는데, 액티브 레코드는 이러한 *객체 생명 주기*내에서 hook을 제공한다. hook을 통해 어플리케이션과 데이터를 조종할 수 있다. 예를 들어, 객체 생성 전에 데이터 검증을 하거나, 콜백 / 옵저버로 객체 상태 변화 전 로직을 실행할 수 있다.
@@ -18,12 +17,12 @@ category: "Rails"
 - 콜백, 옵저버: 객체의 상태 변화 전/후에 로직을 실행하도록 허용
 
 이 글에서는 **데이터 검증**에 대해 (특히, 모델 수준에서 데이터 검증) 알아보려고 한다.
+
 <hr>
 
+## 데이터 검증?
 
-##  데이터 검증?
-
-데이터 검증은 오직 유효한 데이터만 데이터베이스에 들어가도록 검증하는 작업을 뜻한다. 예를 들어, 모든 회원들이 필수로 유효한 이메일 주소를 입력하도록 검증할 수 있다. 
+데이터 검증은 오직 유효한 데이터만 데이터베이스에 들어가도록 검증하는 작업을 뜻한다. 예를 들어, 모든 회원들이 필수로 유효한 이메일 주소를 입력하도록 검증할 수 있다.
 
 데이터베이스에 데이터를 저장하기 전에 데이터를 검증하는 여러가지 방법이 있다.
 
@@ -34,13 +33,11 @@ category: "Rails"
 
 위 방법 중, 모델에서 데이터 검증을 실행하는 것이 가장 신뢰성이 높고, 테스트 및 유지보수에 편하다.
 
-
-
-### 데이터 검증 시점 
+### 데이터 검증 시점
 
 그렇다면 데이터 검증은 어떤 시점에 시행되는 걸까?
 
-새로운 레코드를 만들면 DB에 `INSERT` SQL 명령어를 전달하고, 데이터를 수정하면 DB에 `UPDATE` SQL 명령어를 전달하는데, 데이터 검증은 보통 데이터베이스에 이런 명령어를 전달하기 전에 실행된다. 만약에 데이터 검증이 하나라도 실패하면, 해당 객체는 타당하지 않은 객체로 기록되고, 액티브 레코드는 `INSERT`나 `UPDATE` 명령을 실행하지 않는다. 
+새로운 레코드를 만들면 DB에 `INSERT` SQL 명령어를 전달하고, 데이터를 수정하면 DB에 `UPDATE` SQL 명령어를 전달하는데, 데이터 검증은 보통 데이터베이스에 이런 명령어를 전달하기 전에 실행된다. 만약에 데이터 검증이 하나라도 실패하면, 해당 객체는 타당하지 않은 객체로 기록되고, 액티브 레코드는 `INSERT`나 `UPDATE` 명령을 실행하지 않는다.
 
 아래의 메소드는 데이터 검증을 실행시키며, 객체가 유효할때만 데이터베이스에 저장한다:
 
@@ -60,9 +57,7 @@ category: "Rails"
 > ActiveRecord::RecordInvalid: Validation failed: Email can't be blank
 > ```
 >
-> 이에 반해, non-bang 버전은 예외를 발생 시키지 않는다. `save`와 `update`메서드는 **`false`**를 반환하고, `create`는 그냥 **객체를 반환**한다. 
-
-
+> 이에 반해, non-bang 버전은 예외를 발생 시키지 않는다. `save`와 `update`메서드는 **`false`**를 반환하고, `create`는 그냥 **객체를 반환**한다.
 
 ### 데이터 검증 건너뛰는 메서드
 
@@ -87,8 +82,6 @@ category: "Rails"
 - `upsert`
 - `upsert_all`
 
-
-
 ### Valid? Invalid?
 
 객체의 유효 여부를 검사하기 위해 레일즈는 `valid?` 메소드를 사용한다. 데이터를 생성할 때 직접 사용해서 데이터가 유효한지 확인할 수 있다.
@@ -97,14 +90,12 @@ category: "Rails"
 class Person < ActiveRecord::Base
   validates :name, :presence => true
 end
- 
+
 Person.create(:name => "John Doe").valid? # => true
 Person.create(:name => nil).valid? # => false
 ```
 
 `invalid?`는 데이터 검증을 실행하고, 객체에 어떠한 에러라도 추가되면 true(참)을 반환하고 반대면 false(거짓)을 반환한다.
-
-
 
 ### errors[]
 
@@ -114,33 +105,29 @@ Person.create(:name => nil).valid? # => false
 class Person < ActiveRecord::Base
   validates :name, :presence => true
 end
- 
+
 >> Person.new.errors[:name].any? # => false
 >> Person.create.errors[:name].any? # => true
 ```
-
-
 
 이 메소드는 직 에러 컬렉션을 조회할 뿐이고 데이터 검증을 실행하지 않기 때문에 오직 데이터 검증 *실행 후*에만 유용하다.
 
 <hr>
 
-
 ## 데이터 검증 헬퍼 (Validation helpers)
 
-액티브 레코드는 미리 정의된 많은 데이터 검증 헬퍼를 제공하며,  클래스 정의 내부에서 직접 사용할 수 있다. 데이터 검증 헬퍼는 데이터 검증이 실패하면 해당 객체의 `errors` 컬렉션에 에러 메세지를 추가한다. 각 헬퍼마다 여러 attributes(필드)를 적용할 수 있으므로 한 줄의 코드로 여러 필드 검증을 실행할 수 있다. 
+액티브 레코드는 미리 정의된 많은 데이터 검증 헬퍼를 제공하며, 클래스 정의 내부에서 직접 사용할 수 있다. 데이터 검증 헬퍼는 데이터 검증이 실패하면 해당 객체의 `errors` 컬렉션에 에러 메세지를 추가한다. 각 헬퍼마다 여러 attributes(필드)를 적용할 수 있으므로 한 줄의 코드로 여러 필드 검증을 실행할 수 있다.
 
 모든 헬퍼 메서드는 `:on` 과 `:message` 옵션을 사용할 수 있는데, 사용법은 아래와 같다.
+
 - `:on` 옵션: `:save`(기본값), `:create` 또는 `:update` 어느 시점의 값을 검사할 것인지 지정할 수 있다.
-- `:message` 옵션: 검증이 실패할 경우에 `errors` 컬렉션에 추가될 메세지를 지정할 수 있다. 
+- `:message` 옵션: 검증이 실패할 경우에 `errors` 컬렉션에 추가될 메세지를 지정할 수 있다.
 
 그렇다면 이제 데이터 검증 헬퍼를 하나하나 살펴보자.
 
+### 1. `validates_acceptance_of` (수락 검증)
 
-
-###  1. `validates_acceptance_of` (수락 검증)
-
-폼이 실행된 후에, 유저 인터페이스 상에서 체크되어 있는 체크박스를 검증한다. 보통 사용자가  어플리케이션의 서비스 계약 사항의 동의 확인이 필요할때, 동의를 했는지 확인하는 용도로 사용된다. 만약 동의를 하지 않았다면 에러 메세지를 띄우며 데이터 저장 / 수정이 되지 않는다. 기본 메세지는 “*must be accepted*” 로 뜬다.
+폼이 실행된 후에, 유저 인터페이스 상에서 체크되어 있는 체크박스를 검증한다. 보통 사용자가 어플리케이션의 서비스 계약 사항의 동의 확인이 필요할때, 동의를 했는지 확인하는 용도로 사용된다. 만약 동의를 하지 않았다면 에러 메세지를 띄우며 데이터 저장 / 수정이 되지 않는다. 기본 메세지는 “_must be accepted_” 로 뜬다.
 
 ```ruby
 class Person < ActiveRecord::Base
@@ -148,11 +135,9 @@ class Person < ActiveRecord::Base
 end
 ```
 
-
-
 ### 2. validates_associated` (관계 검증)
 
-해당 모델과, 해당 모델에 연계된 모델까지 모두 검증해주는 메서드다. 데이터가 저장될 때, 연계된 모든 객체들에게 `valid?` 메서드가 호출된다. 
+해당 모델과, 해당 모델에 연계된 모델까지 모두 검증해주는 메서드다. 데이터가 저장될 때, 연계된 모든 객체들에게 `valid?` 메서드가 호출된다.
 
 > 단, 주의해야할 점은 해당 메서드는 연계된 두 모델 중 하나에만 사용해야한다. 만약 둘 다 사용하면 서로를 호출해서 무한 루프를 만든다.
 
@@ -163,15 +148,11 @@ class Library < ActiveRecord::Base
 end
 ```
 
-
-
-
-
 ### 3. `validates_confirmation_of` (수락 검증)
 
-이 헬퍼는 동일한 두 필드를 확인해야 할 때 사용한다. 예를 들어 비밀번호 `password` 필드와, 비밀번호 확인 `password_confirmation` 필드 값이 동일한지 확인해준다. 
+이 헬퍼는 동일한 두 필드를 확인해야 할 때 사용한다. 예를 들어 비밀번호 `password` 필드와, 비밀번호 확인 `password_confirmation` 필드 값이 동일한지 확인해준다.
 
-> *주의: 비교하는 대상 필드 이름에 "_confirmation" 을 덧붙인 속성명이 있어야 한다. (ex. password를 검증하려면 password_confirmation 필드가 존재해야 함). 그리고, 이 검사는 오직 `password_confirmation`이 `nil`이 아닐때만 동작한다.
+> \*주의: 비교하는 대상 필드 이름에 "\_confirmation" 을 덧붙인 속성명이 있어야 한다. (ex. password를 검증하려면 password_confirmation 필드가 존재해야 함). 그리고, 이 검사는 오직 `password_confirmation`이 `nil`이 아닐때만 동작한다.
 
 ```ruby
 class User < ActiveRecord::Base
@@ -186,8 +167,6 @@ end
 <%= text_field :person, :password_confirmation %>
 ```
 
-
-
 ### 4. `validates_exclusion_of`
 
 이 헬퍼는 속성의 값이 가지지 않아야 하는 값을 정의한다.
@@ -198,8 +177,6 @@ class Account < ActiveRecord::Base
     :message => "Subdomain %{value} is reserved."
 end
 ```
-
-
 
 ### 5. `validates_format_of` (포맷 검증)
 
@@ -212,11 +189,9 @@ class Product < ActiveRecord::Base
 end
 ```
 
-
-
 ### 6. `validates_inclusion_of`
 
-이 헬퍼는 속성의 값이 속해야만 하는 집합을 정의한다. 
+이 헬퍼는 속성의 값이 속해야만 하는 집합을 정의한다.
 
 ```ruby
 class Coffee < ActiveRecord::Base
@@ -224,8 +199,6 @@ class Coffee < ActiveRecord::Base
     :message => "%{value} is not a valid size"
 end
 ```
-
-
 
 ### 7. `validates_length_of` (길이 검증)
 
@@ -246,8 +219,6 @@ end
 - `:maximum` – 속성은 주어진 길이보다 길 수 없다.
 - `:in` (or `:within`) – 속성의 길이는 반드시 주어진 범위내여야 한다. 이 옵션의 값은 반드시 범위(range)여야 한다.
 - `:is` – 속성의 길이는 주어진 값과 동일해야 한다.
-
-
 
 ### 8. `validates_numericality_of` (숫자 검증)
 
@@ -270,8 +241,6 @@ end
 - `:odd` – 속성 값은 반드시 홀수여야 함
 - `:even` – 속성 값은 반드시 짝수여야 함
 
-
-
 ### 9. `validates_presence_of` (존재 검증)
 
 자주 사용하는 헬퍼이다. 이 헬퍼는 지정된 속성이 비어있는지 검증한다. 검증을 할 때, 해당 값이 `nil` 이거나 빈 문자열인지 확인하기 위해 +blank? 메소드를 사용한다.
@@ -284,21 +253,17 @@ class Person < ActiveRecord::Base
 end
 ```
 
+### 10. `validates_uniqueness_of` (유일성 검증)
 
+자주 사용하는 헬퍼이다. 이 헬퍼는 객체를 저장하기 전에 속성의 값이 유일한지 검증한다.
 
-### 10.  `validates_uniqueness_of` (유일성 검증)
-
-자주 사용하는 헬퍼이다. 이 헬퍼는 객체를 저장하기 전에 속성의 값이 유일한지 검증한다. 
-
-테이블 내 데이터 중  같은 속성 값을 가진 레코드 여부를 알아내기 위해서, SQL 구문을 실행해 검증한다.
+테이블 내 데이터 중 같은 속성 값을 가진 레코드 여부를 알아내기 위해서, SQL 구문을 실행해 검증한다.
 
 ```ruby
 class Account < ActiveRecord::Base
   validates_uniqueness_of :email
 end
 ```
-
-
 
 추가로, `:scope` 옵션을 추가해 유일성 검사에 다른 속성을 지정해서 사용할 수 있다. 예를 들어, 아래 예시처럼 :scope => :year을 추가하면 테이블 내에서 **해당 년도**에 유일한 :name 인지 확인한다.
 
@@ -308,10 +273,6 @@ class Holiday < ActiveRecord::Base
     :message => "should happen once per year"
 end
 ```
-
-
-
-
 
 ### 11. `validates_with` (클래스로 검증)
 
@@ -336,11 +297,7 @@ end
 - `record` – 검증할 레코드
 - `options` – `validates_with`에 넘길 추가 옵션
 
- 다른 모든 검증과 같이, `validates_with`도 `:if`, `:unless` 그리고 `:on` 옵션을 사용할 수 있다.
-
-
-
-
+다른 모든 검증과 같이, `validates_with`도 `:if`, `:unless` 그리고 `:on` 옵션을 사용할 수 있다.
 
 ### 12. `validates_each` (블록으로 각 속성 검증)
 
@@ -354,11 +311,12 @@ class Person < ActiveRecord::Base
 end
 ```
 
-
 <hr>
 
 ### 참고
+
 > - [Rails Guide 액티브 레코드 데이터 검증(Validation)과 콜백(Callback)](https://rubykr.github.io/rails_guides/active_record_validations_callbacks.html)
+
 ## 객체 생명 주기
 
 레일즈 어플리케이션 실행중에, 객체는 만들어지고, 갱신되고, 삭제 되는데, 액티브 레코드는 이러한 *객체 생명 주기*내에서 hook을 제공한다. hook을 통해 어플리케이션과 데이터를 조종할 수 있다. 예를 들어, 객체 생성 전에 데이터 검증을 하거나, 콜백 / 옵저버로 객체 상태 변화 전 로직을 실행할 수 있다.
@@ -368,12 +326,12 @@ end
 - 콜백, 옵저버: 객체의 상태 변화 전/후에 로직을 실행하도록 허용
 
 이 글에서는 **데이터 검증**에 대해 (특히, 모델 수준에서 데이터 검증) 알아보려고 한다.
+
 <hr>
 
+## 데이터 검증?
 
-##  데이터 검증?
-
-데이터 검증은 오직 유효한 데이터만 데이터베이스에 들어가도록 검증하는 작업을 뜻한다. 예를 들어, 모든 회원들이 필수로 유효한 이메일 주소를 입력하도록 검증할 수 있다. 
+데이터 검증은 오직 유효한 데이터만 데이터베이스에 들어가도록 검증하는 작업을 뜻한다. 예를 들어, 모든 회원들이 필수로 유효한 이메일 주소를 입력하도록 검증할 수 있다.
 
 데이터베이스에 데이터를 저장하기 전에 데이터를 검증하는 여러가지 방법이 있다.
 
@@ -384,13 +342,11 @@ end
 
 위 방법 중, 모델에서 데이터 검증을 실행하는 것이 가장 신뢰성이 높고, 테스트 및 유지보수에 편하다.
 
-
-
-### 데이터 검증 시점 
+### 데이터 검증 시점
 
 그렇다면 데이터 검증은 어떤 시점에 시행되는 걸까?
 
-새로운 레코드를 만들면 DB에 `INSERT` SQL 명령어를 전달하고, 데이터를 수정하면 DB에 `UPDATE` SQL 명령어를 전달하는데, 데이터 검증은 보통 데이터베이스에 이런 명령어를 전달하기 전에 실행된다. 만약에 데이터 검증이 하나라도 실패하면, 해당 객체는 타당하지 않은 객체로 기록되고, 액티브 레코드는 `INSERT`나 `UPDATE` 명령을 실행하지 않는다. 
+새로운 레코드를 만들면 DB에 `INSERT` SQL 명령어를 전달하고, 데이터를 수정하면 DB에 `UPDATE` SQL 명령어를 전달하는데, 데이터 검증은 보통 데이터베이스에 이런 명령어를 전달하기 전에 실행된다. 만약에 데이터 검증이 하나라도 실패하면, 해당 객체는 타당하지 않은 객체로 기록되고, 액티브 레코드는 `INSERT`나 `UPDATE` 명령을 실행하지 않는다.
 
 아래의 메소드는 데이터 검증을 실행시키며, 객체가 유효할때만 데이터베이스에 저장한다:
 
@@ -410,9 +366,7 @@ end
 > ActiveRecord::RecordInvalid: Validation failed: Email can't be blank
 > ```
 >
-> 이에 반해, non-bang 버전은 예외를 발생 시키지 않는다. `save`와 `update`메서드는 **`false`**를 반환하고, `create`는 그냥 **객체를 반환**한다. 
-
-
+> 이에 반해, non-bang 버전은 예외를 발생 시키지 않는다. `save`와 `update`메서드는 **`false`**를 반환하고, `create`는 그냥 **객체를 반환**한다.
 
 ### 데이터 검증 건너뛰는 메서드
 
@@ -437,8 +391,6 @@ end
 - `upsert`
 - `upsert_all`
 
-
-
 ### Valid? Invalid?
 
 객체의 유효 여부를 검사하기 위해 레일즈는 `valid?` 메소드를 사용한다. 데이터를 생성할 때 직접 사용해서 데이터가 유효한지 확인할 수 있다.
@@ -447,14 +399,12 @@ end
 class Person < ActiveRecord::Base
   validates :name, :presence => true
 end
- 
+
 Person.create(:name => "John Doe").valid? # => true
 Person.create(:name => nil).valid? # => false
 ```
 
 `invalid?`는 데이터 검증을 실행하고, 객체에 어떠한 에러라도 추가되면 true(참)을 반환하고 반대면 false(거짓)을 반환한다.
-
-
 
 ### errors[]
 
@@ -464,33 +414,29 @@ Person.create(:name => nil).valid? # => false
 class Person < ActiveRecord::Base
   validates :name, :presence => true
 end
- 
+
 >> Person.new.errors[:name].any? # => false
 >> Person.create.errors[:name].any? # => true
 ```
-
-
 
 이 메소드는 직 에러 컬렉션을 조회할 뿐이고 데이터 검증을 실행하지 않기 때문에 오직 데이터 검증 *실행 후*에만 유용하다.
 
 <hr>
 
-
 ## 데이터 검증 헬퍼 (Validation helpers)
 
-액티브 레코드는 미리 정의된 많은 데이터 검증 헬퍼를 제공하며,  클래스 정의 내부에서 직접 사용할 수 있다. 데이터 검증 헬퍼는 데이터 검증이 실패하면 해당 객체의 `errors` 컬렉션에 에러 메세지를 추가한다. 각 헬퍼마다 여러 attributes(필드)를 적용할 수 있으므로 한 줄의 코드로 여러 필드 검증을 실행할 수 있다. 
+액티브 레코드는 미리 정의된 많은 데이터 검증 헬퍼를 제공하며, 클래스 정의 내부에서 직접 사용할 수 있다. 데이터 검증 헬퍼는 데이터 검증이 실패하면 해당 객체의 `errors` 컬렉션에 에러 메세지를 추가한다. 각 헬퍼마다 여러 attributes(필드)를 적용할 수 있으므로 한 줄의 코드로 여러 필드 검증을 실행할 수 있다.
 
 모든 헬퍼 메서드는 `:on` 과 `:message` 옵션을 사용할 수 있는데, 사용법은 아래와 같다.
+
 - `:on` 옵션: `:save`(기본값), `:create` 또는 `:update` 어느 시점의 값을 검사할 것인지 지정할 수 있다.
-- `:message` 옵션: 검증이 실패할 경우에 `errors` 컬렉션에 추가될 메세지를 지정할 수 있다. 
+- `:message` 옵션: 검증이 실패할 경우에 `errors` 컬렉션에 추가될 메세지를 지정할 수 있다.
 
 그렇다면 이제 데이터 검증 헬퍼를 하나하나 살펴보자.
 
+### 1. `validates_acceptance_of` (수락 검증)
 
-
-###  1. `validates_acceptance_of` (수락 검증)
-
-폼이 실행된 후에, 유저 인터페이스 상에서 체크되어 있는 체크박스를 검증한다. 보통 사용자가  어플리케이션의 서비스 계약 사항의 동의 확인이 필요할때, 동의를 했는지 확인하는 용도로 사용된다. 만약 동의를 하지 않았다면 에러 메세지를 띄우며 데이터 저장 / 수정이 되지 않는다. 기본 메세지는 “*must be accepted*” 로 뜬다.
+폼이 실행된 후에, 유저 인터페이스 상에서 체크되어 있는 체크박스를 검증한다. 보통 사용자가 어플리케이션의 서비스 계약 사항의 동의 확인이 필요할때, 동의를 했는지 확인하는 용도로 사용된다. 만약 동의를 하지 않았다면 에러 메세지를 띄우며 데이터 저장 / 수정이 되지 않는다. 기본 메세지는 “_must be accepted_” 로 뜬다.
 
 ```ruby
 class Person < ActiveRecord::Base
@@ -498,11 +444,9 @@ class Person < ActiveRecord::Base
 end
 ```
 
-
-
 ### 2. validates_associated` (관계 검증)
 
-해당 모델과, 해당 모델에 연계된 모델까지 모두 검증해주는 메서드다. 데이터가 저장될 때, 연계된 모든 객체들에게 `valid?` 메서드가 호출된다. 
+해당 모델과, 해당 모델에 연계된 모델까지 모두 검증해주는 메서드다. 데이터가 저장될 때, 연계된 모든 객체들에게 `valid?` 메서드가 호출된다.
 
 > 단, 주의해야할 점은 해당 메서드는 연계된 두 모델 중 하나에만 사용해야한다. 만약 둘 다 사용하면 서로를 호출해서 무한 루프를 만든다.
 
@@ -513,15 +457,11 @@ class Library < ActiveRecord::Base
 end
 ```
 
-
-
-
-
 ### 3. `validates_confirmation_of` (수락 검증)
 
-이 헬퍼는 동일한 두 필드를 확인해야 할 때 사용한다. 예를 들어 비밀번호 `password` 필드와, 비밀번호 확인 `password_confirmation` 필드 값이 동일한지 확인해준다. 
+이 헬퍼는 동일한 두 필드를 확인해야 할 때 사용한다. 예를 들어 비밀번호 `password` 필드와, 비밀번호 확인 `password_confirmation` 필드 값이 동일한지 확인해준다.
 
-> *주의: 비교하는 대상 필드 이름에 "_confirmation" 을 덧붙인 속성명이 있어야 한다. (ex. password를 검증하려면 password_confirmation 필드가 존재해야 함). 그리고, 이 검사는 오직 `password_confirmation`이 `nil`이 아닐때만 동작한다.
+> \*주의: 비교하는 대상 필드 이름에 "\_confirmation" 을 덧붙인 속성명이 있어야 한다. (ex. password를 검증하려면 password_confirmation 필드가 존재해야 함). 그리고, 이 검사는 오직 `password_confirmation`이 `nil`이 아닐때만 동작한다.
 
 ```ruby
 class User < ActiveRecord::Base
@@ -536,8 +476,6 @@ end
 <%= text_field :person, :password_confirmation %>
 ```
 
-
-
 ### 4. `validates_exclusion_of`
 
 이 헬퍼는 속성의 값이 가지지 않아야 하는 값을 정의한다.
@@ -548,8 +486,6 @@ class Account < ActiveRecord::Base
     :message => "Subdomain %{value} is reserved."
 end
 ```
-
-
 
 ### 5. `validates_format_of` (포맷 검증)
 
@@ -562,11 +498,9 @@ class Product < ActiveRecord::Base
 end
 ```
 
-
-
 ### 6. `validates_inclusion_of`
 
-이 헬퍼는 속성의 값이 속해야만 하는 집합을 정의한다. 
+이 헬퍼는 속성의 값이 속해야만 하는 집합을 정의한다.
 
 ```ruby
 class Coffee < ActiveRecord::Base
@@ -574,8 +508,6 @@ class Coffee < ActiveRecord::Base
     :message => "%{value} is not a valid size"
 end
 ```
-
-
 
 ### 7. `validates_length_of` (길이 검증)
 
@@ -596,8 +528,6 @@ end
 - `:maximum` – 속성은 주어진 길이보다 길 수 없다.
 - `:in` (or `:within`) – 속성의 길이는 반드시 주어진 범위내여야 한다. 이 옵션의 값은 반드시 범위(range)여야 한다.
 - `:is` – 속성의 길이는 주어진 값과 동일해야 한다.
-
-
 
 ### 8. `validates_numericality_of` (숫자 검증)
 
@@ -620,8 +550,6 @@ end
 - `:odd` – 속성 값은 반드시 홀수여야 함
 - `:even` – 속성 값은 반드시 짝수여야 함
 
-
-
 ### 9. `validates_presence_of` (존재 검증)
 
 자주 사용하는 헬퍼이다. 이 헬퍼는 지정된 속성이 비어있는지 검증한다. 검증을 할 때, 해당 값이 `nil` 이거나 빈 문자열인지 확인하기 위해 +blank? 메소드를 사용한다.
@@ -634,21 +562,17 @@ class Person < ActiveRecord::Base
 end
 ```
 
+### 10. `validates_uniqueness_of` (유일성 검증)
 
+자주 사용하는 헬퍼이다. 이 헬퍼는 객체를 저장하기 전에 속성의 값이 유일한지 검증한다.
 
-### 10.  `validates_uniqueness_of` (유일성 검증)
-
-자주 사용하는 헬퍼이다. 이 헬퍼는 객체를 저장하기 전에 속성의 값이 유일한지 검증한다. 
-
-테이블 내 데이터 중  같은 속성 값을 가진 레코드 여부를 알아내기 위해서, SQL 구문을 실행해 검증한다.
+테이블 내 데이터 중 같은 속성 값을 가진 레코드 여부를 알아내기 위해서, SQL 구문을 실행해 검증한다.
 
 ```ruby
 class Account < ActiveRecord::Base
   validates_uniqueness_of :email
 end
 ```
-
-
 
 추가로, `:scope` 옵션을 추가해 유일성 검사에 다른 속성을 지정해서 사용할 수 있다. 예를 들어, 아래 예시처럼 :scope => :year을 추가하면 테이블 내에서 **해당 년도**에 유일한 :name 인지 확인한다.
 
@@ -658,10 +582,6 @@ class Holiday < ActiveRecord::Base
     :message => "should happen once per year"
 end
 ```
-
-
-
-
 
 ### 11. `validates_with` (클래스로 검증)
 
@@ -686,11 +606,7 @@ end
 - `record` – 검증할 레코드
 - `options` – `validates_with`에 넘길 추가 옵션
 
- 다른 모든 검증과 같이, `validates_with`도 `:if`, `:unless` 그리고 `:on` 옵션을 사용할 수 있다.
-
-
-
-
+다른 모든 검증과 같이, `validates_with`도 `:if`, `:unless` 그리고 `:on` 옵션을 사용할 수 있다.
 
 ### 12. `validates_each` (블록으로 각 속성 검증)
 
@@ -704,8 +620,8 @@ class Person < ActiveRecord::Base
 end
 ```
 
-
 <hr>
 
 ### 참고
+
 > - [Rails Guide 액티브 레코드 데이터 검증(Validation)과 콜백(Callback)](https://rubykr.github.io/rails_guides/active_record_validations_callbacks.html)

@@ -1,12 +1,12 @@
 ---
 title: 이진 탐색(Binary Search) 구현하기
-date: "2021-11-14T22:40:32.169Z"
+date: '2021-11-14T22:40:32.169Z'
 description: 이진 탐색(binary search)은 정렬된 배열 내에서 목표 값을 찾는 검색 알고리즘이다.
-category: "Algorithm"
+category: 'Algorithm'
+image: 'https://velog.velcdn.com/images/khy226/post/f8a7ddf0-2f9b-47eb-8115-ba6a7442e560/leetcode_logo.001.jpeg'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f8a7ddf0-2f9b-47eb-8115-ba6a7442e560/leetcode_logo.001.jpeg" style="width: 60%; padding-bottom: 50px;">
-
 
 ## 이진 탐색
 
@@ -20,7 +20,7 @@ category: "Algorithm"
 
 ![binary search img](https://camo.githubusercontent.com/c2075ff2cd7addf00519d2c6b719caa84f43264782669ba790ce06a496cd3993/68747470733a2f2f7777772e6765656b73666f726765656b732e6f72672f77702d636f6e74656e742f75706c6f6164732f42696e6172792d5365617263682e706e67)
 
-사진 출처: [Geeks for Geeks: Binary Search](https://www.geeksforgeeks.org/binary-search/) 
+사진 출처: [Geeks for Geeks: Binary Search](https://www.geeksforgeeks.org/binary-search/)
 
 위 사진을 예시로 이진 탐색을 수행해보자. 찾고자하는 타겟값은 23이며, 편의상 x라고 지칭한다.
 
@@ -43,8 +43,6 @@ category: "Algorithm"
 3. x가 중간 요소보다 크다면, x는 중간 요소 뒤에 있는 오른쪽(큰) 절반 배열 안에만 있을 수 있다. 그리고 오른쪽 절반에서 다시 알고리즘을 적용한다.
 4. x가 중간 요소보다 작으면, x는 중간 요소 앖에 있는 왼쪽(아래) 절반에 위치해야 한다. 그래서 왼쪽 절반에 다시 알고리즘을 적용한다.
 
-
-
 이진 탐색은 재귀와 반복문으로 나타낼 수 있으며, 의사 코드(pseudo code)로 위 정의를 나타내면 아래와 같다:
 
 ```javascript
@@ -52,7 +50,7 @@ category: "Algorithm"
 
 BinarySearch(A[0..N-1], value, low, high) {
   if (high < low)
-    return -1 // x가 배열에 없을 때 
+    return -1 // x가 배열에 없을 때
   mid = (low + high) / 2 // 중간 요소 설정
   if (A[mid] > value)
     return BinarySearch(A, value, low, mid-1) // 오른쪽 배열 버리고 다시 이진 탐색 (recursive)
@@ -62,8 +60,6 @@ BinarySearch(A[0..N-1], value, low, high) {
     return mid // 위치값 리턴
 }
 ```
-
-
 
 ```javascript
 // 반복
@@ -83,8 +79,6 @@ binarySearch(A[0..N-1], value) {
   return -1 // not found k
 }
 ```
-
-
 
 <br>
 
@@ -116,8 +110,6 @@ def binary_search(arr, low, high, x):
         # x가 배열에 존재하지 않았음
         return -1
 ```
-
-
 
 ### 반복(Iterative):
 
@@ -166,8 +158,6 @@ Output: 4
 
 Explanation: 9 exists in nums and its index is 4
 
-
-
 **Example 2:**
 
 ```python
@@ -188,8 +178,6 @@ Explanation: 2 does not exist in nums so return -1
 
 - nums is sorted in ascending order.
 
-
-
 ### 나의 풀이:
 
 ```python
@@ -197,7 +185,7 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         start = 0
         end = len(nums) - 1
-        
+
         while start <= end:
             mid = (start + end) // 2
             # if 'mid' number is same as target, return
@@ -212,8 +200,6 @@ class Solution:
         # If we reach here, then the element was not present
         return -1
 ```
-
-
 
 <hr>
 

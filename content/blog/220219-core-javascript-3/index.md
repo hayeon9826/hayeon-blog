@@ -1,12 +1,12 @@
 ---
 title: 코어 자바스크립트 정리 - 3. this
-date: "2022-02-19T22:45:32.169Z"
+date: '2022-02-19T22:45:32.169Z'
 description: 자바스크립트에서 this 란?
-category: "Javascript"
+category: 'Javascript'
+image: 'https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg" style="width: 50%; padding-bottom: 50px;">
-
 
 ### this 란?
 
@@ -33,10 +33,10 @@ category: "Javascript"
 - **전역변수를 선언하면 자바스크립트 엔진을 이를 전역객체의 프로퍼티로 할당한다.**
 
 ```jsx
-var a = 1;
-console.log(a);        // 1
-console.log(window.a); // 1
-console.log(this.a);   // 1
+var a = 1
+console.log(a) // 1
+console.log(window.a) // 1
+console.log(this.a) // 1
 ```
 
 - 위 예시에서 window.a 와 this.a의 값이 모두 1로 출력된다.
@@ -47,10 +47,10 @@ console.log(this.a);   // 1
 #### var변수 대신 window프로퍼티 할당:
 
 ```jsx
-var a = 1;
-window.b = 2;
-console.log(a, window.a, this.a); // 1 1 1
-console.log(b, window.b, this.b); // 2 2 2
+var a = 1
+window.b = 2
+console.log(a, window.a, this.a) // 1 1 1
+console.log(b, window.b, this.b) // 2 2 2
 ```
 
 전역변수 선언과 전역객체의 프로터티 할당 시 같은 결과가 나온다.
@@ -60,13 +60,13 @@ console.log(b, window.b, this.b); // 2 2 2
 아래는 전역 변수, 전역 객체의 삭제 동작이다:
 
 ```jsx
-var a = 1;    
-delete window.a;    // false
-console.log(a, window.a, this.a);   /// 1 1 1
+var a = 1
+delete window.a // false
+console.log(a, window.a, this.a) /// 1 1 1
 
-window.c = 3;
-delete window.c; // true
-console.log(c, window.c, this.c);  // Uncaught ReferenceError: c is not defined
+window.c = 3
+delete window.c // true
+console.log(c, window.c, this.c) // Uncaught ReferenceError: c is not defined
 ```
 
 위 예시에서 차이점이 나온다. 변수에 delete연산자를 사용할 때 (window.)를 생략한 것으로 이해하면 된다.
@@ -80,15 +80,15 @@ console.log(c, window.c, this.c);  // Uncaught ReferenceError: c is not defined
 - 메서드: 미리 정의한 동작을 수행하는 코드 뭉치로, 자신을 호출한 대상 객체에 관한 동작을 수행
 
 ```jsx
-var func = function(x) {
-	console.log(this, x);
-};
-func(1);   // Window {...} 1
+var func = function (x) {
+  console.log(this, x)
+}
+func(1) // Window {...} 1
 
 var obj = {
-	method: func
+  method: func,
 }
-obj.method(2);  // { method: f } 2
+obj.method(2) // { method: f } 2
 ```
 
 - func라는 익명함수를 호출하니 this로 전역객체 Window가 출력된다
@@ -101,15 +101,20 @@ obj.method(2);  // { method: f } 2
 
 ```jsx
 var obj = {
-	methodA: function () { console.log(this); },
-	inner: {
-		methodB: function () { console.log(this); }
-	}
-};
+  methodA: function () {
+    console.log(this)
+  },
+  inner: {
+    methodB: function () {
+      console.log(this)
+    },
+  },
+}
 
-object.methodA();   // {methodA: f, inner: {...} } ( === obj )
-object.inner.methodB();  // {methodB: F} ( === obj.inner)
+object.methodA() // {methodA: f, inner: {...} } ( === obj )
+object.inner.methodB() // {methodB: F} ( === obj.inner)
 ```
+
 ---
 
 ### 함수로서 호출할 때 그 함수 내부에서의 this
@@ -123,20 +128,20 @@ object.inner.methodB();  // {methodB: F} ( === obj.inner)
 
 ```jsx
 var obj1 = {
-	outer: function() {
-		console.log(this);   // (1) obj1
-		var innerFunc = function() {
-			console.log(this);    // (2) 전역객체(window) (3)obj2
-		}
-		innerFunc(); // --- (2) 실행
+  outer: function () {
+    console.log(this) // (1) obj1
+    var innerFunc = function () {
+      console.log(this) // (2) 전역객체(window) (3)obj2
+    }
+    innerFunc() // --- (2) 실행
 
-		var obj2 = {
-			innerMethod : innerFunc
-		};
-		object2.innerMethod(); // --- (3) 실행
-	}
+    var obj2 = {
+      innerMethod: innerFunc,
+    }
+    object2.innerMethod() // --- (3) 실행
+  },
 }
-obj1.outer(); // ----(1) 실행
+obj1.outer() // ----(1) 실행
 ```
 
 - this 바인딩에 관해서 함수 실행하는 당시의 주변 환경(메서드 내부인지, 함수 내부인지 등)은 중요하지 않고, 오직 해당 함수를 호출하는 구문 앞에 점 또는 대괄호 표기가 있는지 없는지가 관건임
@@ -148,15 +153,15 @@ obj1.outer(); // ----(1) 실행
 
 ```jsx
 var obj = {
-	outer: function() {
-		console.log(this);    // (1) { outer: f}
-		var innerFunc = () => {
-			console.log(this);
-		};
-		innerFunc();
-	}
+  outer: function () {
+    console.log(this) // (1) { outer: f}
+    var innerFunc = () => {
+      console.log(this)
+    }
+    innerFunc()
+  },
 }
-obj.outer();
+obj.outer()
 ```
 
 **콜백함수 호출 시 그 함수 내부에서의 this**
@@ -168,7 +173,7 @@ obj.outer();
 **생성자 함수 내부에서의 this**
 
 - 생성자 함수: 어떤 공통된 성질을 지니는 객체들을 생성하는데 사용하는 함수
-    - 객체지향 언어: 생성자는 클래스, 클래스를 통해 만든 객체를 인스턴스 라고 함.
+  - 객체지향 언어: 생성자는 클래스, 클래스를 통해 만든 객체를 인스턴스 라고 함.
 - 프로그래밍적으로 ‘생성자'는 구체적인 인스턴스를 만들기 위한 일종의 틀
 - js에서 new 명령어와 함께 함수를 호출하면 해당 함수가 생성자로서 동작함.
 - 어떤 함수가 생성자 함수로서 호출된 경우, 내부에서의 this는 곧 새로 만들 구체적인 인스턴스 자신
@@ -176,14 +181,15 @@ obj.outer();
 예시)
 
 ```jsx
-var Cat = function(name, age) { //  Cat 변수에 익명 함수 할당
-	this.bark = "야옹";
-	this.name = name;
-	this.age = age;
+var Cat = function (name, age) {
+  //  Cat 변수에 익명 함수 할당
+  this.bark = '야옹'
+  this.name = name
+  this.age = age
 }
 
-var choco = new Cat('초코', 7);  // 생성자 함수 내부에서의 this는 choco 인스턴스
-console.log(choco);
+var choco = new Cat('초코', 7) // 생성자 함수 내부에서의 this는 choco 인스턴스
+console.log(choco)
 
 // Cat { bark: "야옹", name: "초코", age: 7} --- Cat 클래스의 인스턴스 객체 출력
 ```
@@ -192,7 +198,7 @@ console.log(choco);
 
 ### 2. 명시적으로 this를 바인딩 하는 방법
 
-- 아래 메서드들을 통해 this에 별도의 대상을 바인딩 할 수도 있다.  (call, apply, bind 메서드)
+- 아래 메서드들을 통해 this에 별도의 대상을 바인딩 할 수도 있다. (call, apply, bind 메서드)
 
 #### 1) **call 메서드**
 
@@ -206,11 +212,11 @@ Function.prototype.call(thisArg[, arg1[, arg2[, ...]]])
 
 ```jsx
 var func = function (a, b, c) {
-	console.log(this, a, b, c);
+  console.log(this, a, b, c)
 }
 
-func(1, 2, 3); // Window{ ... } 1 2 3
-func.call({ x: 1}, 4, 5, 6); // { x:1 } 4 5 6
+func(1, 2, 3) // Window{ ... } 1 2 3
+func.call({ x: 1 }, 4, 5, 6) // { x:1 } 4 5 6
 ```
 
 #### 2) **apply 메서드**
@@ -223,45 +229,44 @@ Function.prototype.apply(thisArg[, argsArray])
 
 ```jsx
 var func = function (a, b, c) {
-	console.log(this, a, b, c);
+  console.log(this, a, b, c)
 }
 
-func(1, 2, 3); // Window{ ... } 1 2 3
-func.apply({ x: 1}, [4, 5, 6]); // { x:1 } 4 5 6
+func(1, 2, 3) // Window{ ... } 1 2 3
+func.apply({ x: 1 }, [4, 5, 6]) // { x:1 } 4 5 6
 ```
 
 call / apply 메서드를 활용해 중복을 줄일 수 있다. 아래 예시는 생성자 내부에 다른 생성자와 공통된 내용이 있을 경우 call 또는 apply를 이용해 다른 생성자를 호출해 반복을 줄이는 예시이다:
 
 ```jsx
 function Person(name, gender) {
-  this.name = name;
-  this.gender = gender;
+  this.name = name
+  this.gender = gender
 }
 
 function Student(name, gender, school) {
-  Person.call(this, name, gender);
-  this.school = school;
+  Person.call(this, name, gender)
+  this.school = school
 }
 
 function Employee(name, gender, company) {
-  Person.call(this, name, gender);
-  this.company = company;
+  Person.call(this, name, gender)
+  this.company = company
 }
 
-var by = new Student("보영", "female", "단국대");
-var jn = new Employee("재난", "male", "구글");
+var by = new Student('보영', 'female', '단국대')
+var jn = new Employee('재난', 'male', '구글')
 ```
 
 #### 3) **bind 메서드**
 
 > 함수 바인딩이란 특정한 this값과 특정한 매개변수를 넘기면서 다른 함수를 호출하는 함수입니다. 많은 자바스크립트 라이브러리들은 함수를 특정한 컨텍스트에 묶는 함수를 만들었습니다. 일반적으로 이런 함수를 bind()라고 부릅니다. 기본 구조는 아래와 같습니다. (출처: [https://blog.sonim1.com/158](https://blog.sonim1.com/158))
-> 
 
 ```jsx
-function bind(fn, context){
-    return function(){
-        return fn.apply(context, arguments);
-    }
+function bind(fn, context) {
+  return function () {
+    return fn.apply(context, arguments)
+  }
 }
 ```
 
@@ -271,21 +276,21 @@ ECMAScript5에서 bind()메서드가 도입되었으며 아래와 같이 사용�
 Function.prototype.bind(thisArg[, arg1[, arg2[, ...]]])
 ```
 
-- ES5에서 추가된 기능.  call 과 비슷하지만, 즉시 호출하지는 않고 넘겨 받은 this 및 인수들을 바탕으로 새로운 함수 반환.
+- ES5에서 추가된 기능. call 과 비슷하지만, 즉시 호출하지는 않고 넘겨 받은 this 및 인수들을 바탕으로 새로운 함수 반환.
 - 즉, bind 메서드는 함수에 this를 미리 적용하는 것과 부분 적용 함수를 구현하는 두 가지 목적을 지님
 
 ```jsx
-var func = function (a, b, c, d){
-  console.log(this, a, b, c, d);
+var func = function (a, b, c, d) {
+  console.log(this, a, b, c, d)
 }
-func(1, 2, 3, 4);   // Window{...} 1 2 3 4
+func(1, 2, 3, 4) // Window{...} 1 2 3 4
 
-var bindFunc1 = func.bind({ x: 1 });
-bindFunc1(5, 6, 7, 8);  // { x: 1 } 5 6 7 8
+var bindFunc1 = func.bind({ x: 1 })
+bindFunc1(5, 6, 7, 8) // { x: 1 } 5 6 7 8
 
-var bindFunc2 = func.bind({ x: 1 }, 4, 5);
-bindFunc2(6, 7);     // { x: 1} 4 5 6 7
-bindFunc2(8, 9);     // { x: 1} 4 5 8 9
+var bindFunc2 = func.bind({ x: 1 }, 4, 5)
+bindFunc2(6, 7) // { x: 1} 4 5 6 7
+bindFunc2(8, 9) // { x: 1} 4 5 8 9
 ```
 
 #### 4) **화살표 함수의 예외사항**
@@ -295,18 +300,18 @@ bindFunc2(8, 9);     // { x: 1} 4 5 8 9
 
 ```jsx
 var obj = {
-  outer: function() {
-    console.log(this);  // { outer: [Function: outer] }
+  outer: function () {
+    console.log(this) // { outer: [Function: outer] }
     var innerFunc = () => {
-      console.log(this);  // { outer: [Function: outer] }
+      console.log(this) // { outer: [Function: outer] }
     }
-    innerFunc();
-  }
+    innerFunc()
+  },
 }
-obj.outer();
+obj.outer()
 ```
 
-5) **별도의 인자로 this를 받는 경우 (콜백 함수 내에서의 this)**
+5. **별도의 인자로 this를 받는 경우 (콜백 함수 내에서의 this)**
 
 - 콜백 함수를 인자로 받는 메서드 중 일부는 추가로 this로 지정할 객체(thisArg)를 인자로 지정할 수 있는 경우가 있음.
 - 배열 메서드에 이러한 경우가 많이 있으며, 대표적인 예로 forEach가 있음 (ex. foreach, map, filter, some, every, find, findIndex, flatMap, from, 그리고 ES6의 Set, Map)
@@ -318,20 +323,20 @@ var report = {
   sum: 0,
   count: 0,
   add: function () {
-		// arguments 를 배열로 변환해서 args 변수에 담는다
-    var args = Array.prototype.slice.call(arguments); 
-		// 해당 배열(args)를 순회하면서 콜백 함수 실행
+    // arguments 를 배열로 변환해서 args 변수에 담는다
+    var args = Array.prototype.slice.call(arguments)
+    // 해당 배열(args)를 순회하면서 콜백 함수 실행
     args.forEach(function (entry) {
-      this.sum += entry;
-      ++this.count;
-    }, this); // 콜백 함수 내부에서의 this가 해당 this로 바인딩 됨! 
+      this.sum += entry
+      ++this.count
+    }, this) // 콜백 함수 내부에서의 this가 해당 this로 바인딩 됨!
   },
   average: function () {
-    return this.sum / this.count;
+    return this.sum / this.count
   },
-};
-report.add(60, 85, 95);
-console.log(report.sum, report.count, report.average()); // 240 3 80
+}
+report.add(60, 85, 95)
+console.log(report.sum, report.count, report.average()) // 240 3 80
 ```
 
 #### <해설>
@@ -343,5 +348,6 @@ console.log(report.sum, report.count, report.average()); // 240 3 80
 ---
 
 ### 출처
+
 > - 정재남, 『코어 자바스크립트』, 위키북스(2019), p65-93.
 > - [19. 자바스크립트 - 함수 바인딩](https://blog.sonim1.com/158)

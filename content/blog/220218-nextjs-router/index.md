@@ -1,21 +1,20 @@
 ---
 title: Next.js Router 정리
-date: "2022-02-18T22:45:32.169Z"
+date: '2022-02-18T22:45:32.169Z'
 description: Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이 많은 것 같아 자주 사용하는 메서드를 정리해보았습니다.
-category: "React"
+category: 'React'
+image: 'https://velog.velcdn.com/images/khy226/post/fabead09-b8b2-4569-9f97-2e0d0b368ec3/next.png'
 ---
 
 <img src="https://velog.velcdn.com/images/khy226/post/fabead09-b8b2-4569-9f97-2e0d0b368ec3/next.png" style="padding-bottom: 50px;">
 
-
 ## Next.js Router 정리
 
-Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이 많은 것 같아 자주 사용하는 메서드를 정리해보았습니다. 
+Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이 많은 것 같아 자주 사용하는 메서드를 정리해보았습니다.
 또한, next.js에서 왜 `<Link>` 태그를 사용하는지에 대해서도 정리해보았습니다.
 
-  
 <hr />
-  
+
 
 ### Next/Router
 
@@ -33,7 +32,7 @@ function ActiveLink({ children, href }) {
     color: router.asPath === href ? 'red' : 'black',
   }
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     e.preventDefault()
     router.push(href)
   }
@@ -65,13 +64,10 @@ router.push(url, as, options)
 ```
 
 - url: [필수] 라우팅 하려는 url
-  
 - as: [선택] 브라우저 url 바에 보여지는 path
-  
 - options: [선택] ]scroll(라우팅 후 스크롤업), shallow, locale 등의 옵션이 있습니다.
-  
 
-주의: `router.push`는 외부 url 사용시에는 적합하지 않습니다. a tag의 target="_blank" 를 사용하거나 window.location을 사용하는 것이 낫습니다.
+주의: `router.push`는 외부 url 사용시에는 적합하지 않습니다. a tag의 target="\_blank" 를 사용하거나 window.location을 사용하는 것이 낫습니다.
 
 #### 예시:
 
@@ -122,9 +118,7 @@ export default function Page() {
 정리하자면, `router.push`는 라우터의 history 스택 제일 위에 새로운 url을 쌓는 것이고, `router.replace`는 스택 제일 위에 있는 원소를 새로운 url로 바꾸는 것 입니다.
 
 - 이전의 라우팅 히스토리를 모두 유지하고 싶다면 `router.push` 를 사용하면 됩니다.
-  
 - 만약 현재 라우팅 히스토리를 다른 url로 변경하고 싶다면 (예: 로그인 후 마이페이지 이동했을 때. back 버튼 누르면 다시 로그인 페이지로 가지 않기 위해 로그인 url을 history에서 제거) `router.replace`를 사용하면 됩니다.
-  
 
 ### router.back
 
@@ -155,7 +149,7 @@ Next.js에서는 a tag 대신, `<Link>` 컴포넌트를 사용해 a tag를 감�
 ```jsx
 import Link from 'next/link'
 
-<h1 className="title">
+;<h1 className="title">
   Read{' '}
   <Link href="/posts/first-post">
     <a>this page!</a>
