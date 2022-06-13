@@ -1,5 +1,5 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import { getValue, setValue } from '../utils/storage'
 class Utterances extends React.Component {
   constructor(props) {
     super(props)
@@ -10,13 +10,15 @@ class Utterances extends React.Component {
 
   componentDidMount() {
     const scriptEl = document.createElement('script')
+    const isDark = getValue('isDark')
+
     scriptEl.onload = () => this.setState({ status: 'success' })
     scriptEl.onerror = () => this.setState({ status: 'failed' })
     scriptEl.async = true
     scriptEl.src = 'https://utteranc.es/client.js'
     scriptEl.setAttribute('repo', 'hayeon9826/blog-comments')
     scriptEl.setAttribute('issue-term', 'title')
-    scriptEl.setAttribute('theme', 'github-light')
+    scriptEl.setAttribute('theme', isDark ? 'photon-dark' : 'github-light')
     scriptEl.setAttribute('crossorigin', 'anonymous')
     this.commentsEl.current.appendChild(scriptEl)
   }

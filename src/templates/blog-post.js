@@ -1,6 +1,5 @@
-import * as React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, graphql } from 'gatsby'
-
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -9,19 +8,35 @@ import CommentPage from '../components/comments'
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteUrl = data.site.siteMetadata?.siteUrl
   const { previous, next } = data
+  const [viewCount, setViewCount] = useState()
+
+  useEffect(() => {
+    const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '')
+    const key = post?.fields?.slug.replace(/\//g, '')
+    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`).then(async result => {
+      const data = await result.json()
+      setViewCount(data.value)
+    })
+  }, [siteUrl, post?.fields?.slug])
 
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
-        title={post.frontmatter.title}
+        title={post?.frontmatter?.title}
         description={post.frontmatter.description || post.excerpt}
         image={post?.frontmatter?.image}
       />
       <article className="blog-post" itemScope itemType="http://schema.org/Article">
-        <header>
+        <header className="border-bottom">
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p className="post-date">{post.frontmatter.date}</p>
+          <p className="post-date justify-center">
+            <span>{post.frontmatter.date} </span>
+            <span className="text-xs">
+              {`  `} {viewCount} views
+            </span>
+          </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         <hr />
@@ -81,6 +96,9 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD")
         description
         image
+      }
+      fields {
+        slug
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

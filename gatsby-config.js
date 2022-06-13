@@ -7,7 +7,7 @@ module.exports = {
     },
     categories: ['All', 'Javascript', 'React', 'CS', 'Development', 'Native', 'Algorithm', 'Rails', 'Career', 'Story'],
     description: `[김하연 기술 블로그] Javascript, Typescript, React와 프론트엔드 기술 이야기를 기록합니다.`,
-    siteUrl: `https://hayeondev.gatsbyjs.io/`,
+    siteUrl: `https://hayeondev.gatsbyjs.io`,
     social: {
       linkedin: `khy226`,
       github: 'https://github.com/hayeon9826',
@@ -49,6 +49,27 @@ module.exports = {
               aliases: {},
               showLineNumbers: true,
               noInlineHighlight: false,
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+              linkImagesToOriginal: false, // Important!
+            },
+          },
+          {
+            resolve: `gatsby-remark-images-medium-zoom`, // Important!
+            options: {
+              margin: 36,
+              scrollOffset: 0,
             },
           },
         ],

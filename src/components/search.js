@@ -37,7 +37,7 @@ const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
 
   const { query, filteredData } = searchState
   const hasSearchResults = filteredData && query !== initialQuery
-  const posts = hasSearchResults ? filteredData : []
+  const posts = useMemo(() => (hasSearchResults ? filteredData : []), [hasSearchResults, filteredData])
 
   const searchedPosts = useMemo(
     () => posts?.filter(post => selectedCategory === 'All' || post.frontmatter.category === selectedCategory),

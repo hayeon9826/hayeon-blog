@@ -119,11 +119,11 @@ Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby f
 - [x] SEO 적용
 - [x] Disqus를 Utterance로 변경
 - [x] 검색 기능 추가
+- [x] 조회수 추가
 
 ### 해야할 것
 
-- [ ] 조회수 추가
-- [ ] pagination 기능 추가
+- [ ] pagination 기능 추가 (or infinite scroll)
 - [ ] 구글 애드센스 적용
 - [ ] ReadME 업데이트
 - [ ] image zoom 작업

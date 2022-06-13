@@ -19,6 +19,7 @@ const Seo = ({ description, lang, meta, title, image }) => {
             title
             description
             siteUrl
+            image
           }
         }
       }

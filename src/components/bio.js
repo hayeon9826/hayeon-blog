@@ -34,7 +34,9 @@ const Bio = () => {
       {author?.name && (
         <p className="justify-center">
           <span>
-            <strong>{author.name}</strong>
+            <strong className="author-badge">
+              <Link to="/about">@{author.name}</Link>
+            </strong>
             <br />
             <small className="text-gray font-semibold">{author?.summary || null}</small>
             <br />

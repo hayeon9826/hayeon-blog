@@ -13,7 +13,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: '100%';
-  --maxWidth-wrapper: var(--maxWidth-2xl);
+  --maxWidth-wrapper: var(--maxWidth-3xl);
   --spacing-px: '1px';
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -63,6 +63,7 @@
 :root[data-theme='light'] {
   --bg-color: #ffffff;
   --color-primary: #3d5afe;
+  --color-shade: #011276;
   --color-text: #000000;
   --color-text-light: #f0f1f2;
   --color-text-gray: #999999;
@@ -83,6 +84,7 @@
 :root[data-theme='dark'] {
   --bg-color: #232326;
   --color-primary: #3d8afe;
+  --color-shade: #8b9cfe;
   --color-text: #ffffff;
   --color-text-light: #e6e6e6;
   --color-text-gray: #bfbfbf;
@@ -323,6 +325,28 @@ img {
   z-index: 100;
 }
 
+.author-badge {
+  background-color: var(--color-category-bg);
+  padding: 2px 6px;
+  border-radius: 8px;
+  color: var(--color-shade);
+}
+
+.text-xs {
+  font-size: var(--fontSize-xs);
+  line-height: 20px;
+}
+
+.border-bottom {
+  border-bottom: 0.1px solid var(--category-item-border);
+  margin-bottom: var(--spacing-10);
+}
+
+.author-badge a {
+  text-decoration: none;
+  color: var(--color-shade);
+}
+
 .justify-center {
   display: flex;
   justify-content: space-between;
@@ -358,7 +382,7 @@ img {
   width: 100%;
   max-width: var(--maxWidth-wrapper);
   margin: var(--spacing-6) auto;
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-0);
 }
 
 .searchBar {
