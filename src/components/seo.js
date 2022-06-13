@@ -18,6 +18,7 @@ const Seo = ({ description, lang, meta, title }) => {
           siteMetadata {
             title
             description
+            siteUrl
             social {
               linkedin
             }
@@ -29,6 +30,7 @@ const Seo = ({ description, lang, meta, title }) => {
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
+  const siteUrl = site.siteMetadata?.siteUrl
 
   return (
     <Helmet
@@ -52,7 +54,7 @@ const Seo = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `Blog`,
         },
         {
           name: `google-site-verification`,
@@ -61,6 +63,18 @@ const Seo = ({ description, lang, meta, title }) => {
         {
           name: `naver-site-verification`,
           content: `4c8febd79f827b2ffd66e1d7d0947063445054f1`,
+        },
+        {
+          name: 'robots',
+          content: 'index, follow',
+        },
+        {
+          property: 'og:url',
+          content: siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: `${siteUrl}/preview.png`,
         },
       ].concat(meta)}
     />
