@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data, location }) => {
         <header className="border-bottom">
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="post-date justify-center">
-            <span>{post.frontmatter.date} </span>
+            <span className="text-sm">{post.frontmatter.date} </span>
             <span className="text-xs">
               {`  `} {viewCount} views
             </span>

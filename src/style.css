@@ -337,6 +337,11 @@ img {
   line-height: 20px;
 }
 
+.text-sm {
+  font-size: var(--fontSize-sm);
+  line-height: 20px;
+}
+
 .border-bottom {
   border-bottom: 0.1px solid var(--category-item-border);
   margin-bottom: var(--spacing-10);
