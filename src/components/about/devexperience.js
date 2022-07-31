@@ -57,7 +57,7 @@ const DevExperience = () => {
               <figure className="image">
                 <StaticImage
                   formats={['auto', 'webp', 'avif']}
-                  src="../images/franchise_img.jpeg"
+                  src="../../images/franchise_img.jpeg"
                   width={500}
                   height={280}
                   quality={95}
@@ -114,7 +114,7 @@ const DevExperience = () => {
               <figure className="image">
                 <StaticImage
                   formats={['auto', 'webp', 'avif']}
-                  src="../images/sagn_img.jpeg"
+                  src="../../images/sagn_img.jpeg"
                   width={500}
                   height={280}
                   quality={95}
@@ -182,7 +182,7 @@ const DevExperience = () => {
               <figure className="image">
                 <StaticImage
                   formats={['auto', 'webp', 'avif']}
-                  src="../images/gloryus_img.png"
+                  src="../../images/gloryus_img.png"
                   width={500}
                   height={500}
                   quality={95}
@@ -263,7 +263,7 @@ const DevExperience = () => {
               <figure className="image">
                 <StaticImage
                   formats={['auto', 'webp', 'avif']}
-                  src="../images/modooda_img.jpeg"
+                  src="../../images/modooda_img.jpeg"
                   width={500}
                   height={220}
                   quality={95}
@@ -334,7 +334,7 @@ const DevExperience = () => {
               <figure className="image">
                 <StaticImage
                   formats={['auto', 'webp', 'avif']}
-                  src="../images/pppper_img.png"
+                  src="../../images/pppper_img.png"
                   width={480}
                   height={240}
                   quality={95}

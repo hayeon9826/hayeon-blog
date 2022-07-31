@@ -24,7 +24,7 @@ const Header = () => {
             <figure className="image">
               <StaticImage
                 formats={['auto', 'webp', 'avif']}
-                src="../images/profile_img.jpg"
+                src="../../images/profile_img.jpg"
                 width={240}
                 height={300}
                 quality={95}

@@ -82,7 +82,7 @@ const DevLife = () => {
           <figure className="image">
             <StaticImage
               formats={['auto', 'webp', 'avif']}
-              src="../images/timeline.png"
+              src="../../images/timeline.png"
               width={640}
               height={240}
               quality={95}
