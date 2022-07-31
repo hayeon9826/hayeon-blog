@@ -590,6 +590,17 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 500px) {
+  .column-list {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
 .column {
   padding: 0 1em;
 }
