@@ -7,14 +7,14 @@ import Seo from '../components/seo'
 import Search from '../components/search'
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const posts = data.allMarkdownRemark.nodes
   const params = new URLSearchParams(location?.search)
   const category = params.get('category') || 'All'
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Posts" />
+      <Seo title="Hayeon Dev Blog | Posts" />
       <Bio />
       <Category location={location} />
       {/* search bar & searched posts */}

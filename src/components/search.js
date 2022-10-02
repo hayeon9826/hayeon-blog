@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react'
-import PostPage from './post'
 import NoPostPage from './noPost'
+import PostsPage from './posts'
 
 const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
   const initialQuery = ''
@@ -66,27 +66,19 @@ const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
       {/* searched result */}
       {searchState?.query ? (
         <div>
-          <ol style={{ listStyle: `none` }} className="mb-32">
-            {searchedPosts.length ? (
-              searchedPosts?.map(post => {
-                return <PostPage post={post} key={post?.frontmatter?.title} />
-              })
-            ) : (
-              <NoPostPage
-                location={location}
-                siteTitle={siteTitle}
-                text={'검색 결과가 없습니다. 다른 검색어를 입력해주세요 :)'}
-              />
-            )}
-          </ol>
+          {searchedPosts.length ? (
+            <PostsPage posts={searchedPosts} category={selectedCategory} />
+          ) : (
+            <NoPostPage
+              location={location}
+              siteTitle={siteTitle}
+              text={'검색 결과가 없습니다. 다른 검색어를 입력해주세요 :)'}
+            />
+          )}
         </div>
       ) : (
         <>
-          <ol style={{ listStyle: `none` }} className="mb-32">
-            {categorizedPosts?.map(post => {
-              return <PostPage post={post} key={post?.frontmatter?.title} />
-            })}
-          </ol>
+          <PostsPage posts={categorizedPosts} category={selectedCategory} />
         </>
       )}
     </div>

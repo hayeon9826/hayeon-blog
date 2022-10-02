@@ -16,7 +16,7 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="About" />
+      <Seo title="Hayeon Dev Blog | About" />
       <article className="page sans mb-32">
         <div className="page-body">
           <Header />

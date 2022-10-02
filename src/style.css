@@ -1,5 +1,5 @@
 /* CSS Custom Properties Definitions */
-/* @import url(https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css); */
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css);
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 :root {
@@ -539,6 +539,48 @@ img {
   background: url('https://raw.githubusercontent.com/RuchiVS/image-upload/main/sun.png') no-repeat center #ffffff;
   background-size: 10px;
   cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+
+.mt-6{
+  margin-top: 24px;
+}
+
+.mt-12 {
+  margin-top: 48px;
+}
+
+.mt-20 {
+  margin-top: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid #6495ED;
+  border-color: #6495ED transparent #6495ED transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 button {

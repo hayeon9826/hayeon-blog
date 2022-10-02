@@ -7,7 +7,7 @@ import CommentPage from '../components/comments'
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const siteUrl = data.site.siteMetadata?.siteUrl
   const { previous, next } = data
   const [viewCount, setViewCount] = useState()
