@@ -22,10 +22,10 @@ const Category = ({ location, siteTitle }) => {
         <ul className="scroll-toggle__list">
           {categories &&
             categories?.map((category, id) => (
-              <li className={`scroll-toggle__list-item ${currentCategory === category && 'active'}`} key={id}>
-                  <a href={`/?category=${category}`} className="text-white font-semibold no-underline">
-                    <div>{category}</div>
-                  </a>
+              <li className={`no-underline scroll-toggle__list-item ${currentCategory === category && 'active'}`} key={id}>
+                  <Link to={`/?category=${category}`}>
+                    <div className="text-white font-semibold no-underline">{category}</div>
+                  </Link>
               </li>
             ))}
         </ul>
