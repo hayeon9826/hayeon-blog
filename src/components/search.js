@@ -65,7 +65,7 @@ const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
       </div>
       {/* searched result */}
       {searchState?.query ? (
-        <div>
+        <>
           {searchedPosts.length ? (
             <PostsPage posts={searchedPosts} category={selectedCategory} />
           ) : (
@@ -75,7 +75,7 @@ const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
               text={'검색 결과가 없습니다. 다른 검색어를 입력해주세요 :)'}
             />
           )}
-        </div>
+        </>
       ) : (
         <>
           <PostsPage posts={categorizedPosts} category={selectedCategory} />

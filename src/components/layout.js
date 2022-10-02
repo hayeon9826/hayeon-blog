@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import ThemeBtn from './themeBtn'
-
+import '../../src/style.css'
 
 const Layout = ({ location, title, children }) => {
 

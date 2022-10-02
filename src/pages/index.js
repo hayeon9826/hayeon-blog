@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Search from '../components/search'
 
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const posts = data.allMarkdownRemark.nodes
