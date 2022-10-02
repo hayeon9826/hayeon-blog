@@ -32,6 +32,7 @@ _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 
 ## 🔥 해야할 것
 
+- [ ] 리로드시 css 파일 delay 문제 해결
 - [ ] 구글 애드센스 적용
 - [ ] ReadME 업데이트
 - [ ] image zoom 작업
