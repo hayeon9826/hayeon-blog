@@ -10,6 +10,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "add": "^2.0.6",
+    "babel-plugin-styled-components": "^2.0.7",
     "font-awesome": "^4.7.0",
     "gatsby": "^4.15.2",
     "gatsby-plugin-advanced-sitemap": "^2.1.0",
@@ -23,6 +24,7 @@
     "gatsby-plugin-robots-txt": "^1.7.1",
     "gatsby-plugin-sharp": "^4.15.1",
     "gatsby-plugin-sitemap": "^5.16.0",
+    "gatsby-plugin-styled-components": "^5.24.0",
     "gatsby-plugin-use-dark-mode": "^1.5.0",
     "gatsby-remark-copy-linked-files": "^5.15.0",
     "gatsby-remark-images": "^6.16.0",
@@ -39,6 +41,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.6",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
     "use-dark-mode": "^2.3.1",

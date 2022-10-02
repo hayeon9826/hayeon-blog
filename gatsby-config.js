@@ -15,6 +15,7 @@ module.exports = {
     image: '/preview.png',
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {

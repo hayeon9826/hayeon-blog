@@ -1,12 +1,10 @@
-
 // custom CSS styles
-import './src/style.css'
-
-// custom typefaces
-import 'typeface-montserrat'
-import 'typeface-merriweather'
+require('./src/style.css')
 // normalize CSS across browsers
-import './src/normalize.css'
+require ('./src/normalize.css')
 
 // Highlighting for code blocks
 require('prism-themes/themes/prism-holi-theme.css')
+// custom typefaces
+require('typeface-montserrat')
+require('typeface-merriweather')
