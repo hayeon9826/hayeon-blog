@@ -300,6 +300,10 @@ img {
 
 /* Custom classes */
 
+.no-underline{
+  text-decoration: none;
+}
+
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);

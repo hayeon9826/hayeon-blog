@@ -5,7 +5,7 @@ module.exports = {
       name: `김하연`,
       summary: `2년차 프론트엔드 개발자 입니다. 사용자 경험 개선, 읽기 쉬운 코드에 집중하여 개발합니다.`,
     },
-    categories: ['All', 'Javascript', 'React', 'CS', 'Development', 'Native', 'Algorithm', 'Rails', 'Career', 'Story'],
+    categories: ['All', 'Javascript', 'React', 'CS', 'Development', 'Native', 'Algorithm', 'Rails', 'Career'],
     description: `[김하연 기술 블로그] Javascript, Typescript, React와 프론트엔드 기술 이야기를 기록합니다.`,
     siteUrl: `https://hayeondev.gatsbyjs.io`,
     social: {
