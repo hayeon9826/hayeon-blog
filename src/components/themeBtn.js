@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { getValue, setValue } from '../utils/storage';
 
 function ThemeBtn() {
   const [isDark, setIsDark] = useState(getValue('isDark'));
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     setValue('isDark', isDark);
     document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
   }, [isDark]);
