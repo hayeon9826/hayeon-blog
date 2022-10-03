@@ -13,7 +13,7 @@ export default function useInfiniteScroll(onIntersect, option = defaultOptions) 
     if (entry.isIntersecting) {
       onIntersect(entry, observer);
     }
-  }, []);
+  }, [onIntersect]);
   // ref나 option이 바뀔 경우 observer를 새로 등록
   useEffect(() => {
     let observer;

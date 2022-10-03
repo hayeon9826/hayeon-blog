@@ -8,6 +8,8 @@
     "url": "https://github.com/hayeon9826/hayeon-blog/issues"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@popperjs/core": "^2.11.5",
     "add": "^2.0.6",
     "babel-plugin-styled-components": "^2.0.7",
@@ -22,6 +24,7 @@
     "gatsby-plugin-offline": "^5.15.1",
     "gatsby-plugin-react-helmet": "^5.15.0",
     "gatsby-plugin-robots-txt": "^1.7.1",
+    "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sharp": "^4.15.1",
     "gatsby-plugin-sitemap": "^5.16.0",
     "gatsby-plugin-styled-components": "^5.24.0",
@@ -41,6 +44,8 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-share": "^4.4.0",
+    "sass": "^1.55.0",
     "styled-components": "^5.3.6",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
