@@ -63,6 +63,10 @@ const Search = ({ props, siteTitle, location, allPosts, selectedCategory }) => {
           </svg>
         </button>
       </div>
+      <div className="p-2 text-xs text-right text-secondary">
+        총  <b>{searchState?.query ? searchedPosts.length : categorizedPosts?.length}</b>개의 게시글
+      </div>
+      
       {/* searched result */}
       {searchState?.query ? (
         <>
