@@ -9,7 +9,7 @@ const Education = () => {
             <span className="title-primary">Education.</span>
           </span>
         </h1>
-        <p>
+        {/* <p>
           <strong>2022.05 - </strong> 대출 비교 플랫폼,{' '}
           <a target="_blank" rel="noreferrer" href="https://finda.co.kr/">
             핀다
@@ -29,7 +29,7 @@ const Education = () => {
             인썸니아
           </a>{' '}
           (Fullstack, 프리랜서)
-        </p>
+        </p> */}
         <p>
           <strong>2018 - 2020</strong> 전국 코딩동아리{' '}
           <a target="_blank" rel="noreferrer" href="https://likelion.net/">
@@ -44,9 +44,9 @@ const Education = () => {
           </a>{' '}
           창의기술경영학과 (졸업)
         </p>
-        <p>
+        {/* <p>
           <strong>2013 - 2016</strong> 대전외국어고등학교 중국어학과 (졸업)
-        </p>
+        </p> */}
       </section>
     </>
   )
