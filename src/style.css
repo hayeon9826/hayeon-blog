@@ -60,7 +60,7 @@
   --color-text-black: black;
 }
 
-:root[data-theme='light'] {
+:root {
   --bg-color: #ffffff;
   --color-primary: #3d5afe;
   --color-shade: #011276;

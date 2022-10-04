@@ -24,7 +24,7 @@ const Category = ({ location, siteTitle }) => {
             categories?.map((category, id) => (
               <li className={`no-underline scroll-toggle__list-item ${currentCategory === category && 'active'}`} key={id}>
                   <Link to={`/?category=${category}`}>
-                    <div className="text-white font-semibold no-underline">{category}</div>
+                    <div className="font-semibold no-underline">{category}</div>
                   </Link>
               </li>
             ))}

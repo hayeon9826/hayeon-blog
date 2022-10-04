@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { getValue, setValue } from '../utils/storage'
+import React from 'react'
+import { getValue } from '../utils/storage'
 class Utterances extends React.Component {
   constructor(props) {
     super(props)

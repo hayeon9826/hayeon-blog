@@ -9,13 +9,14 @@ const PostsPage = ({ posts, category, siteTitle="Hayeon Dev Blog", location }) =
     loadMorePosts();
   });
   
-
   const loadMorePosts = useCallback(() => {
     setCount(v => {
       if (v + 1 <= posts.length) return v + 1;
-      else return v;
+      // else return v;
+      return v + 1
     });
-  }, [posts])
+  }, [posts, posts.length])
+
 
   if (posts.length === 0) {
     return <NoPostPage location={location} siteTitle={siteTitle} />
