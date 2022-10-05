@@ -750,6 +750,10 @@ ul {
   padding-inline-start: 1.7em;
 }
 
+li {
+  margin-bottom: 8px !important;
+}
+
 ul > li {
   padding-left: 0.1em;
 }
