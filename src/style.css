@@ -346,6 +346,10 @@ img {
   line-height: 20px;
 }
 
+.text-lg{
+  font-size: var(--fontSize-4);
+}
+
 .border-bottom {
   border-bottom: 0.1px solid var(--category-item-border);
   margin-bottom: var(--spacing-10);
@@ -385,6 +389,10 @@ img {
   margin-top: var(--spacing-8);
   padding: var(--spacing-2);
   cursor: pointer;
+}
+
+.mb-32{
+ margin-bottom: 64px;
 }
 
 .search-wrapper {
@@ -515,6 +523,16 @@ img {
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
+}
+
+.underline-blue-bold{
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.6rem;
+  text-underline-offset: -0.2em;
+  text-decoration-color: #8cb4ff;
+  text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
+  text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
 }
 
 .toggle-container {

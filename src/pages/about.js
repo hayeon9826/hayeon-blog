@@ -20,20 +20,13 @@ const AboutPage = ({ data, location }) => {
       <article className="page sans mb-32">
         <div className="page-body">
           <Header />
-          <hr />
           <Intro />
-          <hr />
-          <Skill />
-          <hr />
+          {/* <Skill /> */}
           <Work />
-          <hr />
-          <DevLife />
-          <hr />
+          {/* <DevLife /> */}
           <DevExperience />
-          <hr />
           <Education />
-          <hr />
-          <ToyProject />
+          {/* <ToyProject /> */}
         </div>
       </article>
     </Layout>

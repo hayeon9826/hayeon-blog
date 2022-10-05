@@ -3,9 +3,9 @@ import React from 'react'
 const ToyProject = () => {
   return (
     <>
-      <section className="about-toyprojects">
+      <section className="about-toyprojects mb-32">
         <h1>
-          <span style={{ borderBottom: '0.05em solid' }}>
+          <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
             <span className="title-primary">Toy Projects.</span>
           </span>
         </h1>

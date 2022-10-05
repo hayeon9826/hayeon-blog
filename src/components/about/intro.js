@@ -3,7 +3,7 @@ import React from 'react'
 const Intro = () => {
   return (
     <>
-      <section className="about-intro">
+      <section className="about-intro mb-32">
         <h1>
           <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
             <span>Introduction.</span>

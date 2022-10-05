@@ -3,9 +3,9 @@ import React from 'react'
 const Education = () => {
   return (
     <>
-      <section className="about-education">
+      <section className="about-education mb-32">
         <h1>
-          <span style={{ borderBottom: '0.05em solid' }}>
+          <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
             <span className="title-primary">Education.</span>
           </span>
         </h1>

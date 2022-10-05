@@ -2,9 +2,9 @@ import React from 'react'
 
 const Skill = () => {
   return (
-    <section className="about-skill">
+    <section className="about-skill mb-32">
       <h1>
-        <span style={{ borderBottom: '0.05em solid' }}>
+        <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
           <span className="title-primary">Skill.</span>
         </span>
       </h1>

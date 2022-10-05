@@ -4,9 +4,9 @@ import { StaticImage } from 'gatsby-plugin-image'
 const DevExperience = () => {
   return (
     <>
-      <section className="about-devexperience">
+      <section className="about-devexperience mb-32">
         <h1>
-          <span style={{ borderBottom: '0.05em solid' }}>
+          <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
             <span className="title-primary">Dev Experience.</span>
           </span>
         </h1>
