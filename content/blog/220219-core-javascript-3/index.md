@@ -2,7 +2,7 @@
 title: 코어 자바스크립트 정리 - 3. this
 date: '2022-02-19T22:45:32.169Z'
 description: 자바스크립트에서 this 란?
-category: 'Javascript'
+category: 'Books'
 image: 'https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg'
 ---
 

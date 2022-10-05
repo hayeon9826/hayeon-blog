@@ -2,7 +2,7 @@
 title: 자바스크립트 완벽 가이드 7장 요약 [배열]
 date: '2022-07-18T11:45:32.169Z'
 description: 본 게시글은 자바스크립트 완벽 가이드 7장(배열)을 정리 & 요약하는 글입니다.
-category: 'Javascript'
+category: 'Books'
 image: 'http://image.kyobobook.co.kr/images/book/xlarge/683/x9788966260683.jpg'
 ---
 

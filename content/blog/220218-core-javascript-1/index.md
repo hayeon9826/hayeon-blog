@@ -2,7 +2,7 @@
 title: 코어 자바스크립트 정리 - 1. 데이터 타입
 date: '2022-02-18T22:40:32.169Z'
 description: '[코어 자바스크립트] 1강 데이터 타입 정리'
-category: 'Javascript'
+category: 'Books'
 image: 'https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg'
 ---
 
