@@ -15,7 +15,7 @@ const PostsPage = ({ posts, category, siteTitle="Hayeon Dev Blog", location }) =
       // else return v;
       return v + 1
     });
-  }, [posts, posts.length])
+  }, [posts])
 
 
   if (posts.length === 0) {
