@@ -530,7 +530,7 @@ img {
   text-decoration-style: solid;
   text-decoration-thickness: 0.6rem;
   text-underline-offset: -0.2em;
-  text-decoration-color: #8cb4ff;
+  text-decoration-color: var(--color-category-border);
   text-decoration-skip-ink: none; /* works in Firefox & Chrome, not in Safari */
   text-decoration-skip: none; /* works in Safari, not in Firefox & Chrome */
 }
