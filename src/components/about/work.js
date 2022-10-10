@@ -72,6 +72,9 @@ const Work = () => {
             <span className="highlight-gray">2022.06 - 현재</span>
           </p>
           <ul className="bulleted-list">
+            <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
+          </ul>
+          <ul className="bulleted-list">
             <li>마케팅팀과 협업하여 후순위 담보 대출 인프로 페이지 작업 진행</li>
           </ul>
           <ul className="bulleted-list">
