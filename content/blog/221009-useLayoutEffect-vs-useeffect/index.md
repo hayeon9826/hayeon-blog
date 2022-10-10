@@ -12,9 +12,13 @@ ssr에서 useLayoutEffect를 사용하던 도중, 아래와 같은 에러가 발
 
 > Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded into the server renderer's output format. This will lead to a mismatch between the initial, non-hydrated UI and the intended UI. To avoid this, useLayoutEffect should only be used in components that render exclusively on the client. See https://reactjs.org/link/uselayouteffect-ssr for common fixes.
 
-`useLayoutEffect`는 서버 렌더러의 아웃풋으로 인코딩할 수 없으므로, 서버에서 아무 작업도 수행하지 못한다. 이로 인해 초기 hydration이 적용되지 않는 UI와 의도했던 UI가 일치하지 않게 된다. 따라서, 이 문제를 방지하려면 '클라이언트'에서 렌더링하는 컴포넌트에서만 `useLayoutEffect`를 사용해야 한다.
+직역하자면 아래와 같다:
 
-직역하자면 위 문단과 같다. 기본적으로 SSR에서는 자바스크립트가 로드되기 전까지 useLayoutEffect와 useEffect를 사용할 수 없다
+**"`useLayoutEffect`는 서버 렌더러의 아웃풋으로 인코딩할 수 없으므로, 서버에서 아무 작업도 수행하지 못한다. 이로 인해 초기 hydration이 적용되지 않는 UI와 의도했던 UI가 일치하지 않게 된다. 따라서, 이 문제를 방지하려면 '클라이언트'에서 렌더링하는 컴포넌트에서만 `useLayoutEffect`를 사용해야 한다."**
+
+기본적으로 SSR에서는 자바스크립트가 로드되기 전까지 useLayoutEffect와 useEffect를 사용할 수 없다. 따라서 Next.js와 같은 SSR 환경에서 useLayoutEffect를 사용하면 위와 같은 경고 문구가 발생한다.
+
+그렇다면 왜 useEffect에서는 해당 warning이 발생하지 않고, useLayoutEffect에서만 발생하는걸까? 두 개념의 차이점을 확인해보자.
 
 ## useLayoutEffect vs useEffect
 
