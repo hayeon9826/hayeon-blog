@@ -35,7 +35,7 @@ const Bio = () => {
         <p className="justify-center">
           <span>
             <strong className="author-badge">
-              <Link to="/about">@{author.name}</Link>
+              <Link to="/about?header=true">@{author.name}</Link>
             </strong>
             <br />
             <small className="text-gray font-semibold">{author?.summary || null}</small>
@@ -49,7 +49,7 @@ const Bio = () => {
             </a>
           </span>
           <span>
-            <Link className="about-text" to="/about">
+            <Link className="about-text" to="/about?header=true">
               about
             </Link>
           </span>

@@ -10,6 +10,7 @@ import Work from '../components/about/work'
 import DevExperience from '../components/about/devexperience'
 import Education from '../components/about/education'
 import ToyProject from '../components/about/toyproject'
+import OtherExperience from '../components/about/otherexperience'
 
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -19,14 +20,16 @@ const AboutPage = ({ data, location }) => {
       <Seo title="Hayeon Dev Blog | About" />
       <article className="page sans mb-32">
         <div className="page-body">
-          <Header />
+          <Header location={location} />
           <Intro />
-          {/* <Skill /> */}
+
           <Work />
           {/* <DevLife /> */}
           <DevExperience />
+          <ToyProject />
+          <OtherExperience />
+          <Skill />
           <Education />
-          {/* <ToyProject /> */}
         </div>
       </article>
     </Layout>

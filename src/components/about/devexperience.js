@@ -7,9 +7,69 @@ const DevExperience = () => {
       <section className="about-devexperience mb-32">
         <h1>
           <span className="title-primary" style={{ borderBottom: '0.05em solid' }}>
-            <span className="title-primary">Dev Experience.</span>
+            <span className="title-primary">Projects.</span>
           </span>
         </h1>
+        <div className="column-list">
+          <div style={{ width: '25%' }} className="column">
+            <h5>
+              <strong>핀다 (웹)앱</strong>
+            </h5>
+            <p>
+              <span className="title-primary_background">회사 프로젝트</span>
+            </p>
+            <p>2022.05 ~ </p>
+            <p></p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h4>프로젝트 소개</h4>
+            <ul className="bulleted-list">
+              <li>
+                핀다 웹{' '}
+                <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank">
+                  링크
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>대출 상품 검색, 인앱 약정 기능 작업</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>레거시 코드 리팩토링 작업</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div className="column-list">
+          <div style={{ width: '25%' }} className="column">
+            <h5>
+              <strong>핀다 웹사이트</strong>
+            </h5>
+            <p>
+              <span className="title-primary_background">회사 프로젝트</span>
+            </p>
+            <p>2022.05 ~ </p>
+            <p></p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h4>프로젝트 소개</h4>
+            <ul className="bulleted-list">
+              <li>
+                핀다 웹사이트{' '}
+                <a href="https://finda.co.kr/" target="_blank">
+                  링크
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>회사 소개 페이지, 채용 페이지, 대출 검색 페이지 작업</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>Frontend(Web) 팀원분들 및 타부서와 협업하여 작업</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
             <h5>

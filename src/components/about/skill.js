@@ -16,20 +16,20 @@ const Skill = () => {
           </ul>
           <h4>2. Framework / Library</h4>
           <ul className="bulleted-list">
-            <li>Next.js, Ruby on Rails, Framework7</li>
+            <li>Next.js, Ruby on Rails</li>
           </ul>
           <ul className="bulleted-list">
-            <li>React, Jquery, Bootstrap, Tailwind</li>
+            <li>React, Tailwind</li>
           </ul>
           <h4>3. Frontend Library</h4>
           <ul className="bulleted-list">
-            <li>Redux, MobX, Recoil</li>
-            <li>React-Query, RTK-Query</li>
+            <li>Redux, Recoil</li>
+            <li>React-Query</li>
             <li>TailwindCSS, Styled-Components</li>
           </ul>
         </div>
         <div style={{ width: '50%' }} className="column">
-          <h4>4. Environments</h4>
+          {/* <h4>4. Environments</h4>
           <ul className="bulleted-list">
             <li>
               AWS, MacOS
@@ -39,15 +39,15 @@ const Skill = () => {
                 </li>
               </ul>
             </li>
-          </ul>
-          <h4>5. DB</h4>
+          </ul> */}
+          <h4>4. DB</h4>
           <ul className="bulleted-list">
             <li>Postgres</li>
           </ul>
           <ul className="bulleted-list">
             <li>ORM: Prisma, ActiveRecord</li>
           </ul>
-          <h4>6. ETC</h4>
+          <h4>5. ETC</h4>
           <ul id="256e629f-a527-43b1-aac9-09ac9dcbe5a0" className="bulleted-list">
             <li>Yarn, Babel, Webpack</li>
             <li>Git / Github, Bitbucket</li>

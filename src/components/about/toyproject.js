@@ -11,7 +11,55 @@ const ToyProject = () => {
         </h1>
         <details>
           <summary>Toy Projects 상세 보기</summary>
-          <div className="column-list">
+          <div className="column-list mt-4">
+            <div style={{ width: '31.25%' }} className="column">
+              <p>
+                <strong>
+                  <strong>findaoverflow</strong>
+                </strong>
+              </p>
+              <p>2022.18</p>
+              <p>개인 토이 프로젝트</p>
+            </div>
+            <div style={{ width: '68.75%' }} className="column">
+              <ul className="bulleted-list">
+                <li>개인 토이 프로젝트 (본인 포함 2명의 개발자)</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>사용스택: React 18, Next.js, Typescript, Firestore(firebase), React-query, recoil, tailwindcss</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  구현 기능: Firestore를 이용한 데이터 생성/수정/삭제, Firebase Auth를 이용한 회원가입, Next/auth를
+                  이용한 인증 및 회원가입, react-hook-form을 이용한 게시글 폼 작업
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  깃헙링크:{' '}
+                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/findaoverflow">
+                    github.com/hayeon9826/findaoverflow
+                  </a>
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  실서버 링크:{' '}
+                  <a target="_blank" rel="noreferrer" href="https://findaoverflow.vercel.app/">
+                    findaoverflow.vercel.app
+                  </a>
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  <span className="highlight-gray">
+                    <strong>기여도 50%</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="column-list mt-4">
             <div style={{ width: '31.25%' }} className="column">
               <p>
                 <strong>
@@ -40,7 +88,7 @@ const ToyProject = () => {
                 <li>
                   깃헙링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/google-calendar">
-                    https://github.com/hayeon9826/google-calendar
+                    github.com/hayeon9826/google-calendar
                   </a>
                 </li>
               </ul>
@@ -48,7 +96,7 @@ const ToyProject = () => {
                 <li>
                   실서버 링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
-                    https://google-calendar-pearl.vercel.app/
+                    google-calendar-pearl.vercel.app/
                   </a>
                 </li>
               </ul>
@@ -81,7 +129,7 @@ const ToyProject = () => {
                 <li>
                   깃헙링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/tiltil-server">
-                    https://github.com/hayeon9826/tiltil-server
+                    github.com/hayeon9826/tiltil-server
                   </a>
                 </li>
               </ul>
@@ -123,7 +171,7 @@ const ToyProject = () => {
                 <li>
                   링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://beehigh.co.kr/">
-                    https://beehigh.co.kr/
+                    beehigh.co.kr/
                   </a>
                 </li>
               </ul>
@@ -205,7 +253,7 @@ const ToyProject = () => {
                 <li>
                   링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://justplay.co.kr/">
-                    https://justplay.co.kr/
+                    justplay.co.kr/
                   </a>
                 </li>
               </ul>
@@ -218,7 +266,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
                 <strong>모바일 장난감 커머스</strong>
@@ -247,7 +295,7 @@ const ToyProject = () => {
                 <li>
                   링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://play.google.com/store/apps/details?id=com.toyfix">
-                    https://play.google.com/store/apps/details?id=com.toyfix
+                   play.google.com/store/apps/details?id=com.toyfix
                   </a>
                 </li>
               </ul>
@@ -259,8 +307,8 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="column-list">
+          </div> */}
+          {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
                 <strong>코디 추천 서비스</strong>
@@ -296,7 +344,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
@@ -336,7 +384,7 @@ const ToyProject = () => {
                 <li>
                   링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://cofounder.co.kr/">
-                    https://cofounder.co.kr/
+                    cofounder.co.kr/
                   </a>
                 </li>
               </ul>
@@ -365,7 +413,7 @@ const ToyProject = () => {
                 <li>
                   링크:{' '}
                   <a target="_blank" rel="noreferrer" href="https://cacers.com/">
-                    https://cacers.com/
+                    cacers.com/
                   </a>
                 </li>
               </ul>
@@ -373,7 +421,7 @@ const ToyProject = () => {
                 <li>
                   깃헙:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/blend_app">
-                    https://github.com/hayeon9826/
+                    github.com/hayeon9826/
                   </a>
                   cac-web
                 </li>
@@ -387,7 +435,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
                 <a target="_blank" rel="noreferrer" href="http://blend2020.herokuapp.com">
@@ -418,7 +466,7 @@ const ToyProject = () => {
                 <li>
                   깃헙:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/blend_app">
-                    https://github.com/hayeon9826/blend_app
+                    github.com/hayeon9826/blend_app
                   </a>
                 </li>
               </ul>
@@ -430,7 +478,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
@@ -459,7 +507,7 @@ const ToyProject = () => {
                   사이트:{' '}
                   <span className="highlight-gray">
                     <a target="_blank" rel="noreferrer" href="https://asianalyse.com/">
-                      https://asianalyse.com
+                      asianalyse.com
                     </a>
                   </span>
                 </li>
@@ -468,7 +516,7 @@ const ToyProject = () => {
                 <li>
                   깃헙:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/asian-analyse">
-                    https://github.com/hayeon9826/asian-analyse
+                    github.com/hayeon9826/asian-analyse
                   </a>
                 </li>
               </ul>
@@ -481,7 +529,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
                 <a target="_blank" rel="noreferrer" href="http://wheeling.herokuapp.com">
@@ -524,7 +572,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </details>
       </section>
     </>
