@@ -154,7 +154,7 @@ Signature은 **헤더(Header)와 페이로드(Payload)**의 값을 각각 BASE64
 
 사용자가 로그인을 하면, 서버에서 해당 계정 정보를 확인해서 유효시간이 있는 JWT 토큰을 발급한다. 해당 사용자는 유효시간이 끝날 때 까지, 인증이 필요한 요청마다 해당 JWT 토큰을 http 헤더에 넣어 서버에 요청을 한다. 서버에서는 해당 JWT 토큰이 유효한지 확인하고 사용자 정보를 전달한다.
 
-![jwt login](https://auth0.com/learn/wp-content/uploads/2016/01/17.png)
+![jwt login](https://velog.velcdn.com/images/khy226/post/4b2760c2-0f7f-4f87-871e-ab1501c1d904/image.png)
 
 > 이미지 출처: [Get Started with JSON Web Tokens](https://auth0.com/learn/json-web-tokens/)
 
