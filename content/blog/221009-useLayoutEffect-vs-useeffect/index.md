@@ -192,6 +192,24 @@ function Child(props) {
 }
 ```
 
+<br />
+
+## TL;DR
+
+- `useEffect는` DOM의 레이아웃 렌더(render)와 페인트(paint)가 끝난 후에야 호출되는 이펙트 함수이다.
+  따라서, `useEffect`는 상태값이 이펙트에 의존할 경우 화면이 깜박이는 현상을 겪을 수 있어 사용성을 해칠 수 있다.
+- `useLayoutEffect`는 위에 설명한 useEffect의 문제를 해결하기 위해서 등장한 훅이다.
+- `useLayoutEffect`는 DOM의 페인트(paint) 단계 이전에 실행되기 때문에, DOM을 조작하는 코드가 있어도 깜빡이는 현상을 내지 않는다.
+- 주의해야할 점은, `useLayoutEffect`를 SSR 환경에서 사용하면 warning 문구가 뜬다. (WARNING: 클라이언트에서 렌더링하는 컴포넌트에서만 useLayoutEffect를 사용해라..)
+- `useLayoutEffect`는 useEffect와 달리, 모든 DOM 효과들이 실행된 이후에 동기적으로 실행되고, 작업이 완료되면 브라우저 페인팅이 시작된다. 또한, useLayouteffect는 componentDidMount와 componentDidUpdate 시점에 실행되어 리액트의 생명 주기와도 크게 관련이 있기 때문에 (useLayoutEffect만!) 경고 문구가 뜬다.
+- 위 경고 문구를 해결하기 위해선, useLayoutEffect를 `useEffect`로 변경하거나, useLayoutEffect로 컴포넌트를 지연시켜(lazyily show) 나타내면 된다.
+
+<br />
+
+---
+
+<br />
+
 ## 참고
 
 > - [SSR에서 useLayoutEffect 사용하기](https://brunch.co.kr/@devapril/47)
