@@ -1,5 +1,5 @@
 ---
-title: SSR에서는 UseLayoutEffect 대신 useEffect를 사용하자!
+title: Firestore 데이터 관리 방법 알아보기
 date: '2022-10-14T11:45:32.169Z'
 description: 'Firestore에 데이터 저장 / 수정 / 삭제 가져오기 예제 배워보기'
 category: 'React'
