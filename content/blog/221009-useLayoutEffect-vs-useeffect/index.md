@@ -212,6 +212,7 @@ function Child(props) {
 
 ## 참고
 
+> - [What is useLayoutEffect Hook & how it compares to useEffect?](https://javascript.works-hub.com/learn/what-is-uselayouteffect-hook-and-how-it-compares-to-useeffect-b0f0f)
 > - [SSR에서 useLayoutEffect 사용하기](https://brunch.co.kr/@devapril/47)
 > - [uselayouteffect-ssr.md](https://gist.github.com/gaearon/e7d97cdf38a2907924ea12e4ebdf3c85)
 > - [useLayoutEffect 훅에 대하여](https://merrily-code.tistory.com/46)
