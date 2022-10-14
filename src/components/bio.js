@@ -38,20 +38,19 @@ const Bio = () => {
               <Link to="/about?header=true">@{author.name}</Link>
             </strong>
             <br />
-            <small className="text-gray font-semibold">{author?.summary || null}</small>
-            <br />
-            <a className="link-small" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">
+            <p className="text-gray mt-2">{author?.summary || null}</p>
+            <span>
+              <Link className="link-small me-2" to="/about?header=true">
+                About
+              </Link>
+            </span>
+            <a className="link-small me-2" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">
               Github
             </a>
             {` `}
             <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
               Linkedin
             </a>
-          </span>
-          <span>
-            <Link className="about-text" to="/about?header=true">
-              about
-            </Link>
           </span>
         </p>
       )}

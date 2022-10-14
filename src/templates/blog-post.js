@@ -24,9 +24,10 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
-        title={post?.frontmatter?.title}
+        title={`Hayeon Dev Blog | ${post?.frontmatter?.title}`}
         description={post.frontmatter.description || post.excerpt}
         image={post?.frontmatter?.image}
+        keywords={post?.frontmatter?.keywords || '프론트엔드, 기술 블로그, FE, 개발자, React, Next.js'}
       />
       <article className="blog-post" itemScope itemType="http://schema.org/Article">
         <header className="border-bottom">
@@ -96,6 +97,7 @@ export const pageQuery = graphql`
         date(formatString: "YYYY-MM-DD")
         description
         image
+        keywords
       }
       fields {
         slug

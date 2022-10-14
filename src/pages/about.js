@@ -17,7 +17,11 @@ const AboutPage = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Hayeon Dev Blog | About" />
+      <Seo
+        title="Hayeon Dev Blog | 김하연 이력서"
+        description={'2년차 프론트엔드 개발자 김하연 이력서'}
+        keywords={'프론트엔드, 기술 블로그, FE, 개발자, React, Next.js'}
+      />
       <article className="page sans mb-32">
         <div className="page-body">
           <Header location={location} />

@@ -56,7 +56,6 @@
   --fontSize-4: 1.728rem;
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
-  --fontSize-7: 2.986rem;
   --color-text-black: black;
 }
 
@@ -111,6 +110,20 @@
   font-family: var(--font-body) !important;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+  /* mobile ~ screen smaller than 992px */
+  :root {
+    --fontSize-root: 16px;
+    --fontSize-0: 0.875rem;
+    --fontSize-1: 1rem;
+    --fontSize-2: 1.1rem;
+    --fontSize-3: 1.2rem;
+    --fontSize-4: 1.25rem;
+    --fontSize-5: 1.75rem;
+    --fontSize-6: 2.25rem;
+  }
+}
+
 html {
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
@@ -148,7 +161,7 @@ h6 {
   font-family: var(--font-heading);
   margin-top: var(--spacing-8);
   margin-bottom: var(--spacing-6);
-  line-height: var(--lineHeight-tight);
+  line-height: var(--lineHeight-normal);
   letter-spacing: -0.025em;
 }
 
@@ -209,6 +222,9 @@ p {
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: var(--fontSize-0) !important;
 }
 
 ul,
@@ -288,6 +304,7 @@ th {
 
 a {
   color: var(--color-accent);
+  line-height: var(--lineHeight-normal);
 }
 
 a:hover,
@@ -309,7 +326,7 @@ img {
 .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-24) var(--spacing-5);
+  padding: var(--spacing-24) var(--spacing-4);
   position: relative;
 }
 
@@ -382,7 +399,7 @@ img {
 
 .about-text {
   color: var(--color-primary);
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-0);
   font-weight: var(--fontWeight-bold);
 }
 
@@ -937,11 +954,6 @@ input[type='checkbox'] {
   transform: scale(1.5);
   margin-right: 0.6em;
   vertical-align: middle;
-}
-
-p {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 .image {

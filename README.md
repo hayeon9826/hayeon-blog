@@ -29,17 +29,17 @@ _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 - [x] 검색 기능 추가
 - [x] 조회수 추가
 - [x] infinite scroll 기능 추가
+- [x] 리로드시 css 파일 delay 문제 해결
 
 ## 🔥 해야할 것
 
-- [ ] 리로드시 css 파일 delay 문제 해결
-- [ ] 구글 애드센스 적용
-- [ ] ReadME 업데이트
-- [ ] image zoom 작업
+- [ ] SEO 최적화 (키워드 적용)
+- [ ] 좋아요 기능
 - [ ] sns 공유 기능
+- [ ] 구글 애드센스 적용
 
 #### 참고 사이트
 
 - 검색기능: https://aboutmonica.com/blog/create-gatsby-blog-search-tutorial/
 - 검색기능2: https://yohanpro.com/posts/gatsby-search
-- 무한 스크롤: https://woong-jae.com/gatsby/210824-infinite-scroll 
+- 무한 스크롤: https://woong-jae.com/gatsby/210824-infinite-scroll

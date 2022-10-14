@@ -15,7 +15,11 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="Hayeon Dev Blog | Posts" />
+      <Seo
+        title="Hayeon Dev Blog | Posts"
+        description={'프론트엔드 기술 블로그'}
+        keywords={'프론트엔드, 기술 블로그, FE, 개발자, React, Next.js'}
+      />
       <Bio />
       <Category location={location} />
       {/* search bar & searched posts */}

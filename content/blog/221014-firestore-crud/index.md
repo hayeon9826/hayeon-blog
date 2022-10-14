@@ -1,8 +1,9 @@
 ---
-title: Firestore를 이용한 데이터 관리 방법 알아보기
+title: Firestore 데이터 관리 방법 알아보기
 date: '2022-10-14T11:45:32.169Z'
 description: 'Firestore 데이터 저장 / 수정 / 삭제 가져오기 예제 정리'
 category: 'React'
+keywords: 'Firebase, Firestore, NoSQL'
 image: 'https://velog.velcdn.com/images/khy226/post/930f050d-6e88-4b6c-b031-dbf798a78fb2/image.png'
 ---
 
