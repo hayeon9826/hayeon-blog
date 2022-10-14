@@ -122,6 +122,10 @@
     --fontSize-5: 1.75rem;
     --fontSize-6: 2.25rem;
   }
+
+  .bio-author {
+    font-size: var(--fontSize-0);
+  }
 }
 
 html {
@@ -224,7 +228,7 @@ p {
   padding: var(--spacing-0);
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  font-size: var(--fontSize-0) !important;
+  font-size: var(--fontSize-1);
 }
 
 ul,
@@ -363,12 +367,12 @@ img {
 }
 
 .text-xs {
-  font-size: var(--fontSize-xs);
+  font-size: var(--fontSize-xs) !important;
   line-height: 20px;
 }
 
 .text-sm {
-  font-size: var(--fontSize-sm);
+  font-size: var(--fontSize-sm) !important;
   line-height: 20px;
 }
 
@@ -658,14 +662,14 @@ button.button-outline {
 button.button-outline a {
   text-decoration: none !important;
   font-weight: var(--fontWeight-semibold);
-  font-size: var(--fontSize-1);
+  /* font-size: var(--fontSize-1); */
   color: var(--color-primary);
 }
 
 button a {
   text-decoration: none !important;
   font-weight: var(--fontWeight-semibold);
-  font-size: var(--fontSize-1);
+  /* font-size: var(--fontSize-1); */
   color: white;
 }
 

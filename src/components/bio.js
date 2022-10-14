@@ -38,7 +38,7 @@ const Bio = () => {
               <Link to="/about?header=true">@{author.name}</Link>
             </strong>
             <br />
-            <p className="text-gray mt-2">{author?.summary || null}</p>
+            <p className="text-gray mt-2 bio-author">{author?.summary || null}</p>
             <span>
               <Link className="link-small me-2" to="/about?header=true">
                 About

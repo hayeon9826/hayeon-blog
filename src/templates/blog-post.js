@@ -4,8 +4,10 @@ import Bio from '../components/bio'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
 import CommentPage from '../components/comments'
+import { ShareButtons } from '../components/shareButton'
 
 const BlogPostTemplate = ({ data, location }) => {
+  const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.gatsbyjs.io'
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const siteUrl = data.site.siteMetadata?.siteUrl
@@ -40,40 +42,45 @@ const BlogPostTemplate = ({ data, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
+        <br />
+        <ShareButtons
+          url={url}
+          title={post.frontmatter.title?.replace(/\s/g, '-')}
+          description={post.frontmatter.description?.replace(/\s/g, '-')}
+        />
         <hr />
-        <CommentPage />
-        <hr />
-        <footer>
+        <footer className="mb-5">
           <Bio />
+          <nav className="blog-post-nav">
+            <div
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              {previous && (
+                <button className="button-primary text-sm">
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                </button>
+              )}
+
+              {next && (
+                <button className="button-primary text-sm">
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                </button>
+              )}
+            </div>
+          </nav>
         </footer>
       </article>
-      <nav className="blog-post-nav">
-        <div
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          {previous && (
-            <button className="button-outline">
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            </button>
-          )}
-
-          {next && (
-            <button className="button-outline">
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            </button>
-          )}
-        </div>
-      </nav>
+      <CommentPage />
     </Layout>
   )
 }
