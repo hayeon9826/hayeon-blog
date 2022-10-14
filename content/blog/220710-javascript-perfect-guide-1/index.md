@@ -3,6 +3,7 @@ title: 자바스크립트 완벽 가이드 1장, 2장 요약
 date: '2022-07-10T10:45:32.169Z'
 description: 본 게시글은 자바스크립트 완벽 가이드를 정리 & 요약하는 글입니다.
 category: 'Books'
+keywords: '자바스크립트 완벽 가이드, javascript'
 image: 'http://image.kyobobook.co.kr/images/book/xlarge/683/x9788966260683.jpg'
 ---
 

@@ -3,6 +3,7 @@ title: 2022 프론트엔드 취준 기록
 date: '2022-06-10T22:45:32.169Z'
 description: 3개월 간의 취준을 마치며
 category: 'Career'
+keywords: '취준, 프론트엔드, 프론트엔드 개발자, 이력서, 커리어'
 image: 'https://user-images.githubusercontent.com/38210233/172988143-625a9b4a-a104-427d-a3d4-8548a37041f9.png'
 ---
 

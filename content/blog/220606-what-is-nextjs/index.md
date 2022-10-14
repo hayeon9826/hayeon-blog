@@ -3,6 +3,7 @@ title: Next.js 란?
 date: '2022-06-06T22:45:32.169Z'
 description: SSR를 가능하게 해주는 프레임워크!
 category: 'React'
+keywords: 'next.js, react, SSR'
 image: 'https://velog.velcdn.com/images/khy226/post/814c11ee-0626-4947-90a2-3be78a1bb92d/image.jpeg'
 ---
 

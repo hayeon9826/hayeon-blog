@@ -3,6 +3,7 @@ title: '[개발 기초] Web 이란?'
 date: '2022-07-01T22:45:32.169Z'
 description: 'Web 이란?'
 category: 'Development'
+keywords: '웹, web'
 image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80'
 ---
 
@@ -11,8 +12,8 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 ## 01 클라이언트 & 서버
 
 - 클라이언트와 서버를 실생활 예시로 들자면, 레스토랑에서 손님으로서 주문을 하는 상황을 들 수 있다.
-- 이때 주문(=요청) 을 하는 손님을 클라이언트라고 한다. 요청을 받아서 주문에 맞게 음식을 내어주는 사람은  종업원 (server)이다. 이 역할을 담당하는 부분을 서버라고 한다.
-- **서버는 특정 서비스를 제공하는 ‘서비스 제공자’의 역할을 하고 클라이언트는 서비스를 요청하는 ‘서비스  요청자’의 역할이다**.
+- 이때 주문(=요청) 을 하는 손님을 클라이언트라고 한다. 요청을 받아서 주문에 맞게 음식을 내어주는 사람은 종업원 (server)이다. 이 역할을 담당하는 부분을 서버라고 한다.
+- **서버는 특정 서비스를 제공하는 ‘서비스 제공자’의 역할을 하고 클라이언트는 서비스를 요청하는 ‘서비스 요청자’의 역할이다**.
 - 이처럼 **클라이언트와 서버는 서로 정보를 주고받는 관계이다.**
 
 > 출처: [https://www.mobiinside.co.kr/2022/03/22/client-server/](https://www.mobiinside.co.kr/2022/03/22/client-server/)
@@ -28,12 +29,11 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 - 예를 들어 내가 노트북으로 네이버에 접속한다고 했을 때, 노트북이 클라이언트가 되는 것이고, 스마트폰으로 접속을 한다면 스마트폰이 클라이언트가 된다.
 - 조금 더 정확히 말하자면 내가 사용하는 **기기 내의 ‘웹 브라우저’ 또한 클라이언트이다.** 단지 노트북이 있다 해도 노트북 그 자체로 구글 페이지에 접속할 수는 없기때문.
 - 우리는 웹브라우저를 통해 웹사이트에 접속을 하는데, **웹 브라우저란 쉽게 말해 인터넷에 접속하기 위한 소프트웨어이다.** 웹 브라우저가 우리의 요청을 서버에게 보내고, 서버로 받은 응답 정보를 다시 우리 화면에 보여주는 일을 한다.
-    - 예를 들어, 우리가 흔히 사용하고 있는 **크롬, 사파리, 엣지(IE), 파이어 폭스** 등이 있다.
+  - 예를 들어, 우리가 흔히 사용하고 있는 **크롬, 사파리, 엣지(IE), 파이어 폭스** 등이 있다.
 
 정리하자면 클라이언트가 정확히 의미하는 것은 ‘사용자가 사용하는 기기의 웹 브라우저’ 이다. 하지만 통상적으로 사용자가 사용하는 기기를 가리켜 클라이언트라고 하기도 하고, 사용자 자체를 클라이언트라고 부르기도 한다.
 
 <br />
-
 
 ### 서버:
 
@@ -51,6 +51,7 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 ## 02 웹 (웹과 API 서버 통신 / 반응형 웹, 인터렉티브 웹)
 
 ### 웹:
+
 - 인터넷 브라우저에서 주소를 칠 때 www를 자주 보았을 것이다. 이는 ‘월드 와이드 웹'의 줄임말이다.
 - 월드 와이드 웹(World Wide Web)이란 **인터넷에 연결된 사용자들이 서로의 정보를 공유할 수 있는 공간**을 의미한다.
 - 간단히 줄여서 WWW나 W3라고도 부르며, 간단히 웹(Web)이라고 가장 많이 불린다.
@@ -59,7 +60,6 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 - 웹은 인터넷과 같은 의미로 많이 사용되고 있지만, 정확히 말해 웹은 인터넷상의 인기 있는 하나의 서비스일 뿐이다. 하지만 현재에는 인터넷과 웹이라는 단어가 서로 혼용되어 사용될 만큼 인터넷의 가장 큰 부분을 차지하고 있다.
 
 <br />
-
 
 ### 웹의 발전
 
@@ -83,7 +83,6 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 
 ### API:
 
-
 ![api example](https://velog.velcdn.com/images/khy226/post/71443628-ac35-4174-a051-25523fb8eb1d/image.png)
 
 <Br />
@@ -91,15 +90,14 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 - API(Application Programming Interface, 응용 프로그램 프로그래밍 인터페이스)는 응용 프로그램에서 사용할 수 있도록, 운영 체제나 프로그래밍 언어가 제공하는 기능을 제어할 수 있게 만든 인터페이스를 뜻한다. (위키백과)
 - 사전적 정의로만 보면 이게 뭐지? 싶다. 쉽게 설명하면 “**API는 프로그램들이 서로 상호작용하는 것을 도와주는 매개체”** 라고 할 수 있다. 예를 들어, API를 통해 여행서비스 사이트와 항공예매 정보를 연결해줄 수 있다. Slack에 Google 캘린더를 연동시키거나, TADA앱에서 네이버 지도를 띄울 때도 API를 사용하고 있다. 즉, API는 애플리케이션을 서로 연결해서 통신할 수 있게 해주는 매개체이다.
 - 여러 기업들 및 공공기관에서는 오픈 API를 제공하고 있다. 개인 개발자들에게는 일정 호출 수 까지는 무료로 API를 사용할 수 있도록 무료로 제공하고 있다. 대표적으로 카카오, 네이버, 구글과 같은 기업들과 공공데이터포털에서 무료 OPEN API를 사용할 수 있다
-    - 카카오 개발자 센터: [https://developers.kakao.com/](https://developers.kakao.com/)
-    - 네이버 개발자 센터: [https://developers.naver.com](https://developers.naver.com/main/)
-    - 구글 개발자 센터: [https://developers.google.com/](https://developers.google.com/)
-    - 공공 데이터 포털: [https://www.data.go.kr/index.do](https://www.data.go.kr/index.do)
+  - 카카오 개발자 센터: [https://developers.kakao.com/](https://developers.kakao.com/)
+  - 네이버 개발자 센터: [https://developers.naver.com](https://developers.naver.com/main/)
+  - 구글 개발자 센터: [https://developers.google.com/](https://developers.google.com/)
+  - 공공 데이터 포털: [https://www.data.go.kr/index.do](https://www.data.go.kr/index.do)
 
 > 출처: [https://brunch.co.kr/@operator/65](https://brunch.co.kr/@operator/65)
 
 <br />
-
 
 ### **정적 웹 페이지(Static Web Page):**
 
@@ -137,7 +135,7 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 ### 크로스 브라우징:
 
 - 인터넷 익스플로러, 구글 크롬, 애플 사파리 등 정말 다양한 브라우저가 존재합니다. 그리고 브라우저마다 브라우저 렌더링을 하는 `렌더링 엔진` 이 다릅니다. 그래서 동일한 HTML, CSS라도 렌더링 엔진에 따라 조금씩 다르게 보일 수 있습니다.
-- `크로스 브라우징` 은 브라우저의 종류에 상관없이 똑같이 웹을 보여주려는 시도를 뜻합니다.** 프론트엔드 개발자가 짠 웹 코드가 브라우저에 상관없이 동일하게 화면을 보여줘야 고객들이 편하게 사용할 수 있겠죠?
+- `크로스 브라우징` 은 브라우저의 종류에 상관없이 똑같이 웹을 보여주려는 시도를 뜻합니다.\*\* 프론트엔드 개발자가 짠 웹 코드가 브라우저에 상관없이 동일하게 화면을 보여줘야 고객들이 편하게 사용할 수 있겠죠?
 - `크로스 브라우징 테스트`는 프론트엔드 개발자가 웹을 개발한 후 브라우저마다 웹이 잘 보여지는지 확인하는 행위를 의미합니다. 모든 브라우저를 설치해서 테스트할 수는 없기 때문에 이 테스트를 지원해주는 서비스들이 존재합니다. 대표적으로 [LambdaTest](https://www.lambdatest.com/) , 자동화 테스트를 제공하는 [Selenium](https://www.selenium.dev/) 등이 있어요.
 
 출처: [https://www.grabbing.me/3a44d95ce316417ab182370d09fd2bfe#874c8c08f7b14bf69e0c64f174dadd3d](https://www.grabbing.me/3a44d95ce316417ab182370d09fd2bfe#874c8c08f7b14bf69e0c64f174dadd3d)
@@ -158,12 +156,11 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 
 ### HTTPS:
 
-
 ![https example](https://velog.velcdn.com/images/khy226/post/d9e2a4ab-d68b-4208-b774-8158e2515bc8/image.png)
 
 <br />
 
-- HTTP는 굉장히 유용한 프로토콜이지만 네트워크 통신 과정에서 보안에 취약하다는 약점이 있다.  HTTPS는 HTTP가 가진 보안 취약점을 암호화 및 인증 구조를 통해 개선하기 위해 만들어졌다. *(보안 소켓 레이어(SSL, Secure Socket Layer) 개념을 덧붙인 것.)*
+- HTTP는 굉장히 유용한 프로토콜이지만 네트워크 통신 과정에서 보안에 취약하다는 약점이 있다. HTTPS는 HTTP가 가진 보안 취약점을 암호화 및 인증 구조를 통해 개선하기 위해 만들어졌다. *(보안 소켓 레이어(SSL, Secure Socket Layer) 개념을 덧붙인 것.)*
 - 대부분의 웹 사이트에서는 HTTP 프로토콜을 막고 HTTPS 프로토콜을 사용하게 권장한다.
 
 > 출처: [https://www.inflearn.com/pages/weekly-inflearn-12](https://www.inflearn.com/pages/weekly-inflearn-12)
@@ -191,6 +188,7 @@ image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.
 <br />
 
 ---
+
 ## 출처:
 
 > - [[알아두면 쓸데있는 IT지식] 클라이언트와 서버의 통신](https://www.mobiinside.co.kr/2022/03/22/client-server/)

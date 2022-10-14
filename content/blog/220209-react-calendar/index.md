@@ -3,6 +3,7 @@ title: 리액트 앱에 달력(react-calendar) 적용하기
 date: '2022-02-09T22:40:32.169Z'
 description: react-calendar 라이브러리로 react 앱에 달력을 적용하는 방법
 category: 'React'
+keywords: 'react, react-calendar, 라이브러리, 리액트'
 image: 'https://velog.velcdn.com/images/khy226/post/4c39a549-3c18-4ebe-9664-d5213cb3deef/68747470733a2f2f70726f6a656374732e776f6a74656b6d616a2e706c2f72656163742d63616c656e6461722f72656163742d63616c656e6461722e6a7067.jpeg'
 ---
 

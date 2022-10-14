@@ -3,6 +3,7 @@ title: SSR에서는 UseLayoutEffect 대신 useEffect를 사용하자!
 date: '2022-10-09T11:45:32.169Z'
 description: 'Warning: useLayoutEffect does nothing on the server, because its effect cannot be encoded...'
 category: 'React'
+keywords: 'useLayoutEffect, useEffect, SSR, Next.js'
 image: 'https://velog.velcdn.com/images/khy226/post/b8f38c4f-b698-4a04-9f76-608cd7fda15b/image.png'
 ---
 

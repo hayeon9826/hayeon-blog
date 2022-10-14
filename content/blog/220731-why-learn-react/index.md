@@ -3,6 +3,7 @@ title: 왜 리액트를 배워야 할까?
 date: '2022-07-31T11:45:32.169Z'
 description: 수많은 프론트엔드 기술중에 왜 하필 리액트를 배워야하는지에 대해서 간단히 알아보려고 한다.
 category: 'React'
+keywords: 'react, 리액트'
 image: 'https://velog.velcdn.com/images/khy226/post/a43a882d-ebe3-4770-9d91-f59def45ae1d/image.png'
 ---
 

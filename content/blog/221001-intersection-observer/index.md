@@ -3,6 +3,7 @@ title: 'Intersection Observer란? (feat: 무한 스크롤 만들기)'
 date: '2022-10-01T11:45:32.169Z'
 description: Intersection Observer를 이용해서 무한 스크롤을 만들어보자
 category: 'Javascript'
+keywords: 'Intersection Observer, 무한 스크롤, infinite scroll'
 image: 'https://velog.velcdn.com/images/khy226/post/2fd1db86-796e-4fdf-97d7-556afcc03e7c/image.png'
 ---
 

@@ -3,6 +3,7 @@ title: useEffect 완벽 가이드 요약
 date: '2022-06-29T22:45:32.169Z'
 description: 본 게시글은 useEffect 완벽 가이드를 정리 & 요약하는 글입니다.
 category: 'React'
+keywords: 'useEffect, react, 훅'
 image: 'https://velog.velcdn.com/images/khy226/post/69c95fd5-5f8d-4008-979b-8c5f3dfdc10e/image.png'
 ---
 

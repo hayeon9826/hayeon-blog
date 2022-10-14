@@ -3,6 +3,7 @@ title: MobX 훑어보기
 date: '2022-06-01T22:45:32.169Z'
 description: 상태관리 라이브러리, MobX 개념 알아보기
 category: 'React'
+keywords: 'react, MobX, 몹엑스, 상태관리'
 image: 'https://velog.velcdn.com/images/khy226/post/2e1f3cef-4882-4fca-ba2e-6c26a2791534/image.png'
 ---
 

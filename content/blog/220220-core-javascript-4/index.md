@@ -3,6 +3,7 @@ title: 코어 자바스크립트 정리 - 4. 콜백함수
 date: '2022-02-20T22:45:32.169Z'
 description: '콜백함수: 다른 코드의 인자로 넘겨주는 함수'
 category: 'Books'
+keywords: '코어 자바스크립트, 콜백, callback'
 image: 'https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg'
 ---
 
@@ -83,7 +84,6 @@ callback: function(currentValue, index, array)
 setTimeout(function () {
   console.log(this)
 }, 300) // (1) Window { ... }
-
 ;[1, 2, 3, 4, 5].forEach(function (x) {
   console.log(this) // (2) Window { ... }
 })

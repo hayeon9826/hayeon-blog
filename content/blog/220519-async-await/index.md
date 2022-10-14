@@ -3,6 +3,7 @@ title: 동기, 비동기란? (+Promise, async/await 개념)
 date: '2022-05-19T22:45:32.169Z'
 description: 동기는 '직렬적'으로 작동하는 방식이고 비동기는 '병렬적'으로 작동하는 방식이다.
 category: 'Javascript'
+keywords: 'async, await, 동기, 비동기'
 image: 'https://velog.velcdn.com/images/khy226/post/61d1e8ab-9b46-448c-9354-fd0a4e329bb0/image.png'
 ---
 
@@ -39,7 +40,6 @@ image: 'https://velog.velcdn.com/images/khy226/post/61d1e8ab-9b46-448c-9354-fd0a
 
  <img src="https://velog.velcdn.com/images/khy226/post/9c7c7c63-30c9-4360-b64b-138fbf276e50/image.png" style="max-width: 600px; background: white;"/>
  <small>이미지 출처: [비동기식 처리 모델(Asynchronous processing model)](https://poiemaweb.com/es6-promise)</small>
-
 
 - 하지만 비동기 처리를 위해 콜백 패턴을 사용하면 처리 순서를 보장하기 위해 여러 개의 콜백 함수가 중첩되어 복잡도가 높아지는 **콜백 헬(Callback Hell)** 이 발생하는 단점이 있다.
 - 콜백 헬은 가독성을 나쁘게 하며 실수를 유발하는 원인이 된다. 아래는 콜백 헬이 발생하는 전형적인 사례이다.

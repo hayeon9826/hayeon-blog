@@ -3,6 +3,7 @@ title: Next.js Router 정리
 date: '2022-02-18T22:45:32.169Z'
 description: Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이 많은 것 같아 자주 사용하는 메서드를 정리해보았습니다.
 category: 'React'
+keywords: 'next.js, router, 라우터'
 image: 'https://velog.velcdn.com/images/khy226/post/fabead09-b8b2-4569-9f97-2e0d0b368ec3/next.png'
 ---
 
@@ -14,7 +15,6 @@ Next.js 라우터 사용시 정확한 정의를 모르고 사용하는 부분이
 또한, next.js에서 왜 `<Link>` 태그를 사용하는지에 대해서도 정리해보았습니다.
 
 <hr />
-
 
 ### Next/Router
 
@@ -148,7 +148,6 @@ Next.js에서는 a tag 대신, `<Link>` 컴포넌트를 사용해 a tag를 감�
 
 ```jsx
 import Link from 'next/link'
-
 ;<h1 className="title">
   Read{' '}
   <Link href="/posts/first-post">

@@ -3,6 +3,7 @@ title: 코어 자바스크립트 정리 - 2. 실행 컨텍스트
 date: '2022-02-19T22:40:32.169Z'
 description: '실행 컨텍스트(execution context): 실행할 코드에 제공할 환경 정보들을 모아놓은 객체'
 category: 'Books'
+keywords: '코어 자바스크립트, 실행 컨텍스트'
 image: 'https://velog.velcdn.com/images/khy226/post/f3aebb1f-455b-481a-b690-f8aaa467517d/316439749g.jpeg'
 ---
 

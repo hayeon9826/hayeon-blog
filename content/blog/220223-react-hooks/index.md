@@ -3,6 +3,7 @@ title: 자주 사용하는 React Hook 알아보기
 date: '2022-02-23T22:45:32.169Z'
 description: 'React Hook 이란? 🧐 Hook React 버전 16.8부터 React 요소로 새로 추가된 기능이다. 함수형 컴포넌트에서도 클래스형 컴포넌트의 기능을 사용할 수 있게 하는 몇 가지 기술을 Hook 이라고 부른다.'
 category: 'React'
+keywords: 'React, React hook, 리액트, 리액트 훅'
 image: 'https://velog.velcdn.com/images/khy226/post/8b67ffd0-1c77-48d5-bf4c-f563d3f7a49e/img.png'
 ---
 
