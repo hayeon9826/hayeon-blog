@@ -12,15 +12,17 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const siteUrl = data.site.siteMetadata?.siteUrl
   const { previous, next } = data
-  const [viewCount, setViewCount] = useState()
+  const [viewCount, setViewCount] = useState(0)
 
   useEffect(() => {
     const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '')
     const key = post?.fields?.slug.replace(/\//g, '')
-    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`).then(async result => {
-      const data = await result.json()
-      setViewCount(data.value)
-    })
+    if (!url.includes('localhost')) {
+      fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`).then(async result => {
+        const data = await result.json()
+        setViewCount(data.value)
+      })
+    }
   }, [siteUrl, post?.fields?.slug])
 
   return (
@@ -40,6 +42,11 @@ const BlogPostTemplate = ({ data, location }) => {
               {`  `} {viewCount} views
             </span>
           </p>
+          <div className="mb-2">
+            {post.frontmatter?.keywords?.split(', ')?.map(keyword => (
+              <span className="badge rounded-pill text-bg-secondary keyword-badge me-2">{keyword}</span>
+            ))}
+          </div>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} itemProp="articleBody" />
         <br />

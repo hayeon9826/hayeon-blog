@@ -23,7 +23,7 @@ const AboutPage = ({ data, location }) => {
         keywords={'프론트엔드, 기술 블로그, FE, 개발자, React, Next.js'}
       />
       <article className="page sans mb-32">
-        <div className="page-body">
+        <div className="page-body about-page">
           <Header location={location} />
           <Intro />
 
