@@ -161,6 +161,20 @@ body {
   transition: all 0.2s ease 0s;
 }
 
+.category-badge {
+  display: inline-block;
+  padding: 9.6px 11.2px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  border-radius: 50px;
+  background-color: var(--color-primary) !important;
+  color: var(--color-text-light) !important;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: var(--fontSize-xs);
+  transition: all 0.2s ease 0s;
+}
+
 footer {
   padding: var(--spacing-6) var(--spacing-0);
   color: var(--color-text-gray);

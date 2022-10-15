@@ -26,7 +26,7 @@ const DevExperience = () => {
             <ul className="bulleted-list">
               <li>
                 핀다 웹{' '}
-                <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank">
+                <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
                   링크
                 </a>
               </li>
@@ -56,7 +56,7 @@ const DevExperience = () => {
             <ul className="bulleted-list">
               <li>
                 핀다 웹사이트{' '}
-                <a href="https://finda.co.kr/" target="_blank">
+                <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
                   링크
                 </a>
               </li>

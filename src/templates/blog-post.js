@@ -23,7 +23,11 @@ const BlogPostTemplate = ({ data, location }) => {
         setViewCount(data.value)
       })
     }
-  }, [siteUrl, post?.fields?.slug])
+  }, [siteUrl, post?.fields?.slug, url])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -38,13 +42,18 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="post-date justify-center">
             <span className="text-sm">{post.frontmatter.date} </span>
-            <span className="text-xs">
+            <span className="text-sm pt-2">
               {`  `} {viewCount} views
             </span>
           </p>
           <div className="mb-2">
+            <span className="badge rounded-pill text-bg-secondary category-badge me-2">
+              {post.frontmatter.category}
+            </span>
             {post.frontmatter?.keywords?.split(', ')?.map(keyword => (
-              <span className="badge rounded-pill text-bg-secondary keyword-badge me-2">{keyword}</span>
+              <span className="badge rounded-pill text-bg-secondary keyword-badge me-2" key={keyword}>
+                {keyword}
+              </span>
             ))}
           </div>
         </header>
@@ -69,17 +78,21 @@ const BlogPostTemplate = ({ data, location }) => {
               }}
             >
               {previous && (
-                <button className="button-primary text-sm">
+                <button className="button-primary text-sm text-left" style={{ textAlign: 'left' }}>
                   <Link to={previous.fields.slug} rel="prev">
-                    ← {previous.frontmatter.title}
+                    <span className="fw-normal">← Prev</span>
+                    <br />
+                    {previous.frontmatter.title?.substring(0, 20)}
                   </Link>
                 </button>
               )}
 
               {next && (
-                <button className="button-primary text-sm">
+                <button className="button-primary text-sm text-right" style={{ textAlign: 'right' }}>
                   <Link to={next.fields.slug} rel="next">
-                    {next.frontmatter.title} →
+                    <span className="fw-normal">Next →</span>
+                    <br />
+                    {next.frontmatter.title?.substring(0, 20)}
                   </Link>
                 </button>
               )}
@@ -112,6 +125,7 @@ export const pageQuery = graphql`
         description
         image
         keywords
+        category
       }
       fields {
         slug

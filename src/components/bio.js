@@ -26,19 +26,19 @@ const Bio = () => {
         layout="fixed"
         formats={['auto', 'webp', 'avif']}
         src="../images/profile.png"
-        width={70}
-        height={70}
+        width={75}
+        height={75}
         quality={95}
         alt="Profile picture"
       />
       {author?.name && (
-        <p className="justify-center">
-          <span>
+        <div className="justify-center mt-2">
+          <div>
             <strong className="author-badge">
               <Link to="/about?header=true">@{author.name}</Link>
             </strong>
             <br />
-            <p className="text-gray mt-2 bio-author">{author?.summary || null}</p>
+            <div className="text-gray mt-2 bio-author">{author?.summary || null}</div>
             <span>
               <Link className="link-small me-2" to="/about?header=true">
                 About
@@ -51,8 +51,8 @@ const Bio = () => {
             <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
               Linkedin
             </a>
-          </span>
-        </p>
+          </div>
+        </div>
       )}
     </div>
   )

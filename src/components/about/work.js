@@ -31,11 +31,11 @@ const Work = () => {
           <p className="row gap-3">
             <strong className="col-2 text-right">Projects </strong>
             <span className="col-8">
-              <a href="https://finda.co.kr/" target="_blank">
+              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
                 핀다 웹사이트
               </a>
               ,{' '}
-              <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank">
+              <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
                 핀다 웹앱
               </a>
             </span>
@@ -90,7 +90,7 @@ const Work = () => {
           </p>
           <ul className="bulleted-list">
             <li>
-              <a href="https://hayeondev.gatsbyjs.io/220622-debugging-tools-vconsole/" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/220622-debugging-tools-vconsole/" target="_blank" rel="noreferrer">
                 모바일 웹 콘솔 (vconsole)
               </a>
               을 도입하여 stage, devstage에서 효율적인 디버깅을 할 수 있도록 기여
