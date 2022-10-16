@@ -45,4 +45,4 @@ _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 - 검색기능2: https://yohanpro.com/posts/gatsby-search
 - 무한 스크롤: https://woong-jae.com/gatsby/210824-infinite-scroll
 - SNS 공유 버튼: https://edvins.io/add-social-share-buttons-to-gatsby-blog
-- Clap: https://lyket.dev/docs/react
+- 좋아요 Clap 버튼: https://lyket.dev/docs/react

@@ -10,6 +10,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@lyket/react": "^1.4.8",
     "@popperjs/core": "^2.11.5",
     "add": "^2.0.6",
     "babel-plugin-styled-components": "^2.0.7",

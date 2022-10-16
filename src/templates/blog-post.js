@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import CommentPage from '../components/comments'
 import { ShareButtons } from '../components/shareButton'
+import { Provider, ClapButton } from '@lyket/react'
 
 const BlogPostTemplate = ({ data, location }) => {
   const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.gatsbyjs.io'
@@ -28,6 +29,8 @@ const BlogPostTemplate = ({ data, location }) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
+
+  console.log(post?.fields?.slug.replace(/\//g, ''), '$$$$URL')
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -64,6 +67,41 @@ const BlogPostTemplate = ({ data, location }) => {
           title={post.frontmatter.title?.replace(/\s/g, '-')}
           description={post.frontmatter.description?.replace(/\s/g, '-')}
         />
+        <br />
+        <div className="d-flex justify-content-center my-5">
+          <Provider
+            apiKey="pt_4054cfb6bfa9da6987c502d217a93d"
+            sx={{
+              width: '5rem !important',
+              height: '5rem !important',
+            }}
+            theme={{
+              colors: {
+                primary: 'rgba(61, 138, 254, 0.6)',
+                secondary: '#ff00c3',
+                background: '#dff6ff',
+                text: '#6c757d',
+                highlight: '#e095ed',
+                icon: '#292929',
+              },
+              fonts: {
+                body: 'inherit',
+              },
+              styles: {
+                button: {
+                  width: '5rem !important',
+                  height: '5rem !important',
+                },
+              },
+            }}
+          >
+            <ClapButton
+              namespace={post?.fields?.slug?.replace(/\//g, '')?.substring(0, 30)}
+              id={post?.fields?.slug.replace(/\//g, '')?.substring(0, 30)}
+            />
+          </Provider>
+        </div>
+
         <hr />
         <footer className="mb-5">
           <Bio />
