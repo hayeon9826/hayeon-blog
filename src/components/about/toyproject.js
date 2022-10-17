@@ -10,14 +10,10 @@ const ToyProject = () => {
           </span>
         </h1>
         <details>
-          <summary>Toy Projects 상세 보기</summary>
-          <div className="column-list mt-4">
+          <summary className="text-sm">Toy Projects 상세 보기</summary>
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>
-                  <strong>findaoverflow</strong>
-                </strong>
-              </p>
+              <h5 className="mt-2">findaoverflow</h5>
               <p>2022.18</p>
               <p>개인 토이 프로젝트</p>
             </div>
@@ -59,13 +55,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list mt-4">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>
-                  <strong>구글 캘린더 클론</strong>
-                </strong>
-              </p>
+              <h5 className="mt-2">구글 캘린더 클론</h5>
               <p>2022.03</p>
               <p>개인 토이 프로젝트</p>
             </div>
@@ -109,9 +101,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>오늘 배움 (TIL) 서비스</p>
+              <h5 className="mt-2">오늘배움 (TIL) 서비스</h5>
               <p>2021.12 ~ 2022.02</p>
               <p>개인 토이 프로젝트</p>
             </div>
@@ -142,11 +134,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                드론 마켓 서비스<strong> </strong>
-              </p>
+              <h5 className="mt-2">드론 마켓 서비스</h5>
               <p>
                 <span className="highlight-gray">2021.07 ~ 2021.09</span>
               </p>
@@ -162,7 +152,7 @@ const ToyProject = () => {
                 <li>사내 외주 프로젝트 (서브개발, 퍼블리싱)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: rails, ruby, html, css, javascript</li>
+                <li>사용 스택: rails, ruby, javascript</li>
               </ul>
               <ul className="bulleted-list">
                 <li>구현 기능: 피그마를 참고하여 퍼블리싱 작업</li>
@@ -183,12 +173,10 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="column-list">
+          </div> */}
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>인썸니아 빌더 </strong>
-              </p>
+              <h5 className="mt-2">인썸니아 빌더 </h5>
               <p>
                 <span className="highlight-gray">2021.04 ~ 2021.08</span>
               </p>
@@ -221,11 +209,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>O2O 학원 매칭 서비스</strong>
-              </p>
+              <h5 className="mt-2">O2O 학원 매칭 서비스</h5>
               <p>
                 <span className="highlight-gray">2020.12 ~ 2021.11</span>
               </p>
@@ -241,7 +227,7 @@ const ToyProject = () => {
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html, css, javascript, jquery, ubuntu, framework7</li>
+                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu, framework7</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -286,7 +272,7 @@ const ToyProject = () => {
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html, css, javascript, jquery, ubuntu, framework7</li>
+                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu, framework7</li>
               </ul>
               <ul className="bulleted-list">
                 <li>사장님 메뉴, 상점 등록 기능, 상품 등록 및 옵션 추가 기능, ui 개선, 타 장난감 마켓 크롤링 구현</li>
@@ -328,7 +314,7 @@ const ToyProject = () => {
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html, css, javascript, jquery, ubuntu, framework7</li>
+                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu, framework7</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -345,11 +331,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          <div className="column-list">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>BM 제작 서비스</strong>
-              </p>
+              <h5 className="mt-2">BM 제작 서비스</h5>
               <p>
                 <span className="highlight-gray">2020.05 ~ 2020.11</span>
               </p>
@@ -365,7 +349,7 @@ const ToyProject = () => {
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html, css, javascript, jquery, ubuntu</li>
+                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -390,13 +374,11 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <a target="_blank" rel="noreferrer" href="http://cacers.com">
-                  <strong>Cacers</strong>
-                </a>
-              </p>
+              <a target="_blank" rel="noreferrer" href="http://cacers.com">
+                <h5 className="mt-2">Cacers</h5>
+              </a>
               <p>개인 외주 프로젝트</p>
               <p>
                 <span className="highlight-gray">2020.10</span>
@@ -407,7 +389,7 @@ const ToyProject = () => {
                 <li>교내 학회 소개 사이트(개인 외주)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html , css, javascript, ubuntu</li>
+                <li>사용 스택: ruby on rails, javascript, ubuntu</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -421,9 +403,8 @@ const ToyProject = () => {
                 <li>
                   깃헙:{' '}
                   <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/blend_app">
-                    github.com/hayeon9826/
+                    github.com/hayeon9826/cac-web
                   </a>
-                  cac-web
                 </li>
               </ul>
               <ul className="bulleted-list">
@@ -452,7 +433,7 @@ const ToyProject = () => {
                 <li>난민 커피 소개 사이트 (학교 프로젝트)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: Ruby on Rails, ruby, javascript, jquery, html, css</li>
+                <li>사용 스택: Ruby on Rails, ruby, javascript, jquery</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -479,15 +460,11 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          <div className="column-list">
+          <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <strong>
-                  <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
-                    Asianalyse
-                  </a>
-                </strong>
-              </p>
+              <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
+                <h5 className="mt-2">Asianalyse</h5>
+              </a>
               <p>개인 외주 프로젝트</p>
               <p>
                 <span className="highlight-gray">2019.10 ~ 2020.03</span>
@@ -498,9 +475,7 @@ const ToyProject = () => {
                 <li>개인 프로젝트로 진행한 학술지 크롤링 웹 사이트.</li>
               </ul>
               <ul className="bulleted-list">
-                <li>
-                  사용 스택: postgres, AWS, EC2, ruby on rails, html, css, javascript, 헤로쿠, 카페24 (ubuntu), postgres
-                </li>
+                <li>사용 스택: postgres, AWS, EC2, ruby on rails, javascript, 헤로쿠, 카페24 (ubuntu), postgres</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
@@ -546,7 +521,7 @@ const ToyProject = () => {
                 <li>베리어 프리 여행지 추천 사이트 (학교 프로젝트)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, html, css, javascript, 헤로쿠, 아마존 s3, postgres</li>
+                <li>사용 스택: ruby on rails, javascript, 헤로쿠, 아마존 s3, postgres</li>
               </ul>
               <ul className="bulleted-list">
                 <li>

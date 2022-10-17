@@ -13,19 +13,18 @@ const DevExperience = () => {
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
             <h5>
-              <strong>핀다 (웹)앱</strong>
+              <strong>핀다 앱</strong>
             </h5>
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
             <p>2022.05 ~ </p>
-            <p></p>
           </div>
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
             <ul className="bulleted-list">
               <li>
-                핀다 웹{' '}
+                핀다 앱{' '}
                 <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
                   링크
                 </a>
@@ -37,6 +36,31 @@ const DevExperience = () => {
             <ul className="bulleted-list">
               <li>레거시 코드 리팩토링 작업</li>
             </ul>
+            <details>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>Tech Stack</h5>
+              <p>React, Next.js, Redux, Typescript, Tailwindcss</p>
+              <h5>상세업무</h5>
+              <ul className="bulleted-list">
+                <li>대출 상품 검색 페이지에 SSG를 적용하여 렌더링 속도 50% 개선</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>인앱약정 기능을 개발하여 앱 내에서 대출상품 계약을 할 수 있도록 기여</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>기존 Class component의 v1 코드를 Functional Component로 개선하여 v2 프로젝트로 이전</li>
+              </ul>
+              <figure className="image">
+                <StaticImage
+                  formats={['auto', 'webp', 'avif']}
+                  src="../../images/finda_app.png"
+                  width={600}
+                  height={310}
+                  quality={95}
+                  alt="franchise picture"
+                />
+              </figure>
+            </details>
           </div>
         </div>
         <hr />
@@ -65,8 +89,36 @@ const DevExperience = () => {
               <li>회사 소개 페이지, 채용 페이지, 대출 검색 페이지 작업</li>
             </ul>
             <ul className="bulleted-list">
-              <li>Frontend(Web) 팀원분들 및 타부서와 협업하여 작업</li>
+              <li>Frontend(Web) 팀원 및 타부서와 협업하여 작업</li>
             </ul>
+            <details>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>Tech Stack</h5>
+              <p>React, Next.js, Redux, Typescript, Tailwindcss, Cypress, Emotion, Storybook</p>
+              <h5>상세업무</h5>
+              <ul className="bulleted-list">
+                <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>회사 소개 페이지 및 채용 페이지 유지보수.</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li> 채용 페이지 데이터를 구글 스프레드 시트와 연동하는 작업으로 개발 요청 및 협업 시간 200% 단축</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li> 마케팅팀과 협업하여 후순위 담보대출 페이지, 404 에러 페이지 등 요청사항 작업</li>
+              </ul>
+              <figure className="image">
+                <StaticImage
+                  formats={['auto', 'webp', 'avif']}
+                  src="../../images/finda_web.png"
+                  width={600}
+                  height={400}
+                  quality={95}
+                  alt="franchise picture"
+                />
+              </figure>
+            </details>
           </div>
         </div>
         <hr />
@@ -98,13 +150,13 @@ const DevExperience = () => {
               </li>
             </ul>
             <details>
-              <summary>개발 환경 및 상세업무 확인</summary>
-              <h4>개발환경</h4>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>개발환경</h5>
               <p>postgres, AWS (S3, cognito), vercel (테스트 서버 배포)</p>
-              <h4>개발 언어 및 라이브러리</h4>
+              <h5>개발 언어 및 라이브러리</h5>
               <p>백엔드: Node.js, prisma</p>
               <p>프론트엔드: React, Next.js, typescript</p>
-              <h4>상세업무</h4>
+              <h5>상세업무</h5>
               <ul className="bulleted-list">
                 <li>프랜차이즈 관리 페이지 작업</li>
               </ul>
@@ -139,7 +191,12 @@ const DevExperience = () => {
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
             <ul className="bulleted-list">
-              <li>다이어트 관리 및 채팅 서비스</li>
+              <li>
+                다이어트 관리 및 채팅 서비스{' '}
+                <a href="https://apps.apple.com/kr/app/%EC%B1%84%EC%B0%8D%EB%8B%A8/id1616126955" target="blank">
+                  링크
+                </a>
+              </li>
             </ul>
             <ul className="bulleted-list">
               <li>메인 개발자로 프로젝트 리드</li>
@@ -155,13 +212,13 @@ const DevExperience = () => {
               </li>
             </ul>
             <details>
-              <summary>개발 환경 및 상세업무 확인</summary>
-              <h4>개발환경</h4>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>개발환경</h5>
               <p>postgres, AWS (S3, cognito), vercel (테스트 서버 배포)</p>
-              <h4>개발 언어 및 라이브러리</h4>
+              <h5>개발 언어 및 라이브러리</h5>
               <p>백엔드: Node.js, prisma</p>
               <p>프론트엔드: React, Next.js, typescript, html, css</p>
-              <h4>상세업무</h4>
+              <h5>상세업무</h5>
               <ul className="bulleted-list">
                 <li>firestore 활용 실시간 채팅 기능 구현</li>
               </ul>
@@ -196,7 +253,12 @@ const DevExperience = () => {
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
             <ul className="bulleted-list">
-              <li>인플루언서 캠페인 매칭 서비스</li>
+              <li>
+                인플루언서 캠페인 매칭 서비스{' '}
+                <a target="_blank" rel="noreferrer" href="https://gloryus.net">
+                  링크
+                </a>
+              </li>
             </ul>
             <ul className="bulleted-list">
               <li>메인 개발자로 프로젝트 리드</li>
@@ -206,27 +268,19 @@ const DevExperience = () => {
             </ul>
             <ul className="bulleted-list">
               <li>
-                링크:{' '}
-                <a target="_blank" rel="noreferrer" href="https://gloryus.net">
-                  https://gloryus.net
-                </a>
-              </li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>
                 <span className="highlight-gray">
                   <strong>기여도 70%</strong>
                 </span>
               </li>
             </ul>
             <details>
-              <summary>개발 환경 및 상세업무 확인</summary>
-              <h4>개발환경</h4>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>개발환경</h5>
               <p>postgres, AWS (S3, ec2, Amplify)</p>
-              <h4>개발 언어 및 라이브러리</h4>
+              <h5>개발 언어 및 라이브러리</h5>
               <p>백엔드: Ruby on Rails, ruby</p>
               <p>프론트엔드: React, Next.js, typescript html, css</p>
-              <h4>상세업무</h4>
+              <h5>상세업무</h5>
               <ul className="bulleted-list">
                 <li>브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리</li>
               </ul>
@@ -264,34 +318,19 @@ const DevExperience = () => {
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
             <ul className="bulleted-list">
-              <li>사업자를 위한 중고거래 서비스</li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>고객사, 2명의 개발자와 협업</li>
-            </ul>
-            <ul className="bulleted-list">
               <li>
-                앱스토어:
+                사업자를 위한 중고거래 서비스{' '}
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%91%90%EB%8B%A4/id1577313215"
                 >
-                  https://apps.apple.com/kr/app/모두다/id1577313215
+                  링크
                 </a>
               </li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                구글스토어:{' '}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://play.google.com/store/apps/details?id=com.modooda.app"
-                >
-                  https://play.google.com/store/apps/details?id=com.modooda.app
-                </a>
-              </li>
+              <li>고객사, 2명의 개발자와 협업</li>
             </ul>
             <ul className="bulleted-list">
               <li>
@@ -301,13 +340,13 @@ const DevExperience = () => {
               </li>
             </ul>
             <details>
-              <summary>개발 환경 및 상세업무 확인</summary>
-              <h4>개발환경</h4>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>개발환경</h5>
               <p>postgres, AWS (S3, ec2)</p>
-              <h4>개발 언어 및 라이브러리</h4>
+              <h5>개발 언어 및 라이브러리</h5>
               <p>백엔드: Ruby on Rails, ruby</p>
               <p>프론트엔드: React, typescript html, css</p>
-              <h4>상세업무</h4>
+              <h5>상세업무</h5>
               <ul className="bulleted-list">
                 <li>거리 순 상품 정렬</li>
               </ul>
@@ -345,7 +384,12 @@ const DevExperience = () => {
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
             <ul className="bulleted-list">
-              <li>O2O 모바일 패션 쇼핑몰. 사내 외주 프로젝트</li>
+              <li>
+                O2O 모바일 패션 쇼핑몰{' '}
+                <a target="_blank" rel="noreferrer" href="https://pppper.com/">
+                  링크
+                </a>
+              </li>
             </ul>
             <ul className="bulleted-list">
               <li>메인 개발자로 프로젝트 리드</li>
@@ -357,22 +401,13 @@ const DevExperience = () => {
                 </strong>
               </li>
             </ul>
-            <ul className="bulleted-list">
-              <li>
-                링크:{' '}
-                <a target="_blank" rel="noreferrer" href="https://pppper.com/#/mypage">
-                  https://pppper.com
-                </a>
-                /
-              </li>
-            </ul>
             <details>
-              <summary>개발 환경 및 상세업무 확인</summary>
-              <h4>개발환경</h4>
+              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
+              <h5>개발환경</h5>
               <p>postgres, linux, atom</p>
-              <h4>개발 언어 및 라이브러리</h4>
+              <h5>개발 언어 및 라이브러리</h5>
               <p>Ruby on Rails, ruby, javascript, jquery, html, css, framwork7</p>
-              <h4>상세업무</h4>
+              <h5>상세업무</h5>
               <ul className="bulleted-list">
                 <li>제품 구매 시스템 개발 및 배포</li>
               </ul>
