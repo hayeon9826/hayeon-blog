@@ -1095,3 +1095,9 @@ function createPerformanceCalculator(aPerformance, aPlay) {
 <br />
 
 - 결국, 좋은 코드를 가늠하는 확실한 방법은 **‘얼마나 수정하기 쉬운가’** 다
+
+---
+
+## 참고
+
+> - [리팩터링 2판 (마틴 파울러, 2020.04)](hhttp://www.yes24.com/Product/Goods/89649360)
