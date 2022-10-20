@@ -77,7 +77,7 @@ const BlogPostTemplate = ({ data, location }) => {
             }}
             theme={{
               colors: {
-                primary: 'rgba(61, 138, 254, 0.6)',
+                primary: 'rgba(200, 232, 231, 0.8)',
                 secondary: '#ff00c3',
                 background: '#dff6ff',
                 text: '#6c757d',
