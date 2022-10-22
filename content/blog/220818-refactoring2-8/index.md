@@ -111,44 +111,65 @@ module.exports = acquireData(data)
 
 <br />
 
-2 반복문에서 첫 if문은 CSV 첫 줄 건너뛰는 역할. 즉, 해당 slice() 연산을 루프 변수에서 수행하고, 반복문 안의 if문 제거
+2. 반복문에서 첫 if문은 CSV 첫 줄 건너뛰는 역할. 즉, 해당 slice() 연산을 루프 변수에서 수행하고, 반복문 안의 if문 제거
 
-![](https://velog.velcdn.com/images/khy226/post/585fb463-5dae-455d-bede-3c457086994e/image.png)
-
-<br />
-
-3. 모든 클라이언트 코드를 변경했으면, **TrackingInformation**의 모든 요소를 **Shipment**로 옮긴다.
-
-![](https://velog.velcdn.com/images/khy226/post/042661a9-eb17-4a96-b801-8f4131ed1a68/image.png)
+![](https://velog.velcdn.com/images/khy226/post/bc640631-9514-43cf-8bc4-f4bcf68f89bb/image.png)
 
 <br />
 
-4. 다 옮겼으면 **TrackingInformation** 클래스를 삭제한다.
+2-2. 비슷한 원리로 빈 줄 지우기 (trim) 코드 삭제. 대신 filter() 연산 추가
+
+![](https://velog.velcdn.com/images/khy226/post/7023edd6-7ac4-4d19-9255-aead527e3dc0/image.png)
+
+<br />
+
+2-3. map() 연산으로 여러줄의 CSV 데이터 배열로 변환.
+
+![](https://velog.velcdn.com/images/khy226/post/8e2a1288-af67-4d4a-9277-610fa5a03236/image.png)
+
+<Br />
+
+2-4. filter() 인도에 위치한 사무실 레코드를 뽑아냄
+
+![](https://velog.velcdn.com/images/khy226/post/6ea7929d-ba13-4bee-afd4-7127237294e9/image.png)
+
+<br />
+
+2-5. map()을 사용해 결과 레코드 생성
+
+![](https://velog.velcdn.com/images/khy226/post/b034588a-39bc-45ed-bd4a-c1c870ab124c/image.png)
+
+<br />
+
+3. 마지막으로, 파이프라인의 결과를 누적 변수에 추가.
+
+![](https://velog.velcdn.com/images/khy226/post/9c39b0d7-3647-442d-8697-21e72a285c17/image.png)
+
+<br />
 
 #### After
 
-```java
-class Shipment {
-  get trackingInfo() {
-    return `${this.shippingCompany}: ${this.trackingNumber}`;
-  }
+- 위 코드에서 result 변수 인라인, 람다 변수 중 일부 이름 변경, 코드 레이아웃 변경을 해서 최종 리팩토링
 
-  get shippingCompany() {
-    return this._shippingCompany;
-  }
+```javascript
+const data = `office, country, telephone
+Chicago, USA, +1 312 373 1000
+Beijing, China, +86 4008 900 505
+Bangalore, India, +91 80 4064 9570
+Proto Alergre, Brazil, +55 51 3079 3550
+Chennai, India, +91 44 660 44766`
 
-  set shippingCompany(arg) {
-    this._shippingCompany = arg;
-  }
-
-  get trackingNumber() {
-    return this._trackingNumber;
-  }
-
-  set trackingNumber(arg) {
-    this._trackingNumber = arg;
-  }
+function acquireData(input) {
+  const lines = input.split('\\n')
+  return lines
+    .slice(1)
+    .filter(line => line.trim !== '')
+    .map(line => line.split(','))
+    .filter(record => record[1].trim() === 'India')
+    .map(record => ({ city: record[0].trim(), phone: record[2].trim() }))
 }
+
+module.exports = acquireData(data)
 ```
 
 ---

@@ -16,7 +16,11 @@ const Intro = () => {
             '핀다'
           </a>
           에서 2년차 프론트엔드 개발자로 일하고 있는 김하연 입니다. 주로 React와 Next.js를 이용해서 사내 프로젝트 및
-          개인 프로젝트를 작업하고 있습니다. 새로운 기술의 습득을 좋아하며, 사내 스터디 및{' '}
+          개인 프로젝트를 작업하고 있습니다. 새로운 기술의 습득을 좋아하며,{' '}
+          <a href="https://hayeondev.gatsbyjs.io/?category=Study" target="_blank" rel="noreferrer">
+            사내 스터디
+          </a>{' '}
+          및{' '}
           <a href="https://hayeondev.gatsbyjs.io/" target="_blank" rel="noreferrer">
             블로그
           </a>
