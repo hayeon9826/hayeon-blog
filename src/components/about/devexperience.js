@@ -122,7 +122,7 @@ const DevExperience = () => {
           </div>
         </div>
         <hr />
-        <div className="column-list">
+        {/* <div className="column-list">
           <div style={{ width: '25%' }} className="column">
             <h5>
               <strong>프랜차이즈 관리 웹 서비스</strong>
@@ -179,10 +179,10 @@ const DevExperience = () => {
             </details>
           </div>
         </div>
-        <hr />
+        <hr /> */}
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
-            <h5>다이어트 관리 앱</h5>
+            <h5>채찍단</h5>
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
@@ -244,7 +244,7 @@ const DevExperience = () => {
         <hr />
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
-            <h5>인플루언서 매칭 서비스</h5>
+            <h5>글로리어스</h5>
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
@@ -309,7 +309,7 @@ const DevExperience = () => {
         <hr />
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
-            <h5> 중고 거래 웹앱</h5>
+            <h5>모두다</h5>
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
@@ -372,8 +372,8 @@ const DevExperience = () => {
             </details>
           </div>
         </div>
-        <hr />
-        <div className="column-list">
+        {/* <hr /> */}
+        {/* <div className="column-list">
           <div style={{ width: '25%' }} className="column">
             <h5> 패션 SNS 쇼핑몰 </h5>
             <p>
@@ -438,7 +438,7 @@ const DevExperience = () => {
               </figure>
             </details>
           </div>
-        </div>
+        </div> */}
       </section>
     </>
   )

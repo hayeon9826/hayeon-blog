@@ -10,6 +10,21 @@ const OtherExperience = () => {
       </h1>
       <div>
         <div>
+          <h4>OpenSource</h4>
+          <ul className="bulleted-list">
+            <li>
+              Toast UI Editor의 react-editor react 버전 18로 업그레이드:{' '}
+              <a href="https://github.com/nhn/tui.editor/pull/2803" target="_blank">
+                PR 링크
+              </a>
+              ,{' '}
+              <a href="https://github.com/nhn/tui.editor/issues/2790" target="_blank">
+                Issue 링크
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
           <h4>Presentation</h4>
           <ul className="bulleted-list">
             <li>

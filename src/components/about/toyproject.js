@@ -101,7 +101,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list mt-5">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">오늘배움 (TIL) 서비스</h5>
               <p>2021.12 ~ 2022.02</p>
@@ -133,7 +133,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">드론 마켓 서비스</h5>
@@ -174,7 +174,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          <div className="column-list mt-5">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">인썸니아 빌더 </h5>
               <p>
@@ -208,7 +208,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">O2O 학원 매칭 서비스</h5>
@@ -333,42 +333,38 @@ const ToyProject = () => {
           </div> */}
           <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">BM 제작 서비스</h5>
+              <h5 className="mt-2">피링 (p.ling)</h5>
               <p>
-                <span className="highlight-gray">2020.05 ~ 2020.11</span>
+                <span className="highlight-gray">2020.08 ~ 2020.12</span>
               </p>
-              <p>
-                <a target="_blank" rel="noreferrer" href="https://insomenia.com/">
-                  인썸니아
-                </a>{' '}
-                프로젝트
-              </p>
+              <p>개인 프로젝트 (창업)</p>
             </div>
             <div style={{ width: '68.75%' }} className="column">
               <ul className="bulleted-list">
-                <li>사내 외주 프로젝트 (서브개발)</li>
+                <li>모바일 웹 기반 O2O 피부 관리 채팅 서비스</li>
+                <li>본인 포함 4명의 팀원과 공동 개발. 직접 서비스 기획, 배포, 운영</li>
               </ul>
               <ul className="bulleted-list">
                 <li>사용 스택: ruby on rails, javascript, jquery, ubuntu</li>
               </ul>
               <ul className="bulleted-list">
                 <li>
-                  구현 기능: Ruby on rails를 활용하여 카드를 선택/생성 후 비즈니스 모델 공유 시스템 개발, 엑셀 및 pdf
-                  익스포트 기능 구현, import와 연동하여 정기 결제/일반 결제 기능 구현
+                  구현 기능: 상담 예약 시스템 개발 / 제품 결제 api 적용 (import 사용) / 채팅 기능 구현 (action cable
+                  이용) / 별점 기능, 댓글 기능 구현 / 알림톡 api 적용 (httparty, 알리고)
                 </li>
               </ul>
               <ul className="bulleted-list">
                 <li>
                   <span className="highlight-gray">
-                    <strong>기여도 50%</strong>
+                    <strong>기여도 40%</strong>
                   </span>
                 </li>
               </ul>
               <ul className="bulleted-list">
                 <li>
                   링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://cofounder.co.kr/">
-                    cofounder.co.kr/
+                  <a target="_blank" rel="noreferrer" href="https://github.com/kratzjgy/pling-server">
+                    Github Link
                   </a>
                 </li>
               </ul>
@@ -379,10 +375,10 @@ const ToyProject = () => {
               <a target="_blank" rel="noreferrer" href="http://cacers.com">
                 <h5 className="mt-2">Cacers</h5>
               </a>
-              <p>개인 외주 프로젝트</p>
               <p>
                 <span className="highlight-gray">2020.10</span>
               </p>
+              <p>개인 외주 프로젝트</p>
             </div>
             <div style={{ width: '68.75%' }} className="column">
               <ul className="bulleted-list">
@@ -465,10 +461,10 @@ const ToyProject = () => {
               <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
                 <h5 className="mt-2">Asianalyse</h5>
               </a>
-              <p>개인 외주 프로젝트</p>
               <p>
                 <span className="highlight-gray">2019.10 ~ 2020.03</span>
               </p>
+              <p>개인 외주 프로젝트</p>
             </div>
             <div style={{ width: '68.75%' }} className="column">
               <ul className="bulleted-list">
@@ -500,6 +496,46 @@ const ToyProject = () => {
                   <span className="highlight-gray">
                     <strong>기여도 100%</strong>
                   </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="column-list mt-5">
+            <div style={{ width: '31.25%' }} className="column">
+              <h5 className="mt-2">히스킨 (Hiskin)</h5>
+              <p>
+                <span className="highlight-gray">2020.02 ~ 2020.10</span>
+              </p>
+              <p>개인 프로젝트 (창업)</p>
+            </div>
+            <div style={{ width: '68.75%' }} className="column">
+              <ul className="bulleted-list">
+                <li>개인 프로젝트로 진행한 마스크팩 추천 커머스</li>
+                <li>본인 포함 4명의 팀원과 공동 개발. 직접 서비스 기획, 배포, 운영</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  구현 기능: 약 900여 개의 성분과 100여 개의 마스크팩 데이터를 csv로 import 함 / 성분별로 피부 타입에
+                  맞는 마스크팩을 추천하는 알고리즘 개발 / 장바구니, 구매, 결제 프로세스 개발 (import 활용) / 모바일 ui
+                  개선 및 서비스 운영
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  <span className="highlight-gray">
+                    <strong>기여도 40%</strong>
+                  </span>
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  링크:{' '}
+                  <a target="_blank" rel="noreferrer" href="https://github.com/kratzjgy/hiskin-server">
+                    Github Link
+                  </a>
                 </li>
               </ul>
             </div>
