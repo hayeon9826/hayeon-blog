@@ -21,46 +21,36 @@ const DevExperience = () => {
             <p>2022.05 ~ </p>
           </div>
           <div style={{ width: '75%' }} className="column">
-            <h4>프로젝트 소개</h4>
+            <h5>Description.</h5>
+            <p>
+              <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
+                핀다 앱
+              </a>
+              의 웹뷰를 담당하여 개발하였습니다. 대출 상품 페이지의 레거시 코드 리팩토링 작업을 주도하였고, 인앱 약정
+              기능을 개발했습니다.
+            </p>
+            <h5>Tech Stack.</h5>
+            <p>React, Next.js, Redux, Typescript, Tailwindcss</p>
+            <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                핀다 앱{' '}
-                <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
-                  링크
-                </a>
-              </li>
+              <li>대출 상품 검색 페이지에 SSG를 적용하여 렌더링 속도 50% 개선</li>
             </ul>
             <ul className="bulleted-list">
-              <li>대출 상품 검색, 인앱 약정 기능 작업</li>
+              <li>인앱약정 기능을 개발하여 앱 내에서 대출상품 계약을 할 수 있도록 기여</li>
             </ul>
             <ul className="bulleted-list">
-              <li>레거시 코드 리팩토링 작업</li>
+              <li>기존 Class component의 v1 코드를 Functional Component로 개선하여 v2 프로젝트로 이전</li>
             </ul>
-            <details>
-              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
-              <h5>Tech Stack</h5>
-              <p>React, Next.js, Redux, Typescript, Tailwindcss</p>
-              <h5>상세업무</h5>
-              <ul className="bulleted-list">
-                <li>대출 상품 검색 페이지에 SSG를 적용하여 렌더링 속도 50% 개선</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>인앱약정 기능을 개발하여 앱 내에서 대출상품 계약을 할 수 있도록 기여</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>기존 Class component의 v1 코드를 Functional Component로 개선하여 v2 프로젝트로 이전</li>
-              </ul>
-              <figure className="image">
-                <StaticImage
-                  formats={['auto', 'webp', 'avif']}
-                  src="../../images/finda_app.png"
-                  width={600}
-                  height={310}
-                  quality={95}
-                  alt="franchise picture"
-                />
-              </figure>
-            </details>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/finda_app.png"
+                width={600}
+                height={310}
+                quality={95}
+                alt="finda app"
+              />
+            </figure>
           </div>
         </div>
         <hr />
@@ -76,49 +66,39 @@ const DevExperience = () => {
             <p></p>
           </div>
           <div style={{ width: '75%' }} className="column">
-            <h4>프로젝트 소개</h4>
+            <h5>Description.</h5>
+            <p>
+              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
+                핀다 웹사이트
+              </a>
+              를 개발, 유지보수하는 작업을 맡았습니다. 회사 소개 페이지와 채용 페이지를 리뉴얼 하였고, 기존 핀다의
+              레거시 컴포넌트를 최신화하여 Storybook에 배포하였습니다.
+            </p>
+            <h5>Tech Stack</h5>
+            <p>React, Next.js, Redux, Typescript, Tailwindcss, Cypress, Emotion, Storybook</p>
+            <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                핀다 웹사이트{' '}
-                <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
-                  링크
-                </a>
-              </li>
+              <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
             </ul>
             <ul className="bulleted-list">
-              <li>회사 소개 페이지, 채용 페이지, 대출 검색 페이지 작업</li>
+              <li>회사 소개 페이지 및 채용 페이지 유지보수.</li>
             </ul>
             <ul className="bulleted-list">
-              <li>Frontend(Web) 팀원 및 타부서와 협업하여 작업</li>
+              <li> 채용 페이지 데이터를 구글 스프레드 시트와 연동하는 작업으로 개발 요청 및 협업 시간 200% 단축</li>
             </ul>
-            <details>
-              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
-              <h5>Tech Stack</h5>
-              <p>React, Next.js, Redux, Typescript, Tailwindcss, Cypress, Emotion, Storybook</p>
-              <h5>상세업무</h5>
-              <ul className="bulleted-list">
-                <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>회사 소개 페이지 및 채용 페이지 유지보수.</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li> 채용 페이지 데이터를 구글 스프레드 시트와 연동하는 작업으로 개발 요청 및 협업 시간 200% 단축</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li> 마케팅팀과 협업하여 후순위 담보대출 페이지, 404 에러 페이지 등 요청사항 작업</li>
-              </ul>
-              <figure className="image">
-                <StaticImage
-                  formats={['auto', 'webp', 'avif']}
-                  src="../../images/finda_web.png"
-                  width={600}
-                  height={400}
-                  quality={95}
-                  alt="franchise picture"
-                />
-              </figure>
-            </details>
+            <ul className="bulleted-list">
+              <li> 마케팅팀과 협업하여 후순위 담보대출 페이지, 404 에러 페이지 등 요청사항 작업</li>
+            </ul>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/finda_web.png"
+                width={600}
+                height={400}
+                quality={95}
+                alt="finda web"
+              />
+            </figure>
           </div>
         </div>
         <hr />
@@ -189,56 +169,40 @@ const DevExperience = () => {
             <p>2021.11 → 2022.02</p>
           </div>
           <div style={{ width: '75%' }} className="column">
-            <h4>프로젝트 소개</h4>
+            <h5>Description.</h5>
+            <p>
+              다이어트 관리 및 채팅 서비스{' '}
+              <a href="https://apps.apple.com/kr/app/%EC%B1%84%EC%B0%8D%EB%8B%A8/id1616126955" target="blank">
+                채찍단
+              </a>
+              을 주도하여 개발했습니다. 메인 개발자로 프로젝트 리드하였고 고객사, 개발자 2명, 기획자 1명과
+              협업하였습니다.
+            </p>
+            <h5>개발환경</h5>
+            <p>postgres, AWS (S3, cognito), vercel (테스트 서버 배포)</p>
+            <h5>개발 언어 및 라이브러리</h5>
+            <p>백엔드: Node.js, prisma</p>
+            <p>프론트엔드: React, Next.js, typescript, html, css</p>
+            <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                다이어트 관리 및 채팅 서비스{' '}
-                <a href="https://apps.apple.com/kr/app/%EC%B1%84%EC%B0%8D%EB%8B%A8/id1616126955" target="blank">
-                  링크
-                </a>
-              </li>
+              <li>firestore 활용 실시간 채팅 기능 구현</li>
             </ul>
             <ul className="bulleted-list">
-              <li>메인 개발자로 프로젝트 리드</li>
+              <li>react-chartjs2를 이용한 다이어트 그래프 구현</li>
             </ul>
             <ul className="bulleted-list">
-              <li>고객사, 개발자 2명, 기획자 1명과 협업</li>
+              <li>react-calendar 활용한 다이어트 캘린더 구현</li>
             </ul>
-            <ul className="bulleted-list">
-              <li>
-                <span className="highlight-gray">
-                  <strong>기여도 50%</strong>
-                </span>
-              </li>
-            </ul>
-            <details>
-              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
-              <h5>개발환경</h5>
-              <p>postgres, AWS (S3, cognito), vercel (테스트 서버 배포)</p>
-              <h5>개발 언어 및 라이브러리</h5>
-              <p>백엔드: Node.js, prisma</p>
-              <p>프론트엔드: React, Next.js, typescript, html, css</p>
-              <h5>상세업무</h5>
-              <ul className="bulleted-list">
-                <li>firestore 활용 실시간 채팅 기능 구현</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>react-chartjs2를 이용한 다이어트 그래프 구현</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>react-calendar 활용한 다이어트 캘린더 구현</li>
-              </ul>
-              <figure className="image">
-                <StaticImage
-                  formats={['auto', 'webp', 'avif']}
-                  src="../../images/sagn_img.jpeg"
-                  width={500}
-                  height={280}
-                  quality={95}
-                  alt="franchise picture"
-                />
-              </figure>
-            </details>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/sagn_img.jpeg"
+                width={500}
+                height={280}
+                quality={95}
+                alt="sagn"
+              />
+            </figure>
           </div>
         </div>
         <hr />
@@ -251,59 +215,43 @@ const DevExperience = () => {
             <p>2021.08 → 2022.02</p>
           </div>
           <div style={{ width: '75%' }} className="column">
-            <h4>프로젝트 소개</h4>
+            <h5>Description.</h5>
+            <p>
+              인플루언서 캠페인 매칭 서비스{' '}
+              <a target="_blank" rel="noreferrer" href="https://gloryus.net">
+                글로리어스
+              </a>
+              를 주도하여 개발했습니다. 메인 개발자로 프로젝트를 리드하였고, 고객사, 개발자 2명, 기획자 1명, 디자이너
+              1명과 협업하였습니다.
+            </p>
+            <h5>개발환경</h5>
+            <p>postgres, AWS (S3, ec2, Amplify)</p>
+            <h5>개발 언어 및 라이브러리</h5>
+            <p>백엔드: Ruby on Rails, ruby</p>
+            <p>프론트엔드: React, Next.js, typescript html, css</p>
+            <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                인플루언서 캠페인 매칭 서비스{' '}
-                <a target="_blank" rel="noreferrer" href="https://gloryus.net">
-                  링크
-                </a>
-              </li>
+              <li>브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리</li>
             </ul>
             <ul className="bulleted-list">
-              <li>메인 개발자로 프로젝트 리드</li>
+              <li>캠페인 업로드 및 신청 기능</li>
             </ul>
             <ul className="bulleted-list">
-              <li>고객사, 개발자 2명, 기획자 1명, 디자이너 1명과 협업</li>
+              <li>인스타그램 연동 (facebook api)</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                <span className="highlight-gray">
-                  <strong>기여도 70%</strong>
-                </span>
-              </li>
+              <li>aws cdk 활용 배포 작업, aws cognito를 이용한 회원 관리</li>
             </ul>
-            <details>
-              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
-              <h5>개발환경</h5>
-              <p>postgres, AWS (S3, ec2, Amplify)</p>
-              <h5>개발 언어 및 라이브러리</h5>
-              <p>백엔드: Ruby on Rails, ruby</p>
-              <p>프론트엔드: React, Next.js, typescript html, css</p>
-              <h5>상세업무</h5>
-              <ul className="bulleted-list">
-                <li>브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>캠페인 업로드 및 신청 기능</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>인스타그램 연동 (facebook api)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>aws cdk 활용 배포 작업, aws cognito를 이용한 회원 관리</li>
-              </ul>
-              <figure className="image">
-                <StaticImage
-                  formats={['auto', 'webp', 'avif']}
-                  src="../../images/gloryus_img.png"
-                  width={500}
-                  height={500}
-                  quality={95}
-                  alt="gloryus picture"
-                />
-              </figure>
-            </details>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/gloryus_img.png"
+                width={500}
+                height={500}
+                quality={95}
+                alt="gloryus picture"
+              />
+            </figure>
           </div>
         </div>
         <hr />
@@ -317,59 +265,45 @@ const DevExperience = () => {
           </div>
           <div style={{ width: '75%' }} className="column">
             <h4>프로젝트 소개</h4>
+            <p>
+              사업자를 위한 중고거래 서비스{' '}
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%91%90%EB%8B%A4/id1577313215"
+              >
+                모두다
+              </a>
+              를 서브 개발자로 개발하였습니다. 고객사, 2명의 개발자와 협업하였으며, 프로젝트의 30% 이상 기여했습니다.
+            </p>
+            <h5>개발환경</h5>
+            <p>postgres, AWS (S3, ec2)</p>
+            <h5>개발 언어 및 라이브러리</h5>
+            <p>백엔드: Ruby on Rails, ruby</p>
+            <p>프론트엔드: React, typescript html, css</p>
+            <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                사업자를 위한 중고거래 서비스{' '}
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://apps.apple.com/kr/app/%EB%AA%A8%EB%91%90%EB%8B%A4/id1577313215"
-                >
-                  링크
-                </a>
-              </li>
+              <li>거리 순 상품 정렬</li>
             </ul>
             <ul className="bulleted-list">
-              <li>고객사, 2명의 개발자와 협업</li>
+              <li>상품 결제 api 적용 (tosspayment 사용)</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                <span className="highlight-gray">
-                  <strong>기여도 30%</strong>
-                </span>
-              </li>
+              <li>모바일 관리자 페이지</li>
             </ul>
-            <details>
-              <summary className="text-sm">개발 환경 및 상세업무 확인</summary>
-              <h5>개발환경</h5>
-              <p>postgres, AWS (S3, ec2)</p>
-              <h5>개발 언어 및 라이브러리</h5>
-              <p>백엔드: Ruby on Rails, ruby</p>
-              <p>프론트엔드: React, typescript html, css</p>
-              <h5>상세업무</h5>
-              <ul className="bulleted-list">
-                <li>거리 순 상품 정렬</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>상품 결제 api 적용 (tosspayment 사용)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>모바일 관리자 페이지</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>정산 관리 페이지 작업</li>
-              </ul>
-              <figure className="image">
-                <StaticImage
-                  formats={['auto', 'webp', 'avif']}
-                  src="../../images/modooda_img.jpeg"
-                  width={500}
-                  height={220}
-                  quality={95}
-                  alt="gloryus picture"
-                />
-              </figure>
-            </details>
+            <ul className="bulleted-list">
+              <li>정산 관리 페이지 작업</li>
+            </ul>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/modooda_img.jpeg"
+                width={500}
+                height={220}
+                quality={95}
+                alt="modooda picture"
+              />
+            </figure>
           </div>
         </div>
         {/* <hr /> */}

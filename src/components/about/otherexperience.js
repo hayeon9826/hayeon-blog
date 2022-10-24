@@ -10,7 +10,7 @@ const OtherExperience = () => {
       </h1>
       <div>
         <div>
-          <h4>OpenSource</h4>
+          <h4>Open Source</h4>
           <ul className="bulleted-list">
             <li>
               React 18 공식 도큐 - React 최상위 API 페이지 일부 번역:{' '}
