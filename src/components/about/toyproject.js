@@ -22,7 +22,10 @@ const ToyProject = () => {
                 <li>개인 토이 프로젝트 (본인 포함 2명의 개발자)</li>
               </ul>
               <ul className="bulleted-list">
-                <li>사용스택: React 18, Next.js, Typescript, Firestore(firebase), React-query, recoil, tailwindcss</li>
+                <li>
+                  사용스택: React 18, Next.js, Typescript, Firestore(firebase), React-query, recoil, tailwindcss,
+                  Lexical Editor, Tui-Editor, next/auth
+                </li>
               </ul>
               <ul className="bulleted-list">
                 <li>

@@ -13,6 +13,12 @@ const OtherExperience = () => {
           <h4>OpenSource</h4>
           <ul className="bulleted-list">
             <li>
+              React 18 공식 도큐 - React 최상위 API 페이지 일부 번역:{' '}
+              <a href="https://github.com/reactjs/ko.reactjs.org/pull/517" target="_blank">
+                PR 링크
+              </a>
+            </li>
+            <li>
               Toast UI Editor의 react-editor react 버전 18로 업그레이드:{' '}
               <a href="https://github.com/nhn/tui.editor/pull/2803" target="_blank">
                 PR 링크
