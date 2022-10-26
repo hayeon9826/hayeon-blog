@@ -186,6 +186,10 @@ footer {
   font-size: var(--fontSize-0);
 }
 
+.about-footer {
+  color: var(--color-text-gray);
+}
+
 hr {
   background: var(--color-text-gray);
   height: 1px;
@@ -613,7 +617,7 @@ img {
   right: 15px;
 }
 
-.toggle-button:checked {
+le-button:checked {
   background: url('https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png') no-repeat center #212121;
   background-size: 10px;
   cursor: pointer;

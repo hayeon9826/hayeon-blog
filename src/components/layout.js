@@ -4,7 +4,7 @@ import ThemeBtn from './themeBtn'
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  const isRootPath = location.pathname === rootPath
+  const isRootPath = location?.pathname === rootPath
 
   let header
 
@@ -23,9 +23,9 @@ const Layout = ({ location, title, children }) => {
   }
 
   const hasLayout = useCallback(() => {
-    if (location.search.includes('header')) {
+    if (location && location?.search.includes('header')) {
       return true
-    } else if (location.pathname.includes('about')) {
+    } else if (location && location?.pathname.includes('about')) {
       return false
     } else {
       return true

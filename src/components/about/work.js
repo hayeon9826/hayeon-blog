@@ -57,20 +57,40 @@ const Work = () => {
           </p>
           <h4>Description.</h4>
           <p>
-            핀다 앱 내에서 은행 대출 상품을 확인하고 바로 약정을 체결할 수 있는 제품, <a href="#">인앱약정</a> 기능의
-            프론트엔드 개발을 맡고 있습니다.
+            핀다 앱 내에서 은행 대출 상품을 확인하고 바로 약정을 체결할 수 있는 제품,{' '}
+            <a href="/work/inapp-detail-1" target="_blank">
+              인앱약정
+            </a>{' '}
+            기능의 프론트엔드 개발을 맡고 있습니다.
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
-            <li>핀다 앱 내에서 약정 확인 및 대출 연동을 할 수 있는 인앱약정 제품 개발 </li>
+            <li>
+              중간 단계의 폼에서 바로 API 호출하던 방식에서, Redux를 사용하여 상태값을 관리할 수 있도록 설계를
+              변경했습니다. 15회이상 여러번 호출되던 API 횟수를 줄여, 불필요한 서버 요청을 5단계로 줄일 수 있었고, 기존
+              데이터를 참조하는 코드에서 Redux의 상태값을 바로 가져올 수 있도록 하여 페이지 전환 속도를 개선하였습니다.{' '}
+              <a href="/work/inapp-detail-1" target="_blank">
+                [링크]
+              </a>
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>react-spring을 이용하여 웹에서도 앱처럼 자연스로운 모션으로 이동할 수 있도록 개선</li>
+            <li>
+              기존에 앱과 웹 사이의 페이지 이동이 부자연스럽다는 피드백이 있어, 웹을 옆으로 넘길 때 앱처럼 작동할 수
+              있는 transition을 적용했습니다. react-spring을 이용하여 웹에서도 앱처럼 자연스러운 모션으로 이동할 수
+              있도록 사용성을 개선하였습니다.{' '}
+              <a href="/work/inapp-detail-2" target="_blank">
+                [링크]
+              </a>
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>주소 검색을 위한 API 연동 및 Intersection Observer를 이용한 무한 스크롤 도입</li>
+            <li>
+              주소 검색을 위한 API 연동 및 Intersection Observer를 이용한 무한 스크롤 도입을 작업했습니다. 한번에
+              수백가지의 주소를 모두 가져오지 않고, 20개씩 끊어서 데이터를 가져올 수 있게 하여 성능을 최적화 하였습니다.
+            </li>
           </ul>
-          <h4>What I learned.</h4>
+          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
           </ul>
@@ -79,7 +99,7 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
-          </ul>
+          </ul> */}
         </div>
         <br />
         <div className="mt-5">
@@ -110,7 +130,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>대출 그로스팀에서 ios, aos 팀원들과 협력하여 개인화된 금융 서비스를 더욱 빠르고 안정적이게 제공</li>
           </ul>
-          <h4>What I learned.</h4>
+          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
           </ul>
@@ -119,7 +139,7 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
-          </ul>
+          </ul> */}
         </div>
         <br />
         <div className="mt-5">
@@ -151,7 +171,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>피플팀과 협업하여 채용 페이지 디자인 개선 및 그리팅 링크 추가 작업 진행</li>
           </ul>
-          <h4>What I learned.</h4>
+          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
           </ul>
@@ -160,7 +180,7 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
-          </ul>
+          </ul> */}
         </div>
         <br />
         <br />
@@ -225,7 +245,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)</li>
           </ul>
-          <h4>What I learned.</h4>
+          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
           </ul>
@@ -234,7 +254,7 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
-          </ul>
+          </ul> */}
         </div>
 
         <br />
@@ -261,7 +281,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>디자인 피그마를 참고하여 서비스 퍼블리싱 및 유지보수 작업</li>
           </ul>
-          <h4>What I learned.</h4>
+          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
           </ul>
@@ -270,7 +290,7 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>내용이 들어갑니다</li>
-          </ul>
+          </ul> */}
         </div>
       </section>
     </>

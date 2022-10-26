@@ -36,7 +36,7 @@ const AboutPage = ({ data, location }) => {
           <Education />
         </div>
       </article>
-      <div className="mt-100">
+      <div className="mt-100 about-footer">
         <small>
           Frontend Engineer, Hayeon Kim{' '}
           <a href="https://github.com/hayeon9826" target="_blank">
@@ -46,6 +46,10 @@ const AboutPage = ({ data, location }) => {
           Inspired By{' '}
           <a href="https://jbee.io/about" target="_blank">
             jbee
+          </a>
+          ,{' '}
+          <a href="https://hyunseob.github.io/resume/" target="_blank">
+            hyunseob
           </a>
           ,{' '}
           <a href="https://wonny.oopy.io/" target="_blank">
