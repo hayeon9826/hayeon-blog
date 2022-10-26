@@ -62,13 +62,23 @@ const Work = () => {
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
-            <li>핀다 앱 내에서 약정 확인 및 대출 연동을 할 수 있는 인앱약정 제품 개발</li>
+            <li>핀다 앱 내에서 약정 확인 및 대출 연동을 할 수 있는 인앱약정 제품 개발 </li>
           </ul>
           <ul className="bulleted-list">
             <li>react-spring을 이용하여 웹에서도 앱처럼 자연스로운 모션으로 이동할 수 있도록 개선</li>
           </ul>
           <ul className="bulleted-list">
             <li>주소 검색을 위한 API 연동 및 Intersection Observer를 이용한 무한 스크롤 도입</li>
+          </ul>
+          <h4>What I learned.</h4>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
           </ul>
         </div>
         <br />
@@ -100,6 +110,16 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>대출 그로스팀에서 ios, aos 팀원들과 협력하여 개인화된 금융 서비스를 더욱 빠르고 안정적이게 제공</li>
           </ul>
+          <h4>What I learned.</h4>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
         </div>
         <br />
         <div className="mt-5">
@@ -130,6 +150,16 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>피플팀과 협업하여 채용 페이지 디자인 개선 및 그리팅 링크 추가 작업 진행</li>
+          </ul>
+          <h4>What I learned.</h4>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
           </ul>
         </div>
         <br />
@@ -190,10 +220,20 @@ const Work = () => {
             <li>React 활용한 인썸니아 내부 빌더 제작</li>
           </ul>
           <ul className="bulleted-list">
-            <li>Next.js/ Node.js/ Prisma를 이용한 웹 서비스 다수 개발 및 유지보수</li>
+            <li>Next.js/ Node.js/ Prisma를 이용한 웹 서비스 다수 개발</li>
           </ul>
           <ul className="bulleted-list">
             <li>AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)</li>
+          </ul>
+          <h4>What I learned.</h4>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
           </ul>
         </div>
 
@@ -220,6 +260,16 @@ const Work = () => {
           </ul>
           <ul className="bulleted-list">
             <li>디자인 피그마를 참고하여 서비스 퍼블리싱 및 유지보수 작업</li>
+          </ul>
+          <h4>What I learned.</h4>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>내용이 들어갑니다</li>
           </ul>
         </div>
       </section>

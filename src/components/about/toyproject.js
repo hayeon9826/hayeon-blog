@@ -104,6 +104,56 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
+          <div className="column-list mt-5">
+            <div style={{ width: '31.25%' }} className="column">
+              <h5 className="mt-2">VanillaJS 타이핑 게임</h5>
+              <p>2022.10</p>
+              <p>개인 토이 프로젝트</p>
+            </div>
+            <div style={{ width: '68.75%' }} className="column">
+              <ul className="bulleted-list">
+                <li>
+                  개인 토이 프로젝트 (<strong>VanillaJS로 만든 타이핑 게임 프로젝트</strong>)
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>사용스택: vanillaJS, webpack, jest, json-server</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>초기 진입 시 게임 화면 표시</li>
+                <li>게임 시작 및 초기화 버튼 구현</li>
+                <li>게임 시작 시 남은 시간 및 점수 표시</li>
+                <li>input에 단어 입력 시 체크</li>
+                <li>게임 완료 시 완료 페이지로 라우팅</li>
+                <li>완료 페이지에서 점수 및 걸린 평균 시간 표시, 다시 시작 버튼 추가</li>
+                <li>그 외: 첫 화면 진입 시 인풋 disable, 단어 틀리면 인풋 clear</li>
+                <li>Jest로 테스트 코드 작성</li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  깃헙링크:{' '}
+                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/typing-game-vanillajs">
+                    github.com/hayeon9826/typing-game-vanillajs
+                  </a>
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  실서버 링크:{' '}
+                  <a target="_blank" rel="noreferrer" href="https://typing-game-khy.vercel.app/">
+                    typing-game-khy.vercel.app
+                  </a>
+                </li>
+              </ul>
+              <ul className="bulleted-list">
+                <li>
+                  <span className="highlight-gray">
+                    <strong>기여도 100%</strong>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
           {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">오늘배움 (TIL) 서비스</h5>
@@ -212,7 +262,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          <div className="column-list mt-5">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">O2O 학원 매칭 서비스</h5>
               <p>
@@ -254,7 +304,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>
@@ -373,7 +423,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div>
-          <div className="column-list mt-5">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <a target="_blank" rel="noreferrer" href="http://cacers.com">
                 <h5 className="mt-2">Cacers</h5>
@@ -414,7 +464,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           {/* <div className="column-list">
             <div style={{ width: '31.25%' }} className="column">
               <p>

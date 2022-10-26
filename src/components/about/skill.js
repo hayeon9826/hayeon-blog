@@ -49,7 +49,7 @@ const Skill = () => {
           </ul>
           <h4>5. ETC</h4>
           <ul id="256e629f-a527-43b1-aac9-09ac9dcbe5a0" className="bulleted-list">
-            <li>Yarn, Babel, Webpack</li>
+            <li>Yarn, Yarn Berry, Babel, Webpack</li>
             <li>Git / Github, Bitbucket</li>
           </ul>
         </div>
