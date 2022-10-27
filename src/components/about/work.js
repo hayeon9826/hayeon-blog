@@ -66,9 +66,10 @@ const Work = () => {
           <h4>What I did.</h4>
           <ul className="bulleted-list">
             <li>
-              중간 단계의 폼에서 수시로 API 호출하던 방식에서, Redux를 사용하여 상태값을 관리할 수 있도록 설계를
-              개선했습니다. 15회이상 여러번 호출되던 API 횟수를 줄여 불필요한 서버 요청을 5단계로 줄일 수 있었고,
-              프론트에서 Redux의 상태값을 바로 가져올 수 있도록 수정해 페이지 전환 속도를 개선하였습니다.{' '}
+              인앱약정 프로세스 중 잦은 API를 호출하던 방식에서, Redux를 사용하여 상태값을 관리하고 최소한의 API 호출을
+              할 수 있도록 설계를 개선했습니다. 15회이상 여러번 호출되던 API 횟수를 줄여 불필요한 서버 요청을 5단계로
+              줄일 수 있었고, 프론트에서 Redux의 상태값을 바로 가져올 수 있도록 수정해 페이지 전환 속도를
+              개선하였습니다.{' '}
               <a href="/work/inapp-detail-1" target="_blank">
                 [링크]
               </a>
@@ -87,7 +88,8 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>
               주소 검색을 위한 API 연동 및 Intersection Observer를 이용한 무한 스크롤 도입을 작업했습니다. 한번에
-              수백가지의 주소를 모두 가져오지 않고, 20개씩 끊어서 데이터를 가져올 수 있게 하여 성능을 최적화 하였습니다.
+              수백가지의 주소를 모두 가져오지 않고, 20개씩 끊어서 데이터를 가져올 수 있게 하여 사용자 경험을 개선하고
+              성능을 최적화했습니다.
             </li>
           </ul>
           {/* <h4>What I learned.</h4>
@@ -122,13 +124,17 @@ const Work = () => {
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
-            <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
+            <li>
+              디자인팀과 협업하여 디자인 시스템을 구축하였습니다. 기존 핀다 컴포넌트를 스토리북에 모두 정리하여
+              디자이너와 개발자간의 커뮤니케이션 비용과 프론트엔드 개발자의 컴포넌트 적용 시간을 개선하였습니다. (Jira
+              협업 요청 20% 개선) 또한, 기존 컴포넌트를 최신화하여 전체적인 디자인을 변경 작업중입니다.
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>마케팅팀과 협업하여 후순위 담보 대출 인프로 페이지 작업 진행</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>대출 그로스팀에서 ios, aos 팀원들과 협력하여 개인화된 금융 서비스를 더욱 빠르고 안정적이게 제공</li>
+            <li>
+              마케팅팀과 협업하여 후순위 담보 대출 인트로 페이지 작업을 진행했습니다. Tailwind의 `transition-transform`,
+              `transform`, `duration`, `ease-in-out`등 transition 클래스를 활용하여 자동 롤링 배너를 개발했습니다.
+            </li>
           </ul>
           {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
@@ -162,14 +168,21 @@ const Work = () => {
               <a href="https://hayeondev.gatsbyjs.io/220622-debugging-tools-vconsole/" target="_blank" rel="noreferrer">
                 모바일 웹 콘솔 (vconsole)
               </a>
-              을 도입하여 stage, devstage에서 효율적인 디버깅을 할 수 있도록 기여
+              을 도입하여 stage, devstage에서 효율적인 디버깅을 할 수 있도록 기여했습니다.
             </li>
           </ul>
           <ul className="bulleted-list">
-            <li>v1 레거시를 v2로 변경하는 작업을 통해 데이터 로딩 속도 개선 및 최신 문법으로 코드 베이스를 업데이트</li>
+            <li>
+              v1 레거시를 v2로 변경하는 작업을 통해 데이터 로딩 속도 개선 및 최신 문법으로 코드 베이스를
+              업데이트했습니다.
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>피플팀과 협업하여 채용 페이지 디자인 개선 및 그리팅 링크 추가 작업 진행</li>
+            <li>
+              피플팀과 협업하여 채용 페이지 디자인 개선 및 그리팅 링크 추가 작업을 진행했습니다. 피플팀과의 커뮤니케이션
+              시간을 줄이기 위해, 피플팀이 직접 Google Spread Sheet로 데이터를 변경할 수 있도록 설계를 개선했습니다.
+              실제 데이터 적용 시간은 `revalidate 60*60`을 주어 한 시간 후 적용될 수 있도록 작업했습니다.
+            </li>
           </ul>
           {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
@@ -234,27 +247,17 @@ const Work = () => {
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
-            <li>Rails(BE)와 React(FE)를 이용한 5개의 초기 스타트업 웹 서비스 개발 및 유지보수</li>
+            <li>
+              Rails(BE)와 React(FE)를 이용한 5개의 초기 스타트업 웹 서비스를 개발 및 유지보수 했습니다. Next.js/
+              Node.js/ Prisma를 이용해 프론트엔드 개발을 고도화했습니다.
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>React 활용한 인썸니아 내부 빌더 제작</li>
+            <li>React 활용한 인썸니아 내부 빌더를 제작했습니다.</li>
           </ul>
           <ul className="bulleted-list">
-            <li>Next.js/ Node.js/ Prisma를 이용한 웹 서비스 다수 개발</li>
+            <li>AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)를 작업했습니다.</li>
           </ul>
-          <ul className="bulleted-list">
-            <li>AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)</li>
-          </ul>
-          {/* <h4>What I learned.</h4>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul> */}
         </div>
 
         <br />
@@ -273,24 +276,14 @@ const Work = () => {
             <span className="highlight-gray">2020.05-2021.03</span>
           </p>
           <ul className="bulleted-list">
-            <li>Rails와 framework7을 이용한 웹 서비스 개발 및 유지보수</li>
+            <li>Rails와 framework7을 이용한 웹 서비스 개발 및 유지보수를 작업했습니다.</li>
           </ul>
           <ul className="bulleted-list">
-            <li>5개의 스타트업 웹앱 서비스 구현 및 런칭</li>
+            <li>5개의 스타트업 웹앱 서비스 구현 및 런칭하였습니다.</li>
           </ul>
           <ul className="bulleted-list">
-            <li>디자인 피그마를 참고하여 서비스 퍼블리싱 및 유지보수 작업</li>
+            <li>디자인 피그마를 참고하여 서비스 퍼블리싱 및 유지보수 작업을 진행했습니다.</li>
           </ul>
-          {/* <h4>What I learned.</h4>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul> */}
         </div>
       </section>
     </>
