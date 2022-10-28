@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/layout'
-import SyntaxHighlighter from 'react-syntax-highlighter'
-import prism from 'react-syntax-highlighter/dist/esm/styles/prism/prism'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 const Work = () => {
   const beforeCode = `
@@ -74,17 +74,17 @@ const Work = () => {
             </ul>
             <h4>Before</h4>
             <small>* 예시 코드입니다.</small>
-            <SyntaxHighlighter language="javascript" style={prism}>
+            <SyntaxHighlighter language="jsx" style={dracula}>
               {beforeCode}
             </SyntaxHighlighter>
 
             <h4>After</h4>
             <small>* 예시 코드입니다.</small>
 
-            <SyntaxHighlighter language="javascript" style={prism}>
+            <SyntaxHighlighter language="jsx" style={dracula}>
               {afterCode}
             </SyntaxHighlighter>
-            <SyntaxHighlighter language="javascript" style={prism}>
+            <SyntaxHighlighter language="jsx" style={dracula}>
               {afterCode2}
             </SyntaxHighlighter>
           </div>

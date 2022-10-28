@@ -28,9 +28,9 @@ const Header = ({ location }) => {
             저는 <span className="badge text-bg-primary p-1 me-1">_ _ _ _ _ _ </span> 하는 개발자 입니다.
           </div>
           <ul>
-            <li>사용자들의 입장에서 제품을 개발하는</li>
-            <li>조직의 성장과 발전하는 개발문화를 고민하는</li>
-            <li>함께 일하는 동료들과의 소통 및 협업을 중시하는</li>
+            <li>사용자들의 입장에서 섬세하게 제품을 개발하는</li>
+            <li>조직의 발전과 함께 성장하는 개발문화를 고민하는</li>
+            <li>개발 지식을 문서화하고 공유하는 것을 좋아하는</li>
           </ul>
         </div>
         <div>

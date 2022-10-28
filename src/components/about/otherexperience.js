@@ -34,16 +34,39 @@ const OtherExperience = () => {
           <h4>Presentation</h4>
           <ul className="bulleted-list">
             <li>
-              디자인 시스템 개념 및{' '}
+              사내 디자인팀 & 테크팀에게 디자인 시스템 개념 및{' '}
               <a href="https://hayeondev.gatsbyjs.io/220919-storybook/" target="_blank" rel="noreferrer">
                 Storybook 사용 방법
               </a>{' '}
-              발표 - 사내 발표
+              발표
             </li>
             <li>
               프론트엔드 개발 용어집 강의 -{' '}
               <a href="https://zero-base.co.kr/event/school_FE" target="_blank" rel="noreferrer">
                 zerobase
+              </a>
+              ,{' '}
+              <a
+                href="https://drive.google.com/drive/folders/1kT7nvYi8chCUittGLnpBCtidK6IFx0yo?usp=sharing"
+                target="_blank"
+              >
+                강의 링크
+              </a>
+            </li>
+            <li>
+              사내 프론트팀 세미나에서 useEffect 완벽 가이드 요약 발표 -{' '}
+              <a href="https://hayeondev.gatsbyjs.io/220629-useEffect-guide/" target="_blank">
+                발표 자료
+              </a>
+            </li>
+            <li>
+              대학 연합 IT 동아리 멋쟁이사자처럼에서 비전공생들을 대상으로 Django / React 강의 제공 -{' '}
+              <a
+                href="https://drive.google.com/drive/folders/1Ok4bgeFaE_V3lki_pE3GAf0co8H-goSU?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                강의 링크
               </a>
             </li>
           </ul>
