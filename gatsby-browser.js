@@ -1,5 +1,5 @@
 // Highlighting for code blocks
-require('prism-themes/themes/prism-holi-theme.css')
+require('prism-themes/themes/prism-dracula.css')
 // custom typefaces
 require('typeface-montserrat')
 require('typeface-merriweather')
@@ -8,4 +8,4 @@ require('typeface-merriweather')
 // require('./src/style.css')
 
 // normalize CSS across browsers
-require ('./src/normalize.css')
+require('./src/normalize.css')

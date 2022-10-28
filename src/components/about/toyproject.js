@@ -384,7 +384,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          <div className="column-list mt-5">
+          {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <h5 className="mt-2">피링 (p.ling)</h5>
               <p>
@@ -422,7 +422,7 @@ const ToyProject = () => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
           {/* <div className="column-list mt-5">
             <div style={{ width: '31.25%' }} className="column">
               <a target="_blank" rel="noreferrer" href="http://cacers.com">

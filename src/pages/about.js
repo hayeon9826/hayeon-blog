@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { useCallback } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Seo from '../components/seo'
@@ -14,6 +14,16 @@ import OtherExperience from '../components/about/otherexperience'
 
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
+
+  const hasLayout = useCallback(() => {
+    if (location && location?.search.includes('header')) {
+      return true
+    } else if (location && location?.pathname.includes('about')) {
+      return false
+    } else {
+      return true
+    }
+  }, [location])
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -36,27 +46,29 @@ const AboutPage = ({ data, location }) => {
           <Education />
         </div>
       </article>
-      <div className="mt-100 about-footer">
-        <small>
-          Frontend Engineer, Hayeon Kim{' '}
-          <a href="https://github.com/hayeon9826" target="_blank">
-            @hayeon9826
-          </a>
-          <br />
-          Inspired By{' '}
-          <a href="https://jbee.io/about" target="_blank">
-            jbee
-          </a>
-          ,{' '}
-          <a href="https://hyunseob.github.io/resume/" target="_blank">
-            hyunseob
-          </a>
-          ,{' '}
-          <a href="https://wonny.oopy.io/" target="_blank">
-            Wonny
-          </a>
-        </small>
-      </div>
+      {hasLayout() && (
+        <div className="mt-100 about-footer">
+          <small>
+            Frontend Engineer, Hayeon Kim{' '}
+            <a href="https://github.com/hayeon9826" target="_blank">
+              @hayeon9826
+            </a>
+            <br />
+            Inspired By{' '}
+            <a href="https://jbee.io/about" target="_blank">
+              jbee
+            </a>
+            ,{' '}
+            <a href="https://hyunseob.github.io/resume/" target="_blank">
+              hyunseob
+            </a>
+            ,{' '}
+            <a href="https://wonny.oopy.io/" target="_blank">
+              Wonny
+            </a>
+          </small>
+        </div>
+      )}
     </Layout>
   )
 }

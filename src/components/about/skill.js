@@ -19,13 +19,7 @@ const Skill = () => {
             <li>Next.js, Ruby on Rails</li>
           </ul>
           <ul className="bulleted-list">
-            <li>React, Tailwind</li>
-          </ul>
-          <h4>3. Frontend Library</h4>
-          <ul className="bulleted-list">
-            <li>Redux, Recoil</li>
-            <li>React-Query</li>
-            <li>TailwindCSS, Styled-Components</li>
+            <li>React</li>
           </ul>
         </div>
         <div style={{ width: '50%' }} className="column">
@@ -40,14 +34,19 @@ const Skill = () => {
               </ul>
             </li>
           </ul> */}
-          <h4>4. DB</h4>
+          <h4>3. Frontend Library</h4>
+          <ul className="bulleted-list">
+            <li>Redux, Recoil, React-Query</li>
+            <li>TailwindCSS, Styled-Components</li>
+          </ul>
+          {/* <h4>4. DB</h4>
           <ul className="bulleted-list">
             <li>Postgres</li>
           </ul>
           <ul className="bulleted-list">
             <li>ORM: Prisma, ActiveRecord</li>
-          </ul>
-          <h4>5. ETC</h4>
+          </ul> */}
+          <h4>4. Tools</h4>
           <ul id="256e629f-a527-43b1-aac9-09ac9dcbe5a0" className="bulleted-list">
             <li>Yarn, Yarn Berry, Babel, Webpack</li>
             <li>Git / Github, Bitbucket</li>

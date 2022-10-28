@@ -124,12 +124,12 @@ const Work = () => {
           <h4>Description.</h4>
           <p>
             핀다의 <b>‘개인화된 금융 서비스를 더욱 빠르고 안정적이게 제공’</b>하는 목표를 가지고 마케팅 팀과 협업,
-            디자인 시스템 구축의 업무를 맡고 있습니다. 특히, 핀다 내 컴포넌트의 재사용성을 높이고 관리하기 쉬운 시스템
-            구축하기 위해{' '}
+            디자인 시스템 구축의 업무를 맡고 있습니다. 특히, 핀다 내 컴포넌트의 재사용성을 높이고 관리하기 쉬운 디자인
+            시스템을 구축하기 위해{' '}
             <a href="https://storybook.js.org/" target="_blank">
-              디자인 시스템
+              Storybook
             </a>
-            을 주도하여 프론트엔드 개발을 작업중입니다.
+            을 주도하여 개발, 관리하고 있습니다.
             <br />
             <br />
             React, Next.js, Typescript, Redux, Tailwind, Storybook, styled-components를 이용해 개발했습니다.
@@ -183,9 +183,13 @@ const Work = () => {
           </p>
           <h4>Description.</h4>
           <p>
-            핀다의 웹 페이지를 개발하고 유지보수하는 업무를 맡고 있습니다. 효율성을 극대화 하기 위한 모바일 콘솔 적용,
-            레거시 클래스 코드를 함수형 코드로 리팩터링 (전세/오토/신용 대출 상품 페이지), 피플팀과 협업하여 채용페이지
-            관리 등의 업무를 맡았습니다.
+            핀다의{' '}
+            <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
+              웹사이트
+            </a>
+            를 개발하고 유지보수하는 업무를 맡고 있습니다. 효율성을 극대화 하기 위한 모바일 콘솔 적용, 레거시 클래스
+            코드를 함수형 코드로 리팩터링 (전세/오토/신용 대출 상품 페이지), 피플팀과 협업하여 채용페이지 관리 등의
+            업무를 맡았습니다.
             <br />
             <br />
             React, Next.js, Typescript, Redux, Tailwind, styled-components, Cypress, Jest를 이용해 개발했습니다.
@@ -293,13 +297,17 @@ const Work = () => {
             책임 프론트엔드 개발자로서 5개의 초기 스타트업 웹/웹앱 서비스 개발했습니다. 제품 초기 세팅부터 기능 개발,
             리팩토링, 퍼블리싱, 유지보수를 맡았습니다. 고객사와 실시간으로 소통하며 애자일한 프로세스를 경험할 수
             있었습니다.
+            <br />
+            <br />
+            React, Next.js, Typescript, Recoil, React-Query, Tailwind, AWS (S3, EC2, Amplify, RDS, Cognito)를 이용해
+            개발했습니다.
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
             <li>
               Rails(BE)와 React(FE)를 이용한 5개의 초기 스타트업 웹 서비스를 개발 및 유지보수 했습니다. Next.js/
-              Node.js/ Prisma를 이용해 프론트엔드 개발을 고도화했습니다. 여러가지 기술과 포지션을 맡아 다양한 경험을 할
-              수 있었습니다.
+              Node.js/ Prisma를 이용해 프론트엔드 개발을 고도화했습니다. 여러가지 기술과 포지션을 맡아 개발에 대한
+              폭넓은 이해를 할 수 있었고, Frontend / Backend / 퍼블리싱 / Devops 등 다양한 경험을 할 수 있었습니다.
             </li>
           </ul>
           <ul className="bulleted-list">
@@ -310,10 +318,27 @@ const Work = () => {
             </li>
           </ul>
           <ul className="bulleted-list">
-            <li>AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)를 작업했습니다.</li>
+            <li>
+              AWS 서비스를 이용한 사용자 관리(Cognito) 및 배포 (ec2, s3)를 작업했습니다. 기존 MVP 서비스를 더욱 안정성
+              있는 AWS 서비스로 이전함으로써 서비스의 보안과 확장성을 고려한 설계를 하였습니다.
+            </li>
+            <li>
+              약 20개의 사내 기술 도큐를 작성하여 개발자들에게 문제 해결 과정을 공유하였습니다. 혼자서만 기술을 배우고
+              끝내는 것이 아니라, 모두에게 과정 및 결과를 공유함으로써 함께 성장하는 개발 문화 정착에 기여했습니다.{' '}
+              <a href="https://hayeondev.gatsbyjs.io/210906-rails-axlsx/" target="_blank">
+                [예시 1]
+              </a>
+              ,{' '}
+              <a href="https://hayeondev.gatsbyjs.io/210906-rubyzip/" target="_blank">
+                [예시 2]
+              </a>
+              ,{' '}
+              <a href="https://hayeondev.gatsbyjs.io/210910-ios-video/" target="_blank">
+                [예시 3]
+              </a>
+            </li>
           </ul>
         </div>
-
         <br />
         <div className="mt-5">
           <h4 className="mb-1">개발 1팀 팀원 (프리랜서)</h4>
@@ -324,19 +349,37 @@ const Work = () => {
             <span className="highlight-gray">2020.05-2021.03</span>
           </p>
           <h4>Description.</h4>
-          <p>Ruby on Rails 풀스택 개발자로 5가지의 초기 스타트업 웹/웹앱 서비스를 개발, 유지보수를 진행했습니다.</p>
+          <p>
+            Ruby on Rails 풀스택 개발자로 5가지의 초기 스타트업 웹/웹앱 서비스를 개발, 유지보수를 진행했습니다. 고객사와
+            실시간으로 소통하며 우선순위에 맞게 MVP 기능을 개발하는 중요성을 배웠습니다.
+            <br />
+            <br />
+            Ruby, Ruby on Rails, Framework7를 이용해 개발했습니다.
+          </p>
           <h4>What I did.</h4>
           <p>
             <span className="highlight-gray">2020.05-2021.03</span>
           </p>
           <ul className="bulleted-list">
-            <li>Rails와 framework7을 이용한 웹 서비스 개발 및 유지보수를 작업했습니다.</li>
+            <li>
+              Rails와 framework7을 이용한 다섯 가지의 웹 서비스 개발 및 유지보수를 작업했습니다. DB 설계부터 프로젝트
+              초기 세팅, 상세 기능 개발, 어드민 개발, QA, 그리고 유지 보수까지 MVP 서비스를 처음부터 끝까지 주도하여
+              개발해보는 경험을 할 수 있었습니다.
+            </li>
           </ul>
           <ul className="bulleted-list">
-            <li>5개의 스타트업 웹앱 서비스 구현 및 런칭하였습니다.</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>디자인 피그마를 참고하여 서비스 퍼블리싱 및 유지보수 작업을 진행했습니다.</li>
+            <li>
+              디자이너가 전달해준 디자인 피그마를 참고하여 퍼블리싱 작업을 하였습니다.{' '}
+              <a href="/221029-BEM/" target="_blank">
+                BEM(Block, Element, Modifier)
+              </a>{' '}
+              방식으로 커스텀 클래스를 만들어 CSS를 적용했습니다. 클래스 구조를 먼저 설계한 후, 비슷한 요소들끼리 묶어서
+              Block, Element, Modifier를 하나씩 추가하며 작업하여 코드를 더 간결하고 체계적이게 개선할 수 있었습니다.
+            </li>
+            <li>
+              사용자의 입장에서 UI가 편리한지, 뒤로가기 플로우는 자연스러운지, 모호한 버튼 및 워딩이 없는지 섬세하게
+              체크하며 수정이 필요한 부분은 고객사와 직접 논의하여 반영하였습니다.
+            </li>
           </ul>
         </div>
       </section>
