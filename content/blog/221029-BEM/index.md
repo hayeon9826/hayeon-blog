@@ -3,7 +3,7 @@ title: 'BEM이란?'
 date: '2022-10-29T11:45:32.169Z'
 description: 'CSS 네이밍 컨벤션 BEM에 대해서 알아보자'
 category: 'Development'
-keywords: '에디터, Tui-Editor'
+keywords: 'CSS, BEM, Naming Convention'
 image: 'https://velog.velcdn.com/images/khy226/post/609f8aff-4baa-4648-87a4-451ab0285434/image.png'
 ---
 
