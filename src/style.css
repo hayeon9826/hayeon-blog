@@ -617,7 +617,7 @@ img {
   right: 15px;
 }
 
-le-button:checked {
+.toggle-button:checked {
   background: url('https://raw.githubusercontent.com/RuchiVS/image-upload/main/moon.png') no-repeat center #212121;
   background-size: 10px;
   cursor: pointer;
