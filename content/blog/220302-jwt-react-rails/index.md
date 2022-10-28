@@ -37,8 +37,8 @@ JWT 공식 사이트 (https://jwt.io/) 에 들어가면 암호화 된 토큰을 
 
 JWT 토큰의 헤더는 typ와 alg 두 가지 정보로 구성된다. alg는 signature를 암호화 할 알고리즘 방식을 지정하고, typ는 토큰의 타입을 지정한다.
 
-- alg: 토큰의 타입을 지정한다. (ex. JWT)
-- typ: 암호화 알고리즘 방식을 지정한다. 서명(Signature)을 암호화 하거나, 토큰 검증에 사용된다. (ex. HS256, RSA)
+- alg: 암호화 알고리즘 방식을 지정한다. 서명(Signature)을 암호화 하거나, 토큰 검증에 사용된다. (ex. HS256, RSA)
+- typ: 토큰의 타입을 지정한다. (ex. JWT)
 
 ```javascript
 {
