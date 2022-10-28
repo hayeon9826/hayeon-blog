@@ -13,6 +13,12 @@ const OtherExperience = () => {
           <h4>Open Source</h4>
           <ul className="bulleted-list">
             <li>
+              React 18 공식 도큐 - Hooks API Reference 페이지 일부 번역:{' '}
+              <a href="https://github.com/reactjs/ko.reactjs.org/pull/518" target="_blank">
+                PR 링크
+              </a>
+            </li>
+            <li>
               React 18 공식 도큐 - React 최상위 API 페이지 일부 번역:{' '}
               <a href="https://github.com/reactjs/ko.reactjs.org/pull/517" target="_blank">
                 PR 링크
