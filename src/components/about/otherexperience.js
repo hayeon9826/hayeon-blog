@@ -72,7 +72,7 @@ const OtherExperience = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                강의 링크
+                Django 강의 링크
               </a>
             </li>
           </ul>

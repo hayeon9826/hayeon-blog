@@ -33,25 +33,13 @@ const DevExperience = () => {
             <p>React, Next.js, Redux, Typescript, Tailwindcss</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                대출 상품 검색 페이지에 SSG를 적용하여 렌더링 속도 50% 개선. [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>대출 상품 검색 페이지에 SSG를 적용하여 렌더링 속도 50% 개선.</li>
             </ul>
             <ul className="bulleted-list">
               <li>인앱약정 기능을 개발하여 앱 내에서 대출상품 계약을 할 수 있도록 기여.</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                기존 Class component의 v1 코드를 Functional Component로 개선하여 v2 프로젝트로 이전. [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>기존 Class component의 v1 코드를 Functional Component로 개선하여 v2 프로젝트로 이전.</li>
             </ul>
             <figure className="image">
               <StaticImage
@@ -90,26 +78,13 @@ const DevExperience = () => {
             <p>React, Next.js, Redux, Typescript, Tailwindcss, Cypress, Emotion, Storybook</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>디자인팀과 협업하여 디자인 시스템 구축. 기존 핀다 컴포넌트 최신화 및 Storybook 작업</li>
             </ul>
             <ul className="bulleted-list">
               <li>피플팀과 협업하여 회사 소개 페이지 및 채용 페이지 개발, 유지보수.</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                {' '}
-                채용 페이지 데이터를 구글 스프레드 시트와 연동하는 작업으로 개발 요청 및 협업 시간 200% 단축 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li> 채용 페이지 데이터를 구글 스프레드 시트와 연동하는 작업으로 개발 요청 및 협업 시간 200% 단축</li>
             </ul>
             <ul className="bulleted-list">
               <li>마케팅팀과 협업하여 후순위 담보대출 페이지, 404 에러 페이지 등 요청사항 작업</li>
@@ -210,31 +185,13 @@ const DevExperience = () => {
             <p>프론트엔드: React, Next.js, typescript, html, css</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                기존 polling 방식의 채팅에서 firestore를 활용하여 실시간 채팅 기능 구현. [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>기존 polling 방식의 채팅에서 firestore를 활용하여 실시간 채팅 기능 구현.</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                react-chartjs2를 이용한 다이어트 그래프 구현 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>react-chartjs2를 이용한 다이어트 그래프 구현</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                react-calendar 활용한 다이어트 캘린더 구현 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>react-calendar 활용한 다이어트 캘린더 구현</li>
             </ul>
             <figure className="image">
               <StaticImage
@@ -274,25 +231,13 @@ const DevExperience = () => {
             <p>프론트엔드: React, Next.js, typescript html, css</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>
-                브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리</li>
             </ul>
             <ul className="bulleted-list">
               <li>캠페인 업로드 및 신청 기능</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                인스타그램 연동 (facebook api) [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>인스타그램 연동 (facebook api)</li>
             </ul>
             <ul className="bulleted-list">
               <li>aws cdk 활용 배포 작업, aws cognito를 이용한 회원 관리</li>
@@ -341,25 +286,13 @@ const DevExperience = () => {
               <li>거리 순 상품 정렬</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                상품 결제 api 적용 (tosspayment 사용) [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>상품 결제 api 적용 (tosspayment 사용)</li>
             </ul>
             <ul className="bulleted-list">
               <li>모바일 관리자 페이지</li>
             </ul>
             <ul className="bulleted-list">
-              <li>
-                정산 관리 페이지 작업 [
-                <a href="#" target="_blank">
-                  링크
-                </a>
-                ]
-              </li>
+              <li>정산 관리 페이지 작업</li>
             </ul>
             <figure className="image">
               <StaticImage

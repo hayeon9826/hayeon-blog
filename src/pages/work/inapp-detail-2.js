@@ -68,13 +68,13 @@ const Work = () => {
             </ul>
             <h4>Before</h4>
             <small>* 예시 코드입니다.</small>
-            <SyntaxHighlighter language="jsx" style={dracula} wrapLongLines>
+            <SyntaxHighlighter language="jsx" style={dracula}>
               {beforeCode}
             </SyntaxHighlighter>
 
             <h4>After</h4>
             <small>* 예시 코드입니다.</small>
-            <SyntaxHighlighter language="jsx" style={dracula} wrapLongLines>
+            <SyntaxHighlighter language="jsx" style={dracula}>
               {afterCode}
             </SyntaxHighlighter>
           </div>
