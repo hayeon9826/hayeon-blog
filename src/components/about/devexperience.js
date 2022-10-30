@@ -368,6 +368,11 @@ const DevExperience = () => {
                 모두다
               </a>
               를 서브 개발자로 개발하였습니다. 고객사, 2명의 개발자와 협업하였으며, 프로젝트의 30% 이상 기여했습니다.
+              <br />
+              <br />
+              해당 프로젝트를 통해 리액트가 서버로부터 데이터를 받는 과정, 데이터를 받아서 서버 상태를 관리하는 방법
+              (react-query)과 상태 관리(recoil) 등 리액트의 전반적인 흐름을 배울 수 있었습니다. 또한, tosspayment 외부
+              결제 api를 적용하여 프론트에서 결제 처리를 해주는 과정을 경험했습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>postgres, AWS (S3, ec2)</p>
@@ -375,17 +380,28 @@ const DevExperience = () => {
             <p>Ruby on Rails, Ruby, React, React-Query, Recoil, Typescript</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>거리 순 상품 정렬</li>
+              <li>
+                React와 Ruby on Rails를 사용하여 중고거래 O2O 서비스를 구현했습니다. 상품 찜하기부터 장바구니 담기, 간편
+                결제, 바로구매, 환불, 주문내역 확인 및 수정 기능을 구현하며 전체적인 구매 프로세스 개발을 경험할 수
+                있었습니다.
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>상품 결제 api 적용 (tosspayment 사용)</li>
+              <li>
+                API 호출 성능 최적화를 위해 <code>React-Query</code>를 사용해 캐싱을 적절히 활용하였습니다. API 호출
+                데이터의 기본 만료시간이 지나기 전까지 동일한 데이터의 api 호출을 하지 않도록 하였고, 특정 상품을
+                수정했을 경우에만 캐시를 강제로 무효화(invalidate)하여 목록을 새로고침 해주었습니다.
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>모바일 관리자 페이지</li>
+              <li>
+                외부 결제 api 인 토스 페이먼츠(tosspayments)를 적용해 프론트와 백엔드에서 결제 처리를 해주었습니다.
+                프론트에서는 <code>tosspayments/sdk</code> 패키지를 사용해 결제액, 주문명, success url 등 결제 요청
+                정보를 토스에 요청하였으며, 주문의 완료 여부를 전달받고 백으로 넘겨주었습니다. 백에서는 결제 완료 (혹은
+                실패)된 주문 정보를 받아 사용자의 주문 데이터를 업데이트 해주었습니다.
+              </li>
             </ul>
-            <ul className="bulleted-list">
-              <li>정산 관리 페이지 작업</li>
-            </ul>
+
             <figure className="image">
               <StaticImage
                 formats={['auto', 'webp', 'avif']}
