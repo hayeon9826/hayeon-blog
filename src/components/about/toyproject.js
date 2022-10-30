@@ -9,158 +9,183 @@ const ToyProject = () => {
             <span className="title-primary">Toy Projects.</span>
           </span>
         </h1>
-        <details>
-          <summary className="text-sm">Toy Projects 상세 보기</summary>
-          <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">findaoverflow</h5>
-              <p>2022.18</p>
-              <p>개인 토이 프로젝트</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>개인 토이 프로젝트 (본인 포함 2명의 개발자)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  사용스택: React 18, Next.js, Typescript, Firestore(firebase), React-query, recoil, tailwindcss,
-                  Lexical Editor, Tui-Editor, next/auth
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  구현 기능: Firestore를 이용한 데이터 생성/수정/삭제, Firebase Auth를 이용한 회원가입, Next/auth를
-                  이용한 인증 및 회원가입, react-hook-form을 이용한 게시글 폼 작업
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/findaoverflow">
-                    github.com/hayeon9826/findaoverflow
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  실서버 링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://findaoverflow.vercel.app/">
-                    findaoverflow.vercel.app
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 50%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
+        {/* <details> */}
+        {/* <summary className="text-sm">Toy Projects 상세 보기</summary> */}
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <h5>findaoverflow</h5>
+            <p>2022.10 ~</p>
+            <p>개인 토이 프로젝트</p>
           </div>
-          <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">구글 캘린더 클론</h5>
-              <p>2022.03</p>
-              <p>개인 토이 프로젝트</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>
-                  개인 토이 프로젝트 (<strong>구글 캘린더 클론 프로젝트)</strong>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용스택: React(create-react-app), Redux-Toolkit, typescript, tailwindcss</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  구현 기능: Redux-Toolkit를 이용한 상태 관리, 주별/월별 캘린더 보기, 선택한 날짜로 화면 변경, 왼쪽 상단
-                  date picker, 이벤트 등록 및 삭제 기능 (제목, 날짜, 시간, 색상)
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/google-calendar">
-                    github.com/hayeon9826/google-calendar
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  실서버 링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
-                    google-calendar-pearl.vercel.app/
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 100%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>개인 토이 프로젝트 (본인 포함 2명의 개발자)</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/findaoverflow">
+                  github.com/hayeon9826/findaoverflow
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://findaoverflow.vercel.app/">
+                  findaoverflow.vercel.app
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 50%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>
+                React 18, Next.js, Typescript, Firestore(firebase), React-query, recoil, tailwindcss, Jodit Editor,
+                next/auth
+              </li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                백엔드 없이 Next.js의 API Router와 Firestore를 이용한 데이터 생성/수정/삭제 기능을 구현했습니다.
+                Firestore의 구조와 원리에 대한 이해를 높였습니다.{' '}
+                <a href="/221014-firestore-crud/" target="_blank">
+                  [상세 링크]
+                </a>{' '}
+              </li>
+              <li>
+                초기 Firebase Auth를 이용한 회원가입을 적용했으나, Next.js 프로젝트의 확장성을 위해 Next/auth를
+                도입하였습니다. Next/auth를 이용한 인증 및 회원가입을 구현하며 인증 프로세스를 경험했습니다.
+              </li>
+              <li>
+                react-hook-form을 이용한 게시글 폼 작업을 진행하였으며, Jodit Editor를 추가하여 에디터로 포스트 작성을
+                할 수 있게 개선하였습니다.
+              </li>
+            </ul>
           </div>
-          <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">VanillaJS 타이핑 게임</h5>
-              <p>2022.10</p>
-              <p>개인 토이 프로젝트</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>
-                  개인 토이 프로젝트 (<strong>VanillaJS로 만든 타이핑 게임 프로젝트</strong>)
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용스택: vanillaJS, webpack, jest, json-server</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>초기 진입 시 게임 화면 표시</li>
-                <li>게임 시작 및 초기화 버튼 구현</li>
-                <li>게임 시작 시 남은 시간 및 점수 표시</li>
-                <li>input에 단어 입력 시 체크</li>
-                <li>게임 완료 시 완료 페이지로 라우팅</li>
-                <li>완료 페이지에서 점수 및 걸린 평균 시간 표시, 다시 시작 버튼 추가</li>
-                <li>그 외: 첫 화면 진입 시 인풋 disable, 단어 틀리면 인풋 clear</li>
-                <li>Jest로 테스트 코드 작성</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/typing-game-vanillajs">
-                    github.com/hayeon9826/typing-game-vanillajs
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  실서버 링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://typing-game-khy.vercel.app/">
-                    typing-game-khy.vercel.app
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 100%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <h5>구글 캘린더 클론</h5>
+            <p>2022.03</p>
+            <p>개인 토이 프로젝트</p>
           </div>
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">오늘배움 (TIL) 서비스</h5>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>
+                개인 토이 프로젝트 (<strong>구글 캘린더 클론 프로젝트)</strong>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/google-calendar">
+                  github.com/hayeon9826/google-calendar
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
+                  google-calendar-pearl.vercel.app/
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>React(create-react-app), Redux-Toolkit, typescript, tailwindcss</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Redux-Toolkit를 이용해 복잡한 캘린더의 상태를 관리했습니다. 기존 Redux의 boilerplate를 축소한
+                Redux-Toolkit의 유용함을 경험했습니다.
+              </li>
+              <li>캘린더, 이벤트 모달 등의 store를 관리하며 효율적인 상태 관리를 설계했습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <h5>VanillaJS 타이핑 게임</h5>
+            <p>2022.03</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>
+                개인 토이 프로젝트 (<strong>VanillaJS로 만든 타이핑 게임 프로젝트</strong>)
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/typing-game-vanillajs">
+                  github.com/hayeon9826/typing-game-vanillajs
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://typing-game-khy.vercel.app/">
+                  typing-game-khy.vercel.app
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>vanillaJS, webpack, jest, json-server</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                VanillaJS로 타이핑 게임 서비스를 설게하고, 복잡한 기능들을 구현했습니다. VanillaJS의 history API를
+                이용해 직접 라우팅 상태를 관리했습니다.
+              </li>
+              <li>
+                Json-server를 사용해 mock 데이터 서버를 띄운 뒤, async / await 함수로 주어진 API URL을 fetch 하도록
+                설정하였습니다.
+              </li>
+              <li>
+                자주 사용되는 유틸 함수와 게임 화면을 Jest로 단위 테스트 코드를 작성했습니다. 중요한 함수 위주로 코드에
+                잘못된 점은 없는지 보완할 수 있었습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+        {/* <div className="column-list mt-5">
+            <div style={{ width: '25%' }} className="column">
+              <h5>오늘배움 (TIL) 서비스</h5>
               <p>2021.12 ~ 2022.02</p>
               <p>개인 토이 프로젝트</p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>개인 토이 프로젝트</li>
               </ul>
@@ -187,9 +212,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">드론 마켓 서비스</h5>
+        {/* <div className="column-list mt-5">
+            <div style={{ width: '25%' }} className="column">
+              <h5>드론 마켓 서비스</h5>
               <p>
                 <span className="highlight-gray">2021.07 ~ 2021.09</span>
               </p>
@@ -200,7 +225,7 @@ const ToyProject = () => {
                 내부 프로젝트
               </p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>사내 외주 프로젝트 (서브개발, 퍼블리싱)</li>
               </ul>
@@ -227,9 +252,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">인썸니아 빌더 </h5>
+        {/* <div className="column-list mt-5">
+            <div style={{ width: '25%' }} className="column">
+              <h5>인썸니아 빌더 </h5>
               <p>
                 <span className="highlight-gray">2021.04 ~ 2021.08</span>
               </p>
@@ -240,7 +265,7 @@ const ToyProject = () => {
                 내부 프로젝트
               </p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>사내 빌더 프로젝트 (서브개발)</li>
               </ul>
@@ -262,9 +287,9 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">O2O 학원 매칭 서비스</h5>
+        {/* <div className="column-list mt-5">
+            <div style={{ width: '25%' }} className="column">
+              <h5>O2O 학원 매칭 서비스</h5>
               <p>
                 <span className="highlight-gray">2020.12 ~ 2021.11</span>
               </p>
@@ -275,7 +300,7 @@ const ToyProject = () => {
                 프로젝트
               </p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
@@ -305,8 +330,8 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list">
-            <div style={{ width: '31.25%' }} className="column">
+        {/* <div className="column-list">
+            <div style={{ width: '25%' }} className="column">
               <p>
                 <strong>모바일 장난감 커머스</strong>
               </p>
@@ -320,7 +345,7 @@ const ToyProject = () => {
                 프로젝트
               </p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
@@ -347,8 +372,8 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list">
-            <div style={{ width: '31.25%' }} className="column">
+        {/* <div className="column-list">
+            <div style={{ width: '25%' }} className="column">
               <p>
                 <strong>코디 추천 서비스</strong>
               </p>
@@ -362,7 +387,7 @@ const ToyProject = () => {
                 프로젝트
               </p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>사내 외주 프로젝트 (서브개발)</li>
               </ul>
@@ -384,15 +409,15 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">피링 (p.ling)</h5>
+        {/* <div className="column-list mt-5">
+            <div style={{ width: '25%' }} className="column">
+              <h5>피링 (p.ling)</h5>
               <p>
                 <span className="highlight-gray">2020.08 ~ 2020.12</span>
               </p>
               <p>개인 프로젝트 (창업)</p>
             </div>
-            <div style={{ width: '68.75%' }} className="column">
+            <div style={{ width: '75%' }} className="column">
               <ul className="bulleted-list">
                 <li>모바일 웹 기반 O2O 피부 관리 채팅 서비스</li>
                 <li>본인 포함 4명의 팀원과 공동 개발. 직접 서비스 기획, 배포, 운영</li>
@@ -423,221 +448,107 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-          {/* <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <a target="_blank" rel="noreferrer" href="http://cacers.com">
-                <h5 className="mt-2">Cacers</h5>
-              </a>
-              <p>
-                <span className="highlight-gray">2020.10</span>
-              </p>
-              <p>개인 외주 프로젝트</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>교내 학회 소개 사이트(개인 외주)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, javascript, ubuntu</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://cacers.com/">
-                    cacers.com/
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/blend_app">
-                    github.com/hayeon9826/cac-web
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <strong>
-                    <span className="highlight-gray">기여도 100%</span>
-                  </strong>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-          {/* <div className="column-list">
-            <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <a target="_blank" rel="noreferrer" href="http://blend2020.herokuapp.com">
-                  <strong>blend</strong>
-                </a>
-              </p>
-              <p>교내 프로젝트</p>
-              <p>
-                <span className="highlight-gray">2020.04 ~ 2020.07</span>
-              </p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>난민 커피 소개 사이트 (학교 프로젝트)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: Ruby on Rails, ruby, javascript, jquery</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  사이트:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://blend2020.herokuapp.com/">
-                    https://blend2020.herokuapp.com/
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/blend_app">
-                    github.com/hayeon9826/blend_app
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 100%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-          <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
-                <h5 className="mt-2">Asianalyse</h5>
-              </a>
-              <p>
-                <span className="highlight-gray">2019.10 ~ 2020.03</span>
-              </p>
-              <p>개인 외주 프로젝트</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>개인 프로젝트로 진행한 학술지 크롤링 웹 사이트.</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: postgres, AWS, EC2, ruby on rails, javascript, 헤로쿠, 카페24 (ubuntu), postgres</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  사이트:{' '}
-                  <span className="highlight-gray">
-                    <a target="_blank" rel="noreferrer" href="https://asianalyse.com/">
-                      asianalyse.com
-                    </a>
-                  </span>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/asian-analyse">
-                    github.com/hayeon9826/asian-analyse
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 100%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
+              <h5>Asianalyse</h5>
+            </a>
+            <p>
+              <span className="highlight-gray">2019.10 ~ 2020.03</span>
+            </p>
+            <p>개인 외주 프로젝트</p>
           </div>
-          <div className="column-list mt-5">
-            <div style={{ width: '31.25%' }} className="column">
-              <h5 className="mt-2">히스킨 (Hiskin)</h5>
-              <p>
-                <span className="highlight-gray">2020.02 ~ 2020.10</span>
-              </p>
-              <p>개인 프로젝트 (창업)</p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>개인 프로젝트로 진행한 마스크팩 추천 커머스</li>
-                <li>본인 포함 4명의 팀원과 공동 개발. 직접 서비스 기획, 배포, 운영</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  구현 기능: 약 900여 개의 성분과 100여 개의 마스크팩 데이터를 csv로 import 함 / 성분별로 피부 타입에
-                  맞는 마스크팩을 추천하는 알고리즘 개발 / 장바구니, 구매, 결제 프로세스 개발 (import 활용) / 모바일 ui
-                  개선 및 서비스 운영
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 40%</strong>
-                  </span>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/kratzjgy/hiskin-server">
-                    Github Link
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>개인 프로젝트로 진행한 학술지 크롤링 웹 사이트.</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                사이트:{' '}
+                <span className="highlight-gray">
+                  <a target="_blank" rel="noreferrer" href="https://asianalyse.com/">
+                    asianalyse.com
                   </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          {/* <div className="column-list">
-            <div style={{ width: '31.25%' }} className="column">
-              <p>
-                <a target="_blank" rel="noreferrer" href="http://wheeling.herokuapp.com">
-                  <strong>Wheel-ing</strong>
+                </span>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/asian-analyse">
+                  github.com/hayeon9826/asian-analyse
                 </a>
-              </p>
-              <p>교내 프로젝트</p>
-              <p>
-                <span className="highlight-gray">2019.04 ~ 2019.08</span>
-              </p>
-            </div>
-            <div style={{ width: '68.75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>베리어 프리 여행지 추천 사이트 (학교 프로젝트)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, javascript, 헤로쿠, 아마존 s3, postgres</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  사이트:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://wheeling.herokuapp.com/">
-                    https://wheeling.herokuapp.com/
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  깃헙:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://github.com/kratzjgy/wheeling">
-                    https://github.com/kratzjgy/wheeling
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 100%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div> */}
-        </details>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>postgres, AWS, EC2, ruby on rails, javascript, 헤로쿠, 카페24 (ubuntu), postgres</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Ruby on Rails의 i18n을 적용하여 프랑스 및 영어로 사이트를 볼 수 있도록 다국어 설정을 구현했습니다.{' '}
+              </li>
+              <li>
+                기존에 수기로 학회 공지사항을 입력하던 구조에서 자동화를 할 수 있도록 설계하였습니다. 자동화를 위해 cron
+                job으로 주요 학회 사이트 공지사항을 크롤링하여 가져오도록 개선하였습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <h5>히스킨 (Hiskin)</h5>
+            <p>
+              <span className="highlight-gray">2020.02 ~ 2020.10</span>
+            </p>
+            <p>개인 프로젝트 (창업)</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>개인 프로젝트로 진행한 마스크팩 추천 커머스</li>
+              <li>본인 포함 4명의 팀원과 공동 개발. 직접 서비스 기획, 배포, 운영</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 40%</strong>
+                </span>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                Github 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/kratzjgy/hiskin-server">
+                  Github Link
+                </a>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>Ruby on Rails, javascript, jquery, ubuntu</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Ruby on Rails로 약 900여 개의 성분과 100여 개의 마스크팩 데이터를 csv로 import 하여 성분별로 피부 타입에
+                맞는 마스크팩을 추천하는 로직을 개발했습니다.
+              </li>
+              <li> 장바구니, 구매, 결제(import 활용) 등 구매 프로세스를 처음부터 끝까지 경험했습니다.</li>
+              <li> PC 및 모바일 버전의 ui를 테스트하며 반응형 사이트로 개선 하였고, 서비스를 직접 운영하였습니다.</li>
+            </ul>
+          </div>
+        </div>
+        {/* </details> */}
       </section>
     </>
   )
