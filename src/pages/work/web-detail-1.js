@@ -102,8 +102,8 @@ export default initVConsole;
                 </a>
               </li>
               <li>
-                vConsole을 도입하여 stage, devstage에서 효율적인 디버깅을 할 수 있도록 기여했습니다. 10회이상 빠르게
-                연타하면 웹 콘솔이 뜰 수 있도록 적용했습니다.
+                vConsole을 도입하여 stage, devstage에서 효율적인 디버깅을 할 수 있도록 기여했습니다. 두 손가락으로
+                5회이상 빠르게 연타하면 웹 콘솔이 뜰 수 있도록 적용했습니다.
               </li>
               <li>
                 <code>useinitVConsole</code> 훅을 만들어 원하는 페이지에서만 웹 콘솔을 호출 할 수 있도록 작업했습니다.

@@ -10,7 +10,7 @@ const Intro = () => {
           </span>
         </h1>
         <p className="fs-6">
-          2년차 프론트엔드 개발자 김하연 입니다. 새로운 기술의 습득을 중시하며,{' '}
+          2년차 프론트엔드 개발자 김하연 입니다. 새로운 기술의 배움을 즐기며,{' '}
           <a href="https://hayeondev.gatsbyjs.io/?category=Study" target="_blank" rel="noreferrer">
             사내 스터디
           </a>{' '}
