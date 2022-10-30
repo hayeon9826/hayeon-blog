@@ -126,7 +126,10 @@ const DevExperience = () => {
                 마케팅팀의 요청으로 IE 브라우저에서는 핀다 웹페이지 대신, 경고 페이지로 리다이렉트 되도록 작업했습니다.
                 브라우저의 <code>user-agent</code> 값으로 IE 브라우저인지 확인하였고, IE 브라우저 접근 시 Next.js의
                 <code>redirects</code>를 사용해 경고 페이지로 리다이렉트를 시켰습니다. 그 결과, IE 브라우저에서 나타나는
-                화면 깨짐 현상을 해결하였고, 마케팅 광고 검수 승인을 받을 수 있었습니다.
+                화면 깨짐 현상을 해결하였고, 마케팅 광고 검수 승인을 받을 수 있었습니다.{' '}
+                <a href="/221030-nextjs-ie-redirects/" target="_blank">
+                  [참고 링크]
+                </a>
               </li>
             </ul>
             <figure className="image">
@@ -215,20 +218,48 @@ const DevExperience = () => {
               <a href="https://apps.apple.com/kr/app/%EC%B1%84%EC%B0%8D%EB%8B%A8/id1616126955" target="blank">
                 채찍단
               </a>
-              을 주도하여 개발했습니다. 메인 개발자로 프로젝트 리드하였고 고객사, 개발자 2명, 기획자 1명과
+              을 주도하여 개발했습니다. 메인 개발자로 프로젝트를 리드하였고 고객사, 개발자 2명, 기획자 1명과
               협업하였습니다.
+              <br />
+              <br />
+              고객사와 지속적으로 미팅을 하며 기능을 추가 & 수정하였고, 도메인의 이해도를 함께 높일 수 있었습니다.
+              애자일한 협업 프로세스를 경험할 수 있었고 비즈니스와 관련된 지속적인 대화를 중요시하게 되었습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>React, Next.js, Recoil, Typescript, Node.js, Prisma, AWS (S3, cognito), Firestore, Vercel</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>기존 polling 방식의 채팅에서 firestore를 활용하여 실시간 채팅 기능 구현.</li>
+              <li>
+                채팅 기능을 리팩토링 하며 기존 polling 방식에서 firestore를 활용하여 실시간 채팅 기능을 구현했습니다.
+                버벅 거리거나 2초 이상 지연되던 성능 문제를 해결하였고, 채팅 사용성을 개선하였습니다. 사내 첫 Firestore
+                도입이었기 때문에, Firestore 관련해서 리서치를 하였고, 기술 도큐를 작성해 공유하였습니다.{' '}
+                <a href="/220125-firestore-react-chat-app/" target="_blank">
+                  [참고 링크]
+                </a>
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>react-chartjs2를 이용한 다이어트 그래프 구현</li>
+              <li>
+                다이어트 회원들에게 시각화된 몸무게 차트를 그래프로 확인할 수 있는 페이지 개발을 진행하였으며,{' '}
+                <code>react-calendar</code>를 커스터마이징 하여 다이어트 캘린더를 구현했습니다.{' '}
+                <a href="/220209-react-calendar/" target="_blank">
+                  [참고 링크]
+                </a>
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>react-calendar 활용한 다이어트 캘린더 구현</li>
+              <li>
+                Next.js의{' '}
+                <a href="https://nextjs.org/docs/api-routes/introduction" target="_blank">
+                  API Routes
+                </a>
+                와 prisma를 활용해 요청 Method에 따라 데이터를 추가/수정/삭제/요청하는 작업을 진행했습니다. 백엔드 없이
+                프론트엔드를 고도화시켜 하나의 서비스를 처음부터 끝까지 개발하였습니다.
+              </li>
+              <li>
+                고객사 요청으로 기존에 사용하던 웹페이지 도메인에서 서브 도메인을 생성하여 웹앱 url을 연결하는 작업을
+                진행했습니다.
+              </li>
             </ul>
             <figure className="image">
               <StaticImage
@@ -260,21 +291,40 @@ const DevExperience = () => {
               </a>
               를 주도하여 개발했습니다. 메인 개발자로 프로젝트를 리드하였고, 고객사, 개발자 2명, 기획자 1명, 디자이너
               1명과 협업하였습니다.
+              <br />
+              <br />
+              사용자의 타입(관리자 / 유저 / 브랜드)과 언어(영어 / 일본어 / 한국어)에 따라 보여지는 화면이 달라서 간편한
+              사용자 상태 관리에 집중하여 개발하였습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>Ruby on Rails, Ruby, React, Next.js, Recoil, React-Query, Typescript, AWS (S3, ec2, Amplify)</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
-              <li>브랜드 &amp; 인플루언서 권한 및 페이지 분리, 회원별 다국어처리</li>
+              <li>
+                브랜드 및 관리자 사용자가 자동으로 본인의 주문 내역을 csv로 추출할 수 있도록 csv 다운로드 기능을
+                구현했습니다. <code>react-query</code>로 주문 데이터를 받아와, 객체 형식의 배열을 <code>react-csv</code>{' '}
+                라이브러리를 활용해 csv로 추출하였습니다.{' '}
+                <a href="/211209-react-csv/" target="_blank">
+                  [참고 링크]
+                </a>
+              </li>
+              <li>
+                사용자 언어별로 페이지를 다르게 보일 수 있도록 설계하였습니다. Next.js에 <code>i18n</code>을 적용하여
+                사용 언어(영어/ 한국어 / 일본어)에 따라 다른 언어로 페이지를 나타내는 동작을 구현했습니다.
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>캠페인 업로드 및 신청 기능, 주문 내역 csv 추출 작업</li>
+              <li>
+                React-Query와 Recoil을 이용하여 사용자 정보를 가져오고, 복잡한 전역 상태 관리를 진행했습니다. 특히,{' '}
+                <code>Recoil</code>을 활용해 사용자의 현재 상태를 저장하고, 사용자 타입에 따라 다른 화면 (유저 / 관리자
+                / 브랜드)를 보여주는 개발을 진행했습니다.
+              </li>
             </ul>
             <ul className="bulleted-list">
-              <li>인스타그램 연동 (facebook api)</li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>aws cdk 활용 배포 작업, aws cognito를 이용한 회원 관리</li>
+              <li>
+                프로젝트 확장에 대비해 더욱 안정성 있는 AWS 서비스로 이전 작업을 진행했습니다. AWS cdk를 활용하여 배포
+                작업을 진행하였으며, AWS cognito를 이용한 회원 관리를 구현하였습니다.
+              </li>
             </ul>
             <figure className="image">
               <StaticImage
