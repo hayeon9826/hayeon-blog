@@ -325,6 +325,15 @@ const DevExperience = () => {
                 프로젝트 확장에 대비해 더욱 안정성 있는 AWS 서비스로 이전 작업을 진행했습니다. AWS cdk를 활용하여 배포
                 작업을 진행하였으며, AWS cognito를 이용한 회원 관리를 구현하였습니다.
               </li>
+              <li>
+                AWS 배포 중 빌드 파일이 AWS Lambda 배포 패키지 할당량을 초과해서 배포가 되지 않는 문제가 있었습니다.
+                <code>webpack-bundle-analyzer</code>로 빌드 파일 크기를 분석하였고,번들 사이즈가 큰 모듈 위주로 tree
+                shaking을 작업하였습니다. 또한, 불필요한 파일들을 삭제하고 과도하게 분리된 페이지들을 합쳐 빌드 크기를
+                5/6으로 줄일 수 있었고 배포에 성공하였습니다.{' '}
+                <a href="/211011-webpack-bundle-analyzer/" target="_blank">
+                  [참고 링크]
+                </a>
+              </li>
             </ul>
             <figure className="image">
               <StaticImage
