@@ -118,7 +118,9 @@ const ToyProject = () => {
                 Redux-Toolkit를 이용해 복잡한 캘린더의 상태를 관리했습니다. 기존 Redux의 boilerplate를 축소한
                 Redux-Toolkit의 유용함을 경험했습니다.
               </li>
-              <li>캘린더, 이벤트 모달 등의 store를 관리하며 효율적인 상태 관리를 설계했습니다.</li>
+              <li>
+                캘린더, 이벤트, 모달 세 가지의 store를 생성하여 기능별로 상태 관리를 분리하여 Redux를 설계했습니다.
+              </li>
             </ul>
           </div>
         </div>
@@ -165,7 +167,7 @@ const ToyProject = () => {
             <h5>What I did.</h5>
             <ul className="bulleted-list">
               <li>
-                VanillaJS로 타이핑 게임 서비스를 설게하고, 복잡한 기능들을 구현했습니다. VanillaJS의 history API를
+                VanillaJS만으로 타이핑 게임 서비스를 설계하고, 상세 기능들을 구현했습니다. VanillaJS의 history API를
                 이용해 직접 라우팅 상태를 관리했습니다.
               </li>
               <li>
@@ -498,8 +500,14 @@ const ToyProject = () => {
                 Ruby on Rails의 i18n을 적용하여 프랑스 및 영어로 사이트를 볼 수 있도록 다국어 설정을 구현했습니다.{' '}
               </li>
               <li>
-                기존에 수기로 학회 공지사항을 입력하던 구조에서 자동화를 할 수 있도록 설계하였습니다. 자동화를 위해 cron
-                job으로 주요 학회 사이트 공지사항을 크롤링하여 가져오도록 개선하였습니다.
+                기존에 수기로 학회 공지사항을 입력하던 구조에서, 자동화를 할 수 있도록 프로젝트 설계를 보완했습니다.
+                자동화를 위해 <code>Selenium</code>으로 주요 학회 사이트 공지사항을 크롤링하여 가져오도록 하였고,{' '}
+                <code>cron job</code>을 설정해 매주 정해진 시간마다 자동으로 크롤링이 작동하도록 서비스를
+                개선하였습니다.
+              </li>
+              <li>
+                Rails의 <code>impressionist gem</code>을 활용하여 사용자 방문 횟수를 추적하였고, Google Analytics를
+                추가해 전체적인 사이트 유입 현황을 분석했습니다.
               </li>
             </ul>
           </div>
@@ -540,11 +548,15 @@ const ToyProject = () => {
             <h5>What I did.</h5>
             <ul className="bulleted-list">
               <li>
-                Ruby on Rails로 약 900여 개의 성분과 100여 개의 마스크팩 데이터를 csv로 import 하여 성분별로 피부 타입에
-                맞는 마스크팩을 추천하는 로직을 개발했습니다.
+                Ruby on Rails로 전체 서비스를 개발했습니다. 약 900여 개의 성분과 100여 개의 마스크팩 데이터를 csv로
+                import 하여 성분별로 피부 타입에 맞는 마스크팩을 추천하는 로직을 개발했습니다.
               </li>
-              <li> 장바구니, 구매, 결제(import 활용) 등 구매 프로세스를 처음부터 끝까지 경험했습니다.</li>
-              <li> PC 및 모바일 버전의 ui를 테스트하며 반응형 사이트로 개선 하였고, 서비스를 직접 운영하였습니다.</li>
+              <li>
+                {' '}
+                찜, 장바구니, 구매, 결제(import 적용), 주문 내역 등 구매 프로세스를 처음부터 끝까지 개발했습니다. 뿐만
+                아니라, 초기 서비스를 직접 기획, 개발, 마케팅, 영업, 유지보수까지 모든 프로세스를 경험할 수 있었습니다.
+              </li>
+              <li> 사용성 증진을 위해 PC 및 모바일 버전의 UI를 테스트하며 반응형 사이트로 개선하는 작업을 했습니다.</li>
             </ul>
           </div>
         </div>

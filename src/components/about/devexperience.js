@@ -27,7 +27,7 @@ const DevExperience = () => {
                 핀다 앱
               </a>
               의 웹뷰를 담당하여 개발하였습니다. 대출 상품 페이지의 <b>레거시 코드 리팩토링</b> 작업을 하였고, 핀다 앱
-              내에서 대출 상품 및 약정을 비교하고 대출을 받을 수 있게하는 <b>인앱약정 기능</b>을 개발했습니다.
+              내에서 대출 상품 및 약정을 비교하고 대출을 받을 수 있게하는 <b>인앱약정 상품</b>을 개발했습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>React, Next.js, Redux, Typescript, Tailwindcss</p>
@@ -222,17 +222,19 @@ const DevExperience = () => {
               협업하였습니다.
               <br />
               <br />
-              고객사와 지속적으로 미팅을 하며 기능을 추가 & 수정하였고, 도메인의 이해도를 함께 높일 수 있었습니다.
-              애자일한 협업 프로세스를 경험할 수 있었고 비즈니스와 관련된 지속적인 대화를 중요시하게 되었습니다.
+              고객사와 지속적으로 미팅을 하며 새로운 기능을 추가 & 수정하였고, O2O 다이어트 앱 도메인의 이해도를 함께
+              높일 수 있었습니다. 애자일한 협업 프로세스를 경험하며 비즈니스와 관련된 지속적인 대화를 중요시하게
+              되었습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>React, Next.js, Recoil, Typescript, Node.js, Prisma, AWS (S3, cognito), Firestore, Vercel</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
               <li>
-                채팅 기능을 리팩토링 하며 기존 polling 방식에서 firestore를 활용하여 실시간 채팅 기능을 구현했습니다.
-                버벅 거리거나 2초 이상 지연되던 성능 문제를 해결하였고, 채팅 사용성을 개선하였습니다. 사내 첫 Firestore
-                도입이었기 때문에, Firestore 관련해서 리서치를 하였고, 기술 도큐를 작성해 공유하였습니다.{' '}
+                채팅 기능을 리팩토링 하며 기존 polling 방식에서 <code>firestore</code>를 활용하여 실시간 채팅 기능을
+                구현했습니다. 기존 설계에서 버벅 거리거나 2초 이상 지연되던 성능 문제를 해결하였고, 채팅의 사용성을
+                개선하였습니다. 사내 첫 Firestore 도입이었기 때문에, Firestore 관련해서 리서치를 하였고, 기술 도큐를
+                작성해 공유하였습니다.{' '}
                 <a href="/220125-firestore-react-chat-app/" target="_blank">
                   [참고 링크]
                 </a>
@@ -293,31 +295,34 @@ const DevExperience = () => {
               1명과 협업하였습니다.
               <br />
               <br />
-              사용자의 타입(관리자 / 유저 / 브랜드)과 언어(영어 / 일본어 / 한국어)에 따라 보여지는 화면이 달라서 간편한
-              사용자 상태 관리에 집중하여 개발하였습니다.
+              사용자의 타입(관리자 / 유저 / 브랜드)과 언어(영어 / 일본어 / 한국어)에 따라 보여지는 화면이 달라서 복잡한
+              사용자 상태 관리 해결에 집중하여 개발하였습니다.
             </p>
             <h5>Tech Stack.</h5>
             <p>Ruby on Rails, Ruby, React, Next.js, Recoil, React-Query, Typescript, AWS (S3, ec2, Amplify)</p>
             <h5>What I did.</h5>
             <ul className="bulleted-list">
               <li>
-                브랜드 및 관리자 사용자가 자동으로 본인의 주문 내역을 csv로 추출할 수 있도록 csv 다운로드 기능을
-                구현했습니다. <code>react-query</code>로 주문 데이터를 받아와, 객체 형식의 배열을 <code>react-csv</code>{' '}
-                라이브러리를 활용해 csv로 추출하였습니다.{' '}
+                브랜드 유저 및 관리자가 버튼을 누르면, 자동으로 본인 상품의 주문 내역을 일별로 나눠서 csv로 추출할 수
+                있도록 <b>csv 다운로드 기능</b>을 구현했습니다. <code>react-query</code>로 주문 데이터를 객체 형식의
+                배열로 받아와, <code>react-csv</code> 라이브러리를 활용해 csv로 추출하였습니다.{' '}
                 <a href="/211209-react-csv/" target="_blank">
                   [참고 링크]
                 </a>
               </li>
               <li>
-                사용자 언어별로 페이지를 다르게 보일 수 있도록 설계하였습니다. Next.js에 <code>i18n</code>을 적용하여
-                사용 언어(영어/ 한국어 / 일본어)에 따라 다른 언어로 페이지를 나타내는 동작을 구현했습니다.
+                사용자 언어별로 페이지가 다르게 보일 수 있도록 설계하였습니다.{' '}
+                <a href="https://nextjs.org/docs/advanced-features/i18n-routing" target="_blank">
+                  Next.js의 <code>i18n</code>
+                </a>{' '}
+                을 적용하여 사용자의 언어(영어/ 한국어 / 일본어)에 맞는 페이지를 보여주는 다국어 기능을 개발했습니다.
               </li>
             </ul>
             <ul className="bulleted-list">
               <li>
                 React-Query와 Recoil을 이용하여 사용자 정보를 가져오고, 복잡한 전역 상태 관리를 진행했습니다. 특히,{' '}
                 <code>Recoil</code>을 활용해 사용자의 현재 상태를 저장하고, 사용자 타입에 따라 다른 화면 (유저 / 관리자
-                / 브랜드)를 보여주는 개발을 진행했습니다.
+                / 브랜드)를 보여줄 수 있도록 설계했습니다.
               </li>
             </ul>
             <ul className="bulleted-list">
@@ -327,8 +332,8 @@ const DevExperience = () => {
               </li>
               <li>
                 AWS 배포 중 빌드 파일이 AWS Lambda 배포 패키지 할당량을 초과해서 배포가 되지 않는 문제가 있었습니다.
-                <code>webpack-bundle-analyzer</code>로 빌드 파일 크기를 분석하였고,번들 사이즈가 큰 모듈 위주로 tree
-                shaking을 작업하였습니다. 또한, 불필요한 파일들을 삭제하고 과도하게 분리된 페이지들을 합쳐 빌드 크기를
+                <code>webpack-bundle-analyzer</code>로 빌드 파일 크기를 분석하였고, 번들 사이즈가 큰 모듈 위주로 tree
+                shaking을 진행했습니다. 또한, 불필요한 파일들을 삭제하고 과도하게 분리된 페이지들을 합쳐 빌드 크기를
                 5/6으로 줄일 수 있었고 배포에 성공하였습니다.{' '}
                 <a href="/211011-webpack-bundle-analyzer/" target="_blank">
                   [참고 링크]
@@ -388,17 +393,21 @@ const DevExperience = () => {
             </ul>
             <ul className="bulleted-list">
               <li>
-                API 호출 성능 최적화를 위해 <code>React-Query</code>를 사용해 캐싱을 적절히 활용하였습니다. API 호출
-                데이터의 기본 만료시간이 지나기 전까지 동일한 데이터의 api 호출을 하지 않도록 하였고, 특정 상품을
-                수정했을 경우에만 캐시를 강제로 무효화(invalidate)하여 목록을 새로고침 해주었습니다.
+                API 호출 성능 최적화를 위해 <code>React-Query</code>의 <b>캐싱</b>을 적절히 활용하였습니다. API 호출
+                데이터의 기본 만료시간이 지나기 전까지는 동일한 데이터의 api 재호출을 방지하도록 캐시를 적용하였고, 특정
+                상품을 수정했을 경우에만 캐시를 강제로 무효화(invalidate)하여 목록을 새로고침 해주었습니다.
               </li>
             </ul>
             <ul className="bulleted-list">
               <li>
-                외부 결제 api 인 토스 페이먼츠(tosspayments)를 적용해 프론트와 백엔드에서 결제 처리를 해주었습니다.
-                프론트에서는 <code>tosspayments/sdk</code> 패키지를 사용해 결제액, 주문명, success url 등 결제 요청
-                정보를 토스에 요청하였으며, 주문의 완료 여부를 전달받고 백으로 넘겨주었습니다. 백에서는 결제 완료 (혹은
-                실패)된 주문 정보를 받아 사용자의 주문 데이터를 업데이트 해주었습니다.
+                외부 결제 api인{' '}
+                <a href="https://docs.tosspayments.com/reference/js-sdk" target="_blank">
+                  토스 페이먼츠(tosspayments)
+                </a>{' '}
+                를 적용해 프론트와 백엔드에서 결제 처리를 해주었습니다. 프론트에서는 <code>tosspayments/sdk</code>{' '}
+                패키지를 사용해 결제액, 주문명, success url 등 결제 요청 정보를 토스에 요청하였으며, 주문의 완료 여부를
+                전달받고 백으로 넘겨주었습니다. 백에서는 결제 완료 (혹은 실패)된 주문 정보를 받아 사용자의 주문 데이터를
+                업데이트 해주었습니다.
               </li>
             </ul>
 
