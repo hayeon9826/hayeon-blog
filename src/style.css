@@ -66,6 +66,7 @@
   --color-text: #000000;
   --color-text-light: #f0f1f2;
   --color-text-gray: #949494;
+  --color-text-darkGray: #595959;
   --color-light-gray: #f8f8f8;
   --color-gray: #e0e0e0;
   --color-heading: #000000;
@@ -87,6 +88,7 @@
   --color-text: #ffffff;
   --color-text-light: #e6e6e6;
   --color-text-gray: #bfbfbf;
+  --color-text-darkGray: #e6e6e6;
   --color-light-gray: #efefef;
   --color-gray: #adadad;
   --color-heading: #ffffff;
@@ -308,11 +310,11 @@ li > ul {
 }
 
 blockquote {
-  color: var(--color-text-gray);
+  color: var(--color-text-darkGray);
   margin-left: calc(-1 * var(--spacing-6));
   margin-right: var(--spacing-8);
   padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-6);
-  border-left: var(--spacing-1) solid var(--color-primary);
+  border-left: var(--spacing-1) solid var(--color-primary) !important;
   font-size: var(--fontSize-0);
   font-style: italic;
   margin-bottom: var(--spacing-8);
