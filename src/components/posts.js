@@ -3,20 +3,28 @@ import NoPostPage from './noPost'
 import PostPage from './post'
 import useInfiniteScroll from '../utils/useInfiniteScroll'
 
-const PostsPage = ({ posts, category, siteTitle="Hayeon Dev Blog", location }) => {
-  const [count, setCount] = useState(10);
+const PostsPage = ({ posts, category, siteTitle = 'Hayeon Dev Blog', location }) => {
+  const [count, setCount] = useState(10)
+  const [isScroll, setIsScroll] = useState(true)
   const [ref, setRef] = useInfiniteScroll((entry, observer) => {
-    loadMorePosts();
-  });
-  
-  const loadMorePosts = useCallback(() => {
-    setCount(v => {
-      if (v + 1 <= posts.length) return v + 1;
-      // else return v;
-      return v + 1
-    });
-  }, [posts])
+    // count가 총 포스트 수 보다 작을때만 useInfiniteScroll 작동
+    if (posts.length >= count) {
+      loadMorePosts()
+    }
+  })
 
+  const loadMorePosts = useCallback(() => {
+    if (isScroll) {
+      setIsScroll(false)
+      setTimeout(() => {
+        setIsScroll(true)
+        setCount(v => {
+          if (v + 1 <= posts.length) return v + 1
+          return v + 1
+        })
+      }, 500)
+    }
+  }, [posts])
 
   if (posts.length === 0) {
     return <NoPostPage location={location} siteTitle={siteTitle} />
@@ -33,7 +41,7 @@ const PostsPage = ({ posts, category, siteTitle="Hayeon Dev Blog", location }) =
             <div className="lds-dual-ring"></div>
           </div>
         )}
-        <div ref={setRef}/>
+        <div ref={setRef} />
       </ol>
     </>
   )
