@@ -82,7 +82,7 @@
 }
 
 :root[data-theme='dark'] {
-  --bg-color: #232326;
+  --bg-color: #1c1c1c;
   --color-primary: #3d8afe;
   --color-shade: #8b9cfe;
   --color-text: #ffffff;
