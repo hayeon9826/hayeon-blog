@@ -14,21 +14,21 @@ const OtherExperience = () => {
           <ul className="bulleted-list">
             <li>
               React 18 공식 도큐의{' '}
-              <a href="https://ko.reactjs.org/docs/hooks-intro.html" target="_blank">
+              <a href="https://ko.reactjs.org/docs/hooks-intro.html" target="_blank" rel="noreferrer">
                 Hooks API Reference
               </a>{' '}
               페이지를 일부 번역하였습니다.{' '}
-              <a href="https://github.com/reactjs/ko.reactjs.org/pull/518" target="_blank">
+              <a href="https://github.com/reactjs/ko.reactjs.org/pull/518" target="_blank" rel="noreferrer">
                 [PR 링크]
               </a>
             </li>
             <li>
               React 18 공식 도큐의{' '}
-              <a href="https://ko.reactjs.org/docs/react-api.html" target="_blank">
+              <a href="https://ko.reactjs.org/docs/react-api.html" target="_blank" rel="noreferrer">
                 React 최상위 API
               </a>{' '}
               페이지를 일부 번역하였습니다.{' '}
-              <a href="https://github.com/reactjs/ko.reactjs.org/pull/517" target="_blank">
+              <a href="https://github.com/reactjs/ko.reactjs.org/pull/517" target="_blank" rel="noreferrer">
                 [PR 링크]
               </a>
             </li>
@@ -36,11 +36,11 @@ const OtherExperience = () => {
               Toast UI Editor의 <code>react-editor</code> wrapper가 react 18 과 의존성 문제가 있다는 것을 확인하여,
               이슈를 생성, <code>react-editor</code> wrapper의 리액트 관련 dependencies를 최신 버전으로
               업그레이드했습니다.{' '}
-              <a href="https://github.com/nhn/tui.editor/pull/2803" target="_blank">
+              <a href="https://github.com/nhn/tui.editor/pull/2803" target="_blank" rel="noreferrer">
                 [PR 링크]
               </a>
               ,{' '}
-              <a href="https://github.com/nhn/tui.editor/issues/2790" target="_blank">
+              <a href="https://github.com/nhn/tui.editor/issues/2790" target="_blank" rel="noreferrer">
                 [Issue 링크]
               </a>
             </li>
@@ -63,13 +63,14 @@ const OtherExperience = () => {
               <a
                 href="https://drive.google.com/drive/folders/1kT7nvYi8chCUittGLnpBCtidK6IFx0yo?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
               >
                 [강의 링크]
               </a>
             </li>
             <li>
               사내 프론트팀 세미나에서 useEffect 완벽 가이드를 요약하여 발표했습니다.{' '}
-              <a href="https://hayeondev.gatsbyjs.io/220629-useEffect-guide/" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/220629-useEffect-guide/" target="_blank" rel="noreferrer">
                 [참고 링크]
               </a>
             </li>

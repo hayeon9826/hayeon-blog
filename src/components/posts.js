@@ -6,7 +6,7 @@ import useInfiniteScroll from '../utils/useInfiniteScroll'
 const PostsPage = ({ posts, category, siteTitle = 'Hayeon Dev Blog', location }) => {
   const [count, setCount] = useState(10)
   const [isScroll, setIsScroll] = useState(true)
-  const [ref, setRef] = useInfiniteScroll((entry, observer) => {
+  const [, setRef] = useInfiniteScroll((entry, observer) => {
     // count가 총 포스트 수 보다 작을때만 useInfiniteScroll 작동
     if (posts.length >= count) {
       loadMorePosts()
@@ -22,9 +22,9 @@ const PostsPage = ({ posts, category, siteTitle = 'Hayeon Dev Blog', location })
           if (v + 1 <= posts.length) return v + 1
           return v + 1
         })
-      }, 500)
+      }, 200)
     }
-  }, [posts])
+  }, [posts, isScroll])
 
   if (posts.length === 0) {
     return <NoPostPage location={location} siteTitle={siteTitle} />
