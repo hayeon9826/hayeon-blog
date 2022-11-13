@@ -1491,10 +1491,9 @@ details {
   cursor: pointer;
 }
 
-
 /* english resume style */
 
-.en-resume .fixed-top-border{
+.en-resume .fixed-top-border {
   position: fixed;
   width: 100%;
   height: 10px;
@@ -1504,11 +1503,14 @@ details {
 }
 
 .en-resume {
-  margin: 0;
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-32) var(--spacing-4);
+  position: relative;
   color: var(--color-darkGray);
   background-color: var(--color-background);
   font-family: 'Spoqa Han Sans Neo', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .en-resume .underline {
@@ -1516,12 +1518,12 @@ details {
   -webkit-margin-after: 0.5em;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  
+
   border-bottom: 3px solid var(--color-accent);
   display: inline-block;
   color: var(--color-darkGray);
   font-weight: 600;
-  text-transform: uppercase;		
+  text-transform: uppercase;
 }
 
 .en-resume ul {
@@ -1530,17 +1532,17 @@ details {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
-  
+
   list-style: none;
 }
 
 .en-resume .container {
   height: auto;
-  margin: auto; 
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  bottom: 0; 
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
   right: 0;
 }
 
@@ -1552,7 +1554,7 @@ details {
 .en-resume header {
   display: inline-block;
   margin-top: 50px;
-  width: 80%;
+  width: 100%;
 }
 
 .en-resume header h1 {
@@ -1581,23 +1583,31 @@ details {
 .en-resume article .header {
   color: var(--color-accent);
   font-weight: 600;
+  list-style-type: none;
 }
 
 .en-resume article .header span {
   font-size: 10pt;
   font-style: italic;
 }
+.en-resume .pb-15px {
+  padding-bottom: 15px;
+}
 
-.en-resume article .right{
+.en-resume article .right {
   float: right;
-  width: 20%;
+  width: 15%;
   font-weight: 600;
-  
+  list-style-type: none;
 }
 
 .en-resume article .description {
   font-style: italic;
   font-size: 9pt;
+}
+
+.en-resume article .exp-list {
+  margin-bottom: 20px;
 }
 
 .en-resume article .exp-list .fa {
@@ -1608,7 +1618,28 @@ details {
 
 .en-resume article ul li {
   min-height: 25px;
-  max-width: 75%;
+  max-width: 80%;
+}
+
+@media screen and (max-width: 500px) {
+  .en-resume article .right {
+    width: 100%;
+    font-weight: 600;
+    list-style-type: none;
+  }
+
+  .en-resume article ul li {
+    min-height: 25px;
+    max-width: 100%;
+  }
+
+  .about-wrapper {
+    padding: var(--spacing-8) var(--spacing-4);
+  }
+
+  .en-resume {
+    font-size: var(--fontSize-0);
+  }
 }
 
 .en-resume article .reference {

@@ -15,7 +15,7 @@ const AboutPage = ({ data, location }) => {
         keywords={'Frontend, Engineer, FE, Developer, React, Next.js'}
       />
       <article className="page sans mb-32">
-        <div className="page-body about-page">
+        <div className="page-body">
           <EnglishResume />
         </div>
       </article>
