@@ -48,9 +48,14 @@ const Bio = () => {
               Github
             </a>
             {` `}
-            <a className="link-small" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
+            <a className="link-small me-2" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
               Linkedin
             </a>
+            {/* <span>
+              <Link className="link-small me-2" to="/en/about">
+                Resume
+              </Link>
+            </span> */}
           </div>
         </div>
       )}

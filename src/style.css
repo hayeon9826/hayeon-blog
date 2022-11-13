@@ -740,6 +740,7 @@ img {
 .column-list {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 @media screen and (max-width: 500px) {
@@ -1488,4 +1489,146 @@ details {
   font-weight: var(--fontWeight-normal);
   padding: 10px 20px;
   cursor: pointer;
+}
+
+
+/* english resume style */
+
+.en-resume .fixed-top-border{
+  position: fixed;
+  width: 100%;
+  height: 10px;
+  background: var(--color-accent);
+  top: 0;
+  left: 0;
+}
+
+.en-resume {
+  margin: 0;
+  color: var(--color-darkGray);
+  background-color: var(--color-background);
+  font-family: 'Spoqa Han Sans Neo', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.en-resume .underline {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  
+  border-bottom: 3px solid var(--color-accent);
+  display: inline-block;
+  color: var(--color-darkGray);
+  font-weight: 600;
+  text-transform: uppercase;		
+}
+
+.en-resume ul {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+  
+  list-style: none;
+}
+
+.en-resume .container {
+  height: auto;
+  margin: auto; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0;
+}
+
+.en-resume .row {
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+.en-resume header {
+  display: inline-block;
+  margin-top: 50px;
+  width: 80%;
+}
+
+.en-resume header h1 {
+  font-size: 30pt;
+}
+
+.en-resume header ul li {
+  height: 25px;
+}
+
+.en-resume header ul li i {
+  color: var(--color-accent);
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.en-resume article {
+  margin-top: 20px;
+}
+
+.en-resume article h2 {
+  font-size: 20pt;
+}
+
+.en-resume article .header {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.en-resume article .header span {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+.en-resume article .right{
+  float: right;
+  width: 20%;
+  font-weight: 600;
+  
+}
+
+.en-resume article .description {
+  font-style: italic;
+  font-size: 9pt;
+}
+
+.en-resume article .exp-list .fa {
+  color: var(--color-accent);
+  padding-right: 5px;
+  font-size: 12px;
+}
+
+.en-resume article ul li {
+  min-height: 25px;
+  max-width: 75%;
+}
+
+.en-resume article .reference {
+  width: 40%;
+  display: inline-block;
+}
+
+.en-resume article .reference ul li {
+  max-width: 100%;
+}
+
+.en-resume article .spacer {
+  height: 15px;
+}
+
+.en-resume article .tech ul li {
+  max-width: 100% !important;
+}
+
+.en-resume article .tech span {
+  font-weight: 600;
+  color: var(--color-accent);
 }

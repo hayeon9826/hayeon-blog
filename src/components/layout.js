@@ -2,7 +2,7 @@ import React, { useCallback } from 'react'
 import { Link } from 'gatsby'
 import ThemeBtn from './themeBtn'
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, showLayout = true }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location?.pathname === rootPath
 
@@ -34,7 +34,7 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <>
-      {hasLayout() && (
+      {hasLayout() && showLayout && (
         <header className="global-header">
           <div className="max-width-header">
             {header} {<ThemeBtn />}
@@ -43,7 +43,7 @@ const Layout = ({ location, title, children }) => {
       )}
       <div className={hasLayout() ? `global-wrapper` : 'about-wrapper'} data-is-root-path={isRootPath}>
         <main>{children}</main>
-        {hasLayout() && (
+        {hasLayout() && showLayout && (
           <footer>
             © {new Date().getFullYear()}
             {` `}
