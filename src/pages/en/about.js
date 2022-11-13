@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../../components/layout'
 import Seo from '../../components/seo'
-import EnglishResume from '../../components/about/EnglishResume'
+import EnglishResume from '../../components/about/englishResume'
 
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
