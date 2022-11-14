@@ -32,7 +32,7 @@ const AboutPage = ({ data, location }) => {
         description={'2년차 프론트엔드 개발자 김하연 이력서'}
         keywords={'프론트엔드, 기술 블로그, FE, 개발자, React, Next.js'}
       />
-      <article className="page sans mb-32">
+      <article className="page sans mb-32 about-wrapper">
         <div className="page-body about-page">
           <Header location={location} />
           <Intro />

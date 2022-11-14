@@ -41,7 +41,7 @@ const Layout = ({ location, title, children, showLayout = true }) => {
           </div>
         </header>
       )}
-      <div className={hasLayout() ? `global-wrapper` : 'about-wrapper'} data-is-root-path={isRootPath}>
+      <div className={hasLayout() ? 'global-wrapper' : ''} data-is-root-path={isRootPath}>
         <main>{children}</main>
         {hasLayout() && showLayout && (
           <footer>

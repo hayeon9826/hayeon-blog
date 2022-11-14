@@ -14,6 +14,7 @@
   --maxWidth-4xl: 56rem;
   --maxWidth-full: '100%';
   --maxWidth-wrapper: var(--maxWidth-3xl);
+  --resume-wrapper: var(--maxWidth-4xl);
   --spacing-px: '1px';
   --spacing-0: 0;
   --spacing-1: 0.25rem;
@@ -1504,7 +1505,7 @@ details {
 
 .en-resume {
   margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
+  max-width: var(--resume-wrapper);
   padding: var(--spacing-32) var(--spacing-4);
   position: relative;
   color: var(--color-darkGray);
