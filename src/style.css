@@ -1554,7 +1554,7 @@ details {
 
 .en-resume header {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 8rem;
   width: 100%;
 }
 
@@ -1634,8 +1634,13 @@ details {
     max-width: 100%;
   }
 
-  .about-wrapper {
+  .en-resume article,
+  .en-resume header {
     padding: var(--spacing-8) var(--spacing-4);
+  }
+
+  .en-resume header {
+    margin-top: 4rem;
   }
 
   .en-resume {
