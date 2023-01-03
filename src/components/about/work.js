@@ -25,7 +25,7 @@ const Work = () => {
           <hr />
           <p className="row gap-3">
             <strong className="col-2 text-right">Position </strong>
-            <span className="col-8">Frontend(Web), 대출 그로스, 인앱약정 2PT</span>
+            <span className="col-8">Frontend(Web), 대출 그로스, 인앱약정 2PT, 비교대출 PG</span>
           </p>
           <hr />
           <p className="row gap-3">
@@ -47,6 +47,50 @@ const Work = () => {
           </p>
           <hr />
         </div>
+        <div className="mt-5">
+          <h4 className="mb-1">비교대출 PG</h4>
+          <p>
+            <span className="highlight-gray">Frontend Engineer</span>
+          </p>
+          <p>
+            <span className="highlight-gray">2022.12 - 현재</span>
+          </p>
+          <h4>Description.</h4>
+          <p>
+            핀다의 메인 프로덕트인 '비교 대출' 서비스를 맡아 프론트엔드 개발을 작업하고 있습니다. 기존의 비교대출 앱
+            페이지들을 웹 페이지로 이전하고, 리뉴얼, 새로운 기능 추가 등의 개발을 맡았습니다. 2명의 FE 개발자와 2명의
+            ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄 애자일 프로세스로 작업을 진행했습니다.
+            <br />
+            <br />
+            React, Next.js, Typescript, Redux, Tailwind, msw를 이용해 개발했습니다.
+          </p>
+          <h4>What I did.</h4>
+          <ul className="bulleted-list">
+            <li>
+              기존 비교대출 인트로 페이지를 리뉴얼하고, 웹으로 이전하는 작업을 진행했습니다. 기획부터 디자인, API 설계,
+              프론트개발까지 일주일이라는 짧은 시간에 작업하며 애자일 프로세스를 경험할 수 있었습니다. A/B 테스트 결과,
+              개선된 인트로 페이지를 본 사용자들의 한도 조회 비율이 이전 버전 인트로를 조회한 사용자에 비해{' '}
+              <b>9% 상승</b>하였습니다.{' '}
+              <a href="/work/intro-detail" target="_blank">
+                [예시]
+              </a>{' '}
+              <a href="https://www.ekn.kr/web/view.php?key=20221206010001084" target="_blank">
+                [관련 기사]
+              </a>
+            </li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>
+              대출 한도 조회시 사용자들이 대출 의사결정을 더 쉽게 할 수 있는 '대출 의사결정 개선' 프로젝트를
+              작업했습니다. 초기 프로젝트 설계 및 업무 분담을 맡았고 본인 포함 두 명의 프론트엔드 개발자가 작업을
+              하였습니다.
+              <a href="/work/improve-detail" target="_blank">
+                [예시]
+              </a>
+            </li>
+          </ul>
+        </div>
+        <br />
         <div className="mt-5">
           <h4 className="mb-1">인앱약정 2PT</h4>
           <p>
@@ -98,16 +142,6 @@ const Work = () => {
               탁월한 제품 개발과 함께 성장할 수 있는 개발 문화를 만들 수 있도록 노력했습니다.
             </li>
           </ul>
-          {/* <h4>What I learned.</h4>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul> */}
         </div>
         <br />
         <div className="mt-5">
@@ -233,16 +267,16 @@ const Work = () => {
               있도록 작업했습니다.
             </li>
           </ul>
-          {/* <h4>What I learned.</h4>
           <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
+            <li>
+              기존 Bitbucket에서 사용하던 모놀리식 레포를, Github에 이전하며 <b>모노레포</b> 구조로 변경하는 작업을
+              진행했습니다.{' '}
+              <a href="https://finda.co.kr/" target="_blank">
+                핀다 웹 페이지
+              </a>
+              를 담당하여 모노레포 이전작업을 진행했습니다.
+            </li>
           </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul>
-          <ul className="bulleted-list">
-            <li>내용이 들어갑니다</li>
-          </ul> */}
         </div>
         <br />
         <br />
