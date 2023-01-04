@@ -25,7 +25,7 @@ const Work = () => {
           <hr />
           <p className="row gap-3">
             <strong className="col-2 text-right">Position </strong>
-            <span className="col-8">Frontend(Web), 대출 그로스, 인앱약정 2PT, 비교대출 PG</span>
+            <span className="col-8">Frontend(Web), 대출 그로스, 인앱약정 2PT, 금융상품 PG</span>
           </p>
           <hr />
           <p className="row gap-3">
@@ -48,7 +48,7 @@ const Work = () => {
           <hr />
         </div>
         <div className="mt-5">
-          <h4 className="mb-1">비교대출 PG</h4>
+          <h4 className="mb-1">금융상품 PG</h4>
           <p>
             <span className="highlight-gray">Frontend Engineer</span>
           </p>
@@ -57,9 +57,10 @@ const Work = () => {
           </p>
           <h4>Description.</h4>
           <p>
-            핀다의 메인 프로덕트인 '비교 대출' 서비스를 맡아 프론트엔드 개발을 작업하고 있습니다. 기존의 비교대출 앱
-            페이지들을 웹 페이지로 이전하고, 리뉴얼, 새로운 기능 추가 등의 개발을 맡았습니다. 2명의 FE 개발자와 2명의
-            ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄 애자일 프로세스로 작업을 진행했습니다.
+            핀다의 메인 프로덕트인 <b>'비교 대출'</b> 금융 서비스를 맡아 프론트엔드 개발을 작업하고 있습니다. 기존의
+            비교 대출 앱 페이지들을 웹 페이지로 이전하고, 리뉴얼 및 새로운 기능 추가 등의 개발을 맡았습니다. 2명의 FE
+            개발자와 2명의 ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄 애자일 프로세스로 작업을
+            진행했습니다.
             <br />
             <br />
             React, Next.js, Typescript, Redux, Tailwind, msw를 이용해 개발했습니다.
@@ -67,9 +68,9 @@ const Work = () => {
           <h4>What I did.</h4>
           <ul className="bulleted-list">
             <li>
-              기존 비교대출 인트로 페이지를 리뉴얼하고, 웹으로 이전하는 작업을 진행했습니다. 기획부터 디자인, API 설계,
+              기존 비교 대출 인트로 페이지를 리뉴얼하고, 웹으로 이전하는 작업을 진행했습니다. 기획부터 디자인, API 설계,
               프론트개발까지 일주일이라는 짧은 시간에 작업하며 애자일 프로세스를 경험할 수 있었습니다. A/B 테스트 결과,
-              개선된 인트로 페이지를 본 사용자들의 한도 조회 비율이 이전 버전 인트로를 조회한 사용자에 비해{' '}
+              개선된 인트로 페이지를 본 사용자들의 <b>한도 조회 비율</b>이 이전 버전 인트로 조회 사용자에 비해{' '}
               <b>9% 상승</b>하였습니다.{' '}
               <a href="/work/intro-detail" target="_blank">
                 [예시]
