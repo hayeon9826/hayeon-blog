@@ -30,8 +30,6 @@ const BlogPostTemplate = ({ data, location }) => {
     window.scrollTo(0, 0)
   }, [])
 
-  console.log(post?.fields?.slug.replace(/\//g, ''), '$$$$URL')
-
   return (
     <Layout location={location} title={siteTitle}>
       <Seo
