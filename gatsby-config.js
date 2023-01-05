@@ -3,7 +3,7 @@ module.exports = {
     title: `Hayeon Dev Blog`,
     author: {
       name: `김하연`,
-      summary: `2년차 프론트엔드 개발자 입니다. 사용자 경험 개선, 코드의 재사용성, 읽기 쉬운 코드에 집중하여 개발합니다.`,
+      summary: `3년차 프론트엔드 개발자 입니다. 사용자 경험 개선, 코드의 재사용성, 읽기 쉬운 코드에 집중하여 개발합니다.`,
     },
     categories: [
       'All',

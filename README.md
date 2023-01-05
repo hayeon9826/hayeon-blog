@@ -2,7 +2,7 @@
   🚀 Hayeon's Dev blog
 </h1>
 
-2년차 프론트엔드 개발자 김하연의 기술 블로그입니다.
+3년차 프론트엔드 개발자 김하연의 기술 블로그입니다.
 
 - 블로그는 [여기](https://hayeondev.gtsb.io/)에서 확인하실 수 있습니다.
 - 저에 대한 자세한 설명은 [about](https://hayeondev.gtsb.io/about) 페이지에서 확인하실 수 있습니다.
