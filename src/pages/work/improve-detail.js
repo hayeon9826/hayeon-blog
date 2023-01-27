@@ -19,6 +19,9 @@ const Work = () => {
               </li>
             </ul>
             <h4>Example</h4>
+            <ul className="bulleted-list">
+              <li>리스트 페이지</li>
+            </ul>
             <div className="mt-5 row">
               <div className="col shadow mx-2">
                 <img
@@ -57,6 +60,37 @@ const Work = () => {
               <div className="col shadow mx-2">
                 <img
                   src="https://user-images.githubusercontent.com/38210233/210414720-ece5a73f-fa3b-4df2-8bbe-9d21e2f50d71.png"
+                  alt="대출 의사결정 개선 예시"
+                />
+              </div>
+            </div>
+            <ul className="bulleted-list mt-12">
+              <li>리스트 페이지</li>
+            </ul>
+            <div className="mt-5 row">
+              <div className="col shadow mx-2">
+                <img
+                  src="https://user-images.githubusercontent.com/38210233/215053600-03d143ef-36a2-43cd-9ab7-ef6ad5bcb4a7.png"
+                  alt="대출 의사결정 개선 예시"
+                />
+              </div>
+              <div className="col shadow mx-2">
+                <img
+                  src="https://user-images.githubusercontent.com/38210233/215053625-deafefc9-0d62-48ac-9726-942e1d476a31.png"
+                  alt="대출 의사결정 개선 예시"
+                />
+              </div>
+            </div>
+            <div className="mt-5 row">
+              <div className="col shadow mx-2">
+                <img
+                  src="https://user-images.githubusercontent.com/38210233/215053647-048f1ac8-c40a-44be-ae52-ea0808f04958.png"
+                  alt="대출 의사결정 개선 예시"
+                />
+              </div>
+              <div className="col shadow mx-2">
+                <img
+                  src="https://user-images.githubusercontent.com/38210233/215053682-b2f47fd9-44e8-487d-b15c-9a603eaa7dc0.png"
                   alt="대출 의사결정 개선 예시"
                 />
               </div>

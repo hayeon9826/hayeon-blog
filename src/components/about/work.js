@@ -104,7 +104,10 @@ const Work = () => {
           <p>
             핀다 앱 내에서 은행 대출 상품을 확인하고 바로 약정을 체결할 수 있는 제품, <b>인앱약정</b> 기능의 프론트엔드
             개발을 맡고 있습니다. 2명의 FE 개발자와 2명의 ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄
-            애자일 프로세스로 작업을 진행했습니다.
+            애자일 프로세스로 작업을 진행했습니다.{' '}
+            <a href="/work/inapp-image" target="_blank">
+              [예시]
+            </a>
             <br />
             <br />
             React, Next.js, Typescript, Redux, Tailwind, msw를 이용해 개발했습니다.
