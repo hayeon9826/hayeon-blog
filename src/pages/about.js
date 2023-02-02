@@ -53,19 +53,6 @@ const AboutPage = ({ data, location }) => {
             <a href="https://github.com/hayeon9826" target="_blank">
               @hayeon9826
             </a>
-            <br />
-            Inspired By{' '}
-            <a href="https://jbee.io/about" target="_blank">
-              jbee
-            </a>
-            ,{' '}
-            <a href="https://hyunseob.github.io/resume/" target="_blank">
-              hyunseob
-            </a>
-            ,{' '}
-            <a href="https://wonny.oopy.io/" target="_blank">
-              Wonny
-            </a>
           </small>
         </div>
       )}
