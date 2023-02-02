@@ -11,9 +11,59 @@ const ToyProject = () => {
         </h1>
         {/* <details> */}
         {/* <summary className="text-sm">Toy Projects 상세 보기</summary> */}
+        {/* <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://publishd.ai/">
+              <h5>Publishd</h5>
+            </a>
+            <p>2022.12 ~</p>
+            <p>개인 외주 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>본인 포함 2명의 개발자와 협업</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                랜딩 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://publishd.ai/">
+                  publishd.ai
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                서비스 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://beta.publishd.ai/">
+                  beta.publishd.ai
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 30%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>React, Next.js, Typescript, React-query, recoil, tailwindcss, React-quill editor, next/auth</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>TBD</li>
+              <li>TBD</li>
+              <li>TBD</li>
+            </ul>
+          </div>
+        </div> */}
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
-            <h5>findaoverflow</h5>
+            <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
+              <h5>findaoverflow</h5>
+            </a>
             <p>2022.10 ~</p>
             <p>개인 토이 프로젝트</p>
           </div>
@@ -74,7 +124,9 @@ const ToyProject = () => {
         </div>
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
-            <h5>구글 캘린더 클론</h5>
+            <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
+              <h5>구글 캘린더 클론</h5>
+            </a>
             <p>2022.03</p>
             <p>개인 토이 프로젝트</p>
           </div>
@@ -126,7 +178,9 @@ const ToyProject = () => {
         </div>
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
-            <h5>VanillaJS 타이핑 게임</h5>
+            <a target="_blank" rel="noreferrer" href="https://typing-game-khy.vercel.app/">
+              <h5>VanillaJS 타이핑 게임</h5>
+            </a>
             <p>2022.03</p>
             <p>개인 토이 프로젝트</p>
           </div>
@@ -512,7 +566,7 @@ const ToyProject = () => {
             </ul>
           </div>
         </div>
-        <div className="column-list mt-5">
+        {/* <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
             <h5>히스킨 (Hiskin)</h5>
             <p>
@@ -559,7 +613,7 @@ const ToyProject = () => {
               <li> 사용성 증진을 위해 PC 및 모바일 버전의 UI를 테스트하며 반응형 사이트로 개선하는 작업을 했습니다.</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* </details> */}
       </section>
     </>
