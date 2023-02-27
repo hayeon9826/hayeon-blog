@@ -669,6 +669,10 @@ img {
   margin-top: 200px;
 }
 
+.ml-2 {
+  margin-left: 8px;
+}
+
 .lds-dual-ring:after {
   content: ' ';
   display: block;
