@@ -46,8 +46,8 @@ const Header = ({ location }) => {
           </p>
           <hr />
         </div>
-        <br />
         <br /> */}
+        <br />
         <h5>
           안녕하세요, <u className="underline-blue-bold">3년차 프론트엔드 개발자</u> 김하연 입니다.
         </h5>
