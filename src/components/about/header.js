@@ -41,13 +41,18 @@ const Header = ({ location }) => {
           <p className="row gap-3">
             <strong className="col-2 text-right">경력사항</strong>
             <span className="col">
-              총 2년 10개월 <small className="ml-2">핀다(10개월), 인썸니아(2년)</small>
+              총 2년 11개월 <small className="ml-2">핀다(11개월), 인썸니아(2년)</small>
             </span>
           </p>
           <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">지원부문</strong>
+            <span className="col"></span>
+          </p>
+          <hr />
         </div>
-        <br /> */}
         <br />
+        <br /> */}
         <h5>
           안녕하세요, <u className="underline-blue-bold">3년차 프론트엔드 개발자</u> 김하연 입니다.
         </h5>
