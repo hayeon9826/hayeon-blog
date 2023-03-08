@@ -17,7 +17,7 @@ const Header = ({ location }) => {
         <header>
           <h1 className="page-title">
             김하연 <span className="text-lg">(Hayeon Kim)</span>
-            {!hasLayout() && <ThemeBtn />}
+            {/* {!hasLayout() && <ThemeBtn />} */}
           </h1>
         </header>
         <h5>

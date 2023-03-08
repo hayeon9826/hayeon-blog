@@ -45,9 +45,9 @@ const EnglishResume = () => {
             <h2 className="underline">Resume Objective</h2>
 
             <div className="pb-15px">
-              Front-End Web Developer with 2+ years of experience in developing web & webapp applications, optimizing
-              user interfaces, and meticulous testing & debugging. Value acquiring new technologies and organizing
-              concepts through tech studies and tech blogs. Enjoy active code reviews, technical discussions with other
+              Front-End Web Developer with 3 years of experience in developing web applications, optimizing user
+              interfaces, and meticulous testing & debugging. Value acquiring new technologies and organizing concepts
+              through tech studies and writing tech blogs. Enjoy active code reviews, technical discussions with other
               developers, and eager to improve user experience by finding better solutions.
             </div>
           </article>
@@ -61,11 +61,14 @@ const EnglishResume = () => {
                 <li className="header">
                   Front-End Developer, <span>Finda - Seoul, Korea</span>
                 </li>
-                <li>Developed and maintained web pages & webviews in Finda (Fintech Startup in Korea). </li>
                 <li>
-                  Took charge of developing 'in-app agreement feature', where customers could conclude a loan contract
-                  via Finda App. Also, built desgin system and deployed to Storybook (with chromatic) by cooperating
-                  with the designers.
+                  Developed and maintained Finda web and Finda app webviews. Took charge of transferring loan list, loan
+                  main page, loan detail page into webviews.{' '}
+                </li>
+                <li>
+                  Developed 'in-app contract' feature, where customers could conclude a loan contract via Finda App.
+                  Also, built desgin system and deployed to Storybook (with chromatic) by cooperating with the
+                  designers.
                 </li>
                 <li>
                   Improved inefficient API call structure by implementing Redux. Decreased redundant API calls by 60%.
@@ -83,10 +86,10 @@ const EnglishResume = () => {
                   Side Generation) on data fetching to improve API request time. Decreased API fetching time from 4s to
                   0.5s.
                 </li>
-                <li>
+                {/* <li>
                   Refactored job opening page, and enabled HR team to directly update job openings by linking Google
                   Spread Sheet data to Finda web page.
-                </li>
+                </li> */}
               </ul>
             </div>
 
