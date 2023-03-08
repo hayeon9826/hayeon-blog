@@ -72,7 +72,7 @@ const Work = () => {
               프론트개발까지 일주일이라는 짧은 시간에 작업하며 애자일 프로세스를 경험할 수 있었습니다. A/B 테스트 결과,
               개선된 인트로 페이지를 본 사용자들의 <b>한도 조회 비율</b>이 이전 버전 인트로 조회 사용자에 비해{' '}
               <b>9% 상승</b>하였습니다.{' '}
-              <a href="/work/intro-detail" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/intro-detail" target="_blank">
                 [예시]
               </a>{' '}
               <a href="https://www.ekn.kr/web/view.php?key=20221206010001084" target="_blank">
@@ -85,7 +85,7 @@ const Work = () => {
               대출 한도 조회시 사용자들이 대출 의사결정을 더 쉽게 할 수 있는 '대출 의사결정 개선' 프로젝트를
               작업했습니다. 초기 프로젝트 설계 및 업무 분담을 맡았고 본인 포함 두 명의 프론트엔드 개발자가 작업을
               하였습니다.
-              <a href="/work/improve-detail" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/improve-detail" target="_blank">
                 [예시]
               </a>
             </li>
@@ -105,7 +105,7 @@ const Work = () => {
             핀다 앱 내에서 은행 대출 상품을 확인하고 바로 약정을 체결할 수 있는 제품, <b>인앱약정</b> 기능의 프론트엔드
             개발을 맡고 있습니다. 2명의 FE 개발자와 2명의 ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄
             애자일 프로세스로 작업을 진행했습니다.{' '}
-            <a href="/work/inapp-image" target="_blank">
+            <a href="https://hayeondev.gatsbyjs.io/work/inapp-image" target="_blank">
               [예시]
             </a>
             <br />
@@ -119,7 +119,7 @@ const Work = () => {
               할 수 있도록 설계를 개선했습니다. 15회이상 여러번 호출되던 API 횟수를 줄여 불필요한 서버 요청을 5단계로
               줄일 수 있었고, 프론트에서 Redux의 상태값을 바로 가져올 수 있도록 수정해 페이지 전환 속도를
               개선하였습니다.{' '}
-              <a href="/work/inapp-detail-1" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/inapp-detail-1" target="_blank">
                 [상세 코드]
               </a>
             </li>
@@ -129,7 +129,7 @@ const Work = () => {
               기존에 앱과 웹 사이의 페이지 이동이 부자연스럽다는 피드백이 있어, 웹을 옆으로 넘길 때 앱처럼 작동할 수
               있는 transition을 적용했습니다. react-spring을 이용하여 웹에서도 앱처럼 자연스러운 모션으로 이동할 수
               있도록 사용성을 개선하였습니다.{' '}
-              <a href="/work/inapp-detail-2" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/inapp-detail-2" target="_blank">
                 [상세 코드]
               </a>
             </li>
@@ -191,7 +191,7 @@ const Work = () => {
               <code>transition-transform</code>, <code>transform</code>, <code>duration</code>, <code>ease-in-out</code>
               등 transition 클래스를 활용하여 재사용 가능한 자동 롤링 배너를 개발했습니다. 코드 재사용을 가능하게 하여
               개발 효율성을 증대시켰으며, transition css를 활용하여 자연스러운 전환 효과를 적용하였습니다.{' '}
-              <a href="/work/growth-detail-1" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/growth-detail-1" target="_blank">
                 [상세 코드]
               </a>
             </li>
@@ -244,7 +244,7 @@ const Work = () => {
               위해 5회이상 빠르게 연타 할 때에만 웹 콘솔이 뜰 수 있도록 적용했습니다. 기존의{' '}
               <code>stage, devstage 오류 발견 - 로컬 환경 설정 - 로컬에서 모바일 테스트</code> 단계에서, 바로{' '}
               <code>stage, devstage에서 오류 발견 및 테스트</code>를 할 수 있도록 테스트 과정을 축소시켰습니다.{' '}
-              <a href="/work/web-detail-1" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/work/web-detail-1" target="_blank">
                 [상세 코드]
               </a>
             </li>
@@ -405,7 +405,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>
               디자이너가 전달해준 디자인 피그마를 참고하여 퍼블리싱 작업을 하였습니다.{' '}
-              <a href="/221029-BEM/" target="_blank">
+              <a href="https://hayeondev.gatsbyjs.io/221029-BEM/" target="_blank">
                 BEM(Block, Element, Modifier)
               </a>{' '}
               방식으로 커스텀 클래스를 만들어 CSS를 적용했습니다. 클래스 구조를 먼저 설계한 후, 비슷한 요소들끼리 묶어서

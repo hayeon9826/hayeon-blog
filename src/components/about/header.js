@@ -20,6 +20,39 @@ const Header = ({ location }) => {
             {/* {!hasLayout() && <ThemeBtn />} */}
           </h1>
         </header>
+        {/* <h5>기본정보</h5>
+        <div>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">이름 </strong>
+            <span className="col">김하연</span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">생년월일</strong>
+            <span className="col">1998.02.26 (만 25세)</span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">연락처</strong>
+            <span className="col">010-3932-9826</span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">경력사항</strong>
+            <span className="col">
+              총 2년 11개월 <small className="ml-2">핀다(11개월), 인썸니아(2년)</small>
+            </span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">지원부문</strong>
+            <span className="col"></span>
+          </p>
+          <hr />
+        </div>
+        <br />
+        <br /> */}
         <h5>
           안녕하세요, <u className="underline-blue-bold">3년차 프론트엔드 개발자</u> 김하연 입니다.
         </h5>
@@ -57,7 +90,7 @@ const Header = ({ location }) => {
           </p>
           <hr />
           <p className="row gap-3">
-            <strong className="col-2 text-right">Contact</strong>
+            <strong className="col-2 text-right">Email</strong>
             <a className="col-4" href="mailto:hayeonkim226@gmail.com">
               hayeonkim226@gmail.com
             </a>
