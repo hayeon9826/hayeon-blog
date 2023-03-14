@@ -1,6 +1,6 @@
 ---
 title: '[번역] 비동기 자바스크립트 이해하기 (Understanding Asynchronous JavaScript)'
-date: '2023-0307T11:45:32.169Z'
+date: '2023-03-07T11:45:32.169Z'
 description: '[번역] 비동기 자바스크립트 이해하기 (Understanding Asynchronous JavaScript)'
 category: 'Javascript'
 keywords: 'Javascript, asynchronous'
@@ -103,7 +103,7 @@ first()
 
 <br />
 
-### 자바스크립트에서 비동기가 불가능한 이유? (Blocking)
+### 자바스크립트에서 블로킹이란? (Blocking)
 
 Blocking 이란 무엇일까? 개념을 알아보기 위해 아래 예시를 살펴보자.
 아래처럼 이미지 처리 또는 네트워크 요청을 동기식으로 수행한다고 가정해보자.
