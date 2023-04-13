@@ -13,7 +13,7 @@
   --maxWidth-3xl: 48rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-full: '100%';
-  --maxWidth-wrapper: var(--maxWidth-3xl);
+  --maxWidth-wrapper: var(--maxWidth-2xl);
   --resume-wrapper: var(--maxWidth-4xl);
   --spacing-px: '1px';
   --spacing-0: 0;
@@ -53,10 +53,10 @@
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
   --fontSize-2: 1.2rem;
-  --fontSize-3: 1.44rem;
-  --fontSize-4: 1.728rem;
-  --fontSize-5: 2.074rem;
-  --fontSize-6: 2.488rem;
+  --fontSize-3: 1.4rem;
+  --fontSize-4: 1.7rem;
+  --fontSize-5: 2rem;
+  --fontSize-6: 2.388rem;
   --color-text-black: black;
 }
 
@@ -395,9 +395,9 @@ img {
   /* max-width: var(--maxWidth-wrapper); */
   margin-bottom: var(--spacing-12);
   margin: var(--spacing-0) auto;
-  padding: var(--spacing-5) var(--spacing-5);
-  /* background: var(--color-primary); */
-  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 25%, var(--color-light) 100%);
+  padding: var(--spacing-3) var(--spacing-6);
+  background: var(--color-shade);
+  /* background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 25%, var(--color-light) 100%); */
   top: 0;
   left: 0;
   right: 0;
@@ -458,7 +458,7 @@ img {
 }
 
 .main-heading {
-  font-size: var(--fontSize-4);
+  font-size: var(--fontSize-3);
   color: var(--color-heading-light) !important;
   margin: 0;
   display: inline;
@@ -527,7 +527,7 @@ img {
 }
 
 .post-list-item h2 {
-  font-size: var(--fontSize-4);
+  font-size: var(--fontSize-3);
   color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);

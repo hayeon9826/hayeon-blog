@@ -30,6 +30,12 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     {
+      resolve: `gatsby-plugin-google-adsense`,
+      options: {
+        publisherId: `pub-9858678688044633`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         trackingIds: [

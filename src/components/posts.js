@@ -19,8 +19,8 @@ const PostsPage = ({ posts, category, siteTitle = 'Hayeon Dev Blog', location })
       setTimeout(() => {
         setIsScroll(true)
         setCount(v => {
-          if (v + 1 <= posts.length) return v + 1
-          return v + 1
+          if (v + 5 <= posts.length) return v + 5
+          return v + 5
         })
       }, 200)
     }
