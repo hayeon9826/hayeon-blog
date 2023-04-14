@@ -41,7 +41,7 @@ const Header = ({ location }) => {
           <p className="row gap-3">
             <strong className="col-2 text-right">경력사항</strong>
             <span className="col">
-              총 2년 11개월 <small className="ml-2">핀다(11개월), 인썸니아(2년)</small>
+              총 3년 1개월 <small className="ml-2">핀다(1년), 인썸니아(2년 1개월)</small>
             </span>
           </p>
           <hr />
@@ -61,7 +61,7 @@ const Header = ({ location }) => {
             저는 <span className="badge text-bg-primary p-1 me-1">_ _ _ _ _ _ </span> 하는 개발자 입니다.
           </div>
           <ul>
-            <li>사용자의 입장에서 제품을 개발하는</li>
+            <li>사용자의 입장에서 꼼꼼하게 제품을 개발하는</li>
             <li>조직의 발전과 성장하는 개발문화를 고민하는</li>
             <li>개발 지식을 문서화하고 공유하는 것을 좋아하는</li>
           </ul>
