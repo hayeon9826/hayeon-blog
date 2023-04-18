@@ -707,7 +707,7 @@ requestAnimationFrame(startAnimation)
 cancelAnimationFrame(req) // 애니메이션 멈춤
 ```
 
-> requestAnimationFrame은 [이전 포스트](https://hayeondev.gatsbyjs.io/221031-requestAnimationFrame/)에 더 자세히 정리해두었습니다.
+> requestAnimationFrame은 [이전 포스트](https://hayeondev.com/221031-requestAnimationFrame/)에 더 자세히 정리해두었습니다.
 
 <br />
 
