@@ -61,7 +61,67 @@ const ToyProject = () => {
         </div> */}
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
-            <a target="_blank" rel="noreferrer" href="https://google-calendar-pearl.vercel.app/">
+            <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
+              <h5>bloggy</h5>
+            </a>
+            <p>2023.03 ~</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>Open AI의 text-davinci-003를 이용한 개인 토이 프로젝트 (1인개발)</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/bloggy-front">
+                  github.com/hayeon9826/bloggy-front
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
+                  bloggy-front.vercel.app
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>Frontend: React.js, Next.js, Typescript, Tailwindcss</li>
+              <li>Backend: Prisma, Supabase, Next.js API Routes</li>
+              <li>Deployment: Vercel</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Open AI의 text-davinci-003를 이용해 블로그 글 자동 생성 서비스를 작업했습니다. (
+                <a href="https://bloggy-front.vercel.app/posts/new">링크</a>) 또한, 해당 API를 사용하여 실시간 채팅 앱을
+                구현했습니다. (<a href="https://bloggy-front.vercel.app/chats">링크</a>)
+              </li>
+              <li>
+                Next.js 프로젝트의 확장성을 위해 Next/auth를 도입하였습니다. Next/auth를 이용한 인증 및 회원가입을
+                구현하며 인증 프로세스를 개발했습니다.
+              </li>
+              <li>
+                Prisma ORM을 활용한 재사용 가능한 네 가지 컴포넌트를 개발하여, 관리자 페이지를 구현했습니다. (
+                <a href="https://bloggy-front.vercel.app/admin">링크</a>)
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://findaoverflow.vercel.app/">
               <h5>findaoverflow</h5>
             </a>
             <p>2022.10 ~</p>
@@ -343,49 +403,61 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-        {/* <div className="column-list mt-5">
-            <div style={{ width: '25%' }} className="column">
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://justplay.co.kr/">
               <h5>O2O 학원 매칭 서비스</h5>
-              <p>
-                <span className="highlight-gray">2020.12 ~ 2021.11</span>
-              </p>
-              <p>
-                <a target="_blank" rel="noreferrer" href="https://insomenia.com/">
-                  인썸니아
-                </a>{' '}
-                프로젝트
-              </p>
-            </div>
-            <div style={{ width: '75%' }} className="column">
-              <ul className="bulleted-list">
-                <li>사내 외주 프로젝트 (서브개발)</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>사용 스택: ruby on rails, javascript, jquery, ubuntu, framework7</li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  구현 기능: Ruby on rails를 활용하여 학원 거리순 정렬, ajax 활용해서 주변 지역별로 가까운 학원
-                  보여주기, 학원 및 강의 신청, 수강 강의 확인 페이지 개발
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  링크:{' '}
-                  <a target="_blank" rel="noreferrer" href="https://justplay.co.kr/">
-                    justplay.co.kr/
-                  </a>
-                </li>
-              </ul>
-              <ul className="bulleted-list">
-                <li>
-                  <span className="highlight-gray">
-                    <strong>기여도 50%</strong>
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div> */}
+            </a>
+            <p>
+              <span className="highlight-gray">2020.12 ~ 2021.11</span>
+            </p>
+            <p>
+              <a target="_blank" rel="noreferrer" href="https://insomenia.com/">
+                인썸니아
+              </a>{' '}
+              프로젝트
+            </p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>Insomenia 사내 외주 프로젝트 (서브개발)</li>
+              <li>학원 수강 신청 / 관리 웹앱</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://justplay.co.kr/">
+                  justplay.co.kr/
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 40%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>ruby on rails, javascript, jquery, ubuntu, framework7</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>Ruby on rails를 활용하여 학원 거리순 정렬 기능을 개발했습니다.</li>
+              <li>
+                ajax와 자바스크립트의 location Web API를 활용해서 주변 지역별로 가까운 학원 보여주기 기능을
+                작업했습니다.
+              </li>
+              <li>
+                Framework7을 이용해 학부모/학생을 위한 학원 및 강의 신청 앱을 개발했습니다. ActiveAdmin 라이브러리를
+                활용하여 관리자/선생님을 위한 수강 관리 페이지를 개발했습니다.
+              </li>
+              <li>디자인(피그마)에 맞게 퍼블리싱 작업을 주도적으로 진행했습니다.</li>
+            </ul>
+          </div>
+        </div>
         {/* <div className="column-list">
             <div style={{ width: '25%' }} className="column">
               <p>

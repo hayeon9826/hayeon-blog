@@ -20,7 +20,7 @@ const Header = ({ location }) => {
             {/* {!hasLayout() && <ThemeBtn />} */}
           </h1>
         </header>
-        {/* <h5>기본정보</h5>
+        <h5>기본정보</h5>
         <div>
           <hr />
           <p className="row gap-3">
@@ -45,14 +45,14 @@ const Header = ({ location }) => {
             </span>
           </p>
           <hr />
-          <p className="row gap-3">
+          {/* <p className="row gap-3">
             <strong className="col-2 text-right">지원부문</strong>
             <span className="col"></span>
           </p>
-          <hr />
+          <hr /> */}
         </div>
         <br />
-        <br /> */}
+        <br />
         <h5>
           안녕하세요, <u className="underline-blue-bold">3년차 프론트엔드 개발자</u> 김하연 입니다.
         </h5>
