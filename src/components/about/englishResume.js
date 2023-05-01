@@ -34,7 +34,7 @@ const EnglishResume = () => {
                     <b>Github</b>: github.com/hayeon9826
                   </li>
                   <li className="blog">
-                    <b>Blog</b>: hayeondev.gatsbyjs.io
+                    <b>Blog</b>: hayeondev.com
                   </li>
                 </ul>
               </div>

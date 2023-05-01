@@ -8,7 +8,7 @@ import { ShareButtons } from '../components/shareButton'
 import { Provider, ClapButton } from '@lyket/react'
 
 const BlogPostTemplate = ({ data, location }) => {
-  const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.gatsbyjs.io'
+  const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.com'
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const siteUrl = data.site.siteMetadata?.siteUrl

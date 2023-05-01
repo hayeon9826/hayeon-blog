@@ -19,7 +19,7 @@ module.exports = {
       'Study',
     ],
     description: `[김하연 기술 블로그] Javascript, Typescript, React와 프론트엔드 기술 이야기를 기록합니다.`,
-    siteUrl: `https://hayeondev.gatsbyjs.io`,
+    siteUrl: `https://hayeondev.com`,
     social: {
       linkedin: `khy226`,
       github: 'https://github.com/hayeon9826',
@@ -98,8 +98,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://hayeondev.gatsbyjs.io/',
-        sitemap: 'https://hayeondev.gatsbyjs.io/sitemap.xml',
+        host: 'https://hayeondev.com/',
+        sitemap: 'https://hayeondev.com/sitemap.xml',
         policy: [
           {
             userAgent: '*',

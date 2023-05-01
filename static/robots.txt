@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://hayeondev.gatsbyjs.io/sitemap-pages.xml
+Sitemap: https://hayeondev.com/sitemap-pages.xml

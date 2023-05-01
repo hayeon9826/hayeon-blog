@@ -212,7 +212,7 @@ export default function HomePage() {
 
 ### Redirects
 
-Redirects의 경우 [IE11 브라우저에서 유저 리다이렉트 시키기 (feat. Next.js Redirects)](https://hayeondev.gatsbyjs.io/221030-nextjs-ie-redirects/)에서 잠깐 다뤘던 내용이다. Redirect 설정을 통해 특정 요청 경로를 원하는 경로로 리다이렉트 시킬 수 있다. 이때는 리다이렉트 되는 것 이기 때문에, 페이지 내용과 함께 url도 바뀐다.
+Redirects의 경우 [IE11 브라우저에서 유저 리다이렉트 시키기 (feat. Next.js Redirects)](https://hayeondev.com/221030-nextjs-ie-redirects/)에서 잠깐 다뤘던 내용이다. Redirect 설정을 통해 특정 요청 경로를 원하는 경로로 리다이렉트 시킬 수 있다. 이때는 리다이렉트 되는 것 이기 때문에, 페이지 내용과 함께 url도 바뀐다.
 
 <br />
 
