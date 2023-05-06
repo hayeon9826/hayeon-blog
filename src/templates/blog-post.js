@@ -5,26 +5,12 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import CommentPage from '../components/comments'
 import { ShareButtons } from '../components/shareButton'
-import { Provider, ClapButton } from '@lyket/react'
 
 const BlogPostTemplate = ({ data, location }) => {
   const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.com'
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
-  const siteUrl = data.site.siteMetadata?.siteUrl
   const { previous, next } = data
-  const [viewCount, setViewCount] = useState(0)
-
-  useEffect(() => {
-    const namespace = siteUrl.replace(/(^\w+:|^)\/\//, '')
-    const key = post?.fields?.slug.replace(/\//g, '')
-    if (!url.includes('localhost')) {
-      fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`).then(async result => {
-        const data = await result.json()
-        setViewCount(data.value)
-      })
-    }
-  }, [siteUrl, post?.fields?.slug, url])
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -43,9 +29,6 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p className="post-date justify-center">
             <span className="text-sm">{post.frontmatter.date} </span>
-            <span className="text-sm pt-2">
-              {`  `} {viewCount} views
-            </span>
           </p>
           <div className="mb-2">
             <span className="badge rounded-pill text-bg-secondary category-badge me-2">
@@ -66,40 +49,6 @@ const BlogPostTemplate = ({ data, location }) => {
           description={post.frontmatter.description?.replace(/\s/g, '-')}
         />
         <br />
-        <div className="d-flex justify-content-center my-5">
-          <Provider
-            apiKey="pt_4054cfb6bfa9da6987c502d217a93d"
-            sx={{
-              width: '5rem !important',
-              height: '5rem !important',
-            }}
-            theme={{
-              colors: {
-                primary: 'rgba(200, 232, 231, 0.8)',
-                secondary: '#ff00c3',
-                background: '#dff6ff',
-                text: '#6c757d',
-                highlight: '#e095ed',
-                icon: '#292929',
-              },
-              fonts: {
-                body: 'inherit',
-              },
-              styles: {
-                button: {
-                  width: '5rem !important',
-                  height: '5rem !important',
-                },
-              },
-            }}
-          >
-            <ClapButton
-              namespace={post?.fields?.slug?.replace(/\//g, '')?.substring(0, 30)}
-              id={post?.fields?.slug.replace(/\//g, '')?.substring(0, 30)}
-            />
-          </Provider>
-        </div>
-
         <hr />
         <footer className="mb-5">
           <Bio />
