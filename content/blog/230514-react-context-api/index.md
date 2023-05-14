@@ -152,6 +152,9 @@ Context API를 사용하면 컴포넌트 간의 데이터 전달이 간편해지
 
 ## Context API를 이용한 예시
 
+> - CodeSandbox에서 전체 코드 확인하기: [Before 링크](https://codesandbox.io/s/props-drilling-example-theme-toggle-forked-ynzjnp?file=/src/App.js)
+> - CodeSandbox에서 전체 코드 확인하기: [After 링크](https://codesandbox.io/s/context-api-example-theme-toggle-8v54k9?file=/src/App.js)
+
 이제 간단한 예제를 통해 실제로 Context API를 사용하는 방법을 알아보겠습니다.
 
 ```javascript
@@ -285,6 +288,9 @@ export default App
 <br />
  
 이제 위의 코드를 실행하면 버튼을 클릭할 때마다 테마가 변경되는 것을 확인할 수 있습니다.
+
+> - CodeSandbox에서 전체 코드 확인하기: [Before 링크](https://codesandbox.io/s/props-drilling-example-theme-toggle-forked-ynzjnp?file=/src/App.js)
+> - CodeSandbox에서 전체 코드 확인하기: [After 링크](https://codesandbox.io/s/context-api-example-theme-toggle-8v54k9?file=/src/App.js)
 
 ## 결론
 
