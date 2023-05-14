@@ -40,9 +40,9 @@ const Bio = () => {
             <br />
             <div className="text-gray mt-2 bio-author">{author?.summary || null}</div>
             <span>
-              <Link className="link-small me-2" to="/about?header=true">
+              <a className="link-small me-2" to="/about?header=true" rel="noreferrer" target="_blank">
                 About
-              </Link>
+              </a>
             </span>
             <a className="link-small me-2" target="_blank" rel="noreferrer" href="http://github.com/hayeon9826">
               Github
@@ -52,9 +52,9 @@ const Bio = () => {
               Linkedin
             </a>
             <span>
-              <Link className="link-small me-2" to="/en/about">
+              <a className="link-small me-2" to="/en/about" rel="noreferrer" target="_blank">
                 Resume
-              </Link>
+              </a>
             </span>
           </div>
         </div>
