@@ -40,7 +40,7 @@ const Bio = () => {
             <br />
             <div className="text-gray mt-2 bio-author">{author?.summary || null}</div>
             <span>
-              <a className="link-small me-2" to="/about?header=true" rel="noreferrer" target="_blank">
+              <a className="link-small me-2" href="https://hayeondev.com/about/" rel="noreferrer" target="_blank">
                 About
               </a>
             </span>
@@ -52,7 +52,7 @@ const Bio = () => {
               Linkedin
             </a>
             <span>
-              <a className="link-small me-2" to="/en/about" rel="noreferrer" target="_blank">
+              <a className="link-small me-2" href="https://hayeondev.com/en/about/" rel="noreferrer" target="_blank">
                 Resume
               </a>
             </span>
