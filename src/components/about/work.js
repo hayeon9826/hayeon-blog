@@ -96,7 +96,7 @@ const Work = () => {
               대환대출 서비스를 런칭하며 인트로페이지 리뉴얼 작업을 진행했습니다. 중요한 페이지이기 때문에, 사용자
               반응을 관찰하고 오류 현황을 분석하기 위해 웹에서 <b>AB 테스트</b>를 적용하여 50%에서 100%까지 점진적으로
               페이지를 배포하였습니다.{' '}
-              <a href="https://hayeondev.com/work/improve-detail" target="_blank">
+              <a href="https://hayeondev.com/work/refinance-intro" target="_blank">
                 [예시]
               </a>
             </li>
