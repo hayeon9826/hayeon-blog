@@ -23,7 +23,7 @@ const Intro = () => {
         </p>
         <p className="fs-6">
           전국 대학 연합{' '}
-          <a href="https://likelionyonsei.com/alumni/?page=6" target="_blank">
+          <a href="https://www.likelion.net/" target="_blank">
             프로그래밍 동아리
           </a>{' '}
           활동에서의 2년간의 운영진 활동, 그리고 세 번의 서비스 런칭을 시작으로 개발자의 커리어를 시작하게 되었습니다.
