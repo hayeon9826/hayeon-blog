@@ -61,6 +61,68 @@ const ToyProject = () => {
         </div> */}
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://next-eatmap.vercel.app/">
+              <h5>eatmap</h5>
+            </a>
+            <p>2023.06</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>Next.js 13의 app 디렉토리를 적용한 맛집 지도 서비스 (1인개발)</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/next-eatmap">
+                  github.com/hayeon9826/next-eatmap
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://next-eatmap.vercel.app/">
+                  next-eatmap.vercel.app
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Frontend: React.js, Next.js 13 (app directory), Typescript, Recoil, React-Query, Next-auth,
+                React-hook-form, Tailwindcss
+              </li>
+              <li>Backend: Prisma, Supabase, Next.js API Routes</li>
+              <li>Deployment: Vercel</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                Kakao Map API를 연동한 맛집 지도 앱을 구현했습니다. 페이지 로드시 지도와 커스텀 마커를 보여줄 수 있도록
+                작업했습니다.
+              </li>
+              <li>
+                prisma ORM으로 서울특별시 음식점 공공데이터 약 1000여개의 데이터를 (seed)생성하였고, Next API Routes와
+                prisma를 활용해 데이터를 보여주었습니다.
+              </li>
+              <li>geolocation API을 활용하여 현재위치로 이동할 수 있는 버튼 작업을 진행했습니다.</li>
+              <li>React-query의 infiniteQuery를 이용하여 무한스크롤을 구현했습니다.</li>
+              <li>Next/auth의 Oauth 기능을 활용하여 구글 로그인 / 네이버 로그인 / 카카오 로그인을 구현했습니다.</li>
+              <li>기존의 pages 디렉토리를 next.js 13의 app 디렉토리로 마이그레이션 하였습니다.</li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
               <h5>bloggy</h5>
             </a>

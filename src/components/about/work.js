@@ -48,7 +48,7 @@ const Work = () => {
           <hr />
         </div>
         <div className="mt-5">
-          <h4 className="mb-1">금융상품 PG</h4>
+          <h4 className="mb-1">금융상품 PG (비교대출 PT)</h4>
           <p>
             <span className="highlight-gray">Frontend Engineer</span>
           </p>
@@ -86,6 +86,16 @@ const Work = () => {
               작업했습니다. 프론트엔드 페이지 개발 및 설계를 주도하여 기존 대출 한도 조회 앱 페이지들을 웹으로 이전하는
               작업을 맡아 하였습니다. 구체적으로 대출 한도 조회 리스트, 상세 페이지, 부결 페이지, 미승인 리스트 등의
               페이지를 작업했으며, 확장성 있는 설계와 효율적인 컴포넌트화에 집중하여 개발했습니다.{' '}
+              <a href="https://hayeondev.com/work/improve-detail" target="_blank">
+                [예시]
+              </a>
+            </li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>
+              대환대출 서비스를 런칭하며 인트로페이지 리뉴얼 작업을 진행했습니다. 중요한 페이지이기 때문에, 사용자
+              반응을 관찰하고 오류 현황을 분석하기 위해 웹에서 <b>AB 테스트</b>를 적용하여 50%에서 100%까지 점진적으로
+              페이지를 배포하였습니다.{' '}
               <a href="https://hayeondev.com/work/improve-detail" target="_blank">
                 [예시]
               </a>
@@ -192,9 +202,6 @@ const Work = () => {
               <code>transition-transform</code>, <code>transform</code>, <code>duration</code>, <code>ease-in-out</code>
               등 transition 클래스를 활용하여 재사용 가능한 자동 롤링 배너를 개발했습니다. 코드 재사용을 가능하게 하여
               개발 효율성을 증대시켰으며, transition css를 활용하여 자연스러운 전환 효과를 적용하였습니다.{' '}
-              <a href="https://hayeondev.com/work/growth-detail-1" target="_blank">
-                [상세 코드]
-              </a>
             </li>
           </ul>
           {/* <h4>What I learned.</h4>
@@ -280,6 +287,16 @@ const Work = () => {
                 핀다 웹 페이지
               </a>
               를 담당하여 모노레포 이전작업을 진행했습니다.
+            </li>
+          </ul>
+          <ul className="bulleted-list">
+            <li>
+              디자인팀과 협업하여 핀다 웹 컴포넌트를 공통 컴포넌트로 이전하는 작업을 주도하여 진행했습니다.
+              타이포그래피, Spacing, 버튼, CTA 등 <b>새로운 공통 컴포넌트</b>를 생성하여 웹팀분들이 빠르게 적용할 수
+              있도록 하였고, 디자인 및 마케팅팀과 원활한 협업을 위해 storybook을 관리했습니다.{' '}
+              <a href="https://hayeondev.com/work/design-system" target="_blank">
+                [예시]
+              </a>
             </li>
           </ul>
         </div>
