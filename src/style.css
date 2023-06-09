@@ -747,6 +747,14 @@ img {
   font-size: 0.875rem;
 }
 
+.column-start {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
 .column-list {
   display: flex;
   justify-content: space-between;
@@ -1507,7 +1515,7 @@ details {
   position: fixed;
   width: 100%;
   height: 10px;
-  background: var(--color-accent);
+  background: var(--color-text-darkGray);
   top: 0;
   left: 0;
 }
@@ -1529,11 +1537,11 @@ details {
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
 
-  border-bottom: 3px solid var(--color-accent);
+  border-bottom: 3px solid var(--color-text-darkGray);
   display: inline-block;
   color: var(--color-darkGray);
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .en-resume ul {
@@ -1576,7 +1584,7 @@ details {
 }
 
 .en-resume header ul li i {
-  color: var(--color-accent);
+  color: var(--color-text-darkGray);
   padding-right: 5px;
   padding-left: 5px;
   font-size: 18px;
@@ -1591,7 +1599,7 @@ details {
 }
 
 .en-resume article .header {
-  color: var(--color-accent);
+  color: var(--color-text-darkGray);
   font-weight: 600;
   list-style-type: none;
 }
@@ -1621,7 +1629,7 @@ details {
 }
 
 .en-resume article .exp-list .fa {
-  color: var(--color-accent);
+  color: var(--color-text-darkGray);
   padding-right: 5px;
   font-size: 12px;
 }
@@ -1676,5 +1684,5 @@ details {
 
 .en-resume article .tech span {
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-text-darkGray);
 }

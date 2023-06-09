@@ -1,4 +1,5 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const EnglishResume = () => {
   return (
@@ -7,8 +8,25 @@ const EnglishResume = () => {
         <div className="fixed-top-border" />
         <div className="container">
           <header>
-            <h2 className="underline">Hayeon Kim</h2>
-            <h4 className="mt-0">Frontend Developer</h4>
+            <div className="column-start mb-2">
+              <div className="row">
+                <StaticImage
+                  className="bio-avatar"
+                  layout="fixed"
+                  formats={['auto', 'webp', 'avif']}
+                  src="../images/profile_2.jpeg"
+                  width={75}
+                  height={75}
+                  quality={95}
+                  alt="Profile picture"
+                />
+              </div>
+              <div className="row">
+                <h2 className="mb-1 mt-0">Hayeon Kim</h2>
+                <h5 className="mt-0 mb-0">Frontend Developer</h5>
+              </div>
+            </div>
+
             <div className="column-list w-full">
               <div className="row">
                 <ul>
@@ -45,10 +63,13 @@ const EnglishResume = () => {
             <h2 className="underline">Resume Objective</h2>
 
             <div className="pb-15px">
-              Front-End Web Developer with 3 years of experience in developing web applications, optimizing user
-              interfaces, and meticulous testing & debugging. Value acquiring new technologies and organizing concepts
-              through tech studies and writing tech blogs. Enjoy active code reviews, technical discussions with other
-              developers, and eager to improve user experience by finding better solutions.
+              Junior Front-end Web Developer adept in all stages of advanced web development. Knowledgeable in user
+              interface, testing, and debugging processes. Bringing forth expertise in design, improving, testing and
+              maintenance of web applications. Equipped with a diverse and promising web development skill-set.
+              Proficient in an assortment of technologies, including React, Next.js, JavaScript/Typescript, Recoil,
+              Redux, React-query, tailwind, styled-components, Ruby, and Ruby on Rails. Able to effectively self-manage
+              during independent projects, as well as collaborate in a team setting. Enjoy active code reviews,
+              technical discussions, and eager to improve user experience by finding the best solutions.
             </div>
           </article>
 
@@ -62,12 +83,16 @@ const EnglishResume = () => {
                   Front-End Developer, <span>Finda - Seoul, Korea</span>
                 </li>
                 <li>
-                  Developed and maintained Finda web and Finda app webviews. Took charge of transferring loan list, loan
-                  main page, loan detail page into webviews.{' '}
+                  Redesigned loan intro page and applied AB testing to gradually roll out the page from 50% to 100% to
+                  observe user reactions and analyze errors.
                 </li>
                 <li>
-                  Developed 'in-app contract' feature, where customers could conclude a loan contract via Finda App.
-                  Also, built desgin system and deployed to Storybook (with chromatic) by cooperating with the
+                  Developed and maintained Finda web and Finda app web-views. Took charge of transferring Finda's main
+                  loan list, loan main page, loan detail page into web-views.
+                </li>
+                <li>
+                  Developed 'In-App Contract' feature, where customers could conclude a loan contract via Finda App.
+                  Also, built design system and deployed to Storybook (with chromatic) by cooperating with the
                   designers.
                 </li>
                 <li>
@@ -86,10 +111,10 @@ const EnglishResume = () => {
                   Side Generation) on data fetching to improve API request time. Decreased API fetching time from 4s to
                   0.5s.
                 </li>
-                {/* <li>
+                <li>
                   Refactored job opening page, and enabled HR team to directly update job openings by linking Google
                   Spread Sheet data to Finda web page.
-                </li> */}
+                </li>
               </ul>
             </div>
 
@@ -139,7 +164,7 @@ const EnglishResume = () => {
             </div>
           </article>
           <article>
-            <h2 className="underline">Languages and Technologies</h2>
+            <h2 className="underline">Skills</h2>
 
             <div className="row tech">
               <ul>
