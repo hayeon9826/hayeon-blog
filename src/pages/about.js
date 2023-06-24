@@ -15,7 +15,7 @@ import OtherExperience from '../components/about/otherexperience'
 const AboutPage = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
 
-  const hasLayout = useCallback(() => {
+  const hasHeader = useCallback(() => {
     if (location && location?.search.includes('header')) {
       return true
     } else if (location && location?.pathname.includes('about')) {
@@ -36,17 +36,20 @@ const AboutPage = ({ data, location }) => {
         <div className="page-body about-page">
           <Header location={location} />
           <Intro />
-
           <Work />
           {/* <DevLife /> */}
-          <DevExperience />
-          <ToyProject />
-          <OtherExperience />
-          <Skill />
-          <Education />
+          {!hasHeader() && (
+            <>
+              <DevExperience />
+              <ToyProject />
+              <OtherExperience />
+              <Skill />
+              <Education />
+            </>
+          )}
         </div>
       </article>
-      {hasLayout() && (
+      {hasHeader() && (
         <div className="mt-100 about-footer">
           <small>
             Frontend Engineer, Hayeon Kim{' '}
