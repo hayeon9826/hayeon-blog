@@ -9,6 +9,46 @@ const Work = () => {
             <span className="title-primary">Experience.</span>
           </span>
         </h1>
+        <div className="title-lg mt-16">
+          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer">
+            SK 에너지
+          </a>
+        </div>
+        <p>
+          주유, 충전, 세차, 포인트, 멤버십 어플{' '}
+          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer">
+            머핀
+          </a>{' '}
+          개발
+        </p>
+        <div>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">Period </strong>
+            <span className="col-8">2022.10 ~ 재직중</span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">Position </strong>
+            <span className="col-8">USE 파트 (Frontend Web)</span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">Projects </strong>
+            <span className="col-8">
+              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer">
+                머핀 앱
+              </a>{' '}
+              개발
+            </span>
+          </p>
+          <hr />
+          <p className="row gap-3">
+            <strong className="col-2 text-right">Tech </strong>
+            <span className="col-8">React, Next.js, Typescript, Redux, Emotion, Storybook, GraphQL</span>
+          </p>
+          <hr />
+        </div>
         <br />
         <div className="title-lg mt-16">
           <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
@@ -20,7 +60,7 @@ const Work = () => {
           <hr />
           <p className="row gap-3">
             <strong className="col-2 text-right">Period </strong>
-            <span className="col-8">2022.05 ~ 재직중</span>
+            <span className="col-8">2022.05 ~ 2023.09</span>
           </p>
           <hr />
           <p className="row gap-3">
