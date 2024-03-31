@@ -51,7 +51,7 @@ const OtherExperience = () => {
           <ul className="bulleted-list">
             <li>
               사내 세미나를 열어 디자인팀 & 테크팀에게 디자인 시스템 개념 및 Storybook 사용 방법을 발표했습니다.{' '}
-              <a href="https://hayeondev.com/220919-storybook/" target="_blank" rel="noreferrer">
+              <a href="https://hayeon-blog.vercel.app/220919-storybook/" target="_blank" rel="noreferrer">
                 [참고 링크]
               </a>
             </li>
@@ -70,7 +70,7 @@ const OtherExperience = () => {
             </li>
             <li>
               사내 프론트팀 세미나에서 useEffect 완벽 가이드를 요약하여 발표했습니다.{' '}
-              <a href="https://hayeondev.com/220629-useEffect-guide/" target="_blank" rel="noreferrer">
+              <a href="https://hayeon-blog.vercel.app/220629-useEffect-guide/" target="_blank" rel="noreferrer">
                 [참고 링크]
               </a>
             </li>

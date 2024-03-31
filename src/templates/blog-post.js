@@ -7,7 +7,7 @@ import CommentPage from '../components/comments'
 import { ShareButtons } from '../components/shareButton'
 
 const BlogPostTemplate = ({ data, location }) => {
-  const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeondev.com'
+  const url = typeof window !== 'undefined' ? window.location.href : 'https://hayeon-blog.vercel.app'
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Hayeon | 기술 블로그`
   const { previous, next } = data

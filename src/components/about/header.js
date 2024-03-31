@@ -79,8 +79,8 @@ const Header = ({ location }) => {
           <hr />
           <p className="row gap-3">
             <strong className="col-2 text-right">Blog</strong>
-            <a className="col-4" target="_blank" rel="noreferrer" href="https://hayeondev.com/">
-              hayeondev.com
+            <a className="col-4" target="_blank" rel="noreferrer" href="https://hayeon-blog.vercel.app/">
+              hayeon-blog.vercel.app
             </a>
           </p>
           <hr />

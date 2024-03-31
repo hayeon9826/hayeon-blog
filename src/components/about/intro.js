@@ -11,11 +11,11 @@ const Intro = () => {
         </h1>
         <p className="fs-6">
           4년차 프론트엔드 개발자 김하연입니다. 문제를 끝까지 파고들어 해결하는 경험을 중요시하며,{' '}
-          <a href="https://hayeondev.com/?category=Study" target="_blank" rel="noreferrer">
+          <a href="https://hayeon-blog.vercel.app/?category=Study" target="_blank" rel="noreferrer">
             사내 스터디
           </a>{' '}
           및{' '}
-          <a href="https://hayeondev.com/" target="_blank" rel="noreferrer">
+          <a href="https://hayeon-blog.vercel.app/" target="_blank" rel="noreferrer">
             블로그
           </a>
           를 통해 해결과정을 기록하는 것을 좋아합니다. 적극적인 코드리뷰와 동료들과 기술 공유하는 것을 즐기고, 토이

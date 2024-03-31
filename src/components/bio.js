@@ -52,7 +52,7 @@ const Bio = () => {
               Linkedin
             </a>
             <span>
-              <a className="link-small me-2" href="https://hayeondev.com/en/about/" rel="noreferrer">
+              <a className="link-small me-2" href="https://hayeon-blog.vercel.app/en/about/" rel="noreferrer">
                 Resume
               </a>
             </span>

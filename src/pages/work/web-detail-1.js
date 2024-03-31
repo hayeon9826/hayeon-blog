@@ -93,7 +93,11 @@ export default initVConsole;
                 기존에 모바일 앱/웹에서 에러 확인 및 네트워크 요청등을 상세하게 볼 수 있는 툴이 부재하였습니다. 따라서
                 모바일 디버깅 툴과 관련해서 리서치 및 세미나에서 발표를 하였고 팀원들과 의논한 결과 vConsole 도입을 맡게
                 되었습니다.{' '}
-                <a href="https://hayeondev.com/220622-debugging-tools-vconsole/" target="_blank" rel="noreferrer">
+                <a
+                  href="https://hayeon-blog.vercel.app/220622-debugging-tools-vconsole/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   [발표 내용]
                 </a>
               </li>

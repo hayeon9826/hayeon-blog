@@ -15,7 +15,7 @@ image: 'https://velog.velcdn.com/images/khy226/post/930f050d-6e88-4b6c-b031-dbf7
 
 Firebase 및 Firestore는 공식 도큐에 자세히 설명이 되어 있어서, [Firebase 사이트 공식 도큐](https://firebase.google.com/docs/firestore?hl=ko)만 봐도 이해가 잘 되었다. 공식 도큐를 참고해서 간단하게 Firestore이 어떤 서비스인지 알아보고 기본적인 데이터 생성, 수정, 가져오기, 삭제 방법을 정리하려고 한다.
 
-(추가로, 기존에 Firestore로 채팅을 만드는 포스트를 쓴적이 있는데, ([링크](https://hayeondev.com/220125-firestore-react-chat-app/)) 채팅 구현을 위해서는 해당 글을 참고해도 좋을 것 같다.)
+(추가로, 기존에 Firestore로 채팅을 만드는 포스트를 쓴적이 있는데, ([링크](https://hayeon-blog.vercel.app/220125-firestore-react-chat-app/)) 채팅 구현을 위해서는 해당 글을 참고해도 좋을 것 같다.)
 
 <Br />
 

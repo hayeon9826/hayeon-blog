@@ -52,7 +52,7 @@ const EnglishResume = () => {
                     <b>Github</b>: github.com/hayeon9826
                   </li>
                   <li className="blog">
-                    <b>Blog</b>: hayeondev.com
+                    <b>Blog</b>: hayeon-blog.vercel.app
                   </li>
                 </ul>
               </div>
