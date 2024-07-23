@@ -61,6 +61,101 @@ const ToyProject = () => {
         </div> */}
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package/hello-design-system">
+              <h5>디자인 시스템 라이브러리</h5>
+            </a>
+            <p>2024.04</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>Tailwind를 이용한 디자인 시스템 라이브러리</li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                npm 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://www.npmjs.com/package/hello-design-system">
+                  npmjs.com/package/hello-design-system
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/hello-design-system">
+                  github.com/hayeon9826/hello-design-system
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                데모 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://hello-design-system.vercel.app/">
+                  hello-design-system.vercel.app/
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>Frontend: React.js, Next.js 14, Typescript, Storybook, TailwindCSS</li>
+              <li>Deployment: Vercel</li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/next-bnb">
+              <h5>next-bnb</h5>
+            </a>
+            <p>2024.03</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>Next.js 13을 이용한 숙박 예약 플랫폼</li>
+            </ul>
+
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/next-bnb">
+                  github.com/hayeon9826/next-bnb
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                데모 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://next-bnb-omega.vercel.app/">
+                  next-bnb-omega.vercel.app/
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>Frontend: React.js, Next.js 14, Typescript, Storybook, TailwindCSS</li>
+              <li>Deployment: Vercel</li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="https://next-eatmap.vercel.app/">
               <h5>eatmap</h5>
             </a>

@@ -36,8 +36,10 @@ const Skill = () => {
           </ul> */}
           <h4>3. Frontend Library</h4>
           <ul className="bulleted-list">
-            <li>Redux, Recoil, React-Query</li>
-            <li>TailwindCSS, Styled-Components</li>
+            <li>Redux, Recoil</li>
+            <li>React-Query, Apollo GraphQL</li>
+            <li>TailwindCSS, Styled-Components, emotion</li>
+            <li>MSW, Jest, Cypress</li>
           </ul>
           {/* <h4>4. DB</h4>
           <ul className="bulleted-list">

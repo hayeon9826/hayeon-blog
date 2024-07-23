@@ -13,12 +13,50 @@ const DevExperience = () => {
         <div className="column-list">
           <div style={{ width: '25%' }} className="column">
             <h5>
+              <strong>머핀 앱</strong>
+            </h5>
+            <p>
+              <span className="title-primary_background">회사 프로젝트</span>
+            </p>
+            <p>2023.10 ~ 현재</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <p>
+              <a href="https://apps.apple.com/KR/app/id6445911244" target="_blank" rel="noreferrer">
+                머핀 앱
+              </a>
+              의 웹뷰를 담당하여 개발하였습니다. 머핀앱 주유 및 차량 서비스의 <b>레거시 코드 리팩토링</b> 작업을 하였고,
+              머핀 앱 최적화 및 기존의 React 기반의 구조를 <b>Next.js 14로 마이그레이션</b>하는 작업을 진행했습니다.
+              디자이너 및 기획자와 협업하며 주도적으로 <b>디자인 시스템 프로젝트</b>를 진행하여 스토리북 배포 및
+              재사용가능한 컴포넌트를 제작하여 효율성있는 코드로 개선하였습니다. 앱 복원력을 개선하기 위한{' '}
+              <b>카오스 엔지니어링</b>을 메인으로 개발하였으며, 임직원 전용 프로모션 및 고급휘발유 프로모션 등 사용자
+              만족도를 높일 수 있는 이벤트를 개발하였습니다.
+            </p>
+            <h5>Tech Stack.</h5>
+            <p>React, Next.js 14, Typescript, Redux, Emotion, Storybook, Apollo GraphQL, msw</p>
+            <figure className="image">
+              <StaticImage
+                formats={['auto', 'webp', 'avif']}
+                src="../../images/muffin_app.png"
+                width={600}
+                height={310}
+                quality={95}
+                alt="finda app"
+              />
+            </figure>
+          </div>
+        </div>
+        <hr />
+        <div className="column-list">
+          <div style={{ width: '25%' }} className="column">
+            <h5>
               <strong>핀다 앱</strong>
             </h5>
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
-            <p>2022.05 ~ </p>
+            <p>2022.05 ~ 2023.09</p>
           </div>
           <div style={{ width: '75%' }} className="column">
             <h5>Description.</h5>
