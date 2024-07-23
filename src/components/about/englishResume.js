@@ -63,15 +63,15 @@ const EnglishResume = () => {
             <h2 className="underline">Resume Objective</h2>
 
             <div className="pb-15px">
-              Highly motivated and adaptable Junior Front-end Web Developer with a strong foundation in advanced web
-              development principles. Total 4+ years of web engineering experince, possesses expertise in crafting user
-              interfaces, implementing robust testing strategies, and efficiently debugging complex issues. Proven
-              ability to design, improve, test, and maintain web applications, delivering exceptional user experiences.
-              Skilled in a comprehensive set of technologies, including React, Next.js, JavaScript/TypeScript, state
-              management libraries (Recoil, Redux, React Query), CSS frameworks (Tailwind CSS, styled-components,
-              emotion), and backend knowledge (Ruby, Ruby on Rails). Thrives in both independent and collaborative
-              environments, actively participating in code reviews and technical discussions to continuously optimize
-              user experience through innovative solutions.
+              Highly motivated and adaptable Junior Front-end Web Developer with over 4 years of experience in web
+              engineering. Possesses a strong foundation in advanced web development principles, with expertise in
+              crafting user interfaces, implementing robust testing strategies, and efficiently debugging complex
+              issues. Proven ability to design, improve, test, and maintain web applications, delivering exceptional
+              user experiences. Skilled in a comprehensive set of technologies, including React, Next.js,
+              JavaScript/TypeScript, state management libraries (Recoil, Redux, React Query), CSS frameworks (Tailwind
+              CSS, styled-components, emotion), and backend knowledge (Ruby, Ruby on Rails). Thrives in both independent
+              and collaborative environments, actively participating in code reviews and technical discussions to
+              continuously optimize user experience through innovative solutions.
             </div>
           </article>
 
@@ -80,28 +80,32 @@ const EnglishResume = () => {
 
             <div className="row exp-list">
               <ul>
-                <li className="right">October 2023</li>
+                <li className="right">October 2023 - Present</li>
                 <li className="header">
                   Front-End Developer, <span>SK Energy - Seoul, Korea</span>
                 </li>
                 <li>Implemented chaos engineering to test system resilience and improve error handling.</li>
                 <li>Migrated a React project to Next.js 14, optimizing code and improving Lighthouse scores by 40%.</li>
-                <li>Led the design system project, transitioning from a legacy system to a new, reusable structure.</li>
+                <li>
+                  Led the overhaul of the design system, migrating from a legacy framework to a modern, reusable
+                  architecture, significantly enhancing efficiency and maintainability.
+                </li>
                 <li>
                   Refactored the "Contact Us" and "Vehicle Registration" features, eliminating repetitive code and
                   creating reusable hooks.
                 </li>
                 <li>Developed promotional event pages with gift incentives to boost premium gasoline sales.</li>
                 <li>
-                  Implemented dynamic banners using IntersectionObserver, fixed global state errors in the map and fuel
-                  filter features.
+                  Refactored the "Contact Us" and "Vehicle Registration" features, removing redundant code and
+                  developing reusable hooks for improved maintainability and efficiency.
                 </li>
                 <li>
-                  Optimized vehicle modification/creation, applied image lazy loading, and enhanced the app's design.
+                  Optimized the vehicle modification and creation process, implemented image lazy loading, and enhanced
+                  the overall app design for better performance and user experience.
                 </li>
                 <li>
-                  Utilized hooks, useQueryHook, Apollo graphql's useApolloNetworkStatus, and fetchPolicy for efficient
-                  code implementation.
+                  Leveraged advanced hooks, such as useQueryHook and Apollo GraphQL's useApolloNetworkStatus and
+                  fetchPolicy, to enhance code efficiency and performance.
                 </li>
               </ul>
             </div>
@@ -113,17 +117,18 @@ const EnglishResume = () => {
                   Front-End Developer, <span>Finda - Seoul, Korea</span>
                 </li>
                 <li>
-                  Redesigned loan intro page and applied AB testing to gradually roll out the page from 50% to 100% to
-                  observe user reactions and analyze errors.
+                  Redesigned the loan introduction page and implemented A/B testing to incrementally release the page
+                  from 50% to 100% of users, closely monitoring user reactions and analyzing performance metrics for
+                  errors and improvements.
                 </li>
                 <li>
                   Developed and maintained Finda web and Finda app web-views. Took charge of transferring Finda's main
                   loan list, loan main page, loan detail page into web-views.
                 </li>
                 <li>
-                  Developed 'In-App Contract' feature, where customers could conclude a loan contract via Finda App.
-                  Also, built design system and deployed to Storybook (with chromatic) by cooperating with the
-                  designers.
+                  Developed the 'In-App Contract' feature, enabling customers to finalize loan contracts directly within
+                  the Finda App. Collaborated with designers to build and deploy the design system to Storybook,
+                  utilizing Chromatic for enhanced functionality.
                 </li>
                 <li>
                   Improved inefficient API call structure by implementing Redux. Decreased redundant API calls by 60%.
@@ -137,9 +142,8 @@ const EnglishResume = () => {
                   communication requests on Jira (Confluence Cooperation Tool) by 20%.
                 </li>
                 <li>
-                  Updated legacy code (class components) to new functional components. Implemented Next.js SSG(Static
-                  Side Generation) on data fetching to improve API request time. Decreased API fetching time from 4s to
-                  0.5s.
+                  Updated legacy class components to modern functional components. Implemented Next.js SSG (Static Site
+                  Generation) for data fetching, reducing API request time from 4 seconds to 0.5 seconds.
                 </li>
                 <li>
                   Refactored job opening page, and enabled HR team to directly update job openings by linking Google
@@ -167,9 +171,9 @@ const EnglishResume = () => {
                   user registrations and deployed via AWS EC2 and S3.
                 </li>
                 <li>
-                  Worked on more than 20 technical documents and shared various troubleshooting processes with other
-                  developers. Improved the company's 'learning development culture' by sharing problem solving process
-                  with everyone.
+                  Authored over 20 technical documents and shared troubleshooting processes with fellow developers,
+                  significantly enhancing the company's learning and development culture by promoting collaborative
+                  problem-solving.
                 </li>
               </ul>
             </div>
@@ -183,11 +187,11 @@ const EnglishResume = () => {
                 <li>Developed and maintained five web services using Ruby on Rails and framework7. </li>
                 <li>
                   Experienced the entire web developing process: from designing DB structure to project settings,
-                  developing various featrues, admin development, QA, and maintenance.
+                  developing various features, admin development, QA, and maintenance.
                 </li>
                 <li>
-                  Conducted web publishing collaborating with desginer (using figma), and applied CSS with custom class
-                  names in BEM model.
+                  Collaborated with designers using Figma to conduct web publishing and applied CSS with custom class
+                  names following the BEM methodology for improved code structure and maintainability.
                 </li>
                 <li>Improved user experience by meticulous testing and frequent discussions with the clients.</li>
               </ul>
