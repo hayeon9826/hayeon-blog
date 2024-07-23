@@ -63,18 +63,48 @@ const EnglishResume = () => {
             <h2 className="underline">Resume Objective</h2>
 
             <div className="pb-15px">
-              Junior Front-end Web Developer adept in all stages of advanced web development. Knowledgeable in user
-              interface, testing, and debugging processes. Bringing forth expertise in design, improving, testing and
-              maintenance of web applications. Equipped with a diverse and promising web development skill-set.
-              Proficient in an assortment of technologies, including React, Next.js, JavaScript/Typescript, Recoil,
-              Redux, React-query, tailwind, styled-components, Ruby, and Ruby on Rails. Able to effectively self-manage
-              during independent projects, as well as collaborate in a team setting. Enjoy active code reviews,
-              technical discussions, and eager to improve user experience by finding the best solutions.
+              Highly motivated and adaptable Junior Front-end Web Developer with a strong foundation in advanced web
+              development principles. Total 4+ years of web engineering experince, possesses expertise in crafting user
+              interfaces, implementing robust testing strategies, and efficiently debugging complex issues. Proven
+              ability to design, improve, test, and maintain web applications, delivering exceptional user experiences.
+              Skilled in a comprehensive set of technologies, including React, Next.js, JavaScript/TypeScript, state
+              management libraries (Recoil, Redux, React Query), CSS frameworks (Tailwind CSS, styled-components,
+              emotion), and backend knowledge (Ruby, Ruby on Rails). Thrives in both independent and collaborative
+              environments, actively participating in code reviews and technical discussions to continuously optimize
+              user experience through innovative solutions.
             </div>
           </article>
 
           <article>
             <h2 className="underline">Experience</h2>
+
+            <div className="row exp-list">
+              <ul>
+                <li className="right">October 2023</li>
+                <li className="header">
+                  Front-End Developer, <span>SK Energy - Seoul, Korea</span>
+                </li>
+                <li>Implemented chaos engineering to test system resilience and improve error handling.</li>
+                <li>Migrated a React project to Next.js 14, optimizing code and improving Lighthouse scores by 40%.</li>
+                <li>Led the design system project, transitioning from a legacy system to a new, reusable structure.</li>
+                <li>
+                  Refactored the "Contact Us" and "Vehicle Registration" features, eliminating repetitive code and
+                  creating reusable hooks.
+                </li>
+                <li>Developed promotional event pages with gift incentives to boost premium gasoline sales.</li>
+                <li>
+                  Implemented dynamic banners using IntersectionObserver, fixed global state errors in the map and fuel
+                  filter features.
+                </li>
+                <li>
+                  Optimized vehicle modification/creation, applied image lazy loading, and enhanced the app's design.
+                </li>
+                <li>
+                  Utilized hooks, useQueryHook, Apollo graphql's useApolloNetworkStatus, and fetchPolicy for efficient
+                  code implementation.
+                </li>
+              </ul>
+            </div>
 
             <div className="row exp-list">
               <ul>
@@ -178,8 +208,8 @@ const EnglishResume = () => {
                   <span>Framework</span>: Next.js, Ruby on Rails / React
                 </li>
                 <li>
-                  <span>Library</span>: Redux, Recoil, React-Query, TailwindCSS, Styled-Components, Jest, Cypress,
-                  Storybook
+                  <span>Library</span>: Recoil, React-Query, Redux, TailwindCSS, Styled-Components, Jest, Cypress,
+                  Storybook, MSW, Apollo Graphql, Emotion
                 </li>
                 <li>
                   <span>Dev Tools</span>: Yarn, Yarn Berry, Babel, Webpack, Git/Githhub, Bitbucket
