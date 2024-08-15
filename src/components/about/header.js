@@ -34,9 +34,13 @@ const Header = ({ location }) => {
           </p>
           <hr />
           <p className="row gap-3">
+            <strong className="col-2 text-right">이메일</strong>
+            <span className="col">hayeonkim226@gmail.com</span>
+          </p>
+          {/* <p className="row gap-3">
             <strong className="col-2 text-right">연락처</strong>
             <span className="col">010-3932-9826</span>
-          </p>
+          </p> */}
           <hr />
           <p className="row gap-3">
             <strong className="col-2 text-right">경력사항</strong>
