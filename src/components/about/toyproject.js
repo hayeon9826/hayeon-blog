@@ -348,7 +348,7 @@ const ToyProject = () => {
               <li>
                 백엔드 없이 Next.js의 API Router와 Firestore를 이용한 데이터 생성/수정/삭제 기능을 구현했습니다.
                 Firestore의 구조와 원리에 대한 이해를 높였습니다.{' '}
-                <a href="/221014-firestore-crud/" target="_blank">
+                <a href="/221014-firestore-crud/" target="_blank" rel="noreferrer noopener">
                   [상세 링크]
                 </a>{' '}
               </li>

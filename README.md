@@ -2,10 +2,10 @@
   🚀 Hayeon's Dev blog
 </h1>
 
-3년차 프론트엔드 개발자 김하연의 기술 블로그입니다.
+4년차 프론트엔드 개발자 김하연의 기술 블로그입니다.
 
-- 블로그는 [여기](https://hayeondev.gtsb.io/)에서 확인하실 수 있습니다.
-- 저에 대한 자세한 설명은 [about](https://hayeondev.gtsb.io/about) 페이지에서 확인하실 수 있습니다.
+- 블로그는 [여기](https://hayeon-blog.vercel.app/)에서 확인하실 수 있습니다.
+- 저에 대한 자세한 설명은 [about](https://hayeon-blog.vercel.app/about/) 페이지에서 확인하실 수 있습니다.
 
 _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 
@@ -35,11 +35,6 @@ _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 - [x] 키워드 배지 추가
 - [x] 좋아요 기능
 
-## 🔥 해야할 것
-
-- [ ] 조회수 API 변경 (google Analytics로 이전)
-- [ ] 좋아요 기능 수정 (lyket 제거, 직접 구현 or 라이브러리 변경)
-
 #### 참고 사이트
 
 - 검색기능: https://aboutmonica.com/blog/create-gatsby-blog-search-tutorial/
@@ -47,3 +42,4 @@ _문의사항은 hayeonkim226@gmail.com 으로 연락 부탁드립니다._
 - 무한 스크롤: https://woong-jae.com/gatsby/210824-infinite-scroll
 - SNS 공유 버튼: https://edvins.io/add-social-share-buttons-to-gatsby-blog
 - 좋아요 Clap 버튼: https://lyket.dev/docs/react
+- jbee 블로그: https://github.com/JaeYeopHan/jbee.io

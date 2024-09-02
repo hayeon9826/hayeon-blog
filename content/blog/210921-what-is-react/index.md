@@ -110,7 +110,7 @@ const element = <h1>Hello, {name}</h1>
 ReactDOM.render(element, document.getElementById('root'))
 ```
 
-Jsx의 중괄호 `{}`안에 Javascript <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators#%ED%91%9C%ED%98%84(%EC%8B%9D)" target="_blank">유효한 표현식</a>을 사용할 수 있다. 위의 예시에서는 name이라는 변수를 선언한 후 중괄호로 감싸 JSX 안에 사용하였다. 따라서 화면에는 "Hello, name"이 아닌, name 변수에 담긴 값이 적용되어 `"Hello, velog"` 라는 값이 나타난다.
+Jsx의 중괄호 `{}`안에 Javascript <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Expressions_and_Operators#%ED%91%9C%ED%98%84(%EC%8B%9D)" target="_blank" rel="noreferrer noopener" rel="noreferrer noopener">유효한 표현식</a>을 사용할 수 있다. 위의 예시에서는 name이라는 변수를 선언한 후 중괄호로 감싸 JSX 안에 사용하였다. 따라서 화면에는 "Hello, name"이 아닌, name 변수에 담긴 값이 적용되어 `"Hello, velog"` 라는 값이 나타난다.
 
 JSX는 React **엘리먼트(element)**, 즉 **객체**를 생성한다. 그리고 Babel은 JSX를 React.createElement() 호출로 컴파일한다.
 
@@ -257,24 +257,24 @@ React에서 컴포넌트는 여러가지 생명주기를 가진다. 리액트의
 
 1. **Mount(생성)**: 아래 메서드들은 컴포넌트의 인스턴스가 생성되어 DOM 상에 삽입될 때에 순서대로 호출된다.
 
-- <a href="https://ko.reactjs.org/docs/react-component.html#constructor" target="_blank">constructor()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops" target="_blank">static getDerivedStateFromProps()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#render" target="_blank">render()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#componentdidmount" target="_blank">componentDidMount()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#constructor" target="_blank" rel="noreferrer noopener">constructor()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops" target="_blank" rel="noreferrer noopener">static getDerivedStateFromProps()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#render" target="_blank" rel="noreferrer noopener">render()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#componentdidmount" target="_blank" rel="noreferrer noopener">componentDidMount()</a>
   <br>
 
 2. **Update(갱신)**: props 또는 state가 변경되면 갱신이 발생합니다. 아래 메서드들은 컴포넌트가 다시 렌더링될 때 순서대로 호출된다.
 
-- <a href="https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops" target="_blank">static getDerivedStateFromProps()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank">shouldComponentUpdate()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#render" target="_blank">render()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#getsnapshotbeforeupdate" target="_blank">getSnapshotBeforeUpdate()</a>
-- <a href="https://ko.reactjs.org/docs/react-component.html#componentdidupdate" target="_blank">componentDidUpdate()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#static-getderivedstatefromprops" target="_blank" rel="noreferrer noopener">static getDerivedStateFromProps()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#shouldcomponentupdate" target="_blank" rel="noreferrer noopener">shouldComponentUpdate()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#render" target="_blank" rel="noreferrer noopener">render()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#getsnapshotbeforeupdate" target="_blank" rel="noreferrer noopener">getSnapshotBeforeUpdate()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#componentdidupdate" target="_blank" rel="noreferrer noopener">componentDidUpdate()</a>
   <br>
 
 3. **Unmount(마운트 해제) **:아래 메서드는 컴포넌트가 DOM 상에서 제거될 때에 호출된다.
 
-- <a href="https://ko.reactjs.org/docs/react-component.html#componentwillunmount" target="_blank">componentWillUnmount()</a>
+- <a href="https://ko.reactjs.org/docs/react-component.html#componentwillunmount" target="_blank" rel="noreferrer noopener">componentWillUnmount()</a>
 
 > 출처: https://ko.reactjs.org/docs/react-component.html
 
@@ -283,7 +283,4 @@ React에서 컴포넌트는 여러가지 생명주기를 가진다. 리액트의
 <br><br>
 
 > 참고:
-> https://www.c-sharpcorner.com/article/what-and-why-reactjs/
-> https://dev-yakuza.posstree.com/ko/react/create-react-app/react/
-> https://helloworld-88.tistory.com/350
-> https://www.codecademy.com/articles/react-virtual-dom
+> https://www.c-sharpcorner.com/article/what-and-why-reactjs/ > https://dev-yakuza.posstree.com/ko/react/create-react-app/react/ > https://helloworld-88.tistory.com/350 > https://www.codecademy.com/articles/react-virtual-dom

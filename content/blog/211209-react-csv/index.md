@@ -34,7 +34,7 @@ const csvData = [
 ]
 ;<CSVLink data={csvData}>Download me</CSVLink>
 // or
-;<CSVDownload data={csvData} target="_blank" />
+;<CSVDownload data={csvData} target="_blank" rel="noreferrer noopener" />
 ```
 
 > \*참고: csv는 엑셀과 달리 raw 데이터이므로 포매팅이나 스타일을 입힐 수 없다. 스타일을 입히고 싶다면 sheetjs나 xlsx와 같은 패키지 사용을 추천한다.

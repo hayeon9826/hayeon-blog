@@ -55,10 +55,6 @@ const Layout = ({ location, title, children, showLayout = true }) => {
             <a href="https://www.gatsbyjs.com" target="_blank" rel="noreferrer">
               Gatsby
             </a>
-            , Inspired by{' '}
-            <a href="https://jbee.io/" target="_blank" rel="noreferrer">
-              JBEE.io
-            </a>
           </footer>
         )}
       </div>

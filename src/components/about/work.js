@@ -10,13 +10,13 @@ const Work = () => {
           </span>
         </h1>
         <div className="title-lg mt-16">
-          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer">
+          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer noopener" rel="noreferrer">
             SK 에너지
           </a>
         </div>
         <p>
           주유, 충전, 세차, 포인트, 멤버십 어플{' '}
-          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer">
+          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener" rel="noreferrer">
             머핀
           </a>{' '}
           개발
@@ -36,7 +36,7 @@ const Work = () => {
           <p className="row gap-3">
             <strong className="col-2 text-right">Projects </strong>
             <span className="col-8">
-              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer">
+              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener" rel="noreferrer">
                 머핀 앱
               </a>{' '}
               개발
@@ -109,7 +109,7 @@ const Work = () => {
         </div>
         <br />
         <div className="title-lg mt-16">
-          <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
+          <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
             finda
           </a>
         </div>
@@ -129,11 +129,16 @@ const Work = () => {
           <p className="row gap-3">
             <strong className="col-2 text-right">Projects </strong>
             <span className="col-8">
-              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
+              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
                 핀다 웹사이트
               </a>
               ,{' '}
-              <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer">
+              <a
+                href="https://apps.apple.com/KR/app/id1494077875?mt=8"
+                target="_blank"
+                rel="noreferrer noopener"
+                rel="noreferrer"
+              >
                 핀다 웹앱
               </a>
             </span>
@@ -170,10 +175,10 @@ const Work = () => {
               프론트개발까지 일주일이라는 짧은 시간에 작업하며 애자일 프로세스를 경험할 수 있었습니다. A/B 테스트 결과,
               개선된 인트로 페이지를 본 사용자들의 <b>한도 조회 비율</b>이 이전 버전 인트로 조회 사용자에 비해{' '}
               <b>9% 상승</b>하였습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/intro-detail" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/intro-detail" target="_blank" rel="noreferrer noopener">
                 [예시]
               </a>{' '}
-              <a href="https://www.ekn.kr/web/view.php?key=20221206010001084" target="_blank">
+              <a href="https://www.ekn.kr/web/view.php?key=20221206010001084" target="_blank" rel="noreferrer noopener">
                 [관련 기사]
               </a>
             </li>
@@ -184,7 +189,7 @@ const Work = () => {
               작업했습니다. 프론트엔드 페이지 개발 및 설계를 주도하여 기존 대출 한도 조회 앱 페이지들을 웹으로 이전하는
               작업을 맡아 하였습니다. 구체적으로 대출 한도 조회 리스트, 상세 페이지, 부결 페이지, 미승인 리스트 등의
               페이지를 작업했으며, 확장성 있는 설계와 효율적인 컴포넌트화에 집중하여 개발했습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/improve-detail" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/improve-detail" target="_blank" rel="noreferrer noopener">
                 [예시]
               </a>
             </li>
@@ -194,7 +199,7 @@ const Work = () => {
               대환대출 서비스를 런칭하며 인트로페이지 리뉴얼 작업을 진행했습니다. 중요한 페이지이기 때문에, 사용자
               반응을 관찰하고 오류 현황을 분석하기 위해 웹에서 <b>AB 테스트</b>를 적용하여 50%에서 100%까지 점진적으로
               페이지를 배포하였습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/refinance-intro" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/refinance-intro" target="_blank" rel="noreferrer noopener">
                 [예시]
               </a>
             </li>
@@ -214,7 +219,7 @@ const Work = () => {
             핀다 앱 내에서 은행 대출 상품을 확인하고 바로 약정을 체결할 수 있는 제품, <b>인앱약정</b> 기능의 프론트엔드
             개발을 맡고 있습니다. 2명의 FE 개발자와 2명의 ios / Aos 개발자, 백엔드 개발자, 디자이너, PO와 함 팀을 이뤄
             애자일 프로세스로 작업을 진행했습니다.{' '}
-            <a href="https://hayeon-blog.vercel.app/work/inapp-image" target="_blank">
+            <a href="https://hayeon-blog.vercel.app/work/inapp-image" target="_blank" rel="noreferrer noopener">
               [예시]
             </a>
             <br />
@@ -228,7 +233,7 @@ const Work = () => {
               할 수 있도록 설계를 개선했습니다. 15회이상 여러번 호출되던 API 횟수를 줄여 불필요한 서버 요청을 5단계로
               줄일 수 있었고, 프론트에서 Redux의 상태값을 바로 가져올 수 있도록 수정해 페이지 전환 속도를
               개선하였습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/inapp-detail-1" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/inapp-detail-1" target="_blank" rel="noreferrer noopener">
                 [상세 코드]
               </a>
             </li>
@@ -238,7 +243,7 @@ const Work = () => {
               기존에 앱과 웹 사이의 페이지 이동이 부자연스럽다는 피드백이 있어, 웹을 옆으로 넘길 때 앱처럼 작동할 수
               있는 transition을 적용했습니다. react-spring을 이용하여 웹에서도 앱처럼 자연스러운 모션으로 이동할 수
               있도록 사용성을 개선하였습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/inapp-detail-2" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/inapp-detail-2" target="_blank" rel="noreferrer noopener">
                 [상세 코드]
               </a>
             </li>
@@ -270,7 +275,7 @@ const Work = () => {
             핀다의 <b>‘개인화된 금융 서비스를 더욱 빠르고 안정적이게 제공’</b>하는 목표를 가지고 마케팅 팀과 협업,
             디자인 시스템 구축의 업무를 맡고 있습니다. 특히, 핀다 내 컴포넌트의 재사용성을 높이고 관리하기 쉬운 디자인
             시스템을 구축하기 위해{' '}
-            <a href="https://storybook.js.org/" target="_blank">
+            <a href="https://storybook.js.org/" target="_blank" rel="noreferrer noopener">
               Storybook
             </a>
             을 주도하여 개발, 관리하고 있습니다.
@@ -289,7 +294,7 @@ const Work = () => {
               Storybook을 주도적으로 관리하고 있으며, 팀원간 내용 공유를 위해 Storybook 사용 방법을 디자인팀 / Tech
               전체팀에 발표하였습니다. 또현, 기존 컴포넌트를 최신화하여 전체적인 디자인을 변경 작업중입니다. 핀다 제품의
               통일성을 증대시키고, 사용자 경험을 개선하는데 노력하고 있습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/220919-storybook/" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/220919-storybook/" target="_blank" rel="noreferrer noopener">
                 [참고 링크]
               </a>
             </li>
@@ -325,7 +330,7 @@ const Work = () => {
           <h4>Description.</h4>
           <p>
             핀다의{' '}
-            <a href="https://finda.co.kr/" target="_blank" rel="noreferrer">
+            <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
               웹사이트
             </a>
             를 개발하고 유지보수하는 업무를 맡고 있습니다. 효율성을 극대화 하기 위한 모바일 콘솔 적용, 레거시 클래스
@@ -346,6 +351,7 @@ const Work = () => {
               <a
                 href="https://hayeon-blog.vercel.app/220622-debugging-tools-vconsole/"
                 target="_blank"
+                rel="noreferrer noopener"
                 rel="noreferrer"
               >
                 모바일 웹 콘솔 (vconsole)
@@ -354,7 +360,7 @@ const Work = () => {
               위해 5회이상 빠르게 연타 할 때에만 웹 콘솔이 뜰 수 있도록 적용했습니다. 기존의{' '}
               <code>stage, devstage 오류 발견 - 로컬 환경 설정 - 로컬에서 모바일 테스트</code> 단계에서, 바로{' '}
               <code>stage, devstage에서 오류 발견 및 테스트</code>를 할 수 있도록 테스트 과정을 축소시켰습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/web-detail-1" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/web-detail-1" target="_blank" rel="noreferrer noopener">
                 [상세 코드]
               </a>
             </li>
@@ -385,7 +391,7 @@ const Work = () => {
             <li>
               기존 Bitbucket에서 사용하던 모놀리식 레포를, Github에 이전하며 <b>모노레포</b> 구조로 변경하는 작업을
               진행했습니다.{' '}
-              <a href="https://finda.co.kr/" target="_blank">
+              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener">
                 핀다 웹 페이지
               </a>
               를 담당하여 모노레포 이전작업을 진행했습니다.
@@ -396,7 +402,7 @@ const Work = () => {
               디자인팀과 협업하여 핀다 웹 컴포넌트를 공통 컴포넌트로 이전하는 작업을 주도하여 진행했습니다.
               타이포그래피, Spacing, 버튼, CTA 등 <b>새로운 공통 컴포넌트</b>를 생성하여 웹팀분들이 빠르게 적용할 수
               있도록 하였고, 디자인 및 마케팅팀과 원활한 협업을 위해 storybook을 관리했습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/work/design-system" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/work/design-system" target="_blank" rel="noreferrer noopener">
                 [예시]
               </a>
             </li>
@@ -405,7 +411,7 @@ const Work = () => {
         <br />
         <br />
         <div className="title-lg ">
-          <a target="_blank" rel="noreferrer" href="https://insomenia.com/">
+          <a target="_blank" rel="noreferrer noopener" rel="noreferrer" href="https://insomenia.com/">
             Insomenia
           </a>
         </div>
@@ -480,15 +486,15 @@ const Work = () => {
             <li>
               약 20개의 사내 기술 도큐를 작성하여 개발자들에게 문제 해결 과정을 공유하였습니다. 혼자서만 기술을 배우고
               끝내는 것이 아니라, 모두에게 과정 및 결과를 공유함으로써 함께 성장하는 개발 문화 정착에 기여했습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/210906-rails-axlsx/" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/210906-rails-axlsx/" target="_blank" rel="noreferrer noopener">
                 [예시 1]
               </a>
               ,{' '}
-              <a href="https://hayeon-blog.vercel.app/210906-rubyzip/" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/210906-rubyzip/" target="_blank" rel="noreferrer noopener">
                 [예시 2]
               </a>
               ,{' '}
-              <a href="https://hayeon-blog.vercel.app/210910-ios-video/" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/210910-ios-video/" target="_blank" rel="noreferrer noopener">
                 [예시 3]
               </a>
             </li>
@@ -525,7 +531,7 @@ const Work = () => {
           <ul className="bulleted-list">
             <li>
               디자이너가 전달해준 디자인 피그마를 참고하여 퍼블리싱 작업을 하였습니다.{' '}
-              <a href="https://hayeon-blog.vercel.app/221029-BEM/" target="_blank">
+              <a href="https://hayeon-blog.vercel.app/221029-BEM/" target="_blank" rel="noreferrer noopener">
                 BEM(Block, Element, Modifier)
               </a>{' '}
               방식으로 커스텀 클래스를 만들어 CSS를 적용했습니다. 클래스 구조를 먼저 설계한 후, 비슷한 요소들끼리 묶어서

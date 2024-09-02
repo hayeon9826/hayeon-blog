@@ -172,7 +172,11 @@ const DevExperience = () => {
                 브라우저의 <code>user-agent</code> 값으로 IE 브라우저인지 확인하였고, IE 브라우저 접근 시 Next.js의
                 <code>redirects</code>를 사용해 경고 페이지로 리다이렉트를 시켰습니다. 그 결과, IE 브라우저에서 나타나는
                 화면 깨짐 현상을 해결하였고, 마케팅 광고 검수 승인을 받을 수 있었습니다.{' '}
-                <a href="https://hayeon-blog.vercel.app/221030-nextjs-ie-redirects/" target="_blank">
+                <a
+                  href="https://hayeon-blog.vercel.app/221030-nextjs-ie-redirects/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   [참고 링크]
                 </a>
               </li>
@@ -280,7 +284,11 @@ const DevExperience = () => {
                 구현했습니다. 기존 설계에서 버벅 거리거나 2초 이상 지연되던 성능 문제를 해결하였고, 채팅의 사용성을
                 개선하였습니다. 사내 첫 Firestore 도입이었기 때문에, Firestore 관련해서 리서치를 하였고, 기술 도큐를
                 작성해 공유하였습니다.{' '}
-                <a href="https://hayeon-blog.vercel.app/220125-firestore-react-chat-app/" target="_blank">
+                <a
+                  href="https://hayeon-blog.vercel.app/220125-firestore-react-chat-app/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   [참고 링크]
                 </a>
               </li>
@@ -289,7 +297,11 @@ const DevExperience = () => {
               <li>
                 다이어트 회원들에게 시각화된 몸무게 차트를 그래프로 확인할 수 있는 페이지 개발을 진행하였으며,{' '}
                 <code>react-calendar</code>를 커스터마이징 하여 다이어트 캘린더를 구현했습니다.{' '}
-                <a href="https://hayeon-blog.vercel.app/220209-react-calendar/" target="_blank">
+                <a
+                  href="https://hayeon-blog.vercel.app/220209-react-calendar/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   [참고 링크]
                 </a>
               </li>
@@ -297,7 +309,7 @@ const DevExperience = () => {
             <ul className="bulleted-list">
               <li>
                 Next.js의{' '}
-                <a href="https://nextjs.org/docs/api-routes/introduction" target="_blank">
+                <a href="https://nextjs.org/docs/api-routes/introduction" target="_blank" rel="noreferrer noopener">
                   API Routes
                 </a>
                 와 prisma를 활용해 요청 Method에 따라 데이터를 추가/수정/삭제/요청하는 작업을 진행했습니다. 백엔드 없이
@@ -351,13 +363,17 @@ const DevExperience = () => {
                 브랜드 유저 및 관리자가 버튼을 누르면, 자동으로 본인 상품의 주문 내역을 일별로 나눠서 csv로 추출할 수
                 있도록 <b>csv 다운로드 기능</b>을 구현했습니다. <code>react-query</code>로 주문 데이터를 객체 형식의
                 배열로 받아와, <code>react-csv</code> 라이브러리를 활용해 csv로 추출하였습니다.{' '}
-                <a href="https://hayeon-blog.vercel.app/211209-react-csv/" target="_blank">
+                <a href="https://hayeon-blog.vercel.app/211209-react-csv/" target="_blank" rel="noreferrer noopener">
                   [참고 링크]
                 </a>
               </li>
               <li>
                 사용자 언어별로 페이지가 다르게 보일 수 있도록 설계하였습니다.{' '}
-                <a href="https://nextjs.org/docs/advanced-features/i18n-routing" target="_blank">
+                <a
+                  href="https://nextjs.org/docs/advanced-features/i18n-routing"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   Next.js의 <code>i18n</code>
                 </a>{' '}
                 을 적용하여 사용자의 언어(영어/ 한국어 / 일본어)에 맞는 페이지를 보여주는 다국어 기능을 개발했습니다.
@@ -380,7 +396,11 @@ const DevExperience = () => {
                 <code>webpack-bundle-analyzer</code>로 빌드 파일 크기를 분석하였고, 번들 사이즈가 큰 모듈 위주로 tree
                 shaking을 진행했습니다. 또한, 불필요한 파일들을 삭제하고 과도하게 분리된 페이지들을 합쳐 빌드 크기를
                 5/6으로 줄일 수 있었고 배포에 성공하였습니다.{' '}
-                <a href="https://hayeon-blog.vercel.app/211011-webpack-bundle-analyzer/" target="_blank">
+                <a
+                  href="https://hayeon-blog.vercel.app/211011-webpack-bundle-analyzer/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
                   [참고 링크]
                 </a>
               </li>
@@ -446,7 +466,7 @@ const DevExperience = () => {
             <ul className="bulleted-list">
               <li>
                 외부 결제 api인{' '}
-                <a href="https://docs.tosspayments.com/reference/js-sdk" target="_blank">
+                <a href="https://docs.tosspayments.com/reference/js-sdk" target="_blank" rel="noreferrer noopener">
                   토스 페이먼츠(tosspayments)
                 </a>{' '}
                 를 적용해 프론트와 백엔드에서 결제 처리를 해주었습니다. 프론트에서는 <code>tosspayments/sdk</code>{' '}

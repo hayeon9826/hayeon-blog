@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import Seo from '../components/seo'
 import Header from '../components/about/header'
 import Intro from '../components/about/intro'
-import DevLife from '../components/about/devlife'
+// import DevLife from '../components/about/devlife'
 import Skill from '../components/about/skill'
 import Work from '../components/about/work'
 import DevExperience from '../components/about/devexperience'
@@ -53,7 +53,7 @@ const AboutPage = ({ data, location }) => {
         <div className="mt-100 about-footer">
           <small>
             Frontend Engineer, Hayeon Kim{' '}
-            <a href="https://github.com/hayeon9826" target="_blank">
+            <a href="https://github.com/hayeon9826" target="_blank" rel="noreferrer noopener">
               @hayeon9826
             </a>
           </small>
