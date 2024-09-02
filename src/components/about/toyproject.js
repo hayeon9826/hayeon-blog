@@ -108,6 +108,30 @@ const ToyProject = () => {
               <li>Frontend: React.js, Next.js 14, Typescript, Storybook, TailwindCSS</li>
               <li>Deployment: Vercel</li>
             </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>React 기반 프로젝트를 위한 TailwindCSS 디자인 시스템 라이브러리를 제작하여 npm에 배포하였습니다.</li>
+              <li>ES6 모듈 최적화에 중점을 두어 Rollup을 사용해 번들링을 진행했습니다. </li>
+              <li>
+                Storybook의 MDX 파일을 활용하여 문서화와 예제 페이지를 통합함으로써, 문서화 작업을 자동화하고
+                유지보수성을 높였습니다.
+              </li>
+              <li>
+                globals.css 파일에 디자인 시스템의 빌드된 CSS 파일을 임포트하여 (
+                <b>@import "hello-design-system/build/build.css";</b> 와 같이) 손쉽게 스타일을 적용할 수 있도록 빌드
+                설정을 추가했습니다.
+              </li>
+              <li>
+                변경 사항의 중요도에 따라 major, minor, patch 버전을 구분하여 업데이트하며 버전 관리를 하고 있습니다.
+              </li>
+              <li>
+                해당 디자인 시스템 라이브러리를 적용한 웹 페이지를 배포하여 사용자가 손쉽게 활용할 수 있도록 관리하고
+                있습니다.{' '}
+                <a target="_blank" rel="noreferrer" href="https://hello-design-system.vercel.app/">
+                  hello-design-system.vercel.app/
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="column-list mt-5">
@@ -560,7 +584,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-        <div className="column-list mt-5">
+        {/* <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="https://justplay.co.kr/">
               <h5>O2O 학원 매칭 서비스</h5>
@@ -614,7 +638,7 @@ const ToyProject = () => {
               <li>디자인(피그마)에 맞게 퍼블리싱 작업을 주도적으로 진행했습니다.</li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* <div className="column-list">
             <div style={{ width: '25%' }} className="column">
               <p>
@@ -733,7 +757,7 @@ const ToyProject = () => {
               </ul>
             </div>
           </div> */}
-        <div className="column-list mt-5">
+        {/* <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="http://asianalyse.com">
               <h5>Asianalyse</h5>
@@ -794,7 +818,7 @@ const ToyProject = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
             <h5>히스킨 (Hiskin)</h5>
