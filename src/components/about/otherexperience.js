@@ -50,6 +50,19 @@ const OtherExperience = () => {
           <h4>Presentation</h4>
           <ul className="bulleted-list">
             <li>
+              패스트캠퍼스에서 <b>7개 프로젝트로 완벽 대비하는 Next.js 실무 (ft. 성능 개선)</b> 강의를 진행했습니다.{' '}
+              <a href="https://fastcampus.co.kr/dev_online_nextjs7" target="_blank" rel="noreferrer">
+                [강의 링크]
+              </a>
+            </li>
+            <li>
+              패스트캠퍼스에서 <b>고성능 대규모 프론트엔드 10개 프로젝트 : 최적화부터 유지보수까지 한 번에 끝내기</b>{' '}
+              강의를 진행했습니다.{' '}
+              <a href="https://fastcampus.co.kr/dev_online_newfefinal" target="_blank" rel="noreferrer">
+                [강의 링크]
+              </a>
+            </li>
+            <li>
               사내 세미나를 열어 디자인팀 & 테크팀에게 디자인 시스템 개념 및 Storybook 사용 방법을 발표했습니다.{' '}
               <a href="https://hayeon-blog.vercel.app/220919-storybook/" target="_blank" rel="noreferrer">
                 [참고 링크]
@@ -59,7 +72,7 @@ const OtherExperience = () => {
               <a href="https://zero-base.co.kr/event/school_FE" target="_blank" rel="noreferrer">
                 Zerobase
               </a>
-              의 프론트엔드 개발 용어집 강의를 진행했습니다.{' '}
+              의 <b>프론트엔드 개발 용어집</b> 강의를 진행했습니다.{' '}
               <a
                 href="https://drive.google.com/drive/folders/1kT7nvYi8chCUittGLnpBCtidK6IFx0yo?usp=sharing"
                 target="_blank"
@@ -69,7 +82,7 @@ const OtherExperience = () => {
               </a>
             </li>
             <li>
-              사내 프론트팀 세미나에서 useEffect 완벽 가이드를 요약하여 발표했습니다.{' '}
+              사내 프론트팀 세미나에서 <b>useEffect 완벽 가이드</b>를 요약하여 발표했습니다.{' '}
               <a href="https://hayeon-blog.vercel.app/220629-useEffect-guide/" target="_blank" rel="noreferrer">
                 [참고 링크]
               </a>
