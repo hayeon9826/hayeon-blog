@@ -1,5 +1,5 @@
 // Highlighting for code blocks
-require('prism-themes/themes/prism-dracula.css')
+require('prism-themes/themes/prism-coldark-dark.css')
 // custom typefaces
 require('typeface-montserrat')
 require('typeface-merriweather')
