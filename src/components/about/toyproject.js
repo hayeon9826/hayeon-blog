@@ -136,6 +136,85 @@ const ToyProject = () => {
         </div>
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
+            <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
+              <h5>bloggy</h5>
+            </a>
+            <p>2023.03 ~</p>
+            <p>개인 토이 프로젝트</p>
+          </div>
+          <div style={{ width: '75%' }} className="column">
+            <h5>Description.</h5>
+            <ul className="bulleted-list">
+              <li>
+                DeeplAI와 Clova Chat AI를 활용하여 개발한 AI 기반의 블로그 및 챗봇 서비스 프로젝트입니다. 이 프로젝트는
+                블로그 글 번역, 실시간 채팅 기능 등을 통해 사용자 경험을 향상시키는 것을 목표로 했습니다.
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                깃헙링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/bloggy-front">
+                  github.com/hayeon9826/bloggy-front
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                실서버 링크:{' '}
+                <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
+                  bloggy-front.vercel.app
+                </a>
+              </li>
+            </ul>
+            <ul className="bulleted-list">
+              <li>
+                <span className="highlight-gray">
+                  <strong>기여도 100%</strong>
+                </span>
+              </li>
+            </ul>
+            <h5>Tech Stack.</h5>
+            <ul className="bulleted-list">
+              <li>Frontend: React.js, Next.js, Typescript, Tailwindcss</li>
+              <li>Backend: Prisma, Supabase, Next.js API Routes</li>
+              <li>Deployment: Vercel</li>
+            </ul>
+            <h5>What I did.</h5>
+            <ul className="bulleted-list">
+              <li>
+                <b>DeeplAI를 활용한 블로그 번역 서비스 개발:</b> DeeplAI를 이용해 사용자가 블로그 작성 시 다양한 언어로
+                쉽게 콘텐츠를 번역할 수 있도록 지원했습니다. React-Quill 에디터에서 선택한 텍스트만 실시간으로 번역하고,
+                블로그에 바로 적용할 수 있는 기능을 구현하여, 사용자들이 보다 자연스러운 다국어 콘텐츠를 손쉽게 생성할
+                수 있도록 했습니다.(
+                <a href="https://bloggy-front.vercel.app/posts/new">링크</a>)
+              </li>
+              <li>
+                <b>Clova Chat AI 기반 챗봇 개발:</b> Clova Chat AI를 활용해 사용자의 질문에 실시간으로 응답하는 챗봇
+                기능을 구축했습니다. 약 500개 이상의 대화 내역을 기반으로 학습하여 Bloggy와 관련된 다양한 질문에 일관된
+                답변을 제공하도록 설계했습니다. 이를 통해 사용자들이 챗봇과 상호작용할 때 일관된 경험을 유지하고, 사용자
+                지원을 효율적으로 제공할 수 있었습니다. (<a href="https://bloggy-front.vercel.app/chats">링크</a>)
+              </li>
+              <li>
+                <b>관리자 페이지 구현: </b>
+                Prisma ORM을 활용해 재사용 가능한 네 가지 컴포넌트를 개발하고, 관리자 페이지를 구현하여 데이터의 조회,
+                수정, 삭제가 가능한 직관적인 인터페이스를 제공했습니다. 이로써 관리 효율성을 높이고, 사용자의 다양한
+                요구를 충족시킬 수 있는 환경을 마련했습니다. (<a href="https://bloggy-front.vercel.app/admin">링크</a>)
+              </li>
+              <li>
+                Next-Auth를 도입하여 안전하고 효율적인 인증 및 회원가입 시스템을 구축했습니다. 로그인 기능을 통해
+                사용자별 권한을 관리하며, 일반 사용자는 블로그 작성 및 편집 권한을, 관리자는 어드민 페이지에서 콘텐츠
+                생성, 수정, 삭제 등의 권한을 가지도록 구현하여 시스템의 보안성과 관리 편의성을 크게 강화했습니다.
+              </li>
+              <li>
+                React Query를 활용하여 데이터 페칭, 로딩, 그리고 에러 처리 과정을 효율적으로 관리했습니다. 로딩
+                상태에서는 로딩바를 표시하여 사용자가 데이터 로드 중임을 명확히 인지할 수 있도록 했고, 에러 처리 시에는
+                구체적인 에러 메시지를 제공하여 사용자들이 문제를 이해하고 해결할 수 있도록 지원했습니다.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="column-list mt-5">
+          <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/next-bnb">
               <h5>next-bnb</h5>
             </a>
@@ -240,66 +319,7 @@ const ToyProject = () => {
             </ul>
           </div>
         </div>
-        <div className="column-list mt-5">
-          <div style={{ width: '25%' }} className="column">
-            <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
-              <h5>bloggy</h5>
-            </a>
-            <p>2023.03 ~</p>
-            <p>개인 토이 프로젝트</p>
-          </div>
-          <div style={{ width: '75%' }} className="column">
-            <h5>Description.</h5>
-            <ul className="bulleted-list">
-              <li>Open AI의 text-davinci-003를 이용한 개인 토이 프로젝트 (1인개발)</li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>
-                깃헙링크:{' '}
-                <a target="_blank" rel="noreferrer" href="https://github.com/hayeon9826/bloggy-front">
-                  github.com/hayeon9826/bloggy-front
-                </a>
-              </li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>
-                실서버 링크:{' '}
-                <a target="_blank" rel="noreferrer" href="https://bloggy-front.vercel.app/">
-                  bloggy-front.vercel.app
-                </a>
-              </li>
-            </ul>
-            <ul className="bulleted-list">
-              <li>
-                <span className="highlight-gray">
-                  <strong>기여도 100%</strong>
-                </span>
-              </li>
-            </ul>
-            <h5>Tech Stack.</h5>
-            <ul className="bulleted-list">
-              <li>Frontend: React.js, Next.js, Typescript, Tailwindcss</li>
-              <li>Backend: Prisma, Supabase, Next.js API Routes</li>
-              <li>Deployment: Vercel</li>
-            </ul>
-            <h5>What I did.</h5>
-            <ul className="bulleted-list">
-              <li>
-                Open AI의 text-davinci-003를 이용해 블로그 글 자동 생성 서비스를 작업했습니다. (
-                <a href="https://bloggy-front.vercel.app/posts/new">링크</a>) 또한, 해당 API를 사용하여 실시간 채팅 앱을
-                구현했습니다. (<a href="https://bloggy-front.vercel.app/chats">링크</a>)
-              </li>
-              <li>
-                Next.js 프로젝트의 확장성을 위해 Next/auth를 도입하였습니다. Next/auth를 이용한 인증 및 회원가입을
-                구현하며 인증 프로세스를 개발했습니다.
-              </li>
-              <li>
-                Prisma ORM을 활용한 재사용 가능한 네 가지 컴포넌트를 개발하여, 관리자 페이지를 구현했습니다. (
-                <a href="https://bloggy-front.vercel.app/admin">링크</a>)
-              </li>
-            </ul>
-          </div>
-        </div>
+
         <div className="column-list mt-5">
           <div style={{ width: '25%' }} className="column">
             <a target="_blank" rel="noreferrer" href="https://findaoverflow.vercel.app/">

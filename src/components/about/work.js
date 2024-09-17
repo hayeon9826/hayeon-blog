@@ -10,13 +10,13 @@ const Work = () => {
           </span>
         </h1>
         <div className="title-lg mt-16">
-          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer noopener">
             SK 에너지
           </a>
         </div>
         <p>
           주유, 충전, 세차, 포인트, 멤버십 어플{' '}
-          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
             머핀
           </a>{' '}
           개발
@@ -36,7 +36,7 @@ const Work = () => {
           <p className="row gap-3">
             <strong className="col-2 text-right">Projects </strong>
             <span className="col-8">
-              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
                 머핀 앱
               </a>{' '}
               개발
@@ -69,6 +69,22 @@ const Work = () => {
           </p>
           <h4>What I did.</h4>
           <ul className="bulleted-list">
+            <li>
+              <b>빌드 최적화 및 테스트 환경 개선:</b> '머핀' 디자인 시스템의 CI/CD 파이프라인에서 npm install을 캐싱하여
+              빌드 시간을 약 30% 단축했으며, MSW(Mock Service Worker)를 도입해 GraphQL 개발 서버와 독립적인 테스트
+              환경을 구축함으로써 CI/CD 빌드 속도를 20% 개선했습니다. 또한, Apollo Client의 에러를 효율적으로 처리하기
+              위해 커스텀 훅을 구현하여 에러 코드 및 메시지만 출력하도록 하여 컴포넌트별 에러 처리 시간을 단축하고,
+              반복적인 포매터 및 밸리데이션 함수를 유틸리티로 모듈화해 코드의 가독성과 재사용성을 높였습니다.
+            </li>
+            <li>
+              <b>크로스브라우징 및 호환성 최적화:</b> Next.js 14의 useRouter를 활용해 쿼리를 쉽게 작성할 수 있는 커스텀
+              훅을 생성하고, 레거시 앱(v1)과 마이그레이션된 앱(v2)의 라우팅을 체계적으로 관리하여 유지보수성과 확장성을
+              향상시켰습니다. SVG의 stroke-width 속성 문제를 해결하기 위해 정수 값을 사용하거나 px 단위를 명시하여 iOS와
+              Android 간 렌더링 차이를 줄였으며, WebKit 기반 브라우저에서 -webkit-transform: translate3d(0,0,0);을
+              사용해 SVG 렌더링을 최적화했습니다. 또한, 로그아웃 문제를 해결하기 위해 버전 체크 공통 훅을 개발하여 하위
+              버전에서는 웹페이지로, 상위 버전에서는 앱 페이지로 이동하도록 분기 처리하여 다양한 버전의 사용자 경험을
+              개선하고 호환성 문제를 해결했습니다.
+            </li>
             <li>
               고급휘발유 판매를 촉진하기 위해 <b>고급휘발유 사은품 증정 프로모션</b>을 진행하고, 이벤트 신청 및 완료
               페이지 개발, 히스토리 대응 등을 수행했습니다. 이벤트 프로모션 신청 페이지에서 BFF로 이뤄진 GraphQL API를
@@ -109,7 +125,7 @@ const Work = () => {
         </div>
         <br />
         <div className="title-lg mt-16">
-          <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+          <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener">
             finda
           </a>
         </div>
@@ -129,16 +145,11 @@ const Work = () => {
           <p className="row gap-3">
             <strong className="col-2 text-right">Projects </strong>
             <span className="col-8">
-              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+              <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener">
                 핀다 웹사이트
               </a>
               ,{' '}
-              <a
-                href="https://apps.apple.com/KR/app/id1494077875?mt=8"
-                target="_blank"
-                rel="noreferrer noopener"
-                rel="noreferrer"
-              >
+              <a href="https://apps.apple.com/KR/app/id1494077875?mt=8" target="_blank" rel="noreferrer noopener">
                 핀다 웹앱
               </a>
             </span>
@@ -330,7 +341,7 @@ const Work = () => {
           <h4>Description.</h4>
           <p>
             핀다의{' '}
-            <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener" rel="noreferrer">
+            <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener">
               웹사이트
             </a>
             를 개발하고 유지보수하는 업무를 맡고 있습니다. 효율성을 극대화 하기 위한 모바일 콘솔 적용, 레거시 클래스
@@ -352,7 +363,6 @@ const Work = () => {
                 href="https://hayeon-blog.vercel.app/220622-debugging-tools-vconsole/"
                 target="_blank"
                 rel="noreferrer noopener"
-                rel="noreferrer"
               >
                 모바일 웹 콘솔 (vconsole)
               </a>
@@ -411,7 +421,7 @@ const Work = () => {
         <br />
         <br />
         <div className="title-lg ">
-          <a target="_blank" rel="noreferrer noopener" rel="noreferrer" href="https://insomenia.com/">
+          <a target="_blank" rel="noreferrer noopener" href="https://insomenia.com/">
             Insomenia
           </a>
         </div>
