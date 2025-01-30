@@ -9,120 +9,167 @@ const Work = () => {
             <span className="title-primary">Experience.</span>
           </span>
         </h1>
-        <div className="title-lg mt-16">
-          <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer noopener">
-            SK 에너지
-          </a>
-        </div>
-        <p>
-          주유, 충전, 세차, 포인트, 멤버십 어플{' '}
-          <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
-            머핀
-          </a>{' '}
-          개발
-        </p>
-        <div>
-          <hr />
-          <p className="row gap-3">
-            <strong className="col-2 text-right">Period </strong>
-            <span className="col-8">2022.10 ~ 재직중</span>
-          </p>
-          <hr />
-          <p className="row gap-3">
-            <strong className="col-2 text-right">Position </strong>
-            <span className="col-8">USE 파트 (Frontend Web)</span>
-          </p>
-          <hr />
-          <p className="row gap-3">
-            <strong className="col-2 text-right">Projects </strong>
-            <span className="col-8">
-              <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
-                머핀 앱
-              </a>{' '}
-              개발
-            </span>
-          </p>
-          <hr />
-          <p className="row gap-3">
-            <strong className="col-2 text-right">Tech </strong>
-            <span className="col-8">React, Next.js, Typescript, Redux, Emotion, Storybook, GraphQL</span>
-          </p>
-          <hr />
-        </div>
-        <div className="mt-5">
-          <h4 className="mb-1">USE 파트 (PM)</h4>
+        <section className="mt-16">
+          <div className="title-lg">
+            <a href="https://www.lgresearch.ai/" target="_blank" rel="noreferrer noopener">
+              LG AI 연구원
+            </a>
+          </div>
           <p>
-            <span className="highlight-gray">Frontend Engineer</span>
+            전문가용 대화형 AI 플랫폼{' '}
+            <a href="https://www.lgresearch.ai/exaone" target="_blank" rel="noreferrer noopener">
+              엑사원 (Exaone)
+            </a>{' '}
+            개발
           </p>
+          <div>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Period </strong>
+              <span className="col-8">2023.11 ~ 현재</span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Position </strong>
+              <span className="col-8">Product Development Team (Frontend Web)</span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Projects </strong>
+              <span className="col-8">
+                <a href="https://www.lgresearch.ai/exaone" target="_blank" rel="noreferrer noopener">
+                  엑사원 (Exaone)
+                </a>{' '}
+                디자인 시스템 설계 및 구축, 엑사원 웹 개발
+              </span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Tech </strong>
+              <span className="col-8">React, Next.js, Typescript, Emotion, Vanilla extract, Storybook</span>
+            </p>
+            <hr />
+          </div>
+        </section>
+        <br />
+        <section className="mt-16">
+          <div className="title-lg">
+            <a href="https://skmuffin.com/main.html" target="_blank" rel="noreferrer noopener">
+              SK 에너지
+            </a>
+          </div>
           <p>
-            <span className="highlight-gray">2023.10 - 현재</span>
+            주유, 충전, 세차, 포인트, 멤버십 어플{' '}
+            <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
+              머핀
+            </a>{' '}
+            개발
           </p>
-          <h4>Description.</h4>
-          <p>
-            SK 에너지의 주유, 충전, 세차, 멤버십 웹앱인 <b>'머핀'</b>서비스를 맡아 프론트엔드 개발을 작업하고 있습니다.
-            디자인 시스템 작업, Next.js 14 마이그레이션, 주유 서비스 개선, 차량 직접 등록 서비스 개발, 프로모션 이벤트
-            작업, 카오스 엔지니어링 등의 개발을 맡았습니다. 프로젝트별로 담당된 기획자, 디자이너, 그리고 백엔드 개발자
-            분들과 협력하여 작업을 하였고, 적극적으로 의견을 내어 기존의 디자인 시스템을 개편하는 작업을 진행했습니다.
-            <br />
-            <br />
-            React, Next.js 14, Typescript, Redux, emotion, msw, Apollo GraphQL를 이용해 개발했습니다.
-          </p>
-          <h4>What I did.</h4>
-          <ul className="bulleted-list">
-            <li>
-              <b>빌드 최적화 및 테스트 환경 개선:</b> '머핀' 디자인 시스템의 CI/CD 파이프라인에서 npm install을 캐싱하여
-              빌드 시간을 약 30% 단축했으며, MSW(Mock Service Worker)를 도입해 GraphQL 개발 서버와 독립적인 테스트
-              환경을 구축함으로써 CI/CD 빌드 속도를 20% 개선했습니다. 또한, Apollo Client의 에러를 효율적으로 처리하기
-              위해 커스텀 훅을 구현하여 에러 코드 및 메시지만 출력하도록 하여 컴포넌트별 에러 처리 시간을 단축하고,
-              반복적인 포매터 및 밸리데이션 함수를 유틸리티로 모듈화해 코드의 가독성과 재사용성을 높였습니다.
-            </li>
-            <li>
-              <b>크로스브라우징 및 호환성 최적화:</b> Next.js 14의 useRouter를 활용해 쿼리를 쉽게 작성할 수 있는 커스텀
-              훅을 생성하고, 레거시 앱(v1)과 마이그레이션된 앱(v2)의 라우팅을 체계적으로 관리하여 유지보수성과 확장성을
-              향상시켰습니다. SVG의 stroke-width 속성 문제를 해결하기 위해 정수 값을 사용하거나 px 단위를 명시하여 iOS와
-              Android 간 렌더링 차이를 줄였으며, WebKit 기반 브라우저에서 -webkit-transform: translate3d(0,0,0);을
-              사용해 SVG 렌더링을 최적화했습니다. 또한, 로그아웃 문제를 해결하기 위해 버전 체크 공통 훅을 개발하여 하위
-              버전에서는 웹페이지로, 상위 버전에서는 앱 페이지로 이동하도록 분기 처리하여 다양한 버전의 사용자 경험을
-              개선하고 호환성 문제를 해결했습니다.
-            </li>
-            <li>
-              고급휘발유 판매를 촉진하기 위해 <b>고급휘발유 사은품 증정 프로모션</b>을 진행하고, 이벤트 신청 및 완료
-              페이지 개발, 히스토리 대응 등을 수행했습니다. 이벤트 프로모션 신청 페이지에서 BFF로 이뤄진 GraphQL API를
-              활용하여 사용자 정보, 사은품 리스트, 주유 금액 확인, 신청 폼 제출, 신청 결과 처리를 작업하고 복잡한 데이터
-              처리를 위해 hook으로 관리하고, useQueryHook를 활용하여 효율적인 코드를 구현했습니다. 또한, 백엔드 개발자
-              및 기획자와 협의하여 에러 코드 분류 및 팝업 활용으로 사용자 이탈을 최소화하였습니다.
-            </li>
-            <li>
-              시스템 결함이 생겼을 때 복원력을 테스트하기 위한 <b>카오스 엔지니어링</b>을 실행했습니다. 멤버십 페이지 및
-              포인트 API에서 전면 에러가 발생했을 때, 전면 에러 페이지 이동이 아닌, 개별 컴포넌트 단위로 커스텀된 에러
-              컴포넌트를 보여줄 수 있도록 설계하였습니다. Apollo graphql의 useApolloNetworkStatus를 false로 설정하여
-              전역 에러 처리를 방지하였으며, fetchPolicy를 cache-and-network로 설정하여 캐싱이 된 내용을 먼저 보여주고
-              네트워크 요청을 하도록 설정하였습니다.
-            </li>
-            <li>
-              기존 React 프로젝트를 <b>Next.js 14로 마이그레이션</b> (메뉴 페이지, 설정 페이지, 차량 등록/수정/리스트
-              페이지, 내 정보 페이지, 이벤트 및 공지사항 페이지)하는 작업을 메인 개발자로 진행했습니다. 코드 정리 및
-              Next.js의 Prefetch, Image lazy loading, dynamic 기술 등을 활용해 프로젝트를 최적화하여 Lighthouse 점수를
-              약 40% 개선하였습니다. 또한, 기존 레거시 구조에서 반복되는 코드를 제거하고 재사용 가능한 hook을 생성하여
-              문의하기 구조 리팩토링, 차량 등록 리팩토링 설계하였습니다.
-            </li>
-            <li>
-              <b>디자인 시스템 프로젝트</b>를 주도적으로 진행하였습니다. 디자이너, 프론트엔드 개발자, 기획자들과 주
-              2회씩 정기 회의를 진행하며 기존 레거시 디자인 시스템을 새로운 디자인 시스템 (Plating)으로 설계하였습니다.
-              기존에 설계된 atomic 디자인 시스템의 불명확성을 해결하고자, Foundation 및 Component 형태의 디자인
-              시스템으로 재설계를 진행하였습니다. 타이포 및 색상등의 기본 베이스가 되는 기초는 Foundation으로, 재사용
-              가능한 컴포넌트는 Component로 정의하여 작업하였으며, 기존에 사용하지 않던 컴포넌트를 삭제하고, 변경/추가가
-              필요한 컴포넌트는 업데이트를 진행하였습니다.
-            </li>
-            <li>
-              React, Redux, Redux-persist, emotion, Apollo client를 이용한 <b>머핀 앱 개발 및 유지보수</b> 작업을
-              진행했습니다. 지도 전역 상태 오류 해결, 주유 필터 전역 상태 오류 해결, intersectionObserver를 이용한
-              다이나믹 배너 작업, 차량 직접 추가 기능 작업, 차량 유종 필터 저장 기능, 튜토리얼 페이지 개선 등의 기존
-              기능 유지보수 및 새로운 기능을 추가 개발하였습니다. 또한, 차량 수정/생성시 debounce 되도록 최적화, 이미지
-              lazy loading 적용, 디자인 개선등의 작업을 통해 머핀 앱 최적화 작업을 진행했습니다.
-            </li>
-          </ul>
-        </div>
+          <div>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Period </strong>
+              <span className="col-8">2022.10 ~ 2023.11</span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Position </strong>
+              <span className="col-8">USE 파트 (Frontend Web)</span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Projects </strong>
+              <span className="col-8">
+                <a href="https://muffin.page.link/6Tkp" target="_blank" rel="noreferrer noopener">
+                  머핀 앱
+                </a>{' '}
+                개발, 머핀 디자인 시스템 구축
+              </span>
+            </p>
+            <hr />
+            <p className="row gap-3">
+              <strong className="col-2 text-right">Tech </strong>
+              <span className="col-8">React, Next.js, Typescript, Redux, Emotion, Storybook, GraphQL</span>
+            </p>
+            <hr />
+          </div>
+          <div className="mt-5">
+            <h4 className="mb-1">USE 파트 (PM)</h4>
+            <p>
+              <span className="highlight-gray">Frontend Engineer</span>
+            </p>
+            <p>
+              <span className="highlight-gray">2023.10 - 현재</span>
+            </p>
+            <h4>Description.</h4>
+            <p>
+              SK 에너지의 주유, 충전, 세차, 멤버십 웹앱인 <b>'머핀'</b>서비스를 맡아 프론트엔드 개발을 작업하고
+              있습니다. 디자인 시스템 작업, Next.js 14 마이그레이션, 주유 서비스 개선, 차량 직접 등록 서비스 개발,
+              프로모션 이벤트 작업, 카오스 엔지니어링 등의 개발을 맡았습니다. 프로젝트별로 담당된 기획자, 디자이너,
+              그리고 백엔드 개발자 분들과 협력하여 작업을 하였고, 적극적으로 의견을 내어 기존의 디자인 시스템을 개편하는
+              작업을 진행했습니다.
+              <br />
+              <br />
+              React, Next.js 14, Typescript, Redux, emotion, msw, Apollo GraphQL를 이용해 개발했습니다.
+            </p>
+            <h4>What I did.</h4>
+            <ul className="bulleted-list">
+              <li>
+                <b>빌드 최적화 및 테스트 환경 개선:</b> '머핀' 디자인 시스템의 CI/CD 파이프라인에서 npm install을
+                캐싱하여 빌드 시간을 약 30% 단축했으며, MSW(Mock Service Worker)를 도입해 GraphQL 개발 서버와 독립적인
+                테스트 환경을 구축함으로써 CI/CD 빌드 속도를 20% 개선했습니다. 또한, Apollo Client의 에러를 효율적으로
+                처리하기 위해 커스텀 훅을 구현하여 에러 코드 및 메시지만 출력하도록 하여 컴포넌트별 에러 처리 시간을
+                단축하고, 반복적인 포매터 및 밸리데이션 함수를 유틸리티로 모듈화해 코드의 가독성과 재사용성을
+                높였습니다.
+              </li>
+              <li>
+                <b>크로스브라우징 및 호환성 최적화:</b> Next.js 14의 useRouter를 활용해 쿼리를 쉽게 작성할 수 있는
+                커스텀 훅을 생성하고, 레거시 앱(v1)과 마이그레이션된 앱(v2)의 라우팅을 체계적으로 관리하여 유지보수성과
+                확장성을 향상시켰습니다. SVG의 stroke-width 속성 문제를 해결하기 위해 정수 값을 사용하거나 px 단위를
+                명시하여 iOS와 Android 간 렌더링 차이를 줄였으며, WebKit 기반 브라우저에서 -webkit-transform:
+                translate3d(0,0,0);을 사용해 SVG 렌더링을 최적화했습니다. 또한, 로그아웃 문제를 해결하기 위해 버전 체크
+                공통 훅을 개발하여 하위 버전에서는 웹페이지로, 상위 버전에서는 앱 페이지로 이동하도록 분기 처리하여
+                다양한 버전의 사용자 경험을 개선하고 호환성 문제를 해결했습니다.
+              </li>
+              <li>
+                고급휘발유 판매를 촉진하기 위해 <b>고급휘발유 사은품 증정 프로모션</b>을 진행하고, 이벤트 신청 및 완료
+                페이지 개발, 히스토리 대응 등을 수행했습니다. 이벤트 프로모션 신청 페이지에서 BFF로 이뤄진 GraphQL API를
+                활용하여 사용자 정보, 사은품 리스트, 주유 금액 확인, 신청 폼 제출, 신청 결과 처리를 작업하고 복잡한
+                데이터 처리를 위해 hook으로 관리하고, useQueryHook를 활용하여 효율적인 코드를 구현했습니다. 또한, 백엔드
+                개발자 및 기획자와 협의하여 에러 코드 분류 및 팝업 활용으로 사용자 이탈을 최소화하였습니다.
+              </li>
+              <li>
+                시스템 결함이 생겼을 때 복원력을 테스트하기 위한 <b>카오스 엔지니어링</b>을 실행했습니다. 멤버십 페이지
+                및 포인트 API에서 전면 에러가 발생했을 때, 전면 에러 페이지 이동이 아닌, 개별 컴포넌트 단위로 커스텀된
+                에러 컴포넌트를 보여줄 수 있도록 설계하였습니다. Apollo graphql의 useApolloNetworkStatus를 false로
+                설정하여 전역 에러 처리를 방지하였으며, fetchPolicy를 cache-and-network로 설정하여 캐싱이 된 내용을 먼저
+                보여주고 네트워크 요청을 하도록 설정하였습니다.
+              </li>
+              <li>
+                기존 React 프로젝트를 <b>Next.js 14로 마이그레이션</b> (메뉴 페이지, 설정 페이지, 차량 등록/수정/리스트
+                페이지, 내 정보 페이지, 이벤트 및 공지사항 페이지)하는 작업을 메인 개발자로 진행했습니다. 코드 정리 및
+                Next.js의 Prefetch, Image lazy loading, dynamic 기술 등을 활용해 프로젝트를 최적화하여 Lighthouse 점수를
+                약 40% 개선하였습니다. 또한, 기존 레거시 구조에서 반복되는 코드를 제거하고 재사용 가능한 hook을 생성하여
+                문의하기 구조 리팩토링, 차량 등록 리팩토링 설계하였습니다.
+              </li>
+              <li>
+                <b>디자인 시스템 프로젝트</b>를 주도적으로 진행하였습니다. 디자이너, 프론트엔드 개발자, 기획자들과 주
+                2회씩 정기 회의를 진행하며 기존 레거시 디자인 시스템을 새로운 디자인 시스템 (Plating)으로
+                설계하였습니다. 기존에 설계된 atomic 디자인 시스템의 불명확성을 해결하고자, Foundation 및 Component
+                형태의 디자인 시스템으로 재설계를 진행하였습니다. 타이포 및 색상등의 기본 베이스가 되는 기초는
+                Foundation으로, 재사용 가능한 컴포넌트는 Component로 정의하여 작업하였으며, 기존에 사용하지 않던
+                컴포넌트를 삭제하고, 변경/추가가 필요한 컴포넌트는 업데이트를 진행하였습니다.
+              </li>
+              <li>
+                React, Redux, Redux-persist, emotion, Apollo client를 이용한 <b>머핀 앱 개발 및 유지보수</b> 작업을
+                진행했습니다. 지도 전역 상태 오류 해결, 주유 필터 전역 상태 오류 해결, intersectionObserver를 이용한
+                다이나믹 배너 작업, 차량 직접 추가 기능 작업, 차량 유종 필터 저장 기능, 튜토리얼 페이지 개선 등의 기존
+                기능 유지보수 및 새로운 기능을 추가 개발하였습니다. 또한, 차량 수정/생성시 debounce 되도록 최적화,
+                이미지 lazy loading 적용, 디자인 개선등의 작업을 통해 머핀 앱 최적화 작업을 진행했습니다.
+              </li>
+            </ul>
+          </div>
+        </section>
         <br />
         <div className="title-lg mt-16">
           <a href="https://finda.co.kr/" target="_blank" rel="noreferrer noopener">

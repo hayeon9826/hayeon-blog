@@ -36,11 +36,6 @@ const EnglishResume = () => {
                   <li className="location">
                     <b>Address</b>: Seoul, Republic of Korea
                   </li>
-                  <li className="phone">
-                    <span>
-                      <b>Phone</b>: (+82) 010-3932-9826
-                    </span>
-                  </li>
                 </ul>
               </div>
               <div className="row">

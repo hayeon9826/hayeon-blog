@@ -51,11 +51,11 @@ const Bio = () => {
             <a className="link-small me-2" target="_blank" rel="noreferrer" href="http://www.linkedin.com/in/khy226">
               Linkedin
             </a>
-            <span>
+            {/* <span>
               <a className="link-small me-2" href="https://hayeon-blog.vercel.app/en/about/" rel="noreferrer">
                 Resume
               </a>
-            </span>
+            </span> */}
           </div>
         </div>
       )}
