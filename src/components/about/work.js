@@ -26,7 +26,7 @@ const Work = () => {
             <hr />
             <p className="row gap-3">
               <strong className="col-2 text-right">Period </strong>
-              <span className="col-8">2023.11 ~ 현재</span>
+              <span className="col-8">2024.11 ~ 현재</span>
             </p>
             <hr />
             <p className="row gap-3">
@@ -69,7 +69,7 @@ const Work = () => {
             <hr />
             <p className="row gap-3">
               <strong className="col-2 text-right">Period </strong>
-              <span className="col-8">2022.10 ~ 2023.11</span>
+              <span className="col-8">2022.10 ~ 2024.11</span>
             </p>
             <hr />
             <p className="row gap-3">
@@ -99,7 +99,7 @@ const Work = () => {
               <span className="highlight-gray">Frontend Engineer</span>
             </p>
             <p>
-              <span className="highlight-gray">2023.10 - 현재</span>
+              <span className="highlight-gray">2023.10 - 2024.11</span>
             </p>
             <h4>Description.</h4>
             <p>

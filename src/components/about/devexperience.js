@@ -18,7 +18,7 @@ const DevExperience = () => {
             <p>
               <span className="title-primary_background">회사 프로젝트</span>
             </p>
-            <p>2023.10 ~ 현재</p>
+            <p>2023.10 ~ 2024.11</p>
           </div>
           <div style={{ width: '75%' }} className="column">
             <h5>Description.</h5>
