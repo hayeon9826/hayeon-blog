@@ -69,7 +69,7 @@ const Work = () => {
             <hr />
             <p className="row gap-3">
               <strong className="col-2 text-right">Period </strong>
-              <span className="col-8">2022.10 ~ 2024.11</span>
+              <span className="col-8">2023.10 ~ 2024.11</span>
             </p>
             <hr />
             <p className="row gap-3">
